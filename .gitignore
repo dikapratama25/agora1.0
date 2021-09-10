@@ -1,0 +1,47 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Crystal Reports Backup Files
+*.bak
+
+/Agora/AppCommon/obj
+/Agora/AppCommon/My Project/PublishProfiles
+
+/Agora/BillingASP/BillingASP/obj
+/Agora/BillingASP/Access/obj
+/Agora/BillingASP/BillingASP/My Project/PublishProfiles
+
+/Agora/DBAccess - MYSQL/obj
+
+/Agora/eAdmin/obj
+/Agora/eAdmin/My Project/PublishProfiles
+
+
+/Agora/eProcure/obj
+/Agora/eProcure/My Project/PublishProfiles
+
+/Agora/eProcure_Component/.vs
+/Agora/eProcure_Component/obj
+
+/Agora/eProcurement/obj
+/Agora/eProcurement/My Project/PublishProfiles
+
+
+/Agora/Functions/Functions/obj
+
+
+
+
+
+
+
+
+
+
+
+/Agora/eProcure/.vs/eProcure/v15
+/AgoraLegacy/.vs/AgoraLegacy/v15
+/AgoraLegacy/bin/Debug
+/AgoraLegacy/obj
