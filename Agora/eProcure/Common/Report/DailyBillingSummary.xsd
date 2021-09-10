@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DailyBillingSummary" targetNamespace="http://tempuri.org/DailyBillingSummary.xsd" xmlns:mstns="http://tempuri.org/DailyBillingSummary.xsd" xmlns="http://tempuri.org/DailyBillingSummary.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dtDailyBillingSummaryTableAdapter" GeneratorDataComponentClassName="dtDailyBillingSummaryTableAdapter" Name="dtDailyBillingSummary" UserDataComponentName="dtDailyBillingSummaryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT BM_INVOICE_INDEX, bm.BM_INVOICE_NO, bm.BM_DOC_DATE, bm.BM_CREATED_BY, bm.BM_S_COY_NAME, bd.BM_UNIT_COST, bd.BM_RECEIVED_QTY, bm.BM_EXCHANGE_RATE,
+'' AS GSTAmt, '' AS InvAmtMYR, '' AS InvAmtFCY, bm.BM_CURRENCY_CODE, '' as BM_APPROVED_BY, bm.bm_status_changed_by
+FROM billing_mstr bm
+INNER JOIN billing_details bd ON bm.BM_INVOICE_NO = bd.BM_INVOICE_NO AND bm.BM_S_COY_ID = bd.BM_S_COY_ID
+WHERE bm_b_coy_id = 'hlb' AND bm_invoice_type IS NOT NULL AND bm_invoice_status in (3,13)
+AND bm_status_changed_by='fm'
+
+</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BM_INVOICE_NO" DataSetColumn="BM_INVOICE_NO" />
+              <Mapping SourceColumn="BM_DOC_DATE" DataSetColumn="BM_DOC_DATE" />
+              <Mapping SourceColumn="BM_CREATED_BY" DataSetColumn="BM_CREATED_BY" />
+              <Mapping SourceColumn="BM_S_COY_NAME" DataSetColumn="BM_S_COY_NAME" />
+              <Mapping SourceColumn="BM_CURRENCY_CODE" DataSetColumn="BM_CURRENCY_CODE" />
+              <Mapping SourceColumn="BM_UNIT_COST" DataSetColumn="BM_UNIT_COST" />
+              <Mapping SourceColumn="BM_RECEIVED_QTY" DataSetColumn="BM_RECEIVED_QTY" />
+              <Mapping SourceColumn="BM_EXCHANGE_RATE" DataSetColumn="BM_EXCHANGE_RATE" />
+              <Mapping SourceColumn="BM_INVOICE_INDEX" DataSetColumn="BM_INVOICE_INDEX" />
+              <Mapping SourceColumn="GSTAmt" DataSetColumn="GSTAmt" />
+              <Mapping SourceColumn="InvAmtMYR" DataSetColumn="InvAmtMYR" />
+              <Mapping SourceColumn="InvAmtFCY" DataSetColumn="InvAmtFCY" />
+              <Mapping SourceColumn="BM_APPROVED_BY" DataSetColumn="BM_APPROVED_BY" />
+              <Mapping SourceColumn="bm_status_changed_by" DataSetColumn="bm_status_changed_by" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DailyBillingSummary" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DailyBillingSummary" msprop:Generator_DataSetName="DailyBillingSummary">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtDailyBillingSummary" msprop:Generator_UserTableName="dtDailyBillingSummary" msprop:Generator_RowDeletedName="dtDailyBillingSummaryRowDeleted" msprop:Generator_RowChangedName="dtDailyBillingSummaryRowChanged" msprop:Generator_RowClassName="dtDailyBillingSummaryRow" msprop:Generator_RowChangingName="dtDailyBillingSummaryRowChanging" msprop:Generator_RowEvArgName="dtDailyBillingSummaryRowChangeEvent" msprop:Generator_RowEvHandlerName="dtDailyBillingSummaryRowChangeEventHandler" msprop:Generator_TableClassName="dtDailyBillingSummaryDataTable" msprop:Generator_TableVarName="tabledtDailyBillingSummary" msprop:Generator_RowDeletingName="dtDailyBillingSummaryRowDeleting" msprop:Generator_TablePropName="dtDailyBillingSummary">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BM_INVOICE_NO" msprop:Generator_UserColumnName="BM_INVOICE_NO" msprop:Generator_ColumnVarNameInTable="columnBM_INVOICE_NO" msprop:Generator_ColumnPropNameInRow="BM_INVOICE_NO" msprop:Generator_ColumnPropNameInTable="BM_INVOICE_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BM_DOC_DATE" msprop:Generator_UserColumnName="BM_DOC_DATE" msprop:Generator_ColumnVarNameInTable="columnBM_DOC_DATE" msprop:Generator_ColumnPropNameInRow="BM_DOC_DATE" msprop:Generator_ColumnPropNameInTable="BM_DOC_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BM_CREATED_BY" msprop:Generator_UserColumnName="BM_CREATED_BY" msprop:Generator_ColumnVarNameInTable="columnBM_CREATED_BY" msprop:Generator_ColumnPropNameInRow="BM_CREATED_BY" msprop:Generator_ColumnPropNameInTable="BM_CREATED_BYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BM_S_COY_NAME" msprop:Generator_UserColumnName="BM_S_COY_NAME" msprop:Generator_ColumnVarNameInTable="columnBM_S_COY_NAME" msprop:Generator_ColumnPropNameInRow="BM_S_COY_NAME" msprop:Generator_ColumnPropNameInTable="BM_S_COY_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BM_CURRENCY_CODE" msprop:Generator_UserColumnName="BM_CURRENCY_CODE" msprop:Generator_ColumnVarNameInTable="columnBM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInRow="BM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInTable="BM_CURRENCY_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BM_UNIT_COST" msprop:Generator_UserColumnName="BM_UNIT_COST" msprop:Generator_ColumnVarNameInTable="columnBM_UNIT_COST" msprop:Generator_ColumnPropNameInRow="BM_UNIT_COST" msprop:Generator_ColumnPropNameInTable="BM_UNIT_COSTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BM_RECEIVED_QTY" msprop:Generator_UserColumnName="BM_RECEIVED_QTY" msprop:Generator_ColumnVarNameInTable="columnBM_RECEIVED_QTY" msprop:Generator_ColumnPropNameInRow="BM_RECEIVED_QTY" msprop:Generator_ColumnPropNameInTable="BM_RECEIVED_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BM_EXCHANGE_RATE" msprop:Generator_UserColumnName="BM_EXCHANGE_RATE" msprop:Generator_ColumnVarNameInTable="columnBM_EXCHANGE_RATE" msprop:Generator_ColumnPropNameInRow="BM_EXCHANGE_RATE" msprop:Generator_ColumnPropNameInTable="BM_EXCHANGE_RATEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="BM_INVOICE_INDEX" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="BM_INVOICE_INDEX" msprop:Generator_ColumnVarNameInTable="columnBM_INVOICE_INDEX" msprop:Generator_ColumnPropNameInRow="BM_INVOICE_INDEX" msprop:Generator_ColumnPropNameInTable="BM_INVOICE_INDEXColumn" type="xs:long" />
+              <xs:element name="GSTAmt" msprop:Generator_UserColumnName="GSTAmt" msprop:Generator_ColumnVarNameInTable="columnGSTAmt" msprop:Generator_ColumnPropNameInRow="GSTAmt" msprop:Generator_ColumnPropNameInTable="GSTAmtColumn" type="xs:string" />
+              <xs:element name="InvAmtMYR" msprop:Generator_UserColumnName="InvAmtMYR" msprop:Generator_ColumnVarNameInTable="columnInvAmtMYR" msprop:Generator_ColumnPropNameInRow="InvAmtMYR" msprop:Generator_ColumnPropNameInTable="InvAmtMYRColumn" type="xs:string" />
+              <xs:element name="InvAmtFCY" msprop:Generator_UserColumnName="InvAmtFCY" msprop:Generator_ColumnVarNameInTable="columnInvAmtFCY" msprop:Generator_ColumnPropNameInRow="InvAmtFCY" msprop:Generator_ColumnPropNameInTable="InvAmtFCYColumn" type="xs:string" />
+              <xs:element name="BM_APPROVED_BY" msprop:Generator_UserColumnName="BM_APPROVED_BY" msprop:Generator_ColumnVarNameInTable="columnBM_APPROVED_BY" msprop:Generator_ColumnPropNameInRow="BM_APPROVED_BY" msprop:Generator_ColumnPropNameInTable="BM_APPROVED_BYColumn" type="xs:string" />
+              <xs:element name="bm_status_changed_by" msprop:Generator_UserColumnName="bm_status_changed_by" msprop:Generator_ColumnPropNameInRow="bm_status_changed_by" msprop:Generator_ColumnVarNameInTable="columnbm_status_changed_by" msprop:Generator_ColumnPropNameInTable="bm_status_changed_byColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtDailyBillingSummary" />
+      <xs:field xpath="mstns:BM_INVOICE_INDEX" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

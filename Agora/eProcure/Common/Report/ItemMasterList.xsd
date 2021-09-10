@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ItemMasterList" targetNamespace="http://tempuri.org/ItemMasterList.xsd" xmlns:mstns="http://tempuri.org/ItemMasterList.xsd" xmlns="http://tempuri.org/ItemMasterList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString2.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetItemMasterTableAdapter" GeneratorDataComponentClassName="DataSetItemMasterTableAdapter" Name="DataSetItemMaster" UserDataComponentName="DataSetItemMasterTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString2 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS IM_ITEM_CODE, '' AS IM_INVENTORY_NAME, '' AS ITEMSPEC, 0.00 AS PM_SAFE_QTY, 0.00 AS MONTHCONSUMPTION, '' AS IRSM_IRS_DATE, 0.00 AS POD_BAL_QTY, 0.00 AS OP_CURR_MTH_AMT, 0.00 AS OP_CURR_MTH_QTY, 0.00 AS OP_PAST_1_MTH_QTY, 0.00 AS OP_PAST_2_MTH_QTY, 0.00 AS OP_PAST_3_MTH_QTY, 0.00 AS OP_PAST_4_MTH_QTY, 0.00 AS OP_PAST_5_MTH_QTY, 0.00 AS OP_PAST_6_MTH_QTY, 0.00 AS GRN_CURR_MTH_AMT, 0.00 AS GRN_CURR_MTH_QTY, 0.00 AS GRN_PAST_1_MTH_QTY, 0.00 AS GRN_PAST_2_MTH_QTY, 0.00 AS GRN_PAST_3_MTH_QTY, 0.00 AS GRN_PAST_4_MTH_QTY, 0.00 AS GRN_PAST_5_MTH_QTY, 0.00 AS GRN_PAST_6_MTH_QTY, 0.00 AS II_CURR_MTH_AMT, 0.00 AS II_CURR_MTH_QTY, 0.00 AS II_PAST_1_MTH_QTY, 0.00 AS II_PAST_2_MTH_QTY, 0.00 AS II_PAST_3_MTH_QTY, 0.00 AS II_PAST_4_MTH_QTY, 0.00 AS II_PAST_5_MTH_QTY, 0.00 AS II_PAST_6_MTH_QTY, 0.00 AS RI_CURR_MTH_AMT, 0.00 AS RI_CURR_MTH_QTY, 0.00 AS RI_PAST_1_MTH_QTY, 0.00 AS RI_PAST_2_MTH_QTY, 0.00 AS RI_PAST_3_MTH_QTY, 0.00 AS RI_PAST_4_MTH_QTY, 0.00 AS RI_PAST_5_MTH_QTY, 0.00 AS RI_PAST_6_MTH_QTY, 0.00 AS WO_CURR_MTH_AMT, 0.00 AS WO_CURR_MTH_QTY, 0.00 AS WO_PAST_1_MTH_QTY, 0.00 AS WO_PAST_2_MTH_QTY, 0.00 AS WO_PAST_3_MTH_QTY, 0.00 AS WO_PAST_4_MTH_QTY, 0.00 AS WO_PAST_5_MTH_QTY, 0.00 AS WO_PAST_6_MTH_QTY, 0.00 AS SOH_CURR_MTH_AMT, 0.00 AS SOH_CURR_MTH_QTY, 0.00 AS SOH_PAST_1_MTH_QTY, 0.00 AS SOH_PAST_2_MTH_QTY, 0.00 AS SOH_PAST_3_MTH_QTY, 0.00 AS SOH_PAST_4_MTH_QTY, 0.00 AS SOH_PAST_5_MTH_QTY, 0.00 AS SOH_PAST_6_MTH_QTY FROM INVENTORY_MSTR</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IM_ITEM_CODE" DataSetColumn="IM_ITEM_CODE" />
+              <Mapping SourceColumn="ITEMSPEC" DataSetColumn="ITEMSPEC" />
+              <Mapping SourceColumn="IRSM_IRS_DATE" DataSetColumn="IRSM_IRS_DATE" />
+              <Mapping SourceColumn="IM_INVENTORY_NAME" DataSetColumn="IM_INVENTORY_NAME" />
+              <Mapping SourceColumn="PM_SAFE_QTY" DataSetColumn="PM_SAFE_QTY" />
+              <Mapping SourceColumn="MONTHCONSUMPTION" DataSetColumn="MONTHCONSUMPTION" />
+              <Mapping SourceColumn="POD_BAL_QTY" DataSetColumn="POD_BAL_QTY" />
+              <Mapping SourceColumn="OP_CURR_MTH_AMT" DataSetColumn="OP_CURR_MTH_AMT" />
+              <Mapping SourceColumn="OP_CURR_MTH_QTY" DataSetColumn="OP_CURR_MTH_QTY" />
+              <Mapping SourceColumn="OP_PAST_1_MTH_QTY" DataSetColumn="OP_PAST_1_MTH_QTY" />
+              <Mapping SourceColumn="OP_PAST_2_MTH_QTY" DataSetColumn="OP_PAST_2_MTH_QTY" />
+              <Mapping SourceColumn="OP_PAST_3_MTH_QTY" DataSetColumn="OP_PAST_3_MTH_QTY" />
+              <Mapping SourceColumn="OP_PAST_4_MTH_QTY" DataSetColumn="OP_PAST_4_MTH_QTY" />
+              <Mapping SourceColumn="OP_PAST_5_MTH_QTY" DataSetColumn="OP_PAST_5_MTH_QTY" />
+              <Mapping SourceColumn="OP_PAST_6_MTH_QTY" DataSetColumn="OP_PAST_6_MTH_QTY" />
+              <Mapping SourceColumn="GRN_CURR_MTH_AMT" DataSetColumn="GRN_CURR_MTH_AMT" />
+              <Mapping SourceColumn="GRN_CURR_MTH_QTY" DataSetColumn="GRN_CURR_MTH_QTY" />
+              <Mapping SourceColumn="GRN_PAST_1_MTH_QTY" DataSetColumn="GRN_PAST_1_MTH_QTY" />
+              <Mapping SourceColumn="GRN_PAST_2_MTH_QTY" DataSetColumn="GRN_PAST_2_MTH_QTY" />
+              <Mapping SourceColumn="GRN_PAST_3_MTH_QTY" DataSetColumn="GRN_PAST_3_MTH_QTY" />
+              <Mapping SourceColumn="GRN_PAST_4_MTH_QTY" DataSetColumn="GRN_PAST_4_MTH_QTY" />
+              <Mapping SourceColumn="GRN_PAST_5_MTH_QTY" DataSetColumn="GRN_PAST_5_MTH_QTY" />
+              <Mapping SourceColumn="GRN_PAST_6_MTH_QTY" DataSetColumn="GRN_PAST_6_MTH_QTY" />
+              <Mapping SourceColumn="II_CURR_MTH_AMT" DataSetColumn="II_CURR_MTH_AMT" />
+              <Mapping SourceColumn="II_CURR_MTH_QTY" DataSetColumn="II_CURR_MTH_QTY" />
+              <Mapping SourceColumn="II_PAST_1_MTH_QTY" DataSetColumn="II_PAST_1_MTH_QTY" />
+              <Mapping SourceColumn="II_PAST_2_MTH_QTY" DataSetColumn="II_PAST_2_MTH_QTY" />
+              <Mapping SourceColumn="II_PAST_3_MTH_QTY" DataSetColumn="II_PAST_3_MTH_QTY" />
+              <Mapping SourceColumn="II_PAST_4_MTH_QTY" DataSetColumn="II_PAST_4_MTH_QTY" />
+              <Mapping SourceColumn="II_PAST_5_MTH_QTY" DataSetColumn="II_PAST_5_MTH_QTY" />
+              <Mapping SourceColumn="II_PAST_6_MTH_QTY" DataSetColumn="II_PAST_6_MTH_QTY" />
+              <Mapping SourceColumn="RI_CURR_MTH_AMT" DataSetColumn="RI_CURR_MTH_AMT" />
+              <Mapping SourceColumn="RI_CURR_MTH_QTY" DataSetColumn="RI_CURR_MTH_QTY" />
+              <Mapping SourceColumn="RI_PAST_1_MTH_QTY" DataSetColumn="RI_PAST_1_MTH_QTY" />
+              <Mapping SourceColumn="RI_PAST_2_MTH_QTY" DataSetColumn="RI_PAST_2_MTH_QTY" />
+              <Mapping SourceColumn="RI_PAST_3_MTH_QTY" DataSetColumn="RI_PAST_3_MTH_QTY" />
+              <Mapping SourceColumn="RI_PAST_4_MTH_QTY" DataSetColumn="RI_PAST_4_MTH_QTY" />
+              <Mapping SourceColumn="RI_PAST_5_MTH_QTY" DataSetColumn="RI_PAST_5_MTH_QTY" />
+              <Mapping SourceColumn="RI_PAST_6_MTH_QTY" DataSetColumn="RI_PAST_6_MTH_QTY" />
+              <Mapping SourceColumn="WO_CURR_MTH_AMT" DataSetColumn="WO_CURR_MTH_AMT" />
+              <Mapping SourceColumn="WO_CURR_MTH_QTY" DataSetColumn="WO_CURR_MTH_QTY" />
+              <Mapping SourceColumn="WO_PAST_1_MTH_QTY" DataSetColumn="WO_PAST_1_MTH_QTY" />
+              <Mapping SourceColumn="WO_PAST_2_MTH_QTY" DataSetColumn="WO_PAST_2_MTH_QTY" />
+              <Mapping SourceColumn="WO_PAST_3_MTH_QTY" DataSetColumn="WO_PAST_3_MTH_QTY" />
+              <Mapping SourceColumn="WO_PAST_4_MTH_QTY" DataSetColumn="WO_PAST_4_MTH_QTY" />
+              <Mapping SourceColumn="WO_PAST_5_MTH_QTY" DataSetColumn="WO_PAST_5_MTH_QTY" />
+              <Mapping SourceColumn="WO_PAST_6_MTH_QTY" DataSetColumn="WO_PAST_6_MTH_QTY" />
+              <Mapping SourceColumn="SOH_CURR_MTH_AMT" DataSetColumn="SOH_CURR_MTH_AMT" />
+              <Mapping SourceColumn="SOH_CURR_MTH_QTY" DataSetColumn="SOH_CURR_MTH_QTY" />
+              <Mapping SourceColumn="SOH_PAST_1_MTH_QTY" DataSetColumn="SOH_PAST_1_MTH_QTY" />
+              <Mapping SourceColumn="SOH_PAST_2_MTH_QTY" DataSetColumn="SOH_PAST_2_MTH_QTY" />
+              <Mapping SourceColumn="SOH_PAST_3_MTH_QTY" DataSetColumn="SOH_PAST_3_MTH_QTY" />
+              <Mapping SourceColumn="SOH_PAST_4_MTH_QTY" DataSetColumn="SOH_PAST_4_MTH_QTY" />
+              <Mapping SourceColumn="SOH_PAST_5_MTH_QTY" DataSetColumn="SOH_PAST_5_MTH_QTY" />
+              <Mapping SourceColumn="SOH_PAST_6_MTH_QTY" DataSetColumn="SOH_PAST_6_MTH_QTY" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ItemMasterList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ItemMasterList" msprop:Generator_DataSetName="ItemMasterList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetItemMaster" msprop:Generator_UserTableName="DataSetItemMaster" msprop:Generator_RowDeletedName="DataSetItemMasterRowDeleted" msprop:Generator_RowChangedName="DataSetItemMasterRowChanged" msprop:Generator_RowClassName="DataSetItemMasterRow" msprop:Generator_RowChangingName="DataSetItemMasterRowChanging" msprop:Generator_RowEvArgName="DataSetItemMasterRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetItemMasterRowChangeEventHandler" msprop:Generator_TableClassName="DataSetItemMasterDataTable" msprop:Generator_TableVarName="tableDataSetItemMaster" msprop:Generator_RowDeletingName="DataSetItemMasterRowDeleting" msprop:Generator_TablePropName="DataSetItemMaster">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IM_ITEM_CODE" msprop:Generator_UserColumnName="IM_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="IM_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="IM_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="ITEMSPEC" msprop:Generator_UserColumnName="ITEMSPEC" msprop:Generator_ColumnVarNameInTable="columnITEMSPEC" msprop:Generator_ColumnPropNameInRow="ITEMSPEC" msprop:Generator_ColumnPropNameInTable="ITEMSPECColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_DATE" msprop:Generator_UserColumnName="IRSM_IRS_DATE" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_DATE" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_DATE" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_DATEColumn" type="xs:string" />
+              <xs:element name="IM_INVENTORY_NAME" msprop:Generator_UserColumnName="IM_INVENTORY_NAME" msprop:Generator_ColumnPropNameInRow="IM_INVENTORY_NAME" msprop:Generator_ColumnVarNameInTable="columnIM_INVENTORY_NAME" msprop:Generator_ColumnPropNameInTable="IM_INVENTORY_NAMEColumn" type="xs:string" />
+              <xs:element name="PM_SAFE_QTY" msprop:Generator_UserColumnName="PM_SAFE_QTY" msprop:Generator_ColumnPropNameInRow="PM_SAFE_QTY" msprop:Generator_ColumnVarNameInTable="columnPM_SAFE_QTY" msprop:Generator_ColumnPropNameInTable="PM_SAFE_QTYColumn" type="xs:decimal" />
+              <xs:element name="MONTHCONSUMPTION" msprop:Generator_UserColumnName="MONTHCONSUMPTION" msprop:Generator_ColumnPropNameInRow="MONTHCONSUMPTION" msprop:Generator_ColumnVarNameInTable="columnMONTHCONSUMPTION" msprop:Generator_ColumnPropNameInTable="MONTHCONSUMPTIONColumn" type="xs:decimal" />
+              <xs:element name="POD_BAL_QTY" msprop:Generator_UserColumnName="POD_BAL_QTY" msprop:Generator_ColumnPropNameInRow="POD_BAL_QTY" msprop:Generator_ColumnVarNameInTable="columnPOD_BAL_QTY" msprop:Generator_ColumnPropNameInTable="POD_BAL_QTYColumn" type="xs:decimal" />
+              <xs:element name="OP_CURR_MTH_AMT" msprop:Generator_UserColumnName="OP_CURR_MTH_AMT" msprop:Generator_ColumnPropNameInRow="OP_CURR_MTH_AMT" msprop:Generator_ColumnVarNameInTable="columnOP_CURR_MTH_AMT" msprop:Generator_ColumnPropNameInTable="OP_CURR_MTH_AMTColumn" type="xs:decimal" />
+              <xs:element name="OP_CURR_MTH_QTY" msprop:Generator_UserColumnName="OP_CURR_MTH_QTY" msprop:Generator_ColumnPropNameInRow="OP_CURR_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnOP_CURR_MTH_QTY" msprop:Generator_ColumnPropNameInTable="OP_CURR_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="OP_PAST_1_MTH_QTY" msprop:Generator_UserColumnName="OP_PAST_1_MTH_QTY" msprop:Generator_ColumnPropNameInRow="OP_PAST_1_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnOP_PAST_1_MTH_QTY" msprop:Generator_ColumnPropNameInTable="OP_PAST_1_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="OP_PAST_2_MTH_QTY" msprop:Generator_UserColumnName="OP_PAST_2_MTH_QTY" msprop:Generator_ColumnPropNameInRow="OP_PAST_2_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnOP_PAST_2_MTH_QTY" msprop:Generator_ColumnPropNameInTable="OP_PAST_2_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="OP_PAST_3_MTH_QTY" msprop:Generator_UserColumnName="OP_PAST_3_MTH_QTY" msprop:Generator_ColumnPropNameInRow="OP_PAST_3_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnOP_PAST_3_MTH_QTY" msprop:Generator_ColumnPropNameInTable="OP_PAST_3_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="OP_PAST_4_MTH_QTY" msprop:Generator_UserColumnName="OP_PAST_4_MTH_QTY" msprop:Generator_ColumnPropNameInRow="OP_PAST_4_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnOP_PAST_4_MTH_QTY" msprop:Generator_ColumnPropNameInTable="OP_PAST_4_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="OP_PAST_5_MTH_QTY" msprop:Generator_UserColumnName="OP_PAST_5_MTH_QTY" msprop:Generator_ColumnPropNameInRow="OP_PAST_5_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnOP_PAST_5_MTH_QTY" msprop:Generator_ColumnPropNameInTable="OP_PAST_5_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="OP_PAST_6_MTH_QTY" msprop:Generator_UserColumnName="OP_PAST_6_MTH_QTY" msprop:Generator_ColumnPropNameInRow="OP_PAST_6_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnOP_PAST_6_MTH_QTY" msprop:Generator_ColumnPropNameInTable="OP_PAST_6_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="GRN_CURR_MTH_AMT" msprop:Generator_UserColumnName="GRN_CURR_MTH_AMT" msprop:Generator_ColumnPropNameInRow="GRN_CURR_MTH_AMT" msprop:Generator_ColumnVarNameInTable="columnGRN_CURR_MTH_AMT" msprop:Generator_ColumnPropNameInTable="GRN_CURR_MTH_AMTColumn" type="xs:decimal" />
+              <xs:element name="GRN_CURR_MTH_QTY" msprop:Generator_UserColumnName="GRN_CURR_MTH_QTY" msprop:Generator_ColumnPropNameInRow="GRN_CURR_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnGRN_CURR_MTH_QTY" msprop:Generator_ColumnPropNameInTable="GRN_CURR_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="GRN_PAST_1_MTH_QTY" msprop:Generator_UserColumnName="GRN_PAST_1_MTH_QTY" msprop:Generator_ColumnPropNameInRow="GRN_PAST_1_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnGRN_PAST_1_MTH_QTY" msprop:Generator_ColumnPropNameInTable="GRN_PAST_1_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="GRN_PAST_2_MTH_QTY" msprop:Generator_UserColumnName="GRN_PAST_2_MTH_QTY" msprop:Generator_ColumnPropNameInRow="GRN_PAST_2_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnGRN_PAST_2_MTH_QTY" msprop:Generator_ColumnPropNameInTable="GRN_PAST_2_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="GRN_PAST_3_MTH_QTY" msprop:Generator_UserColumnName="GRN_PAST_3_MTH_QTY" msprop:Generator_ColumnPropNameInRow="GRN_PAST_3_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnGRN_PAST_3_MTH_QTY" msprop:Generator_ColumnPropNameInTable="GRN_PAST_3_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="GRN_PAST_4_MTH_QTY" msprop:Generator_UserColumnName="GRN_PAST_4_MTH_QTY" msprop:Generator_ColumnPropNameInRow="GRN_PAST_4_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnGRN_PAST_4_MTH_QTY" msprop:Generator_ColumnPropNameInTable="GRN_PAST_4_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="GRN_PAST_5_MTH_QTY" msprop:Generator_UserColumnName="GRN_PAST_5_MTH_QTY" msprop:Generator_ColumnPropNameInRow="GRN_PAST_5_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnGRN_PAST_5_MTH_QTY" msprop:Generator_ColumnPropNameInTable="GRN_PAST_5_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="GRN_PAST_6_MTH_QTY" msprop:Generator_UserColumnName="GRN_PAST_6_MTH_QTY" msprop:Generator_ColumnPropNameInRow="GRN_PAST_6_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnGRN_PAST_6_MTH_QTY" msprop:Generator_ColumnPropNameInTable="GRN_PAST_6_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="II_CURR_MTH_AMT" msprop:Generator_UserColumnName="II_CURR_MTH_AMT" msprop:Generator_ColumnPropNameInRow="II_CURR_MTH_AMT" msprop:Generator_ColumnVarNameInTable="columnII_CURR_MTH_AMT" msprop:Generator_ColumnPropNameInTable="II_CURR_MTH_AMTColumn" type="xs:decimal" />
+              <xs:element name="II_CURR_MTH_QTY" msprop:Generator_UserColumnName="II_CURR_MTH_QTY" msprop:Generator_ColumnPropNameInRow="II_CURR_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnII_CURR_MTH_QTY" msprop:Generator_ColumnPropNameInTable="II_CURR_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="II_PAST_1_MTH_QTY" msprop:Generator_UserColumnName="II_PAST_1_MTH_QTY" msprop:Generator_ColumnPropNameInRow="II_PAST_1_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnII_PAST_1_MTH_QTY" msprop:Generator_ColumnPropNameInTable="II_PAST_1_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="II_PAST_2_MTH_QTY" msprop:Generator_UserColumnName="II_PAST_2_MTH_QTY" msprop:Generator_ColumnPropNameInRow="II_PAST_2_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnII_PAST_2_MTH_QTY" msprop:Generator_ColumnPropNameInTable="II_PAST_2_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="II_PAST_3_MTH_QTY" msprop:Generator_UserColumnName="II_PAST_3_MTH_QTY" msprop:Generator_ColumnPropNameInRow="II_PAST_3_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnII_PAST_3_MTH_QTY" msprop:Generator_ColumnPropNameInTable="II_PAST_3_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="II_PAST_4_MTH_QTY" msprop:Generator_UserColumnName="II_PAST_4_MTH_QTY" msprop:Generator_ColumnPropNameInRow="II_PAST_4_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnII_PAST_4_MTH_QTY" msprop:Generator_ColumnPropNameInTable="II_PAST_4_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="II_PAST_5_MTH_QTY" msprop:Generator_UserColumnName="II_PAST_5_MTH_QTY" msprop:Generator_ColumnPropNameInRow="II_PAST_5_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnII_PAST_5_MTH_QTY" msprop:Generator_ColumnPropNameInTable="II_PAST_5_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="II_PAST_6_MTH_QTY" msprop:Generator_UserColumnName="II_PAST_6_MTH_QTY" msprop:Generator_ColumnPropNameInRow="II_PAST_6_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnII_PAST_6_MTH_QTY" msprop:Generator_ColumnPropNameInTable="II_PAST_6_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="RI_CURR_MTH_AMT" msprop:Generator_UserColumnName="RI_CURR_MTH_AMT" msprop:Generator_ColumnPropNameInRow="RI_CURR_MTH_AMT" msprop:Generator_ColumnVarNameInTable="columnRI_CURR_MTH_AMT" msprop:Generator_ColumnPropNameInTable="RI_CURR_MTH_AMTColumn" type="xs:decimal" />
+              <xs:element name="RI_CURR_MTH_QTY" msprop:Generator_UserColumnName="RI_CURR_MTH_QTY" msprop:Generator_ColumnPropNameInRow="RI_CURR_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnRI_CURR_MTH_QTY" msprop:Generator_ColumnPropNameInTable="RI_CURR_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="RI_PAST_1_MTH_QTY" msprop:Generator_UserColumnName="RI_PAST_1_MTH_QTY" msprop:Generator_ColumnPropNameInRow="RI_PAST_1_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnRI_PAST_1_MTH_QTY" msprop:Generator_ColumnPropNameInTable="RI_PAST_1_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="RI_PAST_2_MTH_QTY" msprop:Generator_UserColumnName="RI_PAST_2_MTH_QTY" msprop:Generator_ColumnPropNameInRow="RI_PAST_2_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnRI_PAST_2_MTH_QTY" msprop:Generator_ColumnPropNameInTable="RI_PAST_2_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="RI_PAST_3_MTH_QTY" msprop:Generator_UserColumnName="RI_PAST_3_MTH_QTY" msprop:Generator_ColumnPropNameInRow="RI_PAST_3_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnRI_PAST_3_MTH_QTY" msprop:Generator_ColumnPropNameInTable="RI_PAST_3_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="RI_PAST_4_MTH_QTY" msprop:Generator_UserColumnName="RI_PAST_4_MTH_QTY" msprop:Generator_ColumnPropNameInRow="RI_PAST_4_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnRI_PAST_4_MTH_QTY" msprop:Generator_ColumnPropNameInTable="RI_PAST_4_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="RI_PAST_5_MTH_QTY" msprop:Generator_UserColumnName="RI_PAST_5_MTH_QTY" msprop:Generator_ColumnPropNameInRow="RI_PAST_5_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnRI_PAST_5_MTH_QTY" msprop:Generator_ColumnPropNameInTable="RI_PAST_5_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="RI_PAST_6_MTH_QTY" msprop:Generator_UserColumnName="RI_PAST_6_MTH_QTY" msprop:Generator_ColumnPropNameInRow="RI_PAST_6_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnRI_PAST_6_MTH_QTY" msprop:Generator_ColumnPropNameInTable="RI_PAST_6_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="WO_CURR_MTH_AMT" msprop:Generator_UserColumnName="WO_CURR_MTH_AMT" msprop:Generator_ColumnPropNameInRow="WO_CURR_MTH_AMT" msprop:Generator_ColumnVarNameInTable="columnWO_CURR_MTH_AMT" msprop:Generator_ColumnPropNameInTable="WO_CURR_MTH_AMTColumn" type="xs:decimal" />
+              <xs:element name="WO_CURR_MTH_QTY" msprop:Generator_UserColumnName="WO_CURR_MTH_QTY" msprop:Generator_ColumnPropNameInRow="WO_CURR_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnWO_CURR_MTH_QTY" msprop:Generator_ColumnPropNameInTable="WO_CURR_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="WO_PAST_1_MTH_QTY" msprop:Generator_UserColumnName="WO_PAST_1_MTH_QTY" msprop:Generator_ColumnPropNameInRow="WO_PAST_1_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnWO_PAST_1_MTH_QTY" msprop:Generator_ColumnPropNameInTable="WO_PAST_1_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="WO_PAST_2_MTH_QTY" msprop:Generator_UserColumnName="WO_PAST_2_MTH_QTY" msprop:Generator_ColumnPropNameInRow="WO_PAST_2_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnWO_PAST_2_MTH_QTY" msprop:Generator_ColumnPropNameInTable="WO_PAST_2_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="WO_PAST_3_MTH_QTY" msprop:Generator_UserColumnName="WO_PAST_3_MTH_QTY" msprop:Generator_ColumnPropNameInRow="WO_PAST_3_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnWO_PAST_3_MTH_QTY" msprop:Generator_ColumnPropNameInTable="WO_PAST_3_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="WO_PAST_4_MTH_QTY" msprop:Generator_UserColumnName="WO_PAST_4_MTH_QTY" msprop:Generator_ColumnPropNameInRow="WO_PAST_4_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnWO_PAST_4_MTH_QTY" msprop:Generator_ColumnPropNameInTable="WO_PAST_4_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="WO_PAST_5_MTH_QTY" msprop:Generator_UserColumnName="WO_PAST_5_MTH_QTY" msprop:Generator_ColumnPropNameInRow="WO_PAST_5_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnWO_PAST_5_MTH_QTY" msprop:Generator_ColumnPropNameInTable="WO_PAST_5_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="WO_PAST_6_MTH_QTY" msprop:Generator_UserColumnName="WO_PAST_6_MTH_QTY" msprop:Generator_ColumnPropNameInRow="WO_PAST_6_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnWO_PAST_6_MTH_QTY" msprop:Generator_ColumnPropNameInTable="WO_PAST_6_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="SOH_CURR_MTH_AMT" msprop:Generator_UserColumnName="SOH_CURR_MTH_AMT" msprop:Generator_ColumnPropNameInRow="SOH_CURR_MTH_AMT" msprop:Generator_ColumnVarNameInTable="columnSOH_CURR_MTH_AMT" msprop:Generator_ColumnPropNameInTable="SOH_CURR_MTH_AMTColumn" type="xs:decimal" />
+              <xs:element name="SOH_CURR_MTH_QTY" msprop:Generator_UserColumnName="SOH_CURR_MTH_QTY" msprop:Generator_ColumnPropNameInRow="SOH_CURR_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnSOH_CURR_MTH_QTY" msprop:Generator_ColumnPropNameInTable="SOH_CURR_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="SOH_PAST_1_MTH_QTY" msprop:Generator_UserColumnName="SOH_PAST_1_MTH_QTY" msprop:Generator_ColumnPropNameInRow="SOH_PAST_1_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnSOH_PAST_1_MTH_QTY" msprop:Generator_ColumnPropNameInTable="SOH_PAST_1_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="SOH_PAST_2_MTH_QTY" msprop:Generator_UserColumnName="SOH_PAST_2_MTH_QTY" msprop:Generator_ColumnPropNameInRow="SOH_PAST_2_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnSOH_PAST_2_MTH_QTY" msprop:Generator_ColumnPropNameInTable="SOH_PAST_2_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="SOH_PAST_3_MTH_QTY" msprop:Generator_UserColumnName="SOH_PAST_3_MTH_QTY" msprop:Generator_ColumnPropNameInRow="SOH_PAST_3_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnSOH_PAST_3_MTH_QTY" msprop:Generator_ColumnPropNameInTable="SOH_PAST_3_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="SOH_PAST_4_MTH_QTY" msprop:Generator_UserColumnName="SOH_PAST_4_MTH_QTY" msprop:Generator_ColumnPropNameInRow="SOH_PAST_4_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnSOH_PAST_4_MTH_QTY" msprop:Generator_ColumnPropNameInTable="SOH_PAST_4_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="SOH_PAST_5_MTH_QTY" msprop:Generator_UserColumnName="SOH_PAST_5_MTH_QTY" msprop:Generator_ColumnPropNameInRow="SOH_PAST_5_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnSOH_PAST_5_MTH_QTY" msprop:Generator_ColumnPropNameInTable="SOH_PAST_5_MTH_QTYColumn" type="xs:decimal" />
+              <xs:element name="SOH_PAST_6_MTH_QTY" msprop:Generator_UserColumnName="SOH_PAST_6_MTH_QTY" msprop:Generator_ColumnPropNameInRow="SOH_PAST_6_MTH_QTY" msprop:Generator_ColumnVarNameInTable="columnSOH_PAST_6_MTH_QTY" msprop:Generator_ColumnPropNameInTable="SOH_PAST_6_MTH_QTYColumn" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

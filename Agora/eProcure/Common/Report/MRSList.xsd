@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MRSList" targetNamespace="http://tempuri.org/MRSList.xsd" xmlns:mstns="http://tempuri.org/MRSList.xsd" xmlns="http://tempuri.org/MRSList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString2.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetMRSListTableAdapter" GeneratorDataComponentClassName="DataSetMRSListTableAdapter" Name="DataSetMRSList" UserDataComponentName="DataSetMRSListTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString2 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS IM_ITEM_CODE, '' AS IRSD_IRS_NO, '' AS IRSM_IRS_SECTION, '' AS CS_SEC_NAME, '' AS IRSD_QTY, '' AS IRSM_IRS_APPROVED_DATE, '' AS IC_COST_CLOSE_COST FROM INVENTORY_REQUISITION_SLIP_MSTR</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IM_ITEM_CODE" DataSetColumn="IM_ITEM_CODE" />
+              <Mapping SourceColumn="IRSD_IRS_NO" DataSetColumn="IRSD_IRS_NO" />
+              <Mapping SourceColumn="IRSM_IRS_SECTION" DataSetColumn="IRSM_IRS_SECTION" />
+              <Mapping SourceColumn="CS_SEC_NAME" DataSetColumn="CS_SEC_NAME" />
+              <Mapping SourceColumn="IRSD_QTY" DataSetColumn="IRSD_QTY" />
+              <Mapping SourceColumn="IRSM_IRS_APPROVED_DATE" DataSetColumn="IRSM_IRS_APPROVED_DATE" />
+              <Mapping SourceColumn="IC_COST_CLOSE_COST" DataSetColumn="IC_COST_CLOSE_COST" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MRSList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MRSList" msprop:Generator_DataSetName="MRSList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetMRSList" msprop:Generator_UserTableName="DataSetMRSList" msprop:Generator_RowDeletedName="DataSetMRSListRowDeleted" msprop:Generator_TableClassName="DataSetMRSListDataTable" msprop:Generator_RowChangedName="DataSetMRSListRowChanged" msprop:Generator_RowClassName="DataSetMRSListRow" msprop:Generator_RowChangingName="DataSetMRSListRowChanging" msprop:Generator_RowEvArgName="DataSetMRSListRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetMRSListRowChangeEventHandler" msprop:Generator_TablePropName="DataSetMRSList" msprop:Generator_TableVarName="tableDataSetMRSList" msprop:Generator_RowDeletingName="DataSetMRSListRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IM_ITEM_CODE" msprop:Generator_UserColumnName="IM_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="IM_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="IM_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="IRSD_IRS_NO" msprop:Generator_UserColumnName="IRSD_IRS_NO" msprop:Generator_ColumnPropNameInRow="IRSD_IRS_NO" msprop:Generator_ColumnVarNameInTable="columnIRSD_IRS_NO" msprop:Generator_ColumnPropNameInTable="IRSD_IRS_NOColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_SECTION" msprop:Generator_UserColumnName="IRSM_IRS_SECTION" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_SECTION" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_SECTION" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_SECTIONColumn" type="xs:string" />
+              <xs:element name="CS_SEC_NAME" msprop:Generator_UserColumnName="CS_SEC_NAME" msprop:Generator_ColumnPropNameInRow="CS_SEC_NAME" msprop:Generator_ColumnVarNameInTable="columnCS_SEC_NAME" msprop:Generator_ColumnPropNameInTable="CS_SEC_NAMEColumn" type="xs:string" />
+              <xs:element name="IRSD_QTY" msprop:Generator_UserColumnName="IRSD_QTY" msprop:Generator_ColumnPropNameInRow="IRSD_QTY" msprop:Generator_ColumnVarNameInTable="columnIRSD_QTY" msprop:Generator_ColumnPropNameInTable="IRSD_QTYColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_APPROVED_DATE" msprop:Generator_UserColumnName="IRSM_IRS_APPROVED_DATE" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_APPROVED_DATE" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_APPROVED_DATE" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_APPROVED_DATEColumn" type="xs:string" />
+              <xs:element name="IC_COST_CLOSE_COST" msprop:Generator_UserColumnName="IC_COST_CLOSE_COST" msprop:Generator_ColumnPropNameInRow="IC_COST_CLOSE_COST" msprop:Generator_ColumnVarNameInTable="columnIC_COST_CLOSE_COST" msprop:Generator_ColumnPropNameInTable="IC_COST_CLOSE_COSTColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

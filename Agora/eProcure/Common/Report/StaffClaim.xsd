@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StaffClaim" targetNamespace="http://tempuri.org/StaffClaim.xsd" xmlns:mstns="http://tempuri.org/StaffClaim.xsd" xmlns="http://tempuri.org/StaffClaim.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StaffClaimTableAdapter" GeneratorDataComponentClassName="StaffClaimTableAdapter" Name="StaffClaim" UserDataComponentName="StaffClaimTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString1 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT 	IM.IM_S_COY_NAME, IM.IM_INVOICE_NO, IM.IM_PRCS_SENT, IM.IM_PRCS_RECV, 
+	'' AS AMOUNT,
+	IM.IM_PAYMENT_DATE, ID.ID_BRANCH_CODE, ID.ID_COST_CENTER, IM.IM_CREATED_BY, 
+	IC.ic_status, ID.ID_B_GL_CODE, CB.CBG_B_GL_DESC, IM.IM_CURRENCY_CODE, IC.ic_business_reg_no, IM_PAYMENT_NO, ID_PRODUCT_DESC, ID_GST_INPUT_TAX_CODE, ID_GST_VALUE, '' AS JobGrade
+FROM 	invoice_mstr IM 
+INNER JOIN ipp_company IC 	ON IM.IM_S_COY_ID = IC.ic_index 
+INNER JOIN invoice_details ID 	ON IM.IM_INVOICE_NO = ID.ID_INVOICE_NO 
+INNER JOIN company_b_gl_code CB ON ID.ID_B_GL_CODE = CB.CBG_B_GL_CODE
+WHERE	(IC.ic_coy_id = 'hlb') AND (IC.ic_coy_type = 'E')
+ORDER BY ID.ID_B_GL_CODE, IM.IM_S_COY_NAME</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IM_S_COY_NAME" DataSetColumn="IM_S_COY_NAME" />
+              <Mapping SourceColumn="IM_CREATED_BY" DataSetColumn="IM_CREATED_BY" />
+              <Mapping SourceColumn="ic_status" DataSetColumn="ic_status" />
+              <Mapping SourceColumn="IM_INVOICE_NO" DataSetColumn="IM_INVOICE_NO" />
+              <Mapping SourceColumn="ID_B_GL_CODE" DataSetColumn="ID_B_GL_CODE" />
+              <Mapping SourceColumn="CBG_B_GL_DESC" DataSetColumn="CBG_B_GL_DESC" />
+              <Mapping SourceColumn="IM_CURRENCY_CODE" DataSetColumn="IM_CURRENCY_CODE" />
+              <Mapping SourceColumn="IM_PAYMENT_DATE" DataSetColumn="IM_PAYMENT_DATE" />
+              <Mapping SourceColumn="IM_PRCS_SENT" DataSetColumn="IM_PRCS_SENT" />
+              <Mapping SourceColumn="IM_PRCS_RECV" DataSetColumn="IM_PRCS_RECV" />
+              <Mapping SourceColumn="ID_BRANCH_CODE" DataSetColumn="ID_BRANCH_CODE" />
+              <Mapping SourceColumn="ID_COST_CENTER" DataSetColumn="ID_COST_CENTER" />
+              <Mapping SourceColumn="AMOUNT" DataSetColumn="AMOUNT" />
+              <Mapping SourceColumn="ic_business_reg_no" DataSetColumn="ic_business_reg_no" />
+              <Mapping SourceColumn="IM_PAYMENT_NO" DataSetColumn="IM_PAYMENT_NO" />
+              <Mapping SourceColumn="ID_PRODUCT_DESC" DataSetColumn="ID_PRODUCT_DESC" />
+              <Mapping SourceColumn="ID_GST_INPUT_TAX_CODE" DataSetColumn="ID_GST_INPUT_TAX_CODE" />
+              <Mapping SourceColumn="ID_GST_VALUE" DataSetColumn="ID_GST_VALUE" />
+              <Mapping SourceColumn="JobGrade" DataSetColumn="JobGrade" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StaffClaim" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="StaffClaim" msprop:Generator_DataSetName="StaffClaim">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StaffClaim" msprop:Generator_UserTableName="StaffClaim" msprop:Generator_RowDeletedName="StaffClaimRowDeleted" msprop:Generator_RowChangedName="StaffClaimRowChanged" msprop:Generator_RowClassName="StaffClaimRow" msprop:Generator_RowChangingName="StaffClaimRowChanging" msprop:Generator_RowEvArgName="StaffClaimRowChangeEvent" msprop:Generator_RowEvHandlerName="StaffClaimRowChangeEventHandler" msprop:Generator_TableClassName="StaffClaimDataTable" msprop:Generator_TableVarName="tableStaffClaim" msprop:Generator_RowDeletingName="StaffClaimRowDeleting" msprop:Generator_TablePropName="_StaffClaim">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IM_S_COY_NAME" msprop:Generator_UserColumnName="IM_S_COY_NAME" msprop:Generator_ColumnVarNameInTable="columnIM_S_COY_NAME" msprop:Generator_ColumnPropNameInRow="IM_S_COY_NAME" msprop:Generator_ColumnPropNameInTable="IM_S_COY_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_CREATED_BY" msprop:Generator_UserColumnName="IM_CREATED_BY" msprop:Generator_ColumnVarNameInTable="columnIM_CREATED_BY" msprop:Generator_ColumnPropNameInRow="IM_CREATED_BY" msprop:Generator_ColumnPropNameInTable="IM_CREATED_BYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_status" msprop:Generator_UserColumnName="ic_status" msprop:Generator_ColumnVarNameInTable="columnic_status" msprop:Generator_ColumnPropNameInRow="ic_status" msprop:Generator_ColumnPropNameInTable="ic_statusColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_INVOICE_NO" msprop:Generator_UserColumnName="IM_INVOICE_NO" msprop:Generator_ColumnVarNameInTable="columnIM_INVOICE_NO" msprop:Generator_ColumnPropNameInRow="IM_INVOICE_NO" msprop:Generator_ColumnPropNameInTable="IM_INVOICE_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_B_GL_CODE" msprop:Generator_UserColumnName="ID_B_GL_CODE" msprop:Generator_ColumnVarNameInTable="columnID_B_GL_CODE" msprop:Generator_ColumnPropNameInRow="ID_B_GL_CODE" msprop:Generator_ColumnPropNameInTable="ID_B_GL_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CBG_B_GL_DESC" msprop:Generator_UserColumnName="CBG_B_GL_DESC" msprop:Generator_ColumnVarNameInTable="columnCBG_B_GL_DESC" msprop:Generator_ColumnPropNameInRow="CBG_B_GL_DESC" msprop:Generator_ColumnPropNameInTable="CBG_B_GL_DESCColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_CURRENCY_CODE" msprop:Generator_UserColumnName="IM_CURRENCY_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInRow="IM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInTable="IM_CURRENCY_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_PAYMENT_DATE" msprop:Generator_UserColumnName="IM_PAYMENT_DATE" msprop:Generator_ColumnVarNameInTable="columnIM_PAYMENT_DATE" msprop:Generator_ColumnPropNameInRow="IM_PAYMENT_DATE" msprop:Generator_ColumnPropNameInTable="IM_PAYMENT_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IM_PRCS_SENT" msprop:Generator_UserColumnName="IM_PRCS_SENT" msprop:Generator_ColumnVarNameInTable="columnIM_PRCS_SENT" msprop:Generator_ColumnPropNameInRow="IM_PRCS_SENT" msprop:Generator_ColumnPropNameInTable="IM_PRCS_SENTColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IM_PRCS_RECV" msprop:Generator_UserColumnName="IM_PRCS_RECV" msprop:Generator_ColumnVarNameInTable="columnIM_PRCS_RECV" msprop:Generator_ColumnPropNameInRow="IM_PRCS_RECV" msprop:Generator_ColumnPropNameInTable="IM_PRCS_RECVColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ID_BRANCH_CODE" msprop:Generator_UserColumnName="ID_BRANCH_CODE" msprop:Generator_ColumnVarNameInTable="columnID_BRANCH_CODE" msprop:Generator_ColumnPropNameInRow="ID_BRANCH_CODE" msprop:Generator_ColumnPropNameInTable="ID_BRANCH_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_COST_CENTER" msprop:Generator_UserColumnName="ID_COST_CENTER" msprop:Generator_ColumnVarNameInTable="columnID_COST_CENTER" msprop:Generator_ColumnPropNameInRow="ID_COST_CENTER" msprop:Generator_ColumnPropNameInTable="ID_COST_CENTERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AMOUNT" msprop:Generator_UserColumnName="AMOUNT" msprop:Generator_ColumnVarNameInTable="columnAMOUNT" msprop:Generator_ColumnPropNameInRow="AMOUNT" msprop:Generator_ColumnPropNameInTable="AMOUNTColumn" type="xs:string" />
+              <xs:element name="ic_business_reg_no" msprop:Generator_UserColumnName="ic_business_reg_no" msprop:Generator_ColumnPropNameInRow="ic_business_reg_no" msprop:Generator_ColumnVarNameInTable="columnic_business_reg_no" msprop:Generator_ColumnPropNameInTable="ic_business_reg_noColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_PAYMENT_NO" msprop:Generator_UserColumnName="IM_PAYMENT_NO" msprop:Generator_ColumnVarNameInTable="columnIM_PAYMENT_NO" msprop:Generator_ColumnPropNameInRow="IM_PAYMENT_NO" msprop:Generator_ColumnPropNameInTable="IM_PAYMENT_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_PRODUCT_DESC" msprop:Generator_UserColumnName="ID_PRODUCT_DESC" msprop:Generator_ColumnVarNameInTable="columnID_PRODUCT_DESC" msprop:Generator_ColumnPropNameInRow="ID_PRODUCT_DESC" msprop:Generator_ColumnPropNameInTable="ID_PRODUCT_DESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_GST_INPUT_TAX_CODE" msprop:Generator_UserColumnName="ID_GST_INPUT_TAX_CODE" msprop:Generator_ColumnVarNameInTable="columnID_GST_INPUT_TAX_CODE" msprop:Generator_ColumnPropNameInRow="ID_GST_INPUT_TAX_CODE" msprop:Generator_ColumnPropNameInTable="ID_GST_INPUT_TAX_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_GST_VALUE" msprop:Generator_UserColumnName="ID_GST_VALUE" msprop:Generator_ColumnVarNameInTable="columnID_GST_VALUE" msprop:Generator_ColumnPropNameInRow="ID_GST_VALUE" msprop:Generator_ColumnPropNameInTable="ID_GST_VALUEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JobGrade" msprop:Generator_UserColumnName="JobGrade" msprop:Generator_ColumnPropNameInRow="JobGrade" msprop:Generator_ColumnVarNameInTable="columnJobGrade" msprop:Generator_ColumnPropNameInTable="JobGradeColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

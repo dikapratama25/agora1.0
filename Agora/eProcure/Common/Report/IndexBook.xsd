@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IndexBook" targetNamespace="http://tempuri.org/IndexBook.xsd" xmlns:mstns="http://tempuri.org/IndexBook.xsd" xmlns="http://tempuri.org/IndexBook.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetIndexBookTableAdapter" GeneratorDataComponentClassName="DataSetIndexBookTableAdapter" Name="DataSetIndexBook" UserDataComponentName="DataSetIndexBookTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS PM_ACCT_CODE, '' AS PV_PUR_SPEC_NO, '' AS PM_PRODUCT_DESC, '' AS PM_SPEC1, '' AS PM_SPEC2, '' AS PM_SPEC3, '' PM_VENDOR_ITEM_CODE, '' AS PM_PACKING_QTY, '' AS PV_VENDOR_CODE, '' AS PV_S_COY_NAME, '' AS PV_DELIVERY_TERM, '' AS PV_CURR, '' AS PV_UNIT_PRICE, '' AS PM_UOM, '' AS PV_LEAD_TIME, '' AS PM_MANUFACTURER, '' AS PM_MANUFACTURER2, '' AS PM_MANUFACTURER3 FROM PRODUCT_MSTR </CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PM_ACCT_CODE" DataSetColumn="PM_ACCT_CODE" />
+              <Mapping SourceColumn="PM_PRODUCT_DESC" DataSetColumn="PM_PRODUCT_DESC" />
+              <Mapping SourceColumn="PM_SPEC1" DataSetColumn="PM_SPEC1" />
+              <Mapping SourceColumn="PM_SPEC2" DataSetColumn="PM_SPEC2" />
+              <Mapping SourceColumn="PM_SPEC3" DataSetColumn="PM_SPEC3" />
+              <Mapping SourceColumn="PM_VENDOR_ITEM_CODE" DataSetColumn="PM_VENDOR_ITEM_CODE" />
+              <Mapping SourceColumn="PM_PACKING_QTY" DataSetColumn="PM_PACKING_QTY" />
+              <Mapping SourceColumn="PV_VENDOR_CODE" DataSetColumn="PV_VENDOR_CODE" />
+              <Mapping SourceColumn="PV_S_COY_NAME" DataSetColumn="PV_S_COY_NAME" />
+              <Mapping SourceColumn="PV_DELIVERY_TERM" DataSetColumn="PV_DELIVERY_TERM" />
+              <Mapping SourceColumn="PV_CURR" DataSetColumn="PV_CURR" />
+              <Mapping SourceColumn="PV_UNIT_PRICE" DataSetColumn="PV_UNIT_PRICE" />
+              <Mapping SourceColumn="PM_UOM" DataSetColumn="PM_UOM" />
+              <Mapping SourceColumn="PV_LEAD_TIME" DataSetColumn="PV_LEAD_TIME" />
+              <Mapping SourceColumn="PM_MANUFACTURER" DataSetColumn="PM_MANUFACTURER" />
+              <Mapping SourceColumn="PM_MANUFACTURER2" DataSetColumn="PM_MANUFACTURER2" />
+              <Mapping SourceColumn="PM_MANUFACTURER3" DataSetColumn="PM_MANUFACTURER3" />
+              <Mapping SourceColumn="PV_PUR_SPEC_NO" DataSetColumn="PV_PUR_SPEC_NO" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IndexBook" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="IndexBook" msprop:Generator_DataSetName="IndexBook">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetIndexBook" msprop:Generator_UserTableName="DataSetIndexBook" msprop:Generator_RowDeletedName="DataSetIndexBookRowDeleted" msprop:Generator_RowChangedName="DataSetIndexBookRowChanged" msprop:Generator_RowClassName="DataSetIndexBookRow" msprop:Generator_RowChangingName="DataSetIndexBookRowChanging" msprop:Generator_RowEvArgName="DataSetIndexBookRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetIndexBookRowChangeEventHandler" msprop:Generator_TableClassName="DataSetIndexBookDataTable" msprop:Generator_TableVarName="tableDataSetIndexBook" msprop:Generator_RowDeletingName="DataSetIndexBookRowDeleting" msprop:Generator_TablePropName="DataSetIndexBook">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PM_ACCT_CODE" msprop:Generator_UserColumnName="PM_ACCT_CODE" msprop:Generator_ColumnVarNameInTable="columnPM_ACCT_CODE" msprop:Generator_ColumnPropNameInRow="PM_ACCT_CODE" msprop:Generator_ColumnPropNameInTable="PM_ACCT_CODEColumn" type="xs:string" />
+              <xs:element name="PM_PRODUCT_DESC" msprop:Generator_UserColumnName="PM_PRODUCT_DESC" msprop:Generator_ColumnVarNameInTable="columnPM_PRODUCT_DESC" msprop:Generator_ColumnPropNameInRow="PM_PRODUCT_DESC" msprop:Generator_ColumnPropNameInTable="PM_PRODUCT_DESCColumn" type="xs:string" />
+              <xs:element name="PM_SPEC1" msprop:Generator_UserColumnName="PM_SPEC1" msprop:Generator_ColumnVarNameInTable="columnPM_SPEC1" msprop:Generator_ColumnPropNameInRow="PM_SPEC1" msprop:Generator_ColumnPropNameInTable="PM_SPEC1Column" type="xs:string" />
+              <xs:element name="PM_SPEC2" msprop:Generator_UserColumnName="PM_SPEC2" msprop:Generator_ColumnVarNameInTable="columnPM_SPEC2" msprop:Generator_ColumnPropNameInRow="PM_SPEC2" msprop:Generator_ColumnPropNameInTable="PM_SPEC2Column" type="xs:string" />
+              <xs:element name="PM_SPEC3" msprop:Generator_UserColumnName="PM_SPEC3" msprop:Generator_ColumnVarNameInTable="columnPM_SPEC3" msprop:Generator_ColumnPropNameInRow="PM_SPEC3" msprop:Generator_ColumnPropNameInTable="PM_SPEC3Column" type="xs:string" />
+              <xs:element name="PM_VENDOR_ITEM_CODE" msprop:Generator_UserColumnName="PM_VENDOR_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnPM_VENDOR_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="PM_VENDOR_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="PM_VENDOR_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="PM_PACKING_QTY" msprop:Generator_UserColumnName="PM_PACKING_QTY" msprop:Generator_ColumnVarNameInTable="columnPM_PACKING_QTY" msprop:Generator_ColumnPropNameInRow="PM_PACKING_QTY" msprop:Generator_ColumnPropNameInTable="PM_PACKING_QTYColumn" type="xs:string" />
+              <xs:element name="PV_VENDOR_CODE" msprop:Generator_UserColumnName="PV_VENDOR_CODE" msprop:Generator_ColumnVarNameInTable="columnPV_VENDOR_CODE" msprop:Generator_ColumnPropNameInRow="PV_VENDOR_CODE" msprop:Generator_ColumnPropNameInTable="PV_VENDOR_CODEColumn" type="xs:string" />
+              <xs:element name="PV_S_COY_NAME" msprop:Generator_UserColumnName="PV_S_COY_NAME" msprop:Generator_ColumnVarNameInTable="columnPV_S_COY_NAME" msprop:Generator_ColumnPropNameInRow="PV_S_COY_NAME" msprop:Generator_ColumnPropNameInTable="PV_S_COY_NAMEColumn" type="xs:string" />
+              <xs:element name="PV_DELIVERY_TERM" msprop:Generator_UserColumnName="PV_DELIVERY_TERM" msprop:Generator_ColumnVarNameInTable="columnPV_DELIVERY_TERM" msprop:Generator_ColumnPropNameInRow="PV_DELIVERY_TERM" msprop:Generator_ColumnPropNameInTable="PV_DELIVERY_TERMColumn" type="xs:string" />
+              <xs:element name="PV_CURR" msprop:Generator_UserColumnName="PV_CURR" msprop:Generator_ColumnVarNameInTable="columnPV_CURR" msprop:Generator_ColumnPropNameInRow="PV_CURR" msprop:Generator_ColumnPropNameInTable="PV_CURRColumn" type="xs:string" />
+              <xs:element name="PV_UNIT_PRICE" msprop:Generator_UserColumnName="PV_UNIT_PRICE" msprop:Generator_ColumnVarNameInTable="columnPV_UNIT_PRICE" msprop:Generator_ColumnPropNameInRow="PV_UNIT_PRICE" msprop:Generator_ColumnPropNameInTable="PV_UNIT_PRICEColumn" type="xs:string" />
+              <xs:element name="PM_UOM" msprop:Generator_UserColumnName="PM_UOM" msprop:Generator_ColumnVarNameInTable="columnPM_UOM" msprop:Generator_ColumnPropNameInRow="PM_UOM" msprop:Generator_ColumnPropNameInTable="PM_UOMColumn" type="xs:string" />
+              <xs:element name="PV_LEAD_TIME" msprop:Generator_UserColumnName="PV_LEAD_TIME" msprop:Generator_ColumnVarNameInTable="columnPV_LEAD_TIME" msprop:Generator_ColumnPropNameInRow="PV_LEAD_TIME" msprop:Generator_ColumnPropNameInTable="PV_LEAD_TIMEColumn" type="xs:string" />
+              <xs:element name="PM_MANUFACTURER" msprop:Generator_UserColumnName="PM_MANUFACTURER" msprop:Generator_ColumnVarNameInTable="columnPM_MANUFACTURER" msprop:Generator_ColumnPropNameInRow="PM_MANUFACTURER" msprop:Generator_ColumnPropNameInTable="PM_MANUFACTURERColumn" type="xs:string" />
+              <xs:element name="PM_MANUFACTURER2" msprop:Generator_UserColumnName="PM_MANUFACTURER2" msprop:Generator_ColumnVarNameInTable="columnPM_MANUFACTURER2" msprop:Generator_ColumnPropNameInRow="PM_MANUFACTURER2" msprop:Generator_ColumnPropNameInTable="PM_MANUFACTURER2Column" type="xs:string" />
+              <xs:element name="PM_MANUFACTURER3" msprop:Generator_UserColumnName="PM_MANUFACTURER3" msprop:Generator_ColumnVarNameInTable="columnPM_MANUFACTURER3" msprop:Generator_ColumnPropNameInRow="PM_MANUFACTURER3" msprop:Generator_ColumnPropNameInTable="PM_MANUFACTURER3Column" type="xs:string" />
+              <xs:element name="PV_PUR_SPEC_NO" msprop:Generator_UserColumnName="PV_PUR_SPEC_NO" msprop:Generator_ColumnPropNameInRow="PV_PUR_SPEC_NO" msprop:Generator_ColumnVarNameInTable="columnPV_PUR_SPEC_NO" msprop:Generator_ColumnPropNameInTable="PV_PUR_SPEC_NOColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

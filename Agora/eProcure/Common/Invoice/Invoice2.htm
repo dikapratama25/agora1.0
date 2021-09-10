@@ -1,0 +1,244 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	<HEAD>
+		<title>PreviewInvoice</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK href="../css/Styles.css" rel="stylesheet">
+	</HEAD>
+<BODY MS_POSITIONING="GridLayout" BGCOLOR="#ffffff" onLoad="window.focus();window.print();">
+
+			<TABLE class="alltable" id="tblDOHeader2" cellSpacing="0" cellPadding="0" width="100%"
+				border="0">
+				<tr>
+					<td align="left" valign="top" rowspan="4" height="97" colspan="2"><img id="Image1" src="../Images/logo_tx123_2.jpg" alt="" border="0" /></td>
+					<td class="header" align="left" colSpan="2"><STRONG><span id="lblTitle" class="header">Invoice</span></STRONG>
+					</td>
+				</tr>
+				<tr>
+					<TD class="emptycol" colSpan="2">&nbsp;</TD>
+				</tr>
+				<tr>
+					<td style="HEIGHT: 19px" align="left"><b>Business Reg. No. </b>
+					<td style="HEIGHT: 19px" align="left">:&nbsp;<span id="lblBusRegNo" style="width:145px;">1.25642.7</span></td>
+				</td>
+				<tr>
+					<td align="left"><STRONG>No.</STRONG>
+					<td align="left" class="header">:&nbsp;<b></b><span id="lblInvNo" style="width:145px;">1</span></B></td>
+				</td>
+				<tr>
+					<TD class="emptycol" colSpan="2">&nbsp;</TD>
+					<TD class="emptycol" colSpan="2">&nbsp;</TD>
+				</tr>
+				<tr>
+					<td align="left" colSpan="4" style="HEIGHT: 17px"><span id="lblComName" style="font-weight:bold;">PPSB</span></td>
+				</tr>
+				<tr>
+					<td align="left" colSpan="4"><span id="lblAddr">JALAN 13/4<BR>46200 Petaling Jaya<BR>Selangor Malaysia</span></td>
+				</TD>
+				<tr>
+					<TD class="emptycol" colSpan="2">&nbsp;</TD>
+					<TD class="emptycol" colSpan="2">&nbsp;</TD>
+				</tr>
+				<TR>
+					<TD valign="top"><b> Bill To</b> :
+					</TD>
+					<TD valign="top" rowspan="7">&nbsp;<span id="lblBillTo" style="width:145px;">12 Jalan 13/4 (Bersatu) 46200 Petaling Jaya Selangor Malaysia</span></TD>
+					<td align="left" valign="top"><b>Date </b>
+					</td>
+					<td align="left" valign="top">:&nbsp;<span id="lblDate" style="width:145px;">26/01/2005</span></td>
+					<TD></TD>
+				</TR>
+				<tr vAlign="top">
+					<td align="left" colSpan="1"></td>
+					<td align="left"><b>Our Ref. </b>
+					</td>
+					<td align="left" colSpan="1">:&nbsp;<span id="lblOurRef" style="width:145px;">dd</span></td>
+				</tr>
+				<tr>
+					<td align="left" colspan="1"></td>
+					<td align="left" valign="top"><b>Your Ref.</b>
+					</td>
+					<td align="left" valign="top"><span id="lblYourRef" style="width:145px;">:&nbsp;PO-04-00031<BR>&nbsp;&nbsp;DO04-003 <BR>&nbsp;&nbsp;GRN02</span></td>
+				</tr>
+				<tr>
+					<td align="left" colspan="1"></td>
+					<td align="left"><b>Payment Terms </b>
+					</td>
+					<td align="left">:&nbsp;<span id="lblPayTerm" style="width:145px;">30 Days</span></td>
+				<tr>
+					<td align="left" colspan="1"></td>
+					<td align="left"><b>Payment&nbsp;Method </b>
+					</td>
+					<td align="left">:&nbsp;<span id="lblPayMethod" style="width:145px;">Direct Debit</span></td>
+				<tr>
+					<td align="left" colspan="1" style="HEIGHT: 19px"></td>
+					<td align="left" style="HEIGHT: 19px"><b>Shipment Type </b>
+					</td>
+					<td align="left" style="HEIGHT: 19px">:&nbsp;<span id="lblShipType" style="width:145px;">EXW</span></td>
+				</tr>
+				<tr>
+					<td align="left" colspan="1"></td>
+					<td align="left"><b>Shipment Mode </b>
+					</td>
+					<td align="left">:&nbsp;<span id="lblShipMode" style="width:145px;">Private Parcel</span></td>
+				</tr>
+				<tr>
+					<td align="left" style="WIDTH: 149px"><b>Vendor Remarks</b></td>
+					<td align="left">:&nbsp;<span id="lblVenRemarks" style="width:145px;">d</span></td>
+					<td align="left"><b>Exchange Rate </b>
+					</td>
+					<td align="left">:&nbsp;<span id="lblExcRate" style="width:145px;"></span></td>
+				</tr>
+				<tr>
+					<TD class="emptycol" colSpan="4"></TD>
+				</tr>
+			</TABLE>
+			<table>
+				<TR>
+					<TD><table cellspacing="0" rules="all" border="1" id="dtg_PrevInvoice" style="width:100%;border-collapse:collapse;">
+	<tr>
+		<td align="Left" style="width:200px;">No.</td><td align="Left" style="width:200px;">Description</td><td align="Left">UOM</td><td align="Left" style="width:200px;">Quantity</td><td align="Left" style="width:200px;">Unit Price</td><td align="Left" style="width:200px;">Amount</td><td align="Left" style="width:200px;">Tax</td><td align="Left" style="width:200px;">W.T(Mths)</td>
+	</tr><tr>
+		<td align="Right"></td><td align="Left"></td><td align="Left"></td><td align="Right"></td><td align="Left">( MYR )</td><td align="Left">( MYR )</td><td align="Left">( MYR )</td><td align="Right"></td>
+	</tr><tr>
+		<td align="Right"></td><td align="Left"></td><td align="Left"></td><td align="Right"></td><td align="Left">Sub Total</td><td align="Right"></td><td align="Right"></td><td align="Right"></td>
+	</tr><tr>
+		<td align="Right"></td><td align="Left"></td><td align="Left"></td><td align="Right"></td><td align="Left" style="font-weight:bold;">Total(w/Tax)</td><td align="Right">0.00</td><td align="Right"></td><td align="Right"></td>
+	</tr>
+</table></TD>
+				</TR>
+				<TR>
+					<TD class="emptycol"></TD>
+				</TR>
+				<TR>
+					<TD class="emptycol"><HR>
+					</TD>
+				</TR>
+				<TR>
+					<TD class="emptycol">This is a computer generated invoice. No signature is 
+						required.</TD>
+				</TR>
+			</table>		
+</HTML>
+	<body MS_POSITIONING="GridLayout">
+
+			<TABLE class="alltable" id="tblDOHeader2" cellSpacing="0" cellPadding="2" width="100%"
+				border="0">
+				<tr>
+					<td vAlign="top" align="left" colSpan="2" height="97" rowSpan="4"></td>
+					<td class="header" align="left" colSpan="2"><STRONG><span id="lblTitle" class="header">Invoice</span></STRONG></td>
+				</tr>
+				<tr>
+					<TD class="emptycol" colSpan="2">&nbsp;</TD>
+				</tr>
+				<tr>
+					<td style="HEIGHT: 19px" align="left"><b>Business Reg. No. </b>
+					<td style="HEIGHT: 19px" align="left">:&nbsp;<span id="lblBusRegNo" style="width:145px;">1.25642.7</span></td>
+				</TD>
+				<tr>
+					<td align="left"><STRONG>No.</STRONG>
+					<td class="header" align="left">:&nbsp;<b></b><span id="lblInvNo" style="width:145px;">1105</span></B></td>
+				</TD>
+				<tr>
+					<TD class="emptycol" colSpan="2">&nbsp;</TD>
+					<TD class="emptycol" colSpan="2">&nbsp;</TD>
+				</tr>
+				<tr>
+					<td style="HEIGHT: 17px" align="left" colSpan="4"><span id="lblComName" style="font-weight:bold;">ARI ELECTRIC SDN BHD</span></td>
+				</tr>
+				<tr>
+					<td align="left" colSpan="4"><span id="lblAddr">No. 28, Ground Floor,<BR>Jalan Yap Ah Shak,<BR>Off Jalan Dang Wangi,<BR>12345 Kuala Lumpur<BR>Selangor Malaysia</span></td>
+				</TD>
+				<tr>
+					<TD class="emptycol" colSpan="2">&nbsp;</TD>
+					<TD class="emptycol" colSpan="2">&nbsp;</TD>
+				</tr>
+				<TR>
+					<TD vAlign="top"><b>Bill To</b> :
+					</TD>
+					<TD vAlign="top"><span id="lblBCoyName" style="font-weight:bold;width:145px;">Demo Company Sdn Bhd</span></TD>
+					<td vAlign="top" align="left"><b>Date </b>
+					</td>
+					<td vAlign="top" align="left">:&nbsp;<span id="lblDate" style="width:145px;">24/01/2005</span></td>
+					<TD></TD>
+				</TR>
+				<tr vAlign="top">
+					<td align="left">&nbsp;</td>
+					<td align="left" rowSpan="5"><span id="lblBillTo" style="width:145px;">jln desa taman desa 45555 seremban Negeri Sembilan Malaysia</span></td>
+					<td align="left"><b>Our Ref. </b>
+					</td>
+					<td align="left" colSpan="1">:&nbsp;<span id="lblOurRef" style="width:145px;"></span></td>
+				</tr>
+				<tr>
+					<td align="left" colSpan="1"></td>
+					<td vAlign="top" align="left"><b>Your Ref.</b>
+					</td>
+					<td vAlign="top" align="left"><span id="lblYourRef" style="width:145px;">:&nbsp;PO/20<BR>&nbsp;&nbsp;a67 <BR>&nbsp;&nbsp;GRN/9</span></td>
+				</tr>
+				<tr>
+					<td align="left" colSpan="1"></td>
+					<td align="left"><b>Payment Terms </b>
+					</td>
+					<td align="left">:&nbsp;<span id="lblPayTerm" style="width:145px;">120 Days</span></td>
+				<tr>
+					<td align="left" colSpan="1"></td>
+					<td align="left"><b>Payment&nbsp;Method </b>
+					</td>
+					<td align="left">:&nbsp;<span id="lblPayMethod" style="width:145px;">Cheque</span></td>
+				<tr>
+					<td style="HEIGHT: 19px" align="left" colSpan="1"></td>
+					<td style="HEIGHT: 19px" align="left"><b>Shipment Type </b>
+					</td>
+					<td style="HEIGHT: 19px" align="left">:&nbsp;<span id="lblShipType" style="width:145px;">Not Applicable</span></td>
+				</tr>
+				<tr>
+					<TD class="emptycol" colSpan="2"></TD>
+					<td align="left"><b>Shipment Mode </b>
+					</td>
+					<td align="left">:&nbsp;<span id="lblShipMode" style="width:145px;">Not Applicable</span></td>
+				</tr>
+				<tr>
+					<td vAlign="top" align="left"><b>Vendor Remarks</b> :</td>
+					<td align="left"><span id="lblVenRemarks" style="width:220px;"></span></td>
+					<TD class="emptycol" colSpan="2"></TD>
+				</tr>
+				<tr>
+					<TD class="emptycol" colSpan="4"></TD>
+				</tr>
+			</TABLE>
+			<table width="100%">
+				<TR>
+					<TD><table cellspacing="0" rules="all" border="0" id="dtg_PrevInvoice" style="border-width:0px;width:100%;border-collapse:collapse;">
+	<tr>
+		<td align="Center" style="font-weight:bold;width:8%;">No.</td><td align="Left" style="font-weight:bold;width:45%;">Description</td><td align="Left" style="font-weight:bold;width:5%;">UOM</td><td align="Right" style="font-weight:bold;width:5%;">Quantity</td><td align="Right" style="font-weight:bold;width:12%;">Unit Price</td><td align="Right" style="font-weight:bold;width:12%;">Amount</td><td align="Right" style="font-weight:bold;width:5%;">Tax</td><td align="Right" style="font-weight:bold;width:8%;">W.T(Mths)</td>
+	</tr><tr>
+		<td align="Center"></td><td align="Left"></td><td align="Left"></td><td align="Right"></td><td align="Right">( MYR )</td><td align="Right">( MYR )</td><td align="Right">( MYR )</td><td align="Right"></td>
+	</tr><tr>
+		<td align="Center">1</td><td align="Left">AMPLIFIER: AMPLIFIER</td><td align="Left">PC  </td><td align="Right">5</td><td align="Right">2.0000</td><td align="Right">10.0000</td><td align="Right">0.0000</td><td align="Right">0</td>
+	</tr><tr>
+		<td align="Center"></td><td align="Left"></td><td align="Left"></td><td align="Right"></td><td align="Left">Sub Total</td><td align="Right">10.00</td><td align="Right">0.00</td><td align="Right"></td>
+	</tr><tr>
+		<td align="Center"></td><td align="Left"></td><td align="Left"></td><td align="Right"></td><td align="Left" style="font-weight:bold;">Total(w/Tax)</td><td align="Right">10.00</td><td align="Right"></td><td align="Right"></td>
+	</tr>
+</table></TD>
+				</TR>
+				<TR>
+					<TD class="emptycol"></TD>
+				</TR>
+				<TR>
+					<TD class="emptycol">
+						<HR>
+					</TD>
+				</TR>
+				<TR>
+					<TD class="emptycol">This is a computer generated invoice. No signature is 
+						required.</TD>
+				</TR>
+			</table>
+	</body>
+</HTML>

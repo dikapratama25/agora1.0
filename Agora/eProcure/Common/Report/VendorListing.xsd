@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VendorListing" targetNamespace="http://tempuri.org/VendorListing.xsd" xmlns:mstns="http://tempuri.org/VendorListing.xsd" xmlns="http://tempuri.org/VendorListing.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString2.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VendorListingTableAdapter" GeneratorDataComponentClassName="VendorListingTableAdapter" Name="VendorListing" UserDataComponentName="VendorListingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString2 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT 	a.ic_coy_name, a.ic_other_b_coy_code, a.ic_status, a.ic_business_reg_no, 
+	a.ic_bank_acct, a.ic_payment_method, a.ic_bank_code, a.ic_addr_line1, 
+	a.ic_ent_by, a.ic_ent_datetime, a.ic_mod_by, a.ic_mod_datetime, b.bc_bank_name, 
+	a.ic_coy_id, a.ic_coy_type,a.ic_remark,c.code_desc AS resident_country, d.code_desc as category, a.ic_resident_type
+FROM ipp_company a 
+LEFT OUTER JOIN bank_code b ON b.bc_bank_code = a.ic_bank_code
+LEFT JOIN code_mstr c ON c.code_category = 'CT' AND c.CODE_ABBR = a.ic_resident_country
+LEFT JOIN code_mstr d ON d.code_category = 'IPPCC' AND d.CODE_ABBR = a.ic_company_category
+WHERE (a.ic_coy_id = 'HLB') 
+ORDER BY a.ic_coy_type, a.ic_coy_name</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ic_coy_name" DataSetColumn="ic_coy_name" />
+              <Mapping SourceColumn="ic_other_b_coy_code" DataSetColumn="ic_other_b_coy_code" />
+              <Mapping SourceColumn="ic_status" DataSetColumn="ic_status" />
+              <Mapping SourceColumn="ic_business_reg_no" DataSetColumn="ic_business_reg_no" />
+              <Mapping SourceColumn="ic_bank_acct" DataSetColumn="ic_bank_acct" />
+              <Mapping SourceColumn="ic_payment_method" DataSetColumn="ic_payment_method" />
+              <Mapping SourceColumn="ic_bank_code" DataSetColumn="ic_bank_code" />
+              <Mapping SourceColumn="ic_addr_line1" DataSetColumn="ic_addr_line1" />
+              <Mapping SourceColumn="ic_ent_by" DataSetColumn="ic_ent_by" />
+              <Mapping SourceColumn="ic_ent_datetime" DataSetColumn="ic_ent_datetime" />
+              <Mapping SourceColumn="ic_mod_by" DataSetColumn="ic_mod_by" />
+              <Mapping SourceColumn="ic_mod_datetime" DataSetColumn="ic_mod_datetime" />
+              <Mapping SourceColumn="bc_bank_name" DataSetColumn="bc_bank_name" />
+              <Mapping SourceColumn="ic_coy_id" DataSetColumn="ic_coy_id" />
+              <Mapping SourceColumn="ic_coy_type" DataSetColumn="ic_coy_type" />
+              <Mapping SourceColumn="ic_remark" DataSetColumn="ic_remark" />
+              <Mapping SourceColumn="resident_country" DataSetColumn="resident_country" />
+              <Mapping SourceColumn="category" DataSetColumn="category" />
+              <Mapping SourceColumn="ic_resident_type" DataSetColumn="ic_resident_type" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VendorListing" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="VendorListing" msprop:Generator_DataSetName="VendorListing">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VendorListing" msprop:Generator_UserTableName="VendorListing" msprop:Generator_RowDeletedName="VendorListingRowDeleted" msprop:Generator_RowChangedName="VendorListingRowChanged" msprop:Generator_RowClassName="VendorListingRow" msprop:Generator_RowChangingName="VendorListingRowChanging" msprop:Generator_RowEvArgName="VendorListingRowChangeEvent" msprop:Generator_RowEvHandlerName="VendorListingRowChangeEventHandler" msprop:Generator_TableClassName="VendorListingDataTable" msprop:Generator_TableVarName="tableVendorListing" msprop:Generator_RowDeletingName="VendorListingRowDeleting" msprop:Generator_TablePropName="_VendorListing">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ic_coy_name" msprop:Generator_UserColumnName="ic_coy_name" msprop:Generator_ColumnPropNameInRow="ic_coy_name" msprop:Generator_ColumnVarNameInTable="columnic_coy_name" msprop:Generator_ColumnPropNameInTable="ic_coy_nameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_other_b_coy_code" msprop:Generator_UserColumnName="ic_other_b_coy_code" msprop:Generator_ColumnPropNameInRow="ic_other_b_coy_code" msprop:Generator_ColumnVarNameInTable="columnic_other_b_coy_code" msprop:Generator_ColumnPropNameInTable="ic_other_b_coy_codeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_status" msprop:Generator_UserColumnName="ic_status" msprop:Generator_ColumnPropNameInRow="ic_status" msprop:Generator_ColumnVarNameInTable="columnic_status" msprop:Generator_ColumnPropNameInTable="ic_statusColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_business_reg_no" msprop:Generator_UserColumnName="ic_business_reg_no" msprop:Generator_ColumnPropNameInRow="ic_business_reg_no" msprop:Generator_ColumnVarNameInTable="columnic_business_reg_no" msprop:Generator_ColumnPropNameInTable="ic_business_reg_noColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_bank_acct" msprop:Generator_UserColumnName="ic_bank_acct" msprop:Generator_ColumnPropNameInRow="ic_bank_acct" msprop:Generator_ColumnVarNameInTable="columnic_bank_acct" msprop:Generator_ColumnPropNameInTable="ic_bank_acctColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_payment_method" msprop:Generator_UserColumnName="ic_payment_method" msprop:Generator_ColumnPropNameInRow="ic_payment_method" msprop:Generator_ColumnVarNameInTable="columnic_payment_method" msprop:Generator_ColumnPropNameInTable="ic_payment_methodColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_bank_code" msprop:Generator_UserColumnName="ic_bank_code" msprop:Generator_ColumnPropNameInRow="ic_bank_code" msprop:Generator_ColumnVarNameInTable="columnic_bank_code" msprop:Generator_ColumnPropNameInTable="ic_bank_codeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_addr_line1" msprop:Generator_UserColumnName="ic_addr_line1" msprop:Generator_ColumnPropNameInRow="ic_addr_line1" msprop:Generator_ColumnVarNameInTable="columnic_addr_line1" msprop:Generator_ColumnPropNameInTable="ic_addr_line1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_ent_by" msprop:Generator_UserColumnName="ic_ent_by" msprop:Generator_ColumnPropNameInRow="ic_ent_by" msprop:Generator_ColumnVarNameInTable="columnic_ent_by" msprop:Generator_ColumnPropNameInTable="ic_ent_byColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_ent_datetime" msprop:Generator_UserColumnName="ic_ent_datetime" msprop:Generator_ColumnPropNameInRow="ic_ent_datetime" msprop:Generator_ColumnVarNameInTable="columnic_ent_datetime" msprop:Generator_ColumnPropNameInTable="ic_ent_datetimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ic_mod_by" msprop:Generator_UserColumnName="ic_mod_by" msprop:Generator_ColumnPropNameInRow="ic_mod_by" msprop:Generator_ColumnVarNameInTable="columnic_mod_by" msprop:Generator_ColumnPropNameInTable="ic_mod_byColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_mod_datetime" msprop:Generator_UserColumnName="ic_mod_datetime" msprop:Generator_ColumnPropNameInRow="ic_mod_datetime" msprop:Generator_ColumnVarNameInTable="columnic_mod_datetime" msprop:Generator_ColumnPropNameInTable="ic_mod_datetimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="bc_bank_name" msprop:Generator_UserColumnName="bc_bank_name" msprop:Generator_ColumnPropNameInRow="bc_bank_name" msprop:Generator_ColumnVarNameInTable="columnbc_bank_name" msprop:Generator_ColumnPropNameInTable="bc_bank_nameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_coy_id" msprop:Generator_UserColumnName="ic_coy_id" msprop:Generator_ColumnPropNameInRow="ic_coy_id" msprop:Generator_ColumnVarNameInTable="columnic_coy_id" msprop:Generator_ColumnPropNameInTable="ic_coy_idColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_coy_type" msprop:Generator_UserColumnName="ic_coy_type" msprop:Generator_ColumnPropNameInRow="ic_coy_type" msprop:Generator_ColumnVarNameInTable="columnic_coy_type" msprop:Generator_ColumnPropNameInTable="ic_coy_typeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_remark" msprop:Generator_UserColumnName="ic_remark" msprop:Generator_ColumnVarNameInTable="columnic_remark" msprop:Generator_ColumnPropNameInRow="ic_remark" msprop:Generator_ColumnPropNameInTable="ic_remarkColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="resident_country" msprop:Generator_UserColumnName="resident_country" msprop:Generator_ColumnPropNameInRow="resident_country" msprop:Generator_ColumnVarNameInTable="columnresident_country" msprop:Generator_ColumnPropNameInTable="resident_countryColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="category" msprop:Generator_UserColumnName="category" msprop:Generator_ColumnPropNameInRow="category" msprop:Generator_ColumnVarNameInTable="columncategory" msprop:Generator_ColumnPropNameInTable="categoryColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ic_resident_type" msprop:Generator_UserColumnName="ic_resident_type" msprop:Generator_ColumnPropNameInRow="ic_resident_type" msprop:Generator_ColumnVarNameInTable="columnic_resident_type" msprop:Generator_ColumnPropNameInTable="ic_resident_typeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

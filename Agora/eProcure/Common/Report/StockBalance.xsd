@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StockBalance" targetNamespace="http://tempuri.org/StockBalance.xsd" xmlns:mstns="http://tempuri.org/StockBalance.xsd" xmlns="http://tempuri.org/StockBalance.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetStockBalanceTableAdapter" GeneratorDataComponentClassName="DataSetStockBalanceTableAdapter" Name="DataSetStockBalance" UserDataComponentName="DataSetStockBalanceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString1 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS PM_ACCT_CODE, '' AS PM_VENDOR_ITEM_CODE, '' AS PM_PRODUCT_DESC, '' AS IC_COST_OPEN_QTY, '' AS IC_COST_OPEN_COST, '' AS IC_COST_ISSUE_QTY, '' AS IC_COST_ISSUE_COST, '' AS IC_COST_DISPOSE_QTY, '' AS IC_COST_DISPOSE_COST, '' AS IC_COST_CLOSE_QTY, '' AS IC_COST_CLOSE_COST FROM PRODUCT_MSTR</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PM_ACCT_CODE" DataSetColumn="PM_ACCT_CODE" />
+              <Mapping SourceColumn="PM_VENDOR_ITEM_CODE" DataSetColumn="PM_VENDOR_ITEM_CODE" />
+              <Mapping SourceColumn="PM_PRODUCT_DESC" DataSetColumn="PM_PRODUCT_DESC" />
+              <Mapping SourceColumn="IC_COST_OPEN_QTY" DataSetColumn="IC_COST_OPEN_QTY" />
+              <Mapping SourceColumn="IC_COST_OPEN_COST" DataSetColumn="IC_COST_OPEN_COST" />
+              <Mapping SourceColumn="IC_COST_ISSUE_QTY" DataSetColumn="IC_COST_ISSUE_QTY" />
+              <Mapping SourceColumn="IC_COST_ISSUE_COST" DataSetColumn="IC_COST_ISSUE_COST" />
+              <Mapping SourceColumn="IC_COST_DISPOSE_QTY" DataSetColumn="IC_COST_DISPOSE_QTY" />
+              <Mapping SourceColumn="IC_COST_DISPOSE_COST" DataSetColumn="IC_COST_DISPOSE_COST" />
+              <Mapping SourceColumn="IC_COST_CLOSE_QTY" DataSetColumn="IC_COST_CLOSE_QTY" />
+              <Mapping SourceColumn="IC_COST_CLOSE_COST" DataSetColumn="IC_COST_CLOSE_COST" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StockBalance" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="StockBalance" msprop:Generator_DataSetName="StockBalance">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetStockBalance" msprop:Generator_UserTableName="DataSetStockBalance" msprop:Generator_RowDeletedName="DataSetStockBalanceRowDeleted" msprop:Generator_TableClassName="DataSetStockBalanceDataTable" msprop:Generator_RowChangedName="DataSetStockBalanceRowChanged" msprop:Generator_RowClassName="DataSetStockBalanceRow" msprop:Generator_RowChangingName="DataSetStockBalanceRowChanging" msprop:Generator_RowEvArgName="DataSetStockBalanceRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetStockBalanceRowChangeEventHandler" msprop:Generator_TablePropName="DataSetStockBalance" msprop:Generator_TableVarName="tableDataSetStockBalance" msprop:Generator_RowDeletingName="DataSetStockBalanceRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PM_ACCT_CODE" msprop:Generator_UserColumnName="PM_ACCT_CODE" msprop:Generator_ColumnPropNameInRow="PM_ACCT_CODE" msprop:Generator_ColumnVarNameInTable="columnPM_ACCT_CODE" msprop:Generator_ColumnPropNameInTable="PM_ACCT_CODEColumn" type="xs:string" />
+              <xs:element name="PM_VENDOR_ITEM_CODE" msprop:Generator_UserColumnName="PM_VENDOR_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="PM_VENDOR_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnPM_VENDOR_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="PM_VENDOR_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="PM_PRODUCT_DESC" msprop:Generator_UserColumnName="PM_PRODUCT_DESC" msprop:Generator_ColumnPropNameInRow="PM_PRODUCT_DESC" msprop:Generator_ColumnVarNameInTable="columnPM_PRODUCT_DESC" msprop:Generator_ColumnPropNameInTable="PM_PRODUCT_DESCColumn" type="xs:string" />
+              <xs:element name="IC_COST_OPEN_QTY" msprop:Generator_UserColumnName="IC_COST_OPEN_QTY" msprop:Generator_ColumnPropNameInRow="IC_COST_OPEN_QTY" msprop:Generator_ColumnVarNameInTable="columnIC_COST_OPEN_QTY" msprop:Generator_ColumnPropNameInTable="IC_COST_OPEN_QTYColumn" type="xs:string" />
+              <xs:element name="IC_COST_OPEN_COST" msprop:Generator_UserColumnName="IC_COST_OPEN_COST" msprop:Generator_ColumnPropNameInRow="IC_COST_OPEN_COST" msprop:Generator_ColumnVarNameInTable="columnIC_COST_OPEN_COST" msprop:Generator_ColumnPropNameInTable="IC_COST_OPEN_COSTColumn" type="xs:string" />
+              <xs:element name="IC_COST_ISSUE_QTY" msprop:Generator_UserColumnName="IC_COST_ISSUE_QTY" msprop:Generator_ColumnPropNameInRow="IC_COST_ISSUE_QTY" msprop:Generator_ColumnVarNameInTable="columnIC_COST_ISSUE_QTY" msprop:Generator_ColumnPropNameInTable="IC_COST_ISSUE_QTYColumn" type="xs:string" />
+              <xs:element name="IC_COST_ISSUE_COST" msprop:Generator_UserColumnName="IC_COST_ISSUE_COST" msprop:Generator_ColumnPropNameInRow="IC_COST_ISSUE_COST" msprop:Generator_ColumnVarNameInTable="columnIC_COST_ISSUE_COST" msprop:Generator_ColumnPropNameInTable="IC_COST_ISSUE_COSTColumn" type="xs:string" />
+              <xs:element name="IC_COST_DISPOSE_QTY" msprop:Generator_UserColumnName="IC_COST_DISPOSE_QTY" msprop:Generator_ColumnPropNameInRow="IC_COST_DISPOSE_QTY" msprop:Generator_ColumnVarNameInTable="columnIC_COST_DISPOSE_QTY" msprop:Generator_ColumnPropNameInTable="IC_COST_DISPOSE_QTYColumn" type="xs:string" />
+              <xs:element name="IC_COST_DISPOSE_COST" msprop:Generator_UserColumnName="IC_COST_DISPOSE_COST" msprop:Generator_ColumnPropNameInRow="IC_COST_DISPOSE_COST" msprop:Generator_ColumnVarNameInTable="columnIC_COST_DISPOSE_COST" msprop:Generator_ColumnPropNameInTable="IC_COST_DISPOSE_COSTColumn" type="xs:string" />
+              <xs:element name="IC_COST_CLOSE_QTY" msprop:Generator_UserColumnName="IC_COST_CLOSE_QTY" msprop:Generator_ColumnPropNameInRow="IC_COST_CLOSE_QTY" msprop:Generator_ColumnVarNameInTable="columnIC_COST_CLOSE_QTY" msprop:Generator_ColumnPropNameInTable="IC_COST_CLOSE_QTYColumn" type="xs:string" />
+              <xs:element name="IC_COST_CLOSE_COST" msprop:Generator_UserColumnName="IC_COST_CLOSE_COST" msprop:Generator_ColumnPropNameInRow="IC_COST_CLOSE_COST" msprop:Generator_ColumnVarNameInTable="columnIC_COST_CLOSE_COST" msprop:Generator_ColumnPropNameInTable="IC_COST_CLOSE_COSTColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

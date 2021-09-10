@@ -1,0 +1,984 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+eAdmin
+</name>
+</assembly>
+<members>
+<member name="T:eAdmin.PODetails_xls.DataSetPODetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:eAdmin.PODetails_xls.DataSetPODetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:eAdmin.PODetails_xls.DataSetPODetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:eAdmin.PODetails_xls">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:eAdmin.PODetails_xlsTableAdapters.DataSetPODetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="F:eAdmin.WebForm1.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.WebForm1.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.WebForm1.TextBox1">
+	<summary>
+TextBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.WebForm1.autoComplete1">
+	<summary>
+autoComplete1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:eAdmin.WebForm1">
+	<summary>
+WebForm1 class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:eAdmin.DashboardMaster.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardMaster.lblTitle">
+	<summary>
+lblTitle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardMaster.lblAction">
+	<summary>
+lblAction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardMaster.dtgDashboard">
+	<summary>
+dtgDashboard control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardMaster.cmdSave">
+	<summary>
+cmdSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:eAdmin.DashboardMaster">
+	<summary>
+DashboardMaster class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:eAdmin.CommodityType.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.CommodityType.TreeView1">
+	<summary>
+TreeView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:eAdmin.CommodityType">
+	<summary>
+CommodityType class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="T:eAdmin.TypeAhead">
+	<summary>
+TypeAhead class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="T:eAdmin.DashboardTypeAhead">
+	<summary>
+DashboardTypeAhead class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="T:eAdmin.POSummary.DataSetPOSummaryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:eAdmin.POSummary.DataSetPOSummaryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:eAdmin.POSummary.DataSetPOSummaryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:eAdmin.POSummary">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:eAdmin.POSummaryTableAdapters.DataSetPOSummaryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="F:eAdmin.DashboardSearch.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardSearch.lblTitle">
+	<summary>
+lblTitle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardSearch.lblAction">
+	<summary>
+lblAction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardSearch.lblHeader">
+	<summary>
+lblHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardSearch.ddlUserRole">
+	<summary>
+ddlUserRole control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardSearch.txtDashboardName">
+	<summary>
+txtDashboardName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardSearch.cmdSearch">
+	<summary>
+cmdSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardSearch.dtgDashboardList">
+	<summary>
+dtgDashboardList control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardSearch.btnhidden">
+	<summary>
+btnhidden control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:eAdmin.DashboardSearch">
+	<summary>
+DashboardSearch class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.lblHeader">
+	<summary>
+lblHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.label2">
+	<summary>
+label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.Label4">
+	<summary>
+Label4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.cboMonth">
+	<summary>
+cboMonth control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.ValMth">
+	<summary>
+ValMth control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.cboYear">
+	<summary>
+cboYear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.ValYr">
+	<summary>
+ValYr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.cboReportType">
+	<summary>
+cboReportType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.ValReportType">
+	<summary>
+ValReportType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.Label7">
+	<summary>
+Label7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.cmdSubmit">
+	<summary>
+cmdSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.cmdClear">
+	<summary>
+cmdClear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.vldSumm">
+	<summary>
+vldSumm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN4.lnkBack">
+	<summary>
+lnkBack control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:eAdmin.ReportFormatN4">
+	<summary>
+ReportFormatN4 class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.lblHeader">
+	<summary>
+lblHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.label2">
+	<summary>
+label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.Label4">
+	<summary>
+Label4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.cboMonth">
+	<summary>
+cboMonth control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.ValMth">
+	<summary>
+ValMth control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.cboYear">
+	<summary>
+cboYear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.ValYr">
+	<summary>
+ValYr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.cboReportType">
+	<summary>
+cboReportType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.ValReportType">
+	<summary>
+ValReportType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.Label7">
+	<summary>
+Label7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.cmdSubmit">
+	<summary>
+cmdSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.cmdClear">
+	<summary>
+cmdClear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.vldSumm">
+	<summary>
+vldSumm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN3.lnkBack">
+	<summary>
+lnkBack control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:eAdmin.ReportFormatN3">
+	<summary>
+ReportFormatN3 class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="T:eAdmin.InvSummary_xls.DataSetInvSummaryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:eAdmin.InvSummary_xls.DataSetInvSummaryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:eAdmin.InvSummary_xls.DataSetInvSummaryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:eAdmin.InvSummary_xls">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:eAdmin.InvSummary_xlsTableAdapters.DataSetInvSummaryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="F:eAdmin.ReportFormatN2.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.lblHeader">
+	<summary>
+lblHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.label2">
+	<summary>
+label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.cmbMonthFrom">
+	<summary>
+cmbMonthFrom control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.rfvMonthFrom">
+	<summary>
+rfvMonthFrom control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.cmbYearFrom">
+	<summary>
+cmbYearFrom control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.rfvYearFrom">
+	<summary>
+rfvYearFrom control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.Label4">
+	<summary>
+Label4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.cmbMonthTo">
+	<summary>
+cmbMonthTo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.rfvMonthTo">
+	<summary>
+rfvMonthTo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.Label5">
+	<summary>
+Label5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.cmbYearTo">
+	<summary>
+cmbYearTo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.rfvYearTo">
+	<summary>
+rfvYearTo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.Label6">
+	<summary>
+Label6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.cboReportType">
+	<summary>
+cboReportType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.ValReportType">
+	<summary>
+ValReportType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.Label7">
+	<summary>
+Label7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.cmdSubmit">
+	<summary>
+cmdSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.cmdClear">
+	<summary>
+cmdClear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.vldSumm">
+	<summary>
+vldSumm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN2.lnkBack">
+	<summary>
+lnkBack control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:eAdmin.ReportFormatN2">
+	<summary>
+ReportFormatN2 class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:eAdmin.DashboardMaint.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardMaint.lblTitle">
+	<summary>
+lblTitle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardMaint.lblAction">
+	<summary>
+lblAction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardMaint.lblHeader">
+	<summary>
+lblHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardMaint.ddlUserRole">
+	<summary>
+ddlUserRole control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardMaint.dtgDashboardMaint">
+	<summary>
+dtgDashboardMaint control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardMaint.cmdSave">
+	<summary>
+cmdSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.DashboardMaint.btnhidden">
+	<summary>
+btnhidden control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:eAdmin.DashboardMaint">
+	<summary>
+DashboardMaint class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.lblHeader">
+	<summary>
+lblHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.label2">
+	<summary>
+label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.Label4">
+	<summary>
+Label4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.cboMonth">
+	<summary>
+cboMonth control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.ValMth">
+	<summary>
+ValMth control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.cboYear">
+	<summary>
+cboYear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.ValYr">
+	<summary>
+ValYr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.cboReportType">
+	<summary>
+cboReportType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.ValReportType">
+	<summary>
+ValReportType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.Label7">
+	<summary>
+Label7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.cmdSubmit">
+	<summary>
+cmdSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.cmdClear">
+	<summary>
+cmdClear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.vldSumm">
+	<summary>
+vldSumm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:eAdmin.ReportFormatN1.lnkBack">
+	<summary>
+lnkBack control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:eAdmin.ReportFormatN1">
+	<summary>
+ReportFormatN1 class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="T:eAdmin.InvDetails_xls.DataSetInvDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:eAdmin.InvDetails_xls.DataSetInvDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:eAdmin.InvDetails_xls.DataSetInvDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:eAdmin.InvDetails_xls">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:eAdmin.InvDetails_xlsTableAdapters.DataSetInvDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+</members>
+</doc>

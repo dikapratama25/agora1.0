@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewRIAckListing" targetNamespace="http://tempuri.org/PreviewRIAckListing.xsd" xmlns:mstns="http://tempuri.org/PreviewRIAckListing.xsd" xmlns="http://tempuri.org/PreviewRIAckListing.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetRIAckListingTableAdapter" GeneratorDataComponentClassName="DataSetRIAckListingTableAdapter" Name="DataSetRIAckListing" UserDataComponentName="DataSetRIAckListingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString1 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>Select '' AS IRIM_RI_NO, '' AS IRIM_RI_DATE, '' AS TQTY, '' AS IRIM_RI_STATUS, '' AS ACCCODE, '' AS IRIM_IR_NO FROM INVENTORY_RETURN_INWARD_DETAILS</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IRIM_RI_NO" DataSetColumn="IRIM_RI_NO" />
+              <Mapping SourceColumn="IRIM_RI_DATE" DataSetColumn="IRIM_RI_DATE" />
+              <Mapping SourceColumn="TQTY" DataSetColumn="TQTY" />
+              <Mapping SourceColumn="IRIM_RI_STATUS" DataSetColumn="IRIM_RI_STATUS" />
+              <Mapping SourceColumn="ACCCODE" DataSetColumn="ACCCODE" />
+              <Mapping SourceColumn="IRIM_IR_NO" DataSetColumn="IRIM_IR_NO" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewRIAckListing" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PreviewRIAckListing" msprop:Generator_DataSetName="PreviewRIAckListing">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetRIAckListing" msprop:Generator_UserTableName="DataSetRIAckListing" msprop:Generator_RowDeletedName="DataSetRIAckListingRowDeleted" msprop:Generator_RowChangedName="DataSetRIAckListingRowChanged" msprop:Generator_RowClassName="DataSetRIAckListingRow" msprop:Generator_RowChangingName="DataSetRIAckListingRowChanging" msprop:Generator_RowEvArgName="DataSetRIAckListingRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetRIAckListingRowChangeEventHandler" msprop:Generator_TableClassName="DataSetRIAckListingDataTable" msprop:Generator_TableVarName="tableDataSetRIAckListing" msprop:Generator_RowDeletingName="DataSetRIAckListingRowDeleting" msprop:Generator_TablePropName="DataSetRIAckListing">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IRIM_RI_NO" msprop:Generator_UserColumnName="IRIM_RI_NO" msprop:Generator_ColumnVarNameInTable="columnIRIM_RI_NO" msprop:Generator_ColumnPropNameInRow="IRIM_RI_NO" msprop:Generator_ColumnPropNameInTable="IRIM_RI_NOColumn" type="xs:string" />
+              <xs:element name="IRIM_RI_DATE" msprop:Generator_UserColumnName="IRIM_RI_DATE" msprop:Generator_ColumnVarNameInTable="columnIRIM_RI_DATE" msprop:Generator_ColumnPropNameInRow="IRIM_RI_DATE" msprop:Generator_ColumnPropNameInTable="IRIM_RI_DATEColumn" type="xs:string" />
+              <xs:element name="TQTY" msprop:Generator_UserColumnName="TQTY" msprop:Generator_ColumnVarNameInTable="columnTQTY" msprop:Generator_ColumnPropNameInRow="TQTY" msprop:Generator_ColumnPropNameInTable="TQTYColumn" type="xs:string" />
+              <xs:element name="IRIM_RI_STATUS" msprop:Generator_UserColumnName="IRIM_RI_STATUS" msprop:Generator_ColumnVarNameInTable="columnIRIM_RI_STATUS" msprop:Generator_ColumnPropNameInRow="IRIM_RI_STATUS" msprop:Generator_ColumnPropNameInTable="IRIM_RI_STATUSColumn" type="xs:string" />
+              <xs:element name="ACCCODE" msprop:Generator_UserColumnName="ACCCODE" msprop:Generator_ColumnVarNameInTable="columnACCCODE" msprop:Generator_ColumnPropNameInRow="ACCCODE" msprop:Generator_ColumnPropNameInTable="ACCCODEColumn" type="xs:string" />
+              <xs:element name="IRIM_IR_NO" msprop:Generator_UserColumnName="IRIM_IR_NO" msprop:Generator_ColumnVarNameInTable="columnIRIM_IR_NO" msprop:Generator_ColumnPropNameInRow="IRIM_IR_NO" msprop:Generator_ColumnPropNameInTable="IRIM_IR_NOColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

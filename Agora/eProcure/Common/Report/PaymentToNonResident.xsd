@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PaymentToNonResident" targetNamespace="http://tempuri.org/PaymentToNonResident.xsd" xmlns:mstns="http://tempuri.org/PaymentToNonResident.xsd" xmlns="http://tempuri.org/PaymentToNonResident.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString2.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetPaymentToNonResidentTableAdapter" GeneratorDataComponentClassName="DataSetPaymentToNonResidentTableAdapter" Name="DataSetPaymentToNonResident" UserDataComponentName="DataSetPaymentToNonResidentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString2 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT NULL AS IM_S_COY_NAME, NULL AS IC_COUNTRY, NULL AS IM_INVOICE_NO, NULL AS INVOICE_TOTAL, NULL AS IM_PAYMENT_DATE, NULL AS IM_CURRENCY_CODE, 
+NULL AS IM_INVOICE_TOTAL, NULL AS ID_B_GL_CODE, NULL AS IM_WITHHOLDING_OPT, NULL AS IM_WITHHOLDING_REMARKS, 
+NULL AS IM_WITHHOLDING_TAX, NULL AS WHT_AMT, NULL AS IM_RECEIPT_NO, NULL AS IM_RECEIPT_DATE, NULL AS AMT_PAID, NULL AS WHT_BANK 
+FROM INVOICE_MSTR</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IM_S_COY_NAME" DataSetColumn="IM_S_COY_NAME" />
+              <Mapping SourceColumn="IC_COUNTRY" DataSetColumn="IC_COUNTRY" />
+              <Mapping SourceColumn="IM_INVOICE_NO" DataSetColumn="IM_INVOICE_NO" />
+              <Mapping SourceColumn="INVOICE_TOTAL" DataSetColumn="INVOICE_TOTAL" />
+              <Mapping SourceColumn="IM_PAYMENT_DATE" DataSetColumn="IM_PAYMENT_DATE" />
+              <Mapping SourceColumn="IM_CURRENCY_CODE" DataSetColumn="IM_CURRENCY_CODE" />
+              <Mapping SourceColumn="IM_INVOICE_TOTAL" DataSetColumn="IM_INVOICE_TOTAL" />
+              <Mapping SourceColumn="ID_B_GL_CODE" DataSetColumn="ID_B_GL_CODE" />
+              <Mapping SourceColumn="IM_WITHHOLDING_OPT" DataSetColumn="IM_WITHHOLDING_OPT" />
+              <Mapping SourceColumn="IM_WITHHOLDING_REMARKS" DataSetColumn="IM_WITHHOLDING_REMARKS" />
+              <Mapping SourceColumn="IM_WITHHOLDING_TAX" DataSetColumn="IM_WITHHOLDING_TAX" />
+              <Mapping SourceColumn="WHT_AMT" DataSetColumn="WHT_AMT" />
+              <Mapping SourceColumn="IM_RECEIPT_NO" DataSetColumn="IM_RECEIPT_NO" />
+              <Mapping SourceColumn="IM_RECEIPT_DATE" DataSetColumn="IM_RECEIPT_DATE" />
+              <Mapping SourceColumn="AMT_PAID" DataSetColumn="AMT_PAID" />
+              <Mapping SourceColumn="WHT_BANK" DataSetColumn="WHT_BANK" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PaymentToNonResident" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PaymentToNonResident" msprop:Generator_DataSetName="PaymentToNonResident">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetPaymentToNonResident" msprop:Generator_UserTableName="DataSetPaymentToNonResident" msprop:Generator_RowDeletedName="DataSetPaymentToNonResidentRowDeleted" msprop:Generator_TableClassName="DataSetPaymentToNonResidentDataTable" msprop:Generator_RowChangedName="DataSetPaymentToNonResidentRowChanged" msprop:Generator_RowClassName="DataSetPaymentToNonResidentRow" msprop:Generator_RowChangingName="DataSetPaymentToNonResidentRowChanging" msprop:Generator_RowEvArgName="DataSetPaymentToNonResidentRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetPaymentToNonResidentRowChangeEventHandler" msprop:Generator_TablePropName="DataSetPaymentToNonResident" msprop:Generator_TableVarName="tableDataSetPaymentToNonResident" msprop:Generator_RowDeletingName="DataSetPaymentToNonResidentRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IM_S_COY_NAME" msprop:Generator_UserColumnName="IM_S_COY_NAME" msprop:Generator_ColumnPropNameInRow="IM_S_COY_NAME" msprop:Generator_ColumnVarNameInTable="columnIM_S_COY_NAME" msprop:Generator_ColumnPropNameInTable="IM_S_COY_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IC_COUNTRY" msprop:Generator_UserColumnName="IC_COUNTRY" msprop:Generator_ColumnPropNameInRow="IC_COUNTRY" msprop:Generator_ColumnVarNameInTable="columnIC_COUNTRY" msprop:Generator_ColumnPropNameInTable="IC_COUNTRYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IM_INVOICE_NO" msprop:Generator_UserColumnName="IM_INVOICE_NO" msprop:Generator_ColumnPropNameInRow="IM_INVOICE_NO" msprop:Generator_ColumnVarNameInTable="columnIM_INVOICE_NO" msprop:Generator_ColumnPropNameInTable="IM_INVOICE_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="INVOICE_TOTAL" msprop:Generator_UserColumnName="INVOICE_TOTAL" msprop:Generator_ColumnPropNameInRow="INVOICE_TOTAL" msprop:Generator_ColumnVarNameInTable="columnINVOICE_TOTAL" msprop:Generator_ColumnPropNameInTable="INVOICE_TOTALColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IM_PAYMENT_DATE" msprop:Generator_UserColumnName="IM_PAYMENT_DATE" msprop:Generator_ColumnPropNameInRow="IM_PAYMENT_DATE" msprop:Generator_ColumnVarNameInTable="columnIM_PAYMENT_DATE" msprop:Generator_ColumnPropNameInTable="IM_PAYMENT_DATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IM_CURRENCY_CODE" msprop:Generator_UserColumnName="IM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInRow="IM_CURRENCY_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInTable="IM_CURRENCY_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IM_INVOICE_TOTAL" msprop:Generator_UserColumnName="IM_INVOICE_TOTAL" msprop:Generator_ColumnPropNameInRow="IM_INVOICE_TOTAL" msprop:Generator_ColumnVarNameInTable="columnIM_INVOICE_TOTAL" msprop:Generator_ColumnPropNameInTable="IM_INVOICE_TOTALColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ID_B_GL_CODE" msprop:Generator_UserColumnName="ID_B_GL_CODE" msprop:Generator_ColumnPropNameInRow="ID_B_GL_CODE" msprop:Generator_ColumnVarNameInTable="columnID_B_GL_CODE" msprop:Generator_ColumnPropNameInTable="ID_B_GL_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IM_WITHHOLDING_OPT" msprop:Generator_UserColumnName="IM_WITHHOLDING_OPT" msprop:Generator_ColumnPropNameInRow="IM_WITHHOLDING_OPT" msprop:Generator_ColumnVarNameInTable="columnIM_WITHHOLDING_OPT" msprop:Generator_ColumnPropNameInTable="IM_WITHHOLDING_OPTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IM_WITHHOLDING_REMARKS" msprop:Generator_UserColumnName="IM_WITHHOLDING_REMARKS" msprop:Generator_ColumnPropNameInRow="IM_WITHHOLDING_REMARKS" msprop:Generator_ColumnVarNameInTable="columnIM_WITHHOLDING_REMARKS" msprop:Generator_ColumnPropNameInTable="IM_WITHHOLDING_REMARKSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IM_WITHHOLDING_TAX" msprop:Generator_UserColumnName="IM_WITHHOLDING_TAX" msprop:Generator_ColumnPropNameInRow="IM_WITHHOLDING_TAX" msprop:Generator_ColumnVarNameInTable="columnIM_WITHHOLDING_TAX" msprop:Generator_ColumnPropNameInTable="IM_WITHHOLDING_TAXColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WHT_AMT" msprop:Generator_UserColumnName="WHT_AMT" msprop:Generator_ColumnPropNameInRow="WHT_AMT" msprop:Generator_ColumnVarNameInTable="columnWHT_AMT" msprop:Generator_ColumnPropNameInTable="WHT_AMTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IM_RECEIPT_NO" msprop:Generator_UserColumnName="IM_RECEIPT_NO" msprop:Generator_ColumnPropNameInRow="IM_RECEIPT_NO" msprop:Generator_ColumnVarNameInTable="columnIM_RECEIPT_NO" msprop:Generator_ColumnPropNameInTable="IM_RECEIPT_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IM_RECEIPT_DATE" msprop:Generator_UserColumnName="IM_RECEIPT_DATE" msprop:Generator_ColumnPropNameInRow="IM_RECEIPT_DATE" msprop:Generator_ColumnVarNameInTable="columnIM_RECEIPT_DATE" msprop:Generator_ColumnPropNameInTable="IM_RECEIPT_DATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AMT_PAID" msprop:Generator_UserColumnName="AMT_PAID" msprop:Generator_ColumnPropNameInRow="AMT_PAID" msprop:Generator_ColumnVarNameInTable="columnAMT_PAID" msprop:Generator_ColumnPropNameInTable="AMT_PAIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WHT_BANK" msprop:Generator_UserColumnName="WHT_BANK" msprop:Generator_ColumnPropNameInRow="WHT_BANK" msprop:Generator_ColumnVarNameInTable="columnWHT_BANK" msprop:Generator_ColumnPropNameInTable="WHT_BANKColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

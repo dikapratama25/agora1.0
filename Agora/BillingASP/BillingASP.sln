@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BillingASP", "BillingASP\BillingASP.vbproj", "{0485D68A-E922-4AFB-BDBE-FBD398B6F714}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Access", "Access\Access.vbproj", "{50EABB76-6DC4-4325-81A3-5D93F63C8651}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0485D68A-E922-4AFB-BDBE-FBD398B6F714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0485D68A-E922-4AFB-BDBE-FBD398B6F714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0485D68A-E922-4AFB-BDBE-FBD398B6F714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0485D68A-E922-4AFB-BDBE-FBD398B6F714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50EABB76-6DC4-4325-81A3-5D93F63C8651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50EABB76-6DC4-4325-81A3-5D93F63C8651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50EABB76-6DC4-4325-81A3-5D93F63C8651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50EABB76-6DC4-4325-81A3-5D93F63C8651}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

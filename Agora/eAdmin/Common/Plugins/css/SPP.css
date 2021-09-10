@@ -1,0 +1,281 @@
+@import url("reset.css");
+
+
+BODY
+{
+	margin:10px 10px 10px 10px;
+    
+ 
+}
+H1
+{	
+	font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+	font-size:	17px;
+	font-weight: bold ;
+}
+H2, H3, H4, H5, TH, THEAD, TFOOT
+{
+    COLOR: #003366;
+}	
+H2
+{	
+	font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+	font-size:	16px;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+}	
+
+H3
+{	
+	font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+	font-size:	15px;
+	font-weight:	500;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+}	
+		
+H4
+{	
+	font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+	font-size:	14px;
+	font-weight:	500;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+}	
+	
+H5
+{	
+	font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+	font-size:	13px;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+}	
+	
+H6
+{	
+	font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+	font-size:	12px;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+}
+A:link	{	
+	text-decoration:	none;
+	color:	#3333cc; -moz-outline-style: none;  outline-style:none;
+	}	
+		
+A:visited	{	
+	text-decoration:	none;
+	color:	#333399; -moz-outline-style: none;  outline-style:none;
+	}	
+		
+A:active	{	
+	text-decoration:	none;
+	color:	#333399; -moz-outline-style: none;  outline-style:none;
+	}
+TD 
+{ 
+	
+	font-size: 11px;
+	font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+	padding: 0px 2px;
+	vertical-align:inherit;
+	/* border:1px inset;*/
+	
+}
+/* RadioButtonList td*/
+.rbtn td
+{
+	background :#f5f5f5;
+	font-family :Arial, Verdana, Tahoma, Helvetica, sans-serif;
+	font-size : 8pt;
+	border-bottom-color :Black ;
+	border-right-color :Gray ;
+	color :black ;
+	height  :18px;
+	border:0;
+}
+.TableCol
+{
+	padding:0px 4px;
+	font-size: 11px;
+	color:#000;
+	font-family: Arial, Verdana;
+	background-color:  #f5f5f5;
+	vertical-align:middle;
+	border:0;
+}
+.AllTable
+{
+       width  : 100%;
+       border :0;
+}
+	   
+.TableHeader
+{
+	BORDER-RIGHT: #ffffff 1px solid;
+    BORDER-TOP: #ffffff 1px solid;
+    BORDER-LEFT: #ffffff 1px solid;
+    BORDER-BOTTOM: #ffffff 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: #000;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #d1e1ef;
+    padding:1px 4px;
+}
+.Header
+{
+	 font-size :14px;
+	 font-family :Arial, Verdana ;
+	 font-weight : bold ;
+	 BACKGROUND-COLOR:White;
+	 padding: 13px 0px 5px 3px;
+	 border:0;
+	 
+	
+}
+.Grid
+{
+	
+    BORDER-RIGHT: #ffffff 1px solid;
+    BORDER-TOP: #d1e1ef 1px solid;
+    BORDER-LEFT: #ffffff 1px solid;
+    border-bottom:#ffffff 1px solid;
+    width:100%;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Verdana;
+    background-color : #fdfdfd;
+	vertical-align:middle;
+    
+}
+
+.GridHeader
+{
+    COLOR: #000;
+    BACKGROUND-COLOR: #d1e1ef;
+    font-family :Arial, Verdana;
+    font-weight :bold ;
+     font-size :12px;
+    
+}
+.GridPager
+{
+	background:#fff;
+	font-size :10px;
+}
+.ErrorMsg
+{
+    FONT-SIZE: 11px;
+    COLOR: red;
+    FONT-FAMILY: Arial,Verdana;
+}
+.EmptyCol
+{
+	border:0;
+	background-color:Transparent;
+}
+.txtbox
+{
+	 font-family : Arial, Verdana;
+     font-size : 11px;
+     width: 250px;
+     margin-right:10px;
+}
+.TableInput
+{	
+	font-family : Arial, Verdana;
+    font-size : 11px;
+    width: 250px;
+    margin-right:10px;
+    background-color:White;
+}
+.ddl
+{
+	font-family : Arial, Verdana;
+	font-size : 11px;
+	width: 250px;
+	margin-right:10px;
+	
+}
+.chklist td
+{
+	font-size : 11px;
+	border:0;
+}
+.chk
+{
+	font-size : 11px;
+}
+.button
+{
+	padding:0px 3px 0px 3px;
+	font-family : Arial, Verdana;
+    font-size : 11px;
+    overflow:visible;
+    margin:0px 3px 0px 3px;
+    width:63px;
+}
+.modtxtbox
+{
+    font-family : Arial, Verdana;
+    width: 250px;
+    font-size : 11px;
+    color: Purple;
+    margin-right:10px;   
+}
+.lblInfo
+{
+	font-size : 11px;
+	font-style : normal;
+	font-family :Arial,Verdana;
+	color :  Black;
+	font-weight :  normal;
+	padding-bottom:2px;
+	padding-top:2px;
+}
+.lbl
+{
+	font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size : 11px;
+}
+.lblname
+{
+	font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+}
+
+/* ### New Tab ####*/
+
+.t_entity { width: 100%; font-weight:bold; text-align:left; border-bottom: 1px solid #97a5b0; font-size: 12px; font-family: Arial,"Trebuchet MS",Trebuchet,Verdana,Helvetica,sans-serif;}
+.t_entity ul { list-style:none; margin:0px; padding:0px;}
+.t_entity ul li { float:left; list-style-type:none; margin-bottom:0px; margin-left:0px;}
+.t_entity ul li a.t_entity_btn { color: #27537a; background: transparent url("images/tab_selectable_lt.jpg") no-repeat top left; display: block; line-height: 16px; padding-left: 15px;}
+.t_entity ul li a.t_entity_btn span { background: transparent url("images/tab_selectable_rt.jpg") no-repeat top right; display: block; padding: 5px 15px 4px 0;}
+.t_entity ul li a.t_entity_btn:hover { cursor:pointer; text-decoration: none;}
+.t_entity ul li a.t_entity_btn:hover span {color: black; }
+.t_entity ul li a.t_entity_btn_selected { color: black; background: transparent url("images/tab_selected_lt.jpg") no-repeat top left; display: block; line-height: 16px; padding-left: 15px; }
+.t_entity ul li a.t_entity_btn_selected span { color: black; background: transparent url("images/tab_selected_rt.jpg") no-repeat top right; display: block; padding: 5px 15px 4px 0;}
+.t_entity ul li a.t_entity_btn_selected:hover { color: black; cursor:default; text-decoration: none;}
+.t_entity ul li a.t_entity_btn_selected:hover span {}
+.t_entity ul li .space { width:5px; height:25px; border-bottom: 1px solid #97a5b0; }
+
+

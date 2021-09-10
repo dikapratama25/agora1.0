@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewRFQ_FTN" targetNamespace="http://tempuri.org/PreviewRFQ_FTN.xsd" xmlns:mstns="http://tempuri.org/PreviewRFQ_FTN.xsd" xmlns="http://tempuri.org/PreviewRFQ_FTN.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OleDb">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTablePreviewRFQTableAdapter" GeneratorDataComponentClassName="DataTablePreviewRFQTableAdapter" Name="DataTablePreviewRFQ" UserDataComponentName="DataTablePreviewRFQTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillPreviewRFQ" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetDataPreviewRFQ" GeneratorSourceName="FillPreviewRFQ" GetMethodModifier="Public" GetMethodName="GetDataPreviewRFQ" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetDataPreviewRFQ" UserSourceName="FillPreviewRFQ">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT   RFQ_MSTR.RM_RFQ_ID, RFQ_MSTR.RM_Coy_ID, RFQ_MSTR.RM_RFQ_No, RFQ_MSTR.RM_RFQ_Name,  RFQ_MSTR.RM_Expiry_Date, RFQ_MSTR.RM_Status, RFQ_MSTR.RM_Remark, RFQ_MSTR.RM_Created_By, RFQ_MSTR.RM_Created_On, RFQ_MSTR.RM_Currency_Code, RFQ_MSTR.RM_Payment_Term, RFQ_MSTR.RM_Payment_Type, RFQ_MSTR.RM_Shipment_Term, RFQ_MSTR.RM_Shipment_Mode, RFQ_MSTR.RM_Prefix, RFQ_MSTR.RM_B_Display_Status, RFQ_MSTR.RM_Reqd_Quote_Validity, 
+RFQ_MSTR.RM_Contact_Person, RFQ_MSTR.RM_Contact_Number, RFQ_MSTR.RM_Email, 
+RFQ_MSTR.RM_RFQ_OPTION, RFQ_MSTR.RM_VEN_DISTR_LIST_INDEX, RFQ_DETAIL.RD_RFQ_ID, 
+RFQ_DETAIL.RD_Coy_ID, RFQ_DETAIL.RD_RFQ_Line, RFQ_DETAIL.RD_Product_Code, 
+RFQ_DETAIL.RD_Vendor_Item_Code, RFQ_DETAIL.RD_Quantity, RFQ_DETAIL.RD_Product_Desc, 
+RFQ_DETAIL.RD_UOM, RFQ_DETAIL.RD_Delivery_Lead_Time, RFQ_DETAIL.RD_Warranty_Terms, 
+RFQ_DETAIL.RD_Product_Name, RFQ_INVITED_VENLIST.RIV_RFQ_ID, '' AS RD_ITEM_TYPE, RFQ_INVITED_VENLIST.RIV_S_Coy_ID, 
+RFQ_INVITED_VENLIST.RIV_S_Coy_Name, RFQ_INVITED_VENLIST.RIV_S_Addr_Line1, 
+RFQ_INVITED_VENLIST.RIV_S_Addr_Line2, RFQ_INVITED_VENLIST.RIV_S_Addr_Line3, 
+                RFQ_INVITED_VENLIST.RIV_S_PostCode, RFQ_INVITED_VENLIST.RIV_S_City, 
+                RFQ_INVITED_VENLIST.RIV_S_State, RFQ_INVITED_VENLIST.RIV_S_Country, 
+                RFQ_INVITED_VENLIST.RIV_S_Phone, RFQ_INVITED_VENLIST.RIV_S_Fax, 
+                RFQ_INVITED_VENLIST.RIV_S_Email, COMPANY_MSTR.CM_COY_ID, COMPANY_MSTR.CM_COY_NAME, 
+                COMPANY_MSTR.CM_COY_TYPE, COMPANY_MSTR.CM_PARENT_COY_ID, COMPANY_MSTR.CM_ACCT_NO, 
+                COMPANY_MSTR.CM_BANK, COMPANY_MSTR.CM_BRANCH, COMPANY_MSTR.CM_ADDR_LINE1, 
+                COMPANY_MSTR.CM_ADDR_LINE2, COMPANY_MSTR.CM_ADDR_LINE3, COMPANY_MSTR.CM_POSTCODE, 
+                COMPANY_MSTR.CM_CITY, COMPANY_MSTR.CM_STATE, COMPANY_MSTR.CM_COUNTRY, 
+                COMPANY_MSTR.CM_PHONE, COMPANY_MSTR.CM_FAX, COMPANY_MSTR.CM_EMAIL, 
+                COMPANY_MSTR.CM_COY_LOGO, COMPANY_MSTR.CM_BUSINESS_REG_NO, 
+                COMPANY_MSTR.CM_TAX_REG_NO, COMPANY_MSTR.CM_PAYMENT_TERM, 
+                COMPANY_MSTR.CM_PAYMENT_METHOD, COMPANY_MSTR.CM_ACTUAL_TERMSANDCONDFILE, 
+                COMPANY_MSTR.CM_HUB_TERMSANDCONDFILE, COMPANY_MSTR.CM_PWD_DURATION, 
+                COMPANY_MSTR.CM_TAX_CALC_BY, COMPANY_MSTR.CM_CURRENCY_CODE, 
+                COMPANY_MSTR.CM_BCM_SET, COMPANY_MSTR.CM_BUDGET_FROM_DATE, 
+                COMPANY_MSTR.CM_BUDGET_TO_DATE, COMPANY_MSTR.CM_RFQ_OPTION, 
+                COMPANY_MSTR.CM_LICENCE_PACKAGE, COMPANY_MSTR.CM_LICENSE_USERS, 
+                COMPANY_MSTR.CM_SUB_START_DT, COMPANY_MSTR.CM_SUB_END_DT, 
+                COMPANY_MSTR.CM_LICENSE_PRODUCTS, COMPANY_MSTR.CM_FINDEPT_MODE, 
+                COMPANY_MSTR.CM_PRIV_LABELING, COMPANY_MSTR.CM_SKINS_ID, COMPANY_MSTR.CM_TRAINING, 
+                COMPANY_MSTR.CM_STATUS, COMPANY_MSTR.CM_DELETED, COMPANY_MSTR.CM_MOD_BY, 
+                COMPANY_MSTR.CM_MOD_DT, COMPANY_MSTR.CM_ENT_BY, COMPANY_MSTR.CM_ENT_DT, 
+                COMPANY_MSTR.CM_SKU, COMPANY_MSTR.CM_TRANS_NO, COMPANY_MSTR.CM_CONTACT, 
+                COMPANY_MSTR.CM_REPORT_USERS, COMPANY_MSTR.CM_INV_APPR, COMPANY_MSTR.CM_MULTI_PO, COMPANY_MSTR.CM_BA_CANCEL,
+'' AS CMState,'' AS CMCtry,'' AS SupplierAddrCtry,'' AS RFQ_PaymentTerm,'' AS RFQ_PaymentMethod, ''AS RFQ_ShipmentTerm, ''AS RFQ_ShipmentMode, ''  AS sUPPBUSSREGNO, '' AS DeliveryTerm
+FROM      RFQ_MSTR INNER JOIN
+                RFQ_DETAIL ON RFQ_MSTR.RM_RFQ_ID = RFQ_DETAIL.RD_RFQ_ID INNER JOIN
+                RFQ_INVITED_VENLIST ON RFQ_MSTR.RM_RFQ_ID = RFQ_INVITED_VENLIST.RIV_RFQ_ID INNER JOIN
+                COMPANY_MSTR ON RFQ_MSTR.RM_Coy_ID = COMPANY_MSTR.CM_COY_ID
+WHERE   (RFQ_MSTR.RM_RFQ_No = 'etrx/rfq/09/0010') AND (RFQ_MSTR.RM_Coy_ID = 'demo') AND 
+                (RFQ_INVITED_VENLIST.RIV_S_Coy_ID = 'supplier')</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RM_RFQ_ID" DataSetColumn="RM_RFQ_ID" />
+              <Mapping SourceColumn="RM_Coy_ID" DataSetColumn="RM_Coy_ID" />
+              <Mapping SourceColumn="RM_RFQ_No" DataSetColumn="RM_RFQ_No" />
+              <Mapping SourceColumn="RM_RFQ_Name" DataSetColumn="RM_RFQ_Name" />
+              <Mapping SourceColumn="RM_Expiry_Date" DataSetColumn="RM_Expiry_Date" />
+              <Mapping SourceColumn="RM_Status" DataSetColumn="RM_Status" />
+              <Mapping SourceColumn="RM_Remark" DataSetColumn="RM_Remark" />
+              <Mapping SourceColumn="RM_Created_By" DataSetColumn="RM_Created_By" />
+              <Mapping SourceColumn="RM_Created_On" DataSetColumn="RM_Created_On" />
+              <Mapping SourceColumn="RM_Currency_Code" DataSetColumn="RM_Currency_Code" />
+              <Mapping SourceColumn="RM_Payment_Term" DataSetColumn="RM_Payment_Term" />
+              <Mapping SourceColumn="RM_Payment_Type" DataSetColumn="RM_Payment_Type" />
+              <Mapping SourceColumn="RM_Shipment_Term" DataSetColumn="RM_Shipment_Term" />
+              <Mapping SourceColumn="RM_Shipment_Mode" DataSetColumn="RM_Shipment_Mode" />
+              <Mapping SourceColumn="RM_Prefix" DataSetColumn="RM_Prefix" />
+              <Mapping SourceColumn="RM_B_Display_Status" DataSetColumn="RM_B_Display_Status" />
+              <Mapping SourceColumn="RM_Reqd_Quote_Validity" DataSetColumn="RM_Reqd_Quote_Validity" />
+              <Mapping SourceColumn="RM_Contact_Person" DataSetColumn="RM_Contact_Person" />
+              <Mapping SourceColumn="RM_Contact_Number" DataSetColumn="RM_Contact_Number" />
+              <Mapping SourceColumn="RM_Email" DataSetColumn="RM_Email" />
+              <Mapping SourceColumn="RM_RFQ_OPTION" DataSetColumn="RM_RFQ_OPTION" />
+              <Mapping SourceColumn="RM_VEN_DISTR_LIST_INDEX" DataSetColumn="RM_VEN_DISTR_LIST_INDEX" />
+              <Mapping SourceColumn="RD_RFQ_ID" DataSetColumn="RD_RFQ_ID" />
+              <Mapping SourceColumn="RD_Coy_ID" DataSetColumn="RD_Coy_ID" />
+              <Mapping SourceColumn="RD_RFQ_Line" DataSetColumn="RD_RFQ_Line" />
+              <Mapping SourceColumn="RD_Product_Code" DataSetColumn="RD_Product_Code" />
+              <Mapping SourceColumn="RD_Vendor_Item_Code" DataSetColumn="RD_Vendor_Item_Code" />
+              <Mapping SourceColumn="RD_Quantity" DataSetColumn="RD_Quantity" />
+              <Mapping SourceColumn="RD_Product_Desc" DataSetColumn="RD_Product_Desc" />
+              <Mapping SourceColumn="RD_UOM" DataSetColumn="RD_UOM" />
+              <Mapping SourceColumn="RD_Delivery_Lead_Time" DataSetColumn="RD_Delivery_Lead_Time" />
+              <Mapping SourceColumn="RD_Warranty_Terms" DataSetColumn="RD_Warranty_Terms" />
+              <Mapping SourceColumn="RD_Product_Name" DataSetColumn="RD_Product_Name" />
+              <Mapping SourceColumn="RIV_RFQ_ID" DataSetColumn="RIV_RFQ_ID" />
+              <Mapping SourceColumn="RIV_S_Coy_ID" DataSetColumn="RIV_S_Coy_ID" />
+              <Mapping SourceColumn="RIV_S_Coy_Name" DataSetColumn="RIV_S_Coy_Name" />
+              <Mapping SourceColumn="RIV_S_Addr_Line1" DataSetColumn="RIV_S_Addr_Line1" />
+              <Mapping SourceColumn="RIV_S_Addr_Line2" DataSetColumn="RIV_S_Addr_Line2" />
+              <Mapping SourceColumn="RIV_S_Addr_Line3" DataSetColumn="RIV_S_Addr_Line3" />
+              <Mapping SourceColumn="RIV_S_PostCode" DataSetColumn="RIV_S_PostCode" />
+              <Mapping SourceColumn="RIV_S_City" DataSetColumn="RIV_S_City" />
+              <Mapping SourceColumn="RIV_S_State" DataSetColumn="RIV_S_State" />
+              <Mapping SourceColumn="RIV_S_Country" DataSetColumn="RIV_S_Country" />
+              <Mapping SourceColumn="RIV_S_Phone" DataSetColumn="RIV_S_Phone" />
+              <Mapping SourceColumn="RIV_S_Fax" DataSetColumn="RIV_S_Fax" />
+              <Mapping SourceColumn="RIV_S_Email" DataSetColumn="RIV_S_Email" />
+              <Mapping SourceColumn="CMState" DataSetColumn="CMState" />
+              <Mapping SourceColumn="CMCtry" DataSetColumn="CMCtry" />
+              <Mapping SourceColumn="SupplierAddrCtry" DataSetColumn="SupplierAddrCtry" />
+              <Mapping SourceColumn="sUPPBUSSREGNO" DataSetColumn="sUPPBUSSREGNO" />
+              <Mapping SourceColumn="RFQ_PaymentTerm" DataSetColumn="RFQ_PaymentTerm" />
+              <Mapping SourceColumn="RFQ_ShipmentTerm" DataSetColumn="RFQ_ShipmentTerm" />
+              <Mapping SourceColumn="RFQ_ShipmentMode" DataSetColumn="RFQ_ShipmentMode" />
+              <Mapping SourceColumn="CM_COY_ID" DataSetColumn="CM_COY_ID" />
+              <Mapping SourceColumn="CM_COY_NAME" DataSetColumn="CM_COY_NAME" />
+              <Mapping SourceColumn="CM_COY_TYPE" DataSetColumn="CM_COY_TYPE" />
+              <Mapping SourceColumn="CM_PARENT_COY_ID" DataSetColumn="CM_PARENT_COY_ID" />
+              <Mapping SourceColumn="CM_ACCT_NO" DataSetColumn="CM_ACCT_NO" />
+              <Mapping SourceColumn="CM_BANK" DataSetColumn="CM_BANK" />
+              <Mapping SourceColumn="CM_BRANCH" DataSetColumn="CM_BRANCH" />
+              <Mapping SourceColumn="CM_ADDR_LINE1" DataSetColumn="CM_ADDR_LINE1" />
+              <Mapping SourceColumn="CM_ADDR_LINE2" DataSetColumn="CM_ADDR_LINE2" />
+              <Mapping SourceColumn="CM_ADDR_LINE3" DataSetColumn="CM_ADDR_LINE3" />
+              <Mapping SourceColumn="CM_POSTCODE" DataSetColumn="CM_POSTCODE" />
+              <Mapping SourceColumn="CM_CITY" DataSetColumn="CM_CITY" />
+              <Mapping SourceColumn="CM_STATE" DataSetColumn="CM_STATE" />
+              <Mapping SourceColumn="CM_COUNTRY" DataSetColumn="CM_COUNTRY" />
+              <Mapping SourceColumn="CM_PHONE" DataSetColumn="CM_PHONE" />
+              <Mapping SourceColumn="CM_FAX" DataSetColumn="CM_FAX" />
+              <Mapping SourceColumn="CM_EMAIL" DataSetColumn="CM_EMAIL" />
+              <Mapping SourceColumn="CM_COY_LOGO" DataSetColumn="CM_COY_LOGO" />
+              <Mapping SourceColumn="CM_BUSINESS_REG_NO" DataSetColumn="CM_BUSINESS_REG_NO" />
+              <Mapping SourceColumn="CM_TAX_REG_NO" DataSetColumn="CM_TAX_REG_NO" />
+              <Mapping SourceColumn="CM_PAYMENT_TERM" DataSetColumn="CM_PAYMENT_TERM" />
+              <Mapping SourceColumn="CM_PAYMENT_METHOD" DataSetColumn="CM_PAYMENT_METHOD" />
+              <Mapping SourceColumn="CM_ACTUAL_TERMSANDCONDFILE" DataSetColumn="CM_ACTUAL_TERMSANDCONDFILE" />
+              <Mapping SourceColumn="CM_HUB_TERMSANDCONDFILE" DataSetColumn="CM_HUB_TERMSANDCONDFILE" />
+              <Mapping SourceColumn="CM_PWD_DURATION" DataSetColumn="CM_PWD_DURATION" />
+              <Mapping SourceColumn="CM_TAX_CALC_BY" DataSetColumn="CM_TAX_CALC_BY" />
+              <Mapping SourceColumn="CM_CURRENCY_CODE" DataSetColumn="CM_CURRENCY_CODE" />
+              <Mapping SourceColumn="CM_BCM_SET" DataSetColumn="CM_BCM_SET" />
+              <Mapping SourceColumn="CM_BUDGET_FROM_DATE" DataSetColumn="CM_BUDGET_FROM_DATE" />
+              <Mapping SourceColumn="CM_BUDGET_TO_DATE" DataSetColumn="CM_BUDGET_TO_DATE" />
+              <Mapping SourceColumn="CM_RFQ_OPTION" DataSetColumn="CM_RFQ_OPTION" />
+              <Mapping SourceColumn="CM_LICENCE_PACKAGE" DataSetColumn="CM_LICENCE_PACKAGE" />
+              <Mapping SourceColumn="CM_LICENSE_USERS" DataSetColumn="CM_LICENSE_USERS" />
+              <Mapping SourceColumn="CM_SUB_START_DT" DataSetColumn="CM_SUB_START_DT" />
+              <Mapping SourceColumn="CM_SUB_END_DT" DataSetColumn="CM_SUB_END_DT" />
+              <Mapping SourceColumn="CM_LICENSE_PRODUCTS" DataSetColumn="CM_LICENSE_PRODUCTS" />
+              <Mapping SourceColumn="CM_FINDEPT_MODE" DataSetColumn="CM_FINDEPT_MODE" />
+              <Mapping SourceColumn="CM_PRIV_LABELING" DataSetColumn="CM_PRIV_LABELING" />
+              <Mapping SourceColumn="CM_SKINS_ID" DataSetColumn="CM_SKINS_ID" />
+              <Mapping SourceColumn="CM_TRAINING" DataSetColumn="CM_TRAINING" />
+              <Mapping SourceColumn="CM_STATUS" DataSetColumn="CM_STATUS" />
+              <Mapping SourceColumn="CM_DELETED" DataSetColumn="CM_DELETED" />
+              <Mapping SourceColumn="CM_MOD_BY" DataSetColumn="CM_MOD_BY" />
+              <Mapping SourceColumn="CM_MOD_DT" DataSetColumn="CM_MOD_DT" />
+              <Mapping SourceColumn="CM_ENT_BY" DataSetColumn="CM_ENT_BY" />
+              <Mapping SourceColumn="CM_ENT_DT" DataSetColumn="CM_ENT_DT" />
+              <Mapping SourceColumn="CM_SKU" DataSetColumn="CM_SKU" />
+              <Mapping SourceColumn="CM_TRANS_NO" DataSetColumn="CM_TRANS_NO" />
+              <Mapping SourceColumn="CM_CONTACT" DataSetColumn="CM_CONTACT" />
+              <Mapping SourceColumn="CM_REPORT_USERS" DataSetColumn="CM_REPORT_USERS" />
+              <Mapping SourceColumn="CM_INV_APPR" DataSetColumn="CM_INV_APPR" />
+              <Mapping SourceColumn="CM_MULTI_PO" DataSetColumn="CM_MULTI_PO" />
+              <Mapping SourceColumn="CM_BA_CANCEL" DataSetColumn="CM_BA_CANCEL" />
+              <Mapping SourceColumn="RFQ_PaymentMethod" DataSetColumn="RFQ_PaymentMethod" />
+              <Mapping SourceColumn="RD_ITEM_TYPE" DataSetColumn="RD_ITEM_TYPE" />
+              <Mapping SourceColumn="DeliveryTerm" DataSetColumn="DeliveryTerm" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewRFQ_FTN" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PreviewRFQ_FTN" msprop:Generator_DataSetName="PreviewRFQ_FTN">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTablePreviewRFQ" msprop:Generator_UserTableName="DataTablePreviewRFQ" msprop:Generator_RowDeletedName="DataTablePreviewRFQRowDeleted" msprop:Generator_RowChangedName="DataTablePreviewRFQRowChanged" msprop:Generator_RowClassName="DataTablePreviewRFQRow" msprop:Generator_RowChangingName="DataTablePreviewRFQRowChanging" msprop:Generator_RowEvArgName="DataTablePreviewRFQRowChangeEvent" msprop:Generator_RowEvHandlerName="DataTablePreviewRFQRowChangeEventHandler" msprop:Generator_TableClassName="DataTablePreviewRFQDataTable" msprop:Generator_TableVarName="tableDataTablePreviewRFQ" msprop:Generator_RowDeletingName="DataTablePreviewRFQRowDeleting" msprop:Generator_TablePropName="DataTablePreviewRFQ">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RM_RFQ_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="RM_RFQ_ID" msprop:Generator_ColumnVarNameInTable="columnRM_RFQ_ID" msprop:Generator_ColumnPropNameInRow="RM_RFQ_ID" msprop:Generator_ColumnPropNameInTable="RM_RFQ_IDColumn" type="xs:long" />
+              <xs:element name="RM_Coy_ID" msprop:Generator_UserColumnName="RM_Coy_ID" msprop:Generator_ColumnVarNameInTable="columnRM_Coy_ID" msprop:Generator_ColumnPropNameInRow="RM_Coy_ID" msprop:Generator_ColumnPropNameInTable="RM_Coy_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_RFQ_No" msprop:Generator_UserColumnName="RM_RFQ_No" msprop:Generator_ColumnVarNameInTable="columnRM_RFQ_No" msprop:Generator_ColumnPropNameInRow="RM_RFQ_No" msprop:Generator_ColumnPropNameInTable="RM_RFQ_NoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_RFQ_Name" msprop:Generator_UserColumnName="RM_RFQ_Name" msprop:Generator_ColumnVarNameInTable="columnRM_RFQ_Name" msprop:Generator_ColumnPropNameInRow="RM_RFQ_Name" msprop:Generator_ColumnPropNameInTable="RM_RFQ_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_Expiry_Date" msprop:Generator_UserColumnName="RM_Expiry_Date" msprop:Generator_ColumnVarNameInTable="columnRM_Expiry_Date" msprop:Generator_ColumnPropNameInRow="RM_Expiry_Date" msprop:Generator_ColumnPropNameInTable="RM_Expiry_DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RM_Status" msprop:Generator_UserColumnName="RM_Status" msprop:Generator_ColumnVarNameInTable="columnRM_Status" msprop:Generator_ColumnPropNameInRow="RM_Status" msprop:Generator_ColumnPropNameInTable="RM_StatusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_Remark" msprop:Generator_UserColumnName="RM_Remark" msprop:Generator_ColumnVarNameInTable="columnRM_Remark" msprop:Generator_ColumnPropNameInRow="RM_Remark" msprop:Generator_ColumnPropNameInTable="RM_RemarkColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_Created_By" msprop:Generator_UserColumnName="RM_Created_By" msprop:Generator_ColumnVarNameInTable="columnRM_Created_By" msprop:Generator_ColumnPropNameInRow="RM_Created_By" msprop:Generator_ColumnPropNameInTable="RM_Created_ByColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_Created_On" msprop:Generator_UserColumnName="RM_Created_On" msprop:Generator_ColumnVarNameInTable="columnRM_Created_On" msprop:Generator_ColumnPropNameInRow="RM_Created_On" msprop:Generator_ColumnPropNameInTable="RM_Created_OnColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RM_Currency_Code" msprop:Generator_UserColumnName="RM_Currency_Code" msprop:Generator_ColumnVarNameInTable="columnRM_Currency_Code" msprop:Generator_ColumnPropNameInRow="RM_Currency_Code" msprop:Generator_ColumnPropNameInTable="RM_Currency_CodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_Payment_Term" msprop:Generator_UserColumnName="RM_Payment_Term" msprop:Generator_ColumnVarNameInTable="columnRM_Payment_Term" msprop:Generator_ColumnPropNameInRow="RM_Payment_Term" msprop:Generator_ColumnPropNameInTable="RM_Payment_TermColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_Payment_Type" msprop:Generator_UserColumnName="RM_Payment_Type" msprop:Generator_ColumnVarNameInTable="columnRM_Payment_Type" msprop:Generator_ColumnPropNameInRow="RM_Payment_Type" msprop:Generator_ColumnPropNameInTable="RM_Payment_TypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_Shipment_Term" msprop:Generator_UserColumnName="RM_Shipment_Term" msprop:Generator_ColumnVarNameInTable="columnRM_Shipment_Term" msprop:Generator_ColumnPropNameInRow="RM_Shipment_Term" msprop:Generator_ColumnPropNameInTable="RM_Shipment_TermColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_Shipment_Mode" msprop:Generator_UserColumnName="RM_Shipment_Mode" msprop:Generator_ColumnVarNameInTable="columnRM_Shipment_Mode" msprop:Generator_ColumnPropNameInRow="RM_Shipment_Mode" msprop:Generator_ColumnPropNameInTable="RM_Shipment_ModeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_Prefix" msprop:Generator_UserColumnName="RM_Prefix" msprop:Generator_ColumnVarNameInTable="columnRM_Prefix" msprop:Generator_ColumnPropNameInRow="RM_Prefix" msprop:Generator_ColumnPropNameInTable="RM_PrefixColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_B_Display_Status" msprop:Generator_UserColumnName="RM_B_Display_Status" msprop:Generator_ColumnVarNameInTable="columnRM_B_Display_Status" msprop:Generator_ColumnPropNameInRow="RM_B_Display_Status" msprop:Generator_ColumnPropNameInTable="RM_B_Display_StatusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_Reqd_Quote_Validity" msprop:Generator_UserColumnName="RM_Reqd_Quote_Validity" msprop:Generator_ColumnVarNameInTable="columnRM_Reqd_Quote_Validity" msprop:Generator_ColumnPropNameInRow="RM_Reqd_Quote_Validity" msprop:Generator_ColumnPropNameInTable="RM_Reqd_Quote_ValidityColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RM_Contact_Person" msprop:Generator_UserColumnName="RM_Contact_Person" msprop:Generator_ColumnVarNameInTable="columnRM_Contact_Person" msprop:Generator_ColumnPropNameInRow="RM_Contact_Person" msprop:Generator_ColumnPropNameInTable="RM_Contact_PersonColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_Contact_Number" msprop:Generator_UserColumnName="RM_Contact_Number" msprop:Generator_ColumnVarNameInTable="columnRM_Contact_Number" msprop:Generator_ColumnPropNameInRow="RM_Contact_Number" msprop:Generator_ColumnPropNameInTable="RM_Contact_NumberColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_Email" msprop:Generator_UserColumnName="RM_Email" msprop:Generator_ColumnVarNameInTable="columnRM_Email" msprop:Generator_ColumnPropNameInRow="RM_Email" msprop:Generator_ColumnPropNameInTable="RM_EmailColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_RFQ_OPTION" msprop:Generator_UserColumnName="RM_RFQ_OPTION" msprop:Generator_ColumnVarNameInTable="columnRM_RFQ_OPTION" msprop:Generator_ColumnPropNameInRow="RM_RFQ_OPTION" msprop:Generator_ColumnPropNameInTable="RM_RFQ_OPTIONColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RM_VEN_DISTR_LIST_INDEX" msprop:Generator_UserColumnName="RM_VEN_DISTR_LIST_INDEX" msprop:Generator_ColumnVarNameInTable="columnRM_VEN_DISTR_LIST_INDEX" msprop:Generator_ColumnPropNameInRow="RM_VEN_DISTR_LIST_INDEX" msprop:Generator_ColumnPropNameInTable="RM_VEN_DISTR_LIST_INDEXColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RD_RFQ_ID" msprop:Generator_UserColumnName="RD_RFQ_ID" msprop:Generator_ColumnVarNameInTable="columnRD_RFQ_ID" msprop:Generator_ColumnPropNameInRow="RD_RFQ_ID" msprop:Generator_ColumnPropNameInTable="RD_RFQ_IDColumn" type="xs:long" />
+              <xs:element name="RD_Coy_ID" msprop:Generator_UserColumnName="RD_Coy_ID" msprop:Generator_ColumnVarNameInTable="columnRD_Coy_ID" msprop:Generator_ColumnPropNameInRow="RD_Coy_ID" msprop:Generator_ColumnPropNameInTable="RD_Coy_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RD_RFQ_Line" msprop:Generator_UserColumnName="RD_RFQ_Line" msprop:Generator_ColumnVarNameInTable="columnRD_RFQ_Line" msprop:Generator_ColumnPropNameInRow="RD_RFQ_Line" msprop:Generator_ColumnPropNameInTable="RD_RFQ_LineColumn" type="xs:int" />
+              <xs:element name="RD_Product_Code" msprop:Generator_UserColumnName="RD_Product_Code" msprop:Generator_ColumnVarNameInTable="columnRD_Product_Code" msprop:Generator_ColumnPropNameInRow="RD_Product_Code" msprop:Generator_ColumnPropNameInTable="RD_Product_CodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RD_Vendor_Item_Code" msprop:Generator_UserColumnName="RD_Vendor_Item_Code" msprop:Generator_ColumnVarNameInTable="columnRD_Vendor_Item_Code" msprop:Generator_ColumnPropNameInRow="RD_Vendor_Item_Code" msprop:Generator_ColumnPropNameInTable="RD_Vendor_Item_CodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RD_Quantity" msprop:Generator_UserColumnName="RD_Quantity" msprop:Generator_ColumnVarNameInTable="columnRD_Quantity" msprop:Generator_ColumnPropNameInRow="RD_Quantity" msprop:Generator_ColumnPropNameInTable="RD_QuantityColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RD_Product_Desc" msprop:Generator_UserColumnName="RD_Product_Desc" msprop:Generator_ColumnVarNameInTable="columnRD_Product_Desc" msprop:Generator_ColumnPropNameInRow="RD_Product_Desc" msprop:Generator_ColumnPropNameInTable="RD_Product_DescColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RD_UOM" msprop:Generator_UserColumnName="RD_UOM" msprop:Generator_ColumnVarNameInTable="columnRD_UOM" msprop:Generator_ColumnPropNameInRow="RD_UOM" msprop:Generator_ColumnPropNameInTable="RD_UOMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RD_Delivery_Lead_Time" msprop:Generator_UserColumnName="RD_Delivery_Lead_Time" msprop:Generator_ColumnVarNameInTable="columnRD_Delivery_Lead_Time" msprop:Generator_ColumnPropNameInRow="RD_Delivery_Lead_Time" msprop:Generator_ColumnPropNameInTable="RD_Delivery_Lead_TimeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RD_Warranty_Terms" msprop:Generator_UserColumnName="RD_Warranty_Terms" msprop:Generator_ColumnVarNameInTable="columnRD_Warranty_Terms" msprop:Generator_ColumnPropNameInRow="RD_Warranty_Terms" msprop:Generator_ColumnPropNameInTable="RD_Warranty_TermsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RD_Product_Name" msprop:Generator_UserColumnName="RD_Product_Name" msprop:Generator_ColumnVarNameInTable="columnRD_Product_Name" msprop:Generator_ColumnPropNameInRow="RD_Product_Name" msprop:Generator_ColumnPropNameInTable="RD_Product_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RIV_RFQ_ID" msprop:Generator_UserColumnName="RIV_RFQ_ID" msprop:Generator_ColumnVarNameInTable="columnRIV_RFQ_ID" msprop:Generator_ColumnPropNameInRow="RIV_RFQ_ID" msprop:Generator_ColumnPropNameInTable="RIV_RFQ_IDColumn" type="xs:long" />
+              <xs:element name="RIV_S_Coy_ID" msprop:Generator_UserColumnName="RIV_S_Coy_ID" msprop:Generator_ColumnVarNameInTable="columnRIV_S_Coy_ID" msprop:Generator_ColumnPropNameInRow="RIV_S_Coy_ID" msprop:Generator_ColumnPropNameInTable="RIV_S_Coy_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RIV_S_Coy_Name" msprop:Generator_UserColumnName="RIV_S_Coy_Name" msprop:Generator_ColumnVarNameInTable="columnRIV_S_Coy_Name" msprop:Generator_ColumnPropNameInRow="RIV_S_Coy_Name" msprop:Generator_ColumnPropNameInTable="RIV_S_Coy_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RIV_S_Addr_Line1" msprop:Generator_UserColumnName="RIV_S_Addr_Line1" msprop:Generator_ColumnVarNameInTable="columnRIV_S_Addr_Line1" msprop:Generator_ColumnPropNameInRow="RIV_S_Addr_Line1" msprop:Generator_ColumnPropNameInTable="RIV_S_Addr_Line1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RIV_S_Addr_Line2" msprop:Generator_UserColumnName="RIV_S_Addr_Line2" msprop:Generator_ColumnVarNameInTable="columnRIV_S_Addr_Line2" msprop:Generator_ColumnPropNameInRow="RIV_S_Addr_Line2" msprop:Generator_ColumnPropNameInTable="RIV_S_Addr_Line2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RIV_S_Addr_Line3" msprop:Generator_UserColumnName="RIV_S_Addr_Line3" msprop:Generator_ColumnVarNameInTable="columnRIV_S_Addr_Line3" msprop:Generator_ColumnPropNameInRow="RIV_S_Addr_Line3" msprop:Generator_ColumnPropNameInTable="RIV_S_Addr_Line3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RIV_S_PostCode" msprop:Generator_UserColumnName="RIV_S_PostCode" msprop:Generator_ColumnVarNameInTable="columnRIV_S_PostCode" msprop:Generator_ColumnPropNameInRow="RIV_S_PostCode" msprop:Generator_ColumnPropNameInTable="RIV_S_PostCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RIV_S_City" msprop:Generator_UserColumnName="RIV_S_City" msprop:Generator_ColumnVarNameInTable="columnRIV_S_City" msprop:Generator_ColumnPropNameInRow="RIV_S_City" msprop:Generator_ColumnPropNameInTable="RIV_S_CityColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RIV_S_State" msprop:Generator_UserColumnName="RIV_S_State" msprop:Generator_ColumnVarNameInTable="columnRIV_S_State" msprop:Generator_ColumnPropNameInRow="RIV_S_State" msprop:Generator_ColumnPropNameInTable="RIV_S_StateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RIV_S_Country" msprop:Generator_UserColumnName="RIV_S_Country" msprop:Generator_ColumnVarNameInTable="columnRIV_S_Country" msprop:Generator_ColumnPropNameInRow="RIV_S_Country" msprop:Generator_ColumnPropNameInTable="RIV_S_CountryColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RIV_S_Phone" msprop:Generator_UserColumnName="RIV_S_Phone" msprop:Generator_ColumnVarNameInTable="columnRIV_S_Phone" msprop:Generator_ColumnPropNameInRow="RIV_S_Phone" msprop:Generator_ColumnPropNameInTable="RIV_S_PhoneColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RIV_S_Fax" msprop:Generator_UserColumnName="RIV_S_Fax" msprop:Generator_ColumnVarNameInTable="columnRIV_S_Fax" msprop:Generator_ColumnPropNameInRow="RIV_S_Fax" msprop:Generator_ColumnPropNameInTable="RIV_S_FaxColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RIV_S_Email" msprop:Generator_UserColumnName="RIV_S_Email" msprop:Generator_ColumnVarNameInTable="columnRIV_S_Email" msprop:Generator_ColumnPropNameInRow="RIV_S_Email" msprop:Generator_ColumnPropNameInTable="RIV_S_EmailColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CMState" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CMState" msprop:Generator_ColumnVarNameInTable="columnCMState" msprop:Generator_ColumnPropNameInRow="CMState" msprop:Generator_ColumnPropNameInTable="CMStateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CMCtry" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CMCtry" msprop:Generator_ColumnVarNameInTable="columnCMCtry" msprop:Generator_ColumnPropNameInRow="CMCtry" msprop:Generator_ColumnPropNameInTable="CMCtryColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SupplierAddrCtry" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SupplierAddrCtry" msprop:Generator_ColumnVarNameInTable="columnSupplierAddrCtry" msprop:Generator_ColumnPropNameInRow="SupplierAddrCtry" msprop:Generator_ColumnPropNameInTable="SupplierAddrCtryColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sUPPBUSSREGNO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="sUPPBUSSREGNO" msprop:Generator_ColumnVarNameInTable="columnsUPPBUSSREGNO" msprop:Generator_ColumnPropNameInRow="sUPPBUSSREGNO" msprop:Generator_ColumnPropNameInTable="sUPPBUSSREGNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFQ_PaymentTerm" msdata:ReadOnly="true" msprop:Generator_UserColumnName="RFQ_PaymentTerm" msprop:Generator_ColumnVarNameInTable="columnRFQ_PaymentTerm" msprop:Generator_ColumnPropNameInRow="RFQ_PaymentTerm" msprop:Generator_ColumnPropNameInTable="RFQ_PaymentTermColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFQ_ShipmentTerm" msdata:ReadOnly="true" msprop:Generator_UserColumnName="RFQ_ShipmentTerm" msprop:Generator_ColumnVarNameInTable="columnRFQ_ShipmentTerm" msprop:Generator_ColumnPropNameInRow="RFQ_ShipmentTerm" msprop:Generator_ColumnPropNameInTable="RFQ_ShipmentTermColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFQ_ShipmentMode" msdata:ReadOnly="true" msprop:Generator_UserColumnName="RFQ_ShipmentMode" msprop:Generator_ColumnVarNameInTable="columnRFQ_ShipmentMode" msprop:Generator_ColumnPropNameInRow="RFQ_ShipmentMode" msprop:Generator_ColumnPropNameInTable="RFQ_ShipmentModeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_COY_ID" msprop:Generator_UserColumnName="CM_COY_ID" msprop:Generator_ColumnVarNameInTable="columnCM_COY_ID" msprop:Generator_ColumnPropNameInRow="CM_COY_ID" msprop:Generator_ColumnPropNameInTable="CM_COY_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_COY_NAME" msprop:Generator_UserColumnName="CM_COY_NAME" msprop:Generator_ColumnVarNameInTable="columnCM_COY_NAME" msprop:Generator_ColumnPropNameInRow="CM_COY_NAME" msprop:Generator_ColumnPropNameInTable="CM_COY_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_COY_TYPE" msprop:Generator_UserColumnName="CM_COY_TYPE" msprop:Generator_ColumnVarNameInTable="columnCM_COY_TYPE" msprop:Generator_ColumnPropNameInRow="CM_COY_TYPE" msprop:Generator_ColumnPropNameInTable="CM_COY_TYPEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_PARENT_COY_ID" msprop:Generator_UserColumnName="CM_PARENT_COY_ID" msprop:Generator_ColumnVarNameInTable="columnCM_PARENT_COY_ID" msprop:Generator_ColumnPropNameInRow="CM_PARENT_COY_ID" msprop:Generator_ColumnPropNameInTable="CM_PARENT_COY_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_ACCT_NO" msprop:Generator_UserColumnName="CM_ACCT_NO" msprop:Generator_ColumnVarNameInTable="columnCM_ACCT_NO" msprop:Generator_ColumnPropNameInRow="CM_ACCT_NO" msprop:Generator_ColumnPropNameInTable="CM_ACCT_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_BANK" msprop:Generator_UserColumnName="CM_BANK" msprop:Generator_ColumnVarNameInTable="columnCM_BANK" msprop:Generator_ColumnPropNameInRow="CM_BANK" msprop:Generator_ColumnPropNameInTable="CM_BANKColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_BRANCH" msprop:Generator_UserColumnName="CM_BRANCH" msprop:Generator_ColumnVarNameInTable="columnCM_BRANCH" msprop:Generator_ColumnPropNameInRow="CM_BRANCH" msprop:Generator_ColumnPropNameInTable="CM_BRANCHColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_ADDR_LINE1" msprop:Generator_UserColumnName="CM_ADDR_LINE1" msprop:Generator_ColumnVarNameInTable="columnCM_ADDR_LINE1" msprop:Generator_ColumnPropNameInRow="CM_ADDR_LINE1" msprop:Generator_ColumnPropNameInTable="CM_ADDR_LINE1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_ADDR_LINE2" msprop:Generator_UserColumnName="CM_ADDR_LINE2" msprop:Generator_ColumnVarNameInTable="columnCM_ADDR_LINE2" msprop:Generator_ColumnPropNameInRow="CM_ADDR_LINE2" msprop:Generator_ColumnPropNameInTable="CM_ADDR_LINE2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_ADDR_LINE3" msprop:Generator_UserColumnName="CM_ADDR_LINE3" msprop:Generator_ColumnVarNameInTable="columnCM_ADDR_LINE3" msprop:Generator_ColumnPropNameInRow="CM_ADDR_LINE3" msprop:Generator_ColumnPropNameInTable="CM_ADDR_LINE3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_POSTCODE" msprop:Generator_UserColumnName="CM_POSTCODE" msprop:Generator_ColumnVarNameInTable="columnCM_POSTCODE" msprop:Generator_ColumnPropNameInRow="CM_POSTCODE" msprop:Generator_ColumnPropNameInTable="CM_POSTCODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_CITY" msprop:Generator_UserColumnName="CM_CITY" msprop:Generator_ColumnVarNameInTable="columnCM_CITY" msprop:Generator_ColumnPropNameInRow="CM_CITY" msprop:Generator_ColumnPropNameInTable="CM_CITYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_STATE" msprop:Generator_UserColumnName="CM_STATE" msprop:Generator_ColumnVarNameInTable="columnCM_STATE" msprop:Generator_ColumnPropNameInRow="CM_STATE" msprop:Generator_ColumnPropNameInTable="CM_STATEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_COUNTRY" msprop:Generator_UserColumnName="CM_COUNTRY" msprop:Generator_ColumnVarNameInTable="columnCM_COUNTRY" msprop:Generator_ColumnPropNameInRow="CM_COUNTRY" msprop:Generator_ColumnPropNameInTable="CM_COUNTRYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_PHONE" msprop:Generator_UserColumnName="CM_PHONE" msprop:Generator_ColumnVarNameInTable="columnCM_PHONE" msprop:Generator_ColumnPropNameInRow="CM_PHONE" msprop:Generator_ColumnPropNameInTable="CM_PHONEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_FAX" msprop:Generator_UserColumnName="CM_FAX" msprop:Generator_ColumnVarNameInTable="columnCM_FAX" msprop:Generator_ColumnPropNameInRow="CM_FAX" msprop:Generator_ColumnPropNameInTable="CM_FAXColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_EMAIL" msprop:Generator_UserColumnName="CM_EMAIL" msprop:Generator_ColumnVarNameInTable="columnCM_EMAIL" msprop:Generator_ColumnPropNameInRow="CM_EMAIL" msprop:Generator_ColumnPropNameInTable="CM_EMAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_COY_LOGO" msprop:Generator_UserColumnName="CM_COY_LOGO" msprop:Generator_ColumnVarNameInTable="columnCM_COY_LOGO" msprop:Generator_ColumnPropNameInRow="CM_COY_LOGO" msprop:Generator_ColumnPropNameInTable="CM_COY_LOGOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_BUSINESS_REG_NO" msprop:Generator_UserColumnName="CM_BUSINESS_REG_NO" msprop:Generator_ColumnVarNameInTable="columnCM_BUSINESS_REG_NO" msprop:Generator_ColumnPropNameInRow="CM_BUSINESS_REG_NO" msprop:Generator_ColumnPropNameInTable="CM_BUSINESS_REG_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_TAX_REG_NO" msprop:Generator_UserColumnName="CM_TAX_REG_NO" msprop:Generator_ColumnVarNameInTable="columnCM_TAX_REG_NO" msprop:Generator_ColumnPropNameInRow="CM_TAX_REG_NO" msprop:Generator_ColumnPropNameInTable="CM_TAX_REG_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_PAYMENT_TERM" msprop:Generator_UserColumnName="CM_PAYMENT_TERM" msprop:Generator_ColumnVarNameInTable="columnCM_PAYMENT_TERM" msprop:Generator_ColumnPropNameInRow="CM_PAYMENT_TERM" msprop:Generator_ColumnPropNameInTable="CM_PAYMENT_TERMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_PAYMENT_METHOD" msprop:Generator_UserColumnName="CM_PAYMENT_METHOD" msprop:Generator_ColumnVarNameInTable="columnCM_PAYMENT_METHOD" msprop:Generator_ColumnPropNameInRow="CM_PAYMENT_METHOD" msprop:Generator_ColumnPropNameInTable="CM_PAYMENT_METHODColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_ACTUAL_TERMSANDCONDFILE" msprop:Generator_UserColumnName="CM_ACTUAL_TERMSANDCONDFILE" msprop:Generator_ColumnVarNameInTable="columnCM_ACTUAL_TERMSANDCONDFILE" msprop:Generator_ColumnPropNameInRow="CM_ACTUAL_TERMSANDCONDFILE" msprop:Generator_ColumnPropNameInTable="CM_ACTUAL_TERMSANDCONDFILEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_HUB_TERMSANDCONDFILE" msprop:Generator_UserColumnName="CM_HUB_TERMSANDCONDFILE" msprop:Generator_ColumnVarNameInTable="columnCM_HUB_TERMSANDCONDFILE" msprop:Generator_ColumnPropNameInRow="CM_HUB_TERMSANDCONDFILE" msprop:Generator_ColumnPropNameInTable="CM_HUB_TERMSANDCONDFILEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_PWD_DURATION" msprop:Generator_UserColumnName="CM_PWD_DURATION" msprop:Generator_ColumnVarNameInTable="columnCM_PWD_DURATION" msprop:Generator_ColumnPropNameInRow="CM_PWD_DURATION" msprop:Generator_ColumnPropNameInTable="CM_PWD_DURATIONColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CM_TAX_CALC_BY" msprop:Generator_UserColumnName="CM_TAX_CALC_BY" msprop:Generator_ColumnVarNameInTable="columnCM_TAX_CALC_BY" msprop:Generator_ColumnPropNameInRow="CM_TAX_CALC_BY" msprop:Generator_ColumnPropNameInTable="CM_TAX_CALC_BYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_CURRENCY_CODE" msprop:Generator_UserColumnName="CM_CURRENCY_CODE" msprop:Generator_ColumnVarNameInTable="columnCM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInRow="CM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInTable="CM_CURRENCY_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_BCM_SET" msprop:Generator_UserColumnName="CM_BCM_SET" msprop:Generator_ColumnVarNameInTable="columnCM_BCM_SET" msprop:Generator_ColumnPropNameInRow="CM_BCM_SET" msprop:Generator_ColumnPropNameInTable="CM_BCM_SETColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_BUDGET_FROM_DATE" msprop:Generator_UserColumnName="CM_BUDGET_FROM_DATE" msprop:Generator_ColumnVarNameInTable="columnCM_BUDGET_FROM_DATE" msprop:Generator_ColumnPropNameInRow="CM_BUDGET_FROM_DATE" msprop:Generator_ColumnPropNameInTable="CM_BUDGET_FROM_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CM_BUDGET_TO_DATE" msprop:Generator_UserColumnName="CM_BUDGET_TO_DATE" msprop:Generator_ColumnVarNameInTable="columnCM_BUDGET_TO_DATE" msprop:Generator_ColumnPropNameInRow="CM_BUDGET_TO_DATE" msprop:Generator_ColumnPropNameInTable="CM_BUDGET_TO_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CM_RFQ_OPTION" msprop:Generator_UserColumnName="CM_RFQ_OPTION" msprop:Generator_ColumnVarNameInTable="columnCM_RFQ_OPTION" msprop:Generator_ColumnPropNameInRow="CM_RFQ_OPTION" msprop:Generator_ColumnPropNameInTable="CM_RFQ_OPTIONColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_LICENCE_PACKAGE" msprop:Generator_UserColumnName="CM_LICENCE_PACKAGE" msprop:Generator_ColumnVarNameInTable="columnCM_LICENCE_PACKAGE" msprop:Generator_ColumnPropNameInRow="CM_LICENCE_PACKAGE" msprop:Generator_ColumnPropNameInTable="CM_LICENCE_PACKAGEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_LICENSE_USERS" msprop:Generator_UserColumnName="CM_LICENSE_USERS" msprop:Generator_ColumnVarNameInTable="columnCM_LICENSE_USERS" msprop:Generator_ColumnPropNameInRow="CM_LICENSE_USERS" msprop:Generator_ColumnPropNameInTable="CM_LICENSE_USERSColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CM_SUB_START_DT" msprop:Generator_UserColumnName="CM_SUB_START_DT" msprop:Generator_ColumnVarNameInTable="columnCM_SUB_START_DT" msprop:Generator_ColumnPropNameInRow="CM_SUB_START_DT" msprop:Generator_ColumnPropNameInTable="CM_SUB_START_DTColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CM_SUB_END_DT" msprop:Generator_UserColumnName="CM_SUB_END_DT" msprop:Generator_ColumnVarNameInTable="columnCM_SUB_END_DT" msprop:Generator_ColumnPropNameInRow="CM_SUB_END_DT" msprop:Generator_ColumnPropNameInTable="CM_SUB_END_DTColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CM_LICENSE_PRODUCTS" msprop:Generator_UserColumnName="CM_LICENSE_PRODUCTS" msprop:Generator_ColumnVarNameInTable="columnCM_LICENSE_PRODUCTS" msprop:Generator_ColumnPropNameInRow="CM_LICENSE_PRODUCTS" msprop:Generator_ColumnPropNameInTable="CM_LICENSE_PRODUCTSColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CM_FINDEPT_MODE" msprop:Generator_UserColumnName="CM_FINDEPT_MODE" msprop:Generator_ColumnVarNameInTable="columnCM_FINDEPT_MODE" msprop:Generator_ColumnPropNameInRow="CM_FINDEPT_MODE" msprop:Generator_ColumnPropNameInTable="CM_FINDEPT_MODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_PRIV_LABELING" msprop:Generator_UserColumnName="CM_PRIV_LABELING" msprop:Generator_ColumnVarNameInTable="columnCM_PRIV_LABELING" msprop:Generator_ColumnPropNameInRow="CM_PRIV_LABELING" msprop:Generator_ColumnPropNameInTable="CM_PRIV_LABELINGColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_SKINS_ID" msprop:Generator_UserColumnName="CM_SKINS_ID" msprop:Generator_ColumnVarNameInTable="columnCM_SKINS_ID" msprop:Generator_ColumnPropNameInRow="CM_SKINS_ID" msprop:Generator_ColumnPropNameInTable="CM_SKINS_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_TRAINING" msprop:Generator_UserColumnName="CM_TRAINING" msprop:Generator_ColumnVarNameInTable="columnCM_TRAINING" msprop:Generator_ColumnPropNameInRow="CM_TRAINING" msprop:Generator_ColumnPropNameInTable="CM_TRAININGColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_STATUS" msprop:Generator_UserColumnName="CM_STATUS" msprop:Generator_ColumnVarNameInTable="columnCM_STATUS" msprop:Generator_ColumnPropNameInRow="CM_STATUS" msprop:Generator_ColumnPropNameInTable="CM_STATUSColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_DELETED" msprop:Generator_UserColumnName="CM_DELETED" msprop:Generator_ColumnVarNameInTable="columnCM_DELETED" msprop:Generator_ColumnPropNameInRow="CM_DELETED" msprop:Generator_ColumnPropNameInTable="CM_DELETEDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_MOD_BY" msprop:Generator_UserColumnName="CM_MOD_BY" msprop:Generator_ColumnVarNameInTable="columnCM_MOD_BY" msprop:Generator_ColumnPropNameInRow="CM_MOD_BY" msprop:Generator_ColumnPropNameInTable="CM_MOD_BYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_MOD_DT" msprop:Generator_UserColumnName="CM_MOD_DT" msprop:Generator_ColumnVarNameInTable="columnCM_MOD_DT" msprop:Generator_ColumnPropNameInRow="CM_MOD_DT" msprop:Generator_ColumnPropNameInTable="CM_MOD_DTColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CM_ENT_BY" msprop:Generator_UserColumnName="CM_ENT_BY" msprop:Generator_ColumnVarNameInTable="columnCM_ENT_BY" msprop:Generator_ColumnPropNameInRow="CM_ENT_BY" msprop:Generator_ColumnPropNameInTable="CM_ENT_BYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_ENT_DT" msprop:Generator_UserColumnName="CM_ENT_DT" msprop:Generator_ColumnVarNameInTable="columnCM_ENT_DT" msprop:Generator_ColumnPropNameInRow="CM_ENT_DT" msprop:Generator_ColumnPropNameInTable="CM_ENT_DTColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CM_SKU" msprop:Generator_UserColumnName="CM_SKU" msprop:Generator_ColumnVarNameInTable="columnCM_SKU" msprop:Generator_ColumnPropNameInRow="CM_SKU" msprop:Generator_ColumnPropNameInTable="CM_SKUColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CM_TRANS_NO" msprop:Generator_UserColumnName="CM_TRANS_NO" msprop:Generator_ColumnVarNameInTable="columnCM_TRANS_NO" msprop:Generator_ColumnPropNameInRow="CM_TRANS_NO" msprop:Generator_ColumnPropNameInTable="CM_TRANS_NOColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CM_CONTACT" msprop:Generator_UserColumnName="CM_CONTACT" msprop:Generator_ColumnVarNameInTable="columnCM_CONTACT" msprop:Generator_ColumnPropNameInRow="CM_CONTACT" msprop:Generator_ColumnPropNameInTable="CM_CONTACTColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_REPORT_USERS" msprop:Generator_UserColumnName="CM_REPORT_USERS" msprop:Generator_ColumnVarNameInTable="columnCM_REPORT_USERS" msprop:Generator_ColumnPropNameInRow="CM_REPORT_USERS" msprop:Generator_ColumnPropNameInTable="CM_REPORT_USERSColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CM_INV_APPR" msprop:Generator_UserColumnName="CM_INV_APPR" msprop:Generator_ColumnVarNameInTable="columnCM_INV_APPR" msprop:Generator_ColumnPropNameInRow="CM_INV_APPR" msprop:Generator_ColumnPropNameInTable="CM_INV_APPRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_MULTI_PO" msprop:Generator_UserColumnName="CM_MULTI_PO" msprop:Generator_ColumnVarNameInTable="columnCM_MULTI_PO" msprop:Generator_ColumnPropNameInRow="CM_MULTI_PO" msprop:Generator_ColumnPropNameInTable="CM_MULTI_POColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_BA_CANCEL" msprop:Generator_UserColumnName="CM_BA_CANCEL" msprop:Generator_ColumnVarNameInTable="columnCM_BA_CANCEL" msprop:Generator_ColumnPropNameInRow="CM_BA_CANCEL" msprop:Generator_ColumnPropNameInTable="CM_BA_CANCELColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFQ_PaymentMethod" msdata:ReadOnly="true" msprop:Generator_UserColumnName="RFQ_PaymentMethod" msprop:Generator_ColumnVarNameInTable="columnRFQ_PaymentMethod" msprop:Generator_ColumnPropNameInRow="RFQ_PaymentMethod" msprop:Generator_ColumnPropNameInTable="RFQ_PaymentMethodColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RD_ITEM_TYPE" msprop:Generator_UserColumnName="RD_ITEM_TYPE" msprop:Generator_ColumnPropNameInRow="RD_ITEM_TYPE" msprop:Generator_ColumnVarNameInTable="columnRD_ITEM_TYPE" msprop:Generator_ColumnPropNameInTable="RD_ITEM_TYPEColumn" type="xs:string" />
+              <xs:element name="DeliveryTerm" msprop:Generator_UserColumnName="DeliveryTerm" msprop:Generator_ColumnPropNameInRow="DeliveryTerm" msprop:Generator_ColumnVarNameInTable="columnDeliveryTerm" msprop:Generator_ColumnPropNameInTable="DeliveryTermColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTablePreviewRFQ" />
+      <xs:field xpath="mstns:RM_Coy_ID" />
+      <xs:field xpath="mstns:RM_RFQ_No" />
+      <xs:field xpath="mstns:RD_RFQ_ID" />
+      <xs:field xpath="mstns:RD_Coy_ID" />
+      <xs:field xpath="mstns:RD_RFQ_Line" />
+      <xs:field xpath="mstns:RIV_RFQ_ID" />
+      <xs:field xpath="mstns:RIV_S_Coy_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

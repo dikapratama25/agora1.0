@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OutstandingPO" targetNamespace="http://tempuri.org/OutstandingPO.xsd" xmlns:mstns="http://tempuri.org/OutstandingPO.xsd" xmlns="http://tempuri.org/OutstandingPO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1"  omponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="eprocureConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.eAdmin.My.MySettings.GlobalReference.Default.eprocureConnectionString1" Provider="MySql.Data.MySqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetOutstandingPOTableAdapter" GeneratorDataComponentClassName="DataSetOutstandingPOTableAdapter" Name="DataSetOutstandingPO" UserDataComponentName="DataSetOutstandingPOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString1 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     po_details.POD_PO_NO, PM.POM_CREATED_DATE, PM.POM_PO_DATE, po_details.POD_ETD, PM.POM_S_COY_NAME, 
+                      po_details.POD_VENDOR_ITEM_CODE, po_details.POD_PRODUCT_DESC, po_details.POD_ORDERED_QTY AS POQty, SUM(do_details.DOD_DO_QTY)
+                       AS DOQty, SUM(grn_details.GD_RECEIVED_QTY) AS GRNQty, po_details.POD_REJECTED_QTY, po_details.POD_ORDERED_QTY, 
+                      po_details.POD_DELIVERED_QTY, po_details.POD_CANCELLED_QTY, company_mstr.CM_COY_NAME, PM.POM_BUYER_ID
+FROM         po_mstr PM INNER JOIN
+                      company_mstr ON PM.POM_B_COY_ID = company_mstr.CM_COY_ID INNER JOIN
+                      po_details ON po_details.POD_COY_ID = PM.POM_B_COY_ID AND po_details.POD_PO_NO = PM.POM_PO_NO LEFT OUTER JOIN
+                      do_mstr ON do_mstr.DOM_PO_INDEX = PM.POM_PO_INDEX LEFT OUTER JOIN
+                      do_details ON do_mstr.DOM_DO_NO = do_details.DOD_DO_NO AND do_details.DOD_PO_LINE = po_details.POD_PO_LINE LEFT OUTER JOIN
+                      grn_mstr ON grn_mstr.GM_DO_INDEX = do_mstr.DOM_DO_INDEX AND grn_mstr.GM_PO_INDEX = PM.POM_PO_INDEX LEFT OUTER JOIN
+                      grn_details ON grn_details.GD_GRN_NO = grn_mstr.GM_GRN_NO AND grn_mstr.GM_B_COY_ID = grn_details.GD_B_COY_ID AND 
+                      grn_details.GD_PO_LINE = po_details.POD_PO_LINE
+WHERE     (PM.POM_B_COY_ID = 'tanac') AND (PM.POM_PO_STATUS IN (1, 2, 3)) AND 
+                      (po_details.POD_ORDERED_QTY - po_details.POD_DELIVERED_QTY - po_details.POD_CANCELLED_QTY &gt; 0) AND 
+                      (CURRENT_DATE &gt; PM.POM_PO_DATE)
+GROUP BY PM.POM_PO_NO, po_details.POD_PO_LINE</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="POD_PO_NO" DataSetColumn="POD_PO_NO" />
+              <Mapping SourceColumn="POM_CREATED_DATE" DataSetColumn="POM_CREATED_DATE" />
+              <Mapping SourceColumn="POM_PO_DATE" DataSetColumn="POM_PO_DATE" />
+              <Mapping SourceColumn="POD_ETD" DataSetColumn="POD_ETD" />
+              <Mapping SourceColumn="POM_S_COY_NAME" DataSetColumn="POM_S_COY_NAME" />
+              <Mapping SourceColumn="POD_VENDOR_ITEM_CODE" DataSetColumn="POD_VENDOR_ITEM_CODE" />
+              <Mapping SourceColumn="POD_PRODUCT_DESC" DataSetColumn="POD_PRODUCT_DESC" />
+              <Mapping SourceColumn="POQty" DataSetColumn="POQty" />
+              <Mapping SourceColumn="DOQty" DataSetColumn="DOQty" />
+              <Mapping SourceColumn="GRNQty" DataSetColumn="GRNQty" />
+              <Mapping SourceColumn="POD_REJECTED_QTY" DataSetColumn="POD_REJECTED_QTY" />
+              <Mapping SourceColumn="POD_ORDERED_QTY" DataSetColumn="POD_ORDERED_QTY" />
+              <Mapping SourceColumn="POD_DELIVERED_QTY" DataSetColumn="POD_DELIVERED_QTY" />
+              <Mapping SourceColumn="POD_CANCELLED_QTY" DataSetColumn="POD_CANCELLED_QTY" />
+              <Mapping SourceColumn="CM_COY_NAME" DataSetColumn="CM_COY_NAME" />
+              <Mapping SourceColumn="POM_BUYER_ID" DataSetColumn="POM_BUYER_ID" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OutstandingPO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OutstandingPO" msprop:Generator_DataSetName="OutstandingPO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetOutstandingPO" msprop:Generator_UserTableName="DataSetOutstandingPO" msprop:Generator_RowDeletedName="DataSetOutstandingPORowDeleted" msprop:Generator_RowChangedName="DataSetOutstandingPORowChanged" msprop:Generator_RowClassName="DataSetOutstandingPORow" msprop:Generator_RowChangingName="DataSetOutstandingPORowChanging" msprop:Generator_RowEvArgName="DataSetOutstandingPORowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetOutstandingPORowChangeEventHandler" msprop:Generator_TableClassName="DataSetOutstandingPODataTable" msprop:Generator_TableVarName="tableDataSetOutstandingPO" msprop:Generator_RowDeletingName="DataSetOutstandingPORowDeleting" msprop:Generator_TablePropName="DataSetOutstandingPO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="POD_PO_NO" msprop:Generator_UserColumnName="POD_PO_NO" msprop:Generator_ColumnVarNameInTable="columnPOD_PO_NO" msprop:Generator_ColumnPropNameInRow="POD_PO_NO" msprop:Generator_ColumnPropNameInTable="POD_PO_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POM_CREATED_DATE" msprop:Generator_UserColumnName="POM_CREATED_DATE" msprop:Generator_ColumnVarNameInTable="columnPOM_CREATED_DATE" msprop:Generator_ColumnPropNameInRow="POM_CREATED_DATE" msprop:Generator_ColumnPropNameInTable="POM_CREATED_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="POM_PO_DATE" msprop:Generator_UserColumnName="POM_PO_DATE" msprop:Generator_ColumnVarNameInTable="columnPOM_PO_DATE" msprop:Generator_ColumnPropNameInRow="POM_PO_DATE" msprop:Generator_ColumnPropNameInTable="POM_PO_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="POD_ETD" msprop:Generator_UserColumnName="POD_ETD" msprop:Generator_ColumnVarNameInTable="columnPOD_ETD" msprop:Generator_ColumnPropNameInRow="POD_ETD" msprop:Generator_ColumnPropNameInTable="POD_ETDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="POM_S_COY_NAME" msprop:Generator_UserColumnName="POM_S_COY_NAME" msprop:Generator_ColumnVarNameInTable="columnPOM_S_COY_NAME" msprop:Generator_ColumnPropNameInRow="POM_S_COY_NAME" msprop:Generator_ColumnPropNameInTable="POM_S_COY_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POD_VENDOR_ITEM_CODE" msprop:Generator_UserColumnName="POD_VENDOR_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnPOD_VENDOR_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="POD_VENDOR_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="POD_VENDOR_ITEM_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POD_PRODUCT_DESC" msprop:Generator_UserColumnName="POD_PRODUCT_DESC" msprop:Generator_ColumnVarNameInTable="columnPOD_PRODUCT_DESC" msprop:Generator_ColumnPropNameInRow="POD_PRODUCT_DESC" msprop:Generator_ColumnPropNameInTable="POD_PRODUCT_DESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POQty" msprop:Generator_UserColumnName="POQty" msprop:Generator_ColumnVarNameInTable="columnPOQty" msprop:Generator_ColumnPropNameInRow="POQty" msprop:Generator_ColumnPropNameInTable="POQtyColumn" type="xs:long" />
+              <xs:element name="DOQty" msprop:Generator_UserColumnName="DOQty" msprop:Generator_ColumnVarNameInTable="columnDOQty" msprop:Generator_ColumnPropNameInRow="DOQty" msprop:Generator_ColumnPropNameInTable="DOQtyColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GRNQty" msprop:Generator_UserColumnName="GRNQty" msprop:Generator_ColumnVarNameInTable="columnGRNQty" msprop:Generator_ColumnPropNameInRow="GRNQty" msprop:Generator_ColumnPropNameInTable="GRNQtyColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="POD_REJECTED_QTY" msprop:Generator_UserColumnName="POD_REJECTED_QTY" msprop:Generator_ColumnVarNameInTable="columnPOD_REJECTED_QTY" msprop:Generator_ColumnPropNameInRow="POD_REJECTED_QTY" msprop:Generator_ColumnPropNameInTable="POD_REJECTED_QTYColumn" type="xs:int" />
+              <xs:element name="POD_ORDERED_QTY" msprop:Generator_UserColumnName="POD_ORDERED_QTY" msprop:Generator_ColumnVarNameInTable="columnPOD_ORDERED_QTY" msprop:Generator_ColumnPropNameInRow="POD_ORDERED_QTY" msprop:Generator_ColumnPropNameInTable="POD_ORDERED_QTYColumn" type="xs:long" />
+              <xs:element name="POD_DELIVERED_QTY" msprop:Generator_UserColumnName="POD_DELIVERED_QTY" msprop:Generator_ColumnVarNameInTable="columnPOD_DELIVERED_QTY" msprop:Generator_ColumnPropNameInRow="POD_DELIVERED_QTY" msprop:Generator_ColumnPropNameInTable="POD_DELIVERED_QTYColumn" type="xs:int" />
+              <xs:element name="POD_CANCELLED_QTY" msprop:Generator_UserColumnName="POD_CANCELLED_QTY" msprop:Generator_ColumnVarNameInTable="columnPOD_CANCELLED_QTY" msprop:Generator_ColumnPropNameInRow="POD_CANCELLED_QTY" msprop:Generator_ColumnPropNameInTable="POD_CANCELLED_QTYColumn" type="xs:int" />
+              <xs:element name="CM_COY_NAME" msprop:Generator_UserColumnName="CM_COY_NAME" msprop:Generator_ColumnVarNameInTable="columnCM_COY_NAME" msprop:Generator_ColumnPropNameInRow="CM_COY_NAME" msprop:Generator_ColumnPropNameInTable="CM_COY_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POM_BUYER_ID" msprop:Generator_UserColumnName="POM_BUYER_ID" msprop:Generator_ColumnVarNameInTable="columnPOM_BUYER_ID" msprop:Generator_ColumnPropNameInRow="POM_BUYER_ID" msprop:Generator_ColumnPropNameInTable="POM_BUYER_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataSetOutstandingPO" />
+      <xs:field xpath="mstns:POD_PO_NO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

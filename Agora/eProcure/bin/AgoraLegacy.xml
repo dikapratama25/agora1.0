@@ -1,0 +1,119 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AgoraLegacy
+</name>
+</assembly>
+<members>
+<member name="T:My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:getAccess.checkaccess">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.#ctor">
+<remarks/>
+</member>
+<member name="E:getAccess.checkaccess.CallcheckaccessCompleted">
+<remarks/>
+</member>
+<member name="E:getAccess.checkaccess.syncaccountCompleted">
+<remarks/>
+</member>
+<member name="E:getAccess.checkaccess.syncdetailCompleted">
+<remarks/>
+</member>
+<member name="E:getAccess.checkaccess.getCompanyTypeCompleted">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.Callcheckaccess(System.String)">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.CallcheckaccessAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.CallcheckaccessAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.syncaccount(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.syncaccountAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.syncaccountAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.syncdetail(System.String)">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.syncdetailAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.syncdetailAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.getCompanyType(System.String)">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.getCompanyTypeAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.getCompanyTypeAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:getAccess.checkaccess.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:getAccess.CallcheckaccessCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:getAccess.CallcheckaccessCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:getAccess.CallcheckaccessCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:getAccess.syncaccountCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:getAccess.syncaccountCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:getAccess.syncaccountCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:getAccess.syncdetailCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:getAccess.syncdetailCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:getAccess.syncdetailCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:getAccess.getCompanyTypeCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:getAccess.getCompanyTypeCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:getAccess.getCompanyTypeCompletedEventArgs.Result">
+<remarks/>
+</member>
+</members>
+</doc>

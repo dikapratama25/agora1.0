@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="POBalance" targetNamespace="http://tempuri.org/POBalance.xsd" xmlns:mstns="http://tempuri.org/POBalance.xsd" xmlns="http://tempuri.org/POBalance.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetPOBalanceTableAdapter" GeneratorDataComponentClassName="DataSetPOBalanceTableAdapter" Name="DataSetPOBalance" UserDataComponentName="DataSetPOBalanceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString1 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS POD_VENDOR_ITEM_CODE, '' AS POD_PO_NO, '' AS POM_PO_DATE, '' AS POD_EDD, '' AS POD_ORDERED_QTY, '' AS POD_RECEIVED_QTY, '' AS POD_BAL_QTY, '' AS POM_VENDOR_CODE, '' AS POM_CURRENCY_CODE, '' AS POD_UNIT_COST, '' AS POM_DEL_CODE FROM PO_MSTR</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="POD_VENDOR_ITEM_CODE" DataSetColumn="POD_VENDOR_ITEM_CODE" />
+              <Mapping SourceColumn="POD_PO_NO" DataSetColumn="POD_PO_NO" />
+              <Mapping SourceColumn="POM_PO_DATE" DataSetColumn="POM_PO_DATE" />
+              <Mapping SourceColumn="POD_EDD" DataSetColumn="POD_EDD" />
+              <Mapping SourceColumn="POD_ORDERED_QTY" DataSetColumn="POD_ORDERED_QTY" />
+              <Mapping SourceColumn="POD_RECEIVED_QTY" DataSetColumn="POD_RECEIVED_QTY" />
+              <Mapping SourceColumn="POD_BAL_QTY" DataSetColumn="POD_BAL_QTY" />
+              <Mapping SourceColumn="POM_VENDOR_CODE" DataSetColumn="POM_VENDOR_CODE" />
+              <Mapping SourceColumn="POM_CURRENCY_CODE" DataSetColumn="POM_CURRENCY_CODE" />
+              <Mapping SourceColumn="POD_UNIT_COST" DataSetColumn="POD_UNIT_COST" />
+              <Mapping SourceColumn="POM_DEL_CODE" DataSetColumn="POM_DEL_CODE" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="POBalance" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="POBalance" msprop:Generator_DataSetName="POBalance">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetPOBalance" msprop:Generator_UserTableName="DataSetPOBalance" msprop:Generator_RowDeletedName="DataSetPOBalanceRowDeleted" msprop:Generator_TableClassName="DataSetPOBalanceDataTable" msprop:Generator_RowChangedName="DataSetPOBalanceRowChanged" msprop:Generator_RowClassName="DataSetPOBalanceRow" msprop:Generator_RowChangingName="DataSetPOBalanceRowChanging" msprop:Generator_RowEvArgName="DataSetPOBalanceRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetPOBalanceRowChangeEventHandler" msprop:Generator_TablePropName="DataSetPOBalance" msprop:Generator_TableVarName="tableDataSetPOBalance" msprop:Generator_RowDeletingName="DataSetPOBalanceRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="POD_VENDOR_ITEM_CODE" msprop:Generator_UserColumnName="POD_VENDOR_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="POD_VENDOR_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnPOD_VENDOR_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="POD_VENDOR_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="POD_PO_NO" msprop:Generator_UserColumnName="POD_PO_NO" msprop:Generator_ColumnPropNameInRow="POD_PO_NO" msprop:Generator_ColumnVarNameInTable="columnPOD_PO_NO" msprop:Generator_ColumnPropNameInTable="POD_PO_NOColumn" type="xs:string" />
+              <xs:element name="POM_PO_DATE" msprop:Generator_UserColumnName="POM_PO_DATE" msprop:Generator_ColumnPropNameInRow="POM_PO_DATE" msprop:Generator_ColumnVarNameInTable="columnPOM_PO_DATE" msprop:Generator_ColumnPropNameInTable="POM_PO_DATEColumn" type="xs:string" />
+              <xs:element name="POD_EDD" msprop:Generator_UserColumnName="POD_EDD" msprop:Generator_ColumnPropNameInRow="POD_EDD" msprop:Generator_ColumnVarNameInTable="columnPOD_EDD" msprop:Generator_ColumnPropNameInTable="POD_EDDColumn" type="xs:string" />
+              <xs:element name="POD_ORDERED_QTY" msprop:Generator_UserColumnName="POD_ORDERED_QTY" msprop:Generator_ColumnPropNameInRow="POD_ORDERED_QTY" msprop:Generator_ColumnVarNameInTable="columnPOD_ORDERED_QTY" msprop:Generator_ColumnPropNameInTable="POD_ORDERED_QTYColumn" type="xs:string" />
+              <xs:element name="POD_RECEIVED_QTY" msprop:Generator_UserColumnName="POD_RECEIVED_QTY" msprop:Generator_ColumnPropNameInRow="POD_RECEIVED_QTY" msprop:Generator_ColumnVarNameInTable="columnPOD_RECEIVED_QTY" msprop:Generator_ColumnPropNameInTable="POD_RECEIVED_QTYColumn" type="xs:string" />
+              <xs:element name="POD_BAL_QTY" msprop:Generator_UserColumnName="POD_BAL_QTY" msprop:Generator_ColumnPropNameInRow="POD_BAL_QTY" msprop:Generator_ColumnVarNameInTable="columnPOD_BAL_QTY" msprop:Generator_ColumnPropNameInTable="POD_BAL_QTYColumn" type="xs:string" />
+              <xs:element name="POM_VENDOR_CODE" msprop:Generator_UserColumnName="POM_VENDOR_CODE" msprop:Generator_ColumnPropNameInRow="POM_VENDOR_CODE" msprop:Generator_ColumnVarNameInTable="columnPOM_VENDOR_CODE" msprop:Generator_ColumnPropNameInTable="POM_VENDOR_CODEColumn" type="xs:string" />
+              <xs:element name="POM_CURRENCY_CODE" msprop:Generator_UserColumnName="POM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInRow="POM_CURRENCY_CODE" msprop:Generator_ColumnVarNameInTable="columnPOM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInTable="POM_CURRENCY_CODEColumn" type="xs:string" />
+              <xs:element name="POD_UNIT_COST" msprop:Generator_UserColumnName="POD_UNIT_COST" msprop:Generator_ColumnPropNameInRow="POD_UNIT_COST" msprop:Generator_ColumnVarNameInTable="columnPOD_UNIT_COST" msprop:Generator_ColumnPropNameInTable="POD_UNIT_COSTColumn" type="xs:string" />
+              <xs:element name="POM_DEL_CODE" msprop:Generator_UserColumnName="POM_DEL_CODE" msprop:Generator_ColumnPropNameInRow="POM_DEL_CODE" msprop:Generator_ColumnVarNameInTable="columnPOM_DEL_CODE" msprop:Generator_ColumnPropNameInTable="POM_DEL_CODEColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

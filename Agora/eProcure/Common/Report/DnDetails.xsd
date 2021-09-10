@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DnDetails" targetNamespace="http://tempuri.org/DnDetails.xsd" xmlns:mstns="http://tempuri.org/DnDetails.xsd" xmlns="http://tempuri.org/DnDetails.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString2.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString2 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT DNM_DN_NO, DNM_CREATED_DATE, DNM_DN_S_COY_ID AS COY_S_NAME, DNM_DN_B_COY_ID AS COY_B_NAME, STATUS_DESC, DNM_INV_NO,  
+ID_B_ITEM_CODE, ID_PRODUCT_DESC, ID_UOM, DND_QTY, DNM_CURRENCY_CODE, DNM_EXCHANGE_RATE, DND_UNIT_COST, ID_GST
+FROM DEBIT_NOTE_DETAILS
+INNER JOIN DEBIT_NOTE_MSTR ON DND_DN_S_COY_ID = DNM_DN_S_COY_ID AND DND_DN_NO = DNM_DN_NO
+INNER JOIN INVOICE_MSTR ON DNM_DN_S_COY_ID = IM_S_COY_ID AND DNM_INV_NO = IM_INVOICE_NO
+INNER JOIN INVOICE_DETAILS ON IM_INVOICE_NO = ID_INVOICE_NO AND IM_S_COY_ID = ID_S_COY_ID AND DND_INV_LINE = ID_INVOICE_LINE
+INNER JOIN STATUS_MSTR ON STATUS_TYPE = 'DN' AND DNM_DN_STATUS = STATUS_NO</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DNM_DN_NO" DataSetColumn="DNM_DN_NO" />
+              <Mapping SourceColumn="DNM_CREATED_DATE" DataSetColumn="DNM_CREATED_DATE" />
+              <Mapping SourceColumn="COY_S_NAME" DataSetColumn="COY_S_NAME" />
+              <Mapping SourceColumn="COY_B_NAME" DataSetColumn="COY_B_NAME" />
+              <Mapping SourceColumn="STATUS_DESC" DataSetColumn="STATUS_DESC" />
+              <Mapping SourceColumn="DNM_INV_NO" DataSetColumn="DNM_INV_NO" />
+              <Mapping SourceColumn="ID_B_ITEM_CODE" DataSetColumn="ID_B_ITEM_CODE" />
+              <Mapping SourceColumn="ID_PRODUCT_DESC" DataSetColumn="ID_PRODUCT_DESC" />
+              <Mapping SourceColumn="ID_UOM" DataSetColumn="ID_UOM" />
+              <Mapping SourceColumn="DND_QTY" DataSetColumn="DND_QTY" />
+              <Mapping SourceColumn="DNM_CURRENCY_CODE" DataSetColumn="DNM_CURRENCY_CODE" />
+              <Mapping SourceColumn="DNM_EXCHANGE_RATE" DataSetColumn="DNM_EXCHANGE_RATE" />
+              <Mapping SourceColumn="DND_UNIT_COST" DataSetColumn="DND_UNIT_COST" />
+              <Mapping SourceColumn="ID_GST" DataSetColumn="ID_GST" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DnDetails" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DnDetails" msprop:Generator_DataSetName="DnDetails">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TablePropName="DataTable1" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DNM_DN_NO" msprop:Generator_UserColumnName="DNM_DN_NO" msprop:Generator_ColumnPropNameInRow="DNM_DN_NO" msprop:Generator_ColumnVarNameInTable="columnDNM_DN_NO" msprop:Generator_ColumnPropNameInTable="DNM_DN_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DNM_CREATED_DATE" msprop:Generator_UserColumnName="DNM_CREATED_DATE" msprop:Generator_ColumnPropNameInRow="DNM_CREATED_DATE" msprop:Generator_ColumnVarNameInTable="columnDNM_CREATED_DATE" msprop:Generator_ColumnPropNameInTable="DNM_CREATED_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COY_S_NAME" msprop:Generator_UserColumnName="COY_S_NAME" msprop:Generator_ColumnPropNameInRow="COY_S_NAME" msprop:Generator_ColumnVarNameInTable="columnCOY_S_NAME" msprop:Generator_ColumnPropNameInTable="COY_S_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COY_B_NAME" msprop:Generator_UserColumnName="COY_B_NAME" msprop:Generator_ColumnPropNameInRow="COY_B_NAME" msprop:Generator_ColumnVarNameInTable="columnCOY_B_NAME" msprop:Generator_ColumnPropNameInTable="COY_B_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS_DESC" msprop:Generator_UserColumnName="STATUS_DESC" msprop:Generator_ColumnPropNameInRow="STATUS_DESC" msprop:Generator_ColumnVarNameInTable="columnSTATUS_DESC" msprop:Generator_ColumnPropNameInTable="STATUS_DESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DNM_INV_NO" msprop:Generator_UserColumnName="DNM_INV_NO" msprop:Generator_ColumnPropNameInRow="DNM_INV_NO" msprop:Generator_ColumnVarNameInTable="columnDNM_INV_NO" msprop:Generator_ColumnPropNameInTable="DNM_INV_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_B_ITEM_CODE" msprop:Generator_UserColumnName="ID_B_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="ID_B_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnID_B_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="ID_B_ITEM_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_PRODUCT_DESC" msprop:Generator_UserColumnName="ID_PRODUCT_DESC" msprop:Generator_ColumnPropNameInRow="ID_PRODUCT_DESC" msprop:Generator_ColumnVarNameInTable="columnID_PRODUCT_DESC" msprop:Generator_ColumnPropNameInTable="ID_PRODUCT_DESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_UOM" msprop:Generator_UserColumnName="ID_UOM" msprop:Generator_ColumnPropNameInRow="ID_UOM" msprop:Generator_ColumnVarNameInTable="columnID_UOM" msprop:Generator_ColumnPropNameInTable="ID_UOMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DND_QTY" msprop:Generator_UserColumnName="DND_QTY" msprop:Generator_ColumnPropNameInRow="DND_QTY" msprop:Generator_ColumnVarNameInTable="columnDND_QTY" msprop:Generator_ColumnPropNameInTable="DND_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DNM_CURRENCY_CODE" msprop:Generator_UserColumnName="DNM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInRow="DNM_CURRENCY_CODE" msprop:Generator_ColumnVarNameInTable="columnDNM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInTable="DNM_CURRENCY_CODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DNM_EXCHANGE_RATE" msprop:Generator_UserColumnName="DNM_EXCHANGE_RATE" msprop:Generator_ColumnPropNameInRow="DNM_EXCHANGE_RATE" msprop:Generator_ColumnVarNameInTable="columnDNM_EXCHANGE_RATE" msprop:Generator_ColumnPropNameInTable="DNM_EXCHANGE_RATEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DND_UNIT_COST" msprop:Generator_UserColumnName="DND_UNIT_COST" msprop:Generator_ColumnPropNameInRow="DND_UNIT_COST" msprop:Generator_ColumnVarNameInTable="columnDND_UNIT_COST" msprop:Generator_ColumnPropNameInTable="DND_UNIT_COSTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ID_GST" msprop:Generator_UserColumnName="ID_GST" msprop:Generator_ColumnPropNameInRow="ID_GST" msprop:Generator_ColumnVarNameInTable="columnID_GST" msprop:Generator_ColumnPropNameInTable="ID_GSTColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

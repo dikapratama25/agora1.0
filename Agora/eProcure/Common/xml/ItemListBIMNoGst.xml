@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Format>
+	<Catalog>
+	    <ReadArea>
+			<Sheet>BIM</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>AU</ColTo>
+			<RowFrom>2</RowFrom>
+			<RowTo>501</RowTo>
+		</ReadArea>
+		
+		<Column>
+			<ColNo>0</ColNo>
+			<ColName>No</ColName>
+			<DBField></DBField>
+			<AllowNUll>FALSE</AllowNUll>                 
+			<Regex>^\d*$</Regex>
+			<RegexErrMsg>Row No is expecting integer value.</RegexErrMsg> 
+		</Column>
+		
+		<Column>
+			<ColNo>1</ColNo>
+			<ColName>Item Code</ColName>
+			<DBField>PM_VENDOR_ITEM_CODE</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex>^[ |\S]{0,100}$</Regex>
+			<RegexErrMsg>Item Code maximum length is 100.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>2</ColNo>
+			<ColName>Item Name</ColName>
+			<DBField>PM_PRODUCT_DESC</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex>^[ |\S\r\n\t]{0,500}$</Regex>
+			<RegexErrMsg>Item Code Description maximum length is 500.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>3</ColNo>
+			<ColName>Item Type</ColName>
+			<DBField>PM_ITEM_TYPE</DBField>
+			<AllowNUll>FALSE</AllowNUll>  			
+		</Column>
+		
+		<Column>
+			<ColNo>4</ColNo>
+			<ColName>Description</ColName>
+			<DBField>PM_LONG_DESC</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S\r\n]{0,4000}$</Regex>
+			<RegexErrMsg>Item Description maximum length is 4000.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>5</ColNo>
+			<ColName>Commodity Type</ColName>
+			<DBField>PM_CATEGORY_NAME</DBField>
+			<AllowNUll>FALSE</AllowNUll> 
+			<Regex>^[ |\S]{0,8}$</Regex>
+			<RegexErrMsg>Commodity Type maximum length is 8.</RegexErrMsg>  			
+		</Column>
+		
+		<Column>
+			<ColNo>6</ColNo>
+			<ColName>UOM</ColName>
+			<DBField>PM_UOM</DBField>
+			<AllowNUll>FALSE</AllowNUll>
+		</Column>
+		
+		<Column>
+			<ColNo>7</ColNo>
+			<ColName>Category Code</ColName>
+			<DBField>PM_CAT_CODE</DBField>
+			<AllowNUll>TRUE</AllowNUll>
+			<Regex>^[ |\S]{0,100}$</Regex>
+			<RegexErrMsg>Item reference no maximum length is 100.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>8</ColNo>
+			<ColName>Reference No</ColName>
+			<DBField>PM_REF_NO</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,256}$</Regex>
+			<RegexErrMsg>Item reference no maximum length is 256.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>9</ColNo>
+			<ColName>Need QC/Verification</ColName>
+			<DBField>PM_IQC_IND</DBField>
+			<AllowNUll>FALSE</AllowNUll> 
+		</Column>
+		
+		<Column>
+			<ColNo>10</ColNo>
+			<ColName>Account Code</ColName>
+			<DBField>PM_ACCT_CODE</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,30}$</Regex>
+			<RegexErrMsg>Item account code maximum length is 30.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>11</ColNo>
+			<ColName>Order Quantity (Min)</ColName>
+			<DBField>PM_ORD_MIN_QTY</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^\d{1,6}(?:\.(?:\d{0,1})?\d)?$</Regex>
+			<RegexErrMsg>Item order quantity (Min) is expecting numeric value.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>12</ColNo>
+			<ColName>Order Quantity (Max)</ColName>
+			<DBField>PM_ORD_MAX_QTY</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^\d{1,6}(?:\.(?:\d{0,1})?\d)?$</Regex>
+			<RegexErrMsg>Item order quantity (Max) is expecting numeric value.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>13</ColNo>
+			<ColName>Safety Level (Min Inventory)</ColName>
+			<DBField>PM_SAFE_QTY</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^\d{1,6}(?:\.(?:\d{0,1})?\d)?$</Regex>
+			<RegexErrMsg>Item Safety level (Min Inventory) is expecting numeric value.</RegexErrMsg> 
+		</Column>
+		
+		<Column>
+			<ColNo>14</ColNo>
+			<ColName>Max Inventory Quantity</ColName>
+			<DBField>PM_MAX_INV_QTY</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^\d{1,6}(?:\.(?:\d{0,1})?\d)?$</Regex>
+			<RegexErrMsg>Item max inventory quantity is expecting numeric value.</RegexErrMsg> 
+		</Column>
+		
+		<Column>
+			<ColNo>15</ColNo>
+			<ColName>Brand</ColName>
+			<DBField>PM_PRODUCT_BRAND</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,256}$</Regex>
+			<RegexErrMsg>Item brand maximum length is 256.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>16</ColNo>
+			<ColName>Manufacturer Name</ColName>
+			<DBField>PM_MANUFACTURER</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,50}$</Regex>
+			<RegexErrMsg>Item manufacturer name maximum length is 50.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>17</ColNo>
+			<ColName>Drawing Number</ColName>
+			<DBField>PM_DRAW_NO</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,50}$</Regex>
+			<RegexErrMsg>Item drawing number maximum length is 50.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>18</ColNo>
+			<ColName>Model</ColName>
+			<DBField>PM_PRODUCT_MODEL</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,256}$</Regex>
+			<RegexErrMsg>Item model maximum length is 256.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>19</ColNo>
+			<ColName>Gross Weight (kg)</ColName>
+			<DBField>PM_GROSS_WEIGHT</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,50}$</Regex>
+			<RegexErrMsg>Item gross weight (kg) maximum length is 50.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>20</ColNo>
+			<ColName>Net Weight (kg)</ColName>
+			<DBField>PM_NET_WEIGHT</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,50}$</Regex>
+			<RegexErrMsg>Item net weight (kg) maximum length is 50.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>21</ColNo>
+			<ColName>Length (meter)</ColName>
+			<DBField>PM_LENGHT</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,50}$</Regex>
+			<RegexErrMsg>Item length (meter) maximum length is 50.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>22</ColNo>
+			<ColName>Version No</ColName>
+			<DBField>PM_VERS_NO</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,50}$</Regex>
+			<RegexErrMsg>Item version no maximum length is 50.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>23</ColNo>
+			<ColName>Packing Specification</ColName>
+			<DBField>PM_PACKING_REQ</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,256}$</Regex>
+			<RegexErrMsg>Item version no maximum length is 256.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>24</ColNo>
+			<ColName>Width (meter)</ColName>
+			<DBField>PM_WIDTH</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,50}$</Regex>
+			<RegexErrMsg>Item width (meter) maximum length is 50.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>25</ColNo>
+			<ColName>Color Info</ColName>
+			<DBField>PM_COLOR_INFO</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,256}$</Regex>
+			<RegexErrMsg>Item color info maximum length is 256.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>26</ColNo>
+			<ColName>Volume (liter)</ColName>
+			<DBField>PM_VOLUME</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,50}$</Regex>
+			<RegexErrMsg>Item volume (liter) maximum length is 50.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>27</ColNo>
+			<ColName>HS Code</ColName>
+			<DBField>PM_HSC_CODE</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,256}$</Regex>
+			<RegexErrMsg>Item HS code maximum length is 256.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>28</ColNo>
+			<ColName>Height (meter)</ColName>
+			<DBField>PM_HEIGHT</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,50}$</Regex>
+			<RegexErrMsg>Item height (meter) maximum length is 50.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>29</ColNo>
+			<ColName>Remarks</ColName>
+			<DBField>PM_REMARKS</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S\r\n]{0,3000}$</Regex>
+			<RegexErrMsg>Item remarks maximum length is 3000.</RegexErrMsg>  
+		</Column>
+
+		<Column>
+		  <ColNo>38</ColNo>
+		  <ColName>Preferred Vendor Order Lead Time(Days)</ColName>
+		  <DBField>Preferred Vendor Order Lead Time(Days)</DBField>
+		  <AllowNUll>TRUE</AllowNUll>
+		  <Regex>^\d*$</Regex>
+		  <RegexErrMsg>Preferred Vendor Order Lead Time(Days) is expecting integer value.</RegexErrMsg>
+		</Column>
+
+		<Column>
+		  <ColNo>39</ColNo>
+		  <ColName>1st Alternative Vendor Order Lead Time(Days)</ColName>
+		  <DBField>1st Alternative Vendor Order Lead Time(Days)</DBField>
+		  <AllowNUll>TRUE</AllowNUll>
+		  <Regex>^\d*$</Regex>
+		  <RegexErrMsg>1st Alternative Vendor Order Lead Time(Days) is expecting integer value.</RegexErrMsg>
+		</Column>
+
+		<Column>
+		  <ColNo>40</ColNo>
+		  <ColName>2nd Alternative Vendor Order Lead Time(Days)</ColName>
+		  <DBField>2nd Alternative Vendor Order Lead Time(Days)</DBField>
+		  <AllowNUll>TRUE</AllowNUll>
+		  <Regex>^\d*$</Regex>
+		  <RegexErrMsg>2nd Alternative Vendor Order Lead Time(Days) is expecting integer value.</RegexErrMsg>
+		</Column>
+
+		<Column>
+		  <ColNo>41</ColNo>
+		  <ColName>3rd Alternative Vendor Order Lead Time(Days)</ColName>
+		  <DBField>3rd Alternative Vendor Order Lead Time(Days)</DBField>
+		  <AllowNUll>TRUE</AllowNUll>
+		  <Regex>^\d*$</Regex>
+		  <RegexErrMsg>3rd Alternative Vendor Order Lead Time(Days) is expecting integer value.</RegexErrMsg>
+		</Column>
+
+		<Column>
+			<ColNo>46</ColNo>
+			<ColName>Action</ColName>
+			<DBField>Action</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex>^[NMDA]{1}$</Regex>
+			<RegexErrMsg>Action can only 'N','M','D','A'.</RegexErrMsg> 
+		</Column>	
+
+		<Version>
+			<Sheet>PredefineCode</Sheet>
+			<ColFrom>J</ColFrom>
+			<ColTo>J</ColTo>
+			<RowFrom>2</RowFrom>
+			<RowTo>2</RowTo>
+		</Version>		
+		
+	</Catalog>
+</Format>
+

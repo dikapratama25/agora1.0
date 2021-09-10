@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PRPOForInventory" targetNamespace="http://tempuri.org/PRPOForInventory.xsd" xmlns:mstns="http://tempuri.org/PRPOForInventory.xsd" xmlns="http://tempuri.org/PRPOForInventory.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString3 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString3.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetPRPOForInventoryTableAdapter" GeneratorDataComponentClassName="DataSetPRPOForInventoryTableAdapter" Name="DataSetPRPOForInventory" UserDataComponentName="DataSetPRPOForInventoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString3 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS NO_PR, '' AS NO_PO, '' AS CM_COY_NAME, '' AS POD_OVERSEA, '' AS POM_CURRENCY_CODE, '' AS GL_CODE, '' AS ACCT_CODE, '' AS AM_ACCT_DESC, '' AS POD_UNIT_AMT, '' AS POD_L_UNIT_AMT FROM PO_DETAILS</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NO_PR" DataSetColumn="NO_PR" />
+              <Mapping SourceColumn="NO_PO" DataSetColumn="NO_PO" />
+              <Mapping SourceColumn="CM_COY_NAME" DataSetColumn="CM_COY_NAME" />
+              <Mapping SourceColumn="POD_OVERSEA" DataSetColumn="POD_OVERSEA" />
+              <Mapping SourceColumn="POM_CURRENCY_CODE" DataSetColumn="POM_CURRENCY_CODE" />
+              <Mapping SourceColumn="GL_CODE" DataSetColumn="GL_CODE" />
+              <Mapping SourceColumn="ACCT_CODE" DataSetColumn="ACCT_CODE" />
+              <Mapping SourceColumn="POD_UNIT_AMT" DataSetColumn="POD_UNIT_AMT" />
+              <Mapping SourceColumn="POD_L_UNIT_AMT" DataSetColumn="POD_L_UNIT_AMT" />
+              <Mapping SourceColumn="AM_ACCT_DESC" DataSetColumn="AM_ACCT_DESC" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PRPOForInventory" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PRPOForInventory" msprop:Generator_DataSetName="PRPOForInventory">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetPRPOForInventory" msprop:Generator_UserTableName="DataSetPRPOForInventory" msprop:Generator_RowDeletedName="DataSetPRPOForInventoryRowDeleted" msprop:Generator_RowChangedName="DataSetPRPOForInventoryRowChanged" msprop:Generator_RowClassName="DataSetPRPOForInventoryRow" msprop:Generator_RowChangingName="DataSetPRPOForInventoryRowChanging" msprop:Generator_RowEvArgName="DataSetPRPOForInventoryRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetPRPOForInventoryRowChangeEventHandler" msprop:Generator_TableClassName="DataSetPRPOForInventoryDataTable" msprop:Generator_TableVarName="tableDataSetPRPOForInventory" msprop:Generator_RowDeletingName="DataSetPRPOForInventoryRowDeleting" msprop:Generator_TablePropName="DataSetPRPOForInventory">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NO_PR" msprop:Generator_UserColumnName="NO_PR" msprop:Generator_ColumnVarNameInTable="columnNO_PR" msprop:Generator_ColumnPropNameInRow="NO_PR" msprop:Generator_ColumnPropNameInTable="NO_PRColumn" type="xs:string" />
+              <xs:element name="NO_PO" msprop:Generator_UserColumnName="NO_PO" msprop:Generator_ColumnVarNameInTable="columnNO_PO" msprop:Generator_ColumnPropNameInRow="NO_PO" msprop:Generator_ColumnPropNameInTable="NO_POColumn" type="xs:string" />
+              <xs:element name="CM_COY_NAME" msprop:Generator_UserColumnName="CM_COY_NAME" msprop:Generator_ColumnVarNameInTable="columnCM_COY_NAME" msprop:Generator_ColumnPropNameInRow="CM_COY_NAME" msprop:Generator_ColumnPropNameInTable="CM_COY_NAMEColumn" type="xs:string" />
+              <xs:element name="POD_OVERSEA" msprop:Generator_UserColumnName="POD_OVERSEA" msprop:Generator_ColumnVarNameInTable="columnPOD_OVERSEA" msprop:Generator_ColumnPropNameInRow="POD_OVERSEA" msprop:Generator_ColumnPropNameInTable="POD_OVERSEAColumn" type="xs:string" />
+              <xs:element name="POM_CURRENCY_CODE" msprop:Generator_UserColumnName="POM_CURRENCY_CODE" msprop:Generator_ColumnVarNameInTable="columnPOM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInRow="POM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInTable="POM_CURRENCY_CODEColumn" type="xs:string" />
+              <xs:element name="GL_CODE" msprop:Generator_UserColumnName="GL_CODE" msprop:Generator_ColumnVarNameInTable="columnGL_CODE" msprop:Generator_ColumnPropNameInRow="GL_CODE" msprop:Generator_ColumnPropNameInTable="GL_CODEColumn" type="xs:string" />
+              <xs:element name="ACCT_CODE" msprop:Generator_UserColumnName="ACCT_CODE" msprop:Generator_ColumnVarNameInTable="columnACCT_CODE" msprop:Generator_ColumnPropNameInRow="ACCT_CODE" msprop:Generator_ColumnPropNameInTable="ACCT_CODEColumn" type="xs:string" />
+              <xs:element name="POD_UNIT_AMT" msprop:Generator_UserColumnName="POD_UNIT_AMT" msprop:Generator_ColumnVarNameInTable="columnPOD_UNIT_AMT" msprop:Generator_ColumnPropNameInRow="POD_UNIT_AMT" msprop:Generator_ColumnPropNameInTable="POD_UNIT_AMTColumn" type="xs:string" />
+              <xs:element name="POD_L_UNIT_AMT" msprop:Generator_UserColumnName="POD_L_UNIT_AMT" msprop:Generator_ColumnVarNameInTable="columnPOD_L_UNIT_AMT" msprop:Generator_ColumnPropNameInRow="POD_L_UNIT_AMT" msprop:Generator_ColumnPropNameInTable="POD_L_UNIT_AMTColumn" type="xs:string" />
+              <xs:element name="AM_ACCT_DESC" msprop:Generator_UserColumnName="AM_ACCT_DESC" msprop:Generator_ColumnPropNameInRow="AM_ACCT_DESC" msprop:Generator_ColumnVarNameInTable="columnAM_ACCT_DESC" msprop:Generator_ColumnPropNameInTable="AM_ACCT_DESCColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

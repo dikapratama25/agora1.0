@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Format>
+	<Catalog>
+	    <ReadArea>
+			<Sheet>Sheet1</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>S</ColTo>
+			<RowFrom>3</RowFrom>
+			<RowTo>22</RowTo>
+		</ReadArea>
+		
+		<Column>
+			<ColNo>0</ColNo>
+			<ColName>Row No</ColName>
+			<DBField></DBField>
+			<AllowNUll>FALSE</AllowNUll>                 
+			<Regex>^\d*$</Regex>
+			<RegexErrMsg>Row No is expecting integer value.</RegexErrMsg> 
+		</Column>
+		<Column>
+			<ColNo>1</ColNo>
+			<ColName>Item Id</ColName>
+			<DBField>PM_PRODUCT_CODE</DBField>
+			<AllowNUll>TRUE</AllowNUll>                 
+			<Regex>^\S{0,20}$</Regex>
+			<RegexErrMsg>Item id's maximum length is 20.</RegexErrMsg> 
+		</Column>
+		
+		<Column>
+			<ColNo>2</ColNo>
+			<ColName>Company Id</ColName>
+			<DBField>CM_COY_ID</DBField>
+			<AllowNUll>FALSE</AllowNUll>                 
+			<Regex>^[ |\S]{0,20}$</Regex>
+			<RegexErrMsg>Company id's maximum length is 20.</RegexErrMsg> 
+			<SQL>
+				<SQLItem>
+					<Query>SELECT COUNT(*) FROM COMPANY_MSTR WHERE CM_COY_TYPE IN ('VENDOR','BOTH') AND CM_COY_ID=</Query>
+					<QueryErrMsg>Invalid Company ID</QueryErrMsg>
+				</SQLItem>
+			</SQL>
+		</Column>
+
+		
+		<Column>
+			<ColNo>4</ColNo>
+			<ColName>Category Code</ColName>
+			<DBField>CM_CATEGORY_NAME</DBField>
+			<AllowNUll>FALSE</AllowNUll>                 
+			<Regex>^[ |\S]{0,50}$</Regex>
+			<RegexErrMsg>Category Code's maximum length is 50.</RegexErrMsg> 
+			<SQL>
+				<SQLItem>
+					<Query>SELECT COUNT(*) FROM CATEGORY_MSTR WHERE CM_STATUS='A' AND CM_CATEGORY_NAME=</Query>
+					<QueryErrMsg>Invalid Category Code</QueryErrMsg>
+				</SQLItem>
+				
+			</SQL>
+		</Column>
+		
+		<Column>
+			<ColNo>5</ColNo>
+			<ColName>Category Desc</ColName>
+			<DBField>CM_CATEGORY_DESC</DBField>
+			<AllowNUll>TRUE</AllowNUll>                 
+			<Regex>^[ |\S]{0,200}$</Regex>
+			<RegexErrMsg>Category Desc.'s maximum length is 200.</RegexErrMsg> 
+		</Column>
+		
+		<Column>
+			<ColNo>6</ColNo>
+			<ColName>Category Price</ColName>
+			<DBField>PM_UNIT_COST</DBField>
+			<AllowNUll>TRUE</AllowNUll>                 
+			<Regex>(?!^0*\.0*$)\d{1,10}(\.\d{1,4})?$</Regex>
+			<RegexErrMsg>Category Price is expecting cost value.</RegexErrMsg> 
+		</Column>
+	
+		
+		<Column>
+			<ColNo>7</ColNo>
+			<ColName>Currency Code</ColName>
+			<DBField>CODE_ABBR</DBField>
+			<AllowNUll>FALSE</AllowNUll>
+			<Regex>^\S{0,30}$</Regex>
+			<RegexErrMsg>Currency Code's maximum length is 30.</RegexErrMsg>                 
+			<SQL>
+				<SQLItem>
+					<Query>SELECT COUNT(*) FROM CODE_MSTR WHERE CODE_CATEGORY='CU' AND CODE_ABBR=</Query>
+					<QueryErrMsg>Currency Code not found</QueryErrMsg>
+				</SQLItem>
+			</SQL>
+		</Column>
+		
+		<Column>
+			<ColNo>8</ColNo>
+			<ColName>UOM</ColName>
+			<DBField>CODE_ABBR</DBField>
+			<AllowNUll>FALSE</AllowNUll>                 
+			<Regex>^\S{0,30}$</Regex>
+			<RegexErrMsg>UOM's maximum length is 30.</RegexErrMsg>       
+			<SQL>
+				<SQLItem>
+					<Query>SELECT COUNT(*) FROM CODE_MSTR WHERE CODE_CATEGORY='UOM' AND CODE_DESC=</Query>
+					<QueryErrMsg>UOM not found</QueryErrMsg>
+				</SQLItem>
+			</SQL>
+		</Column>
+		
+		<Column>
+			<ColNo>9</ColNo>
+			<ColName>Tax Code</ColName>
+			<DBField>CODE_ABBR</DBField>
+			<AllowNUll>FALSE</AllowNUll>                 
+			<Regex>^\S{0,30}$</Regex>
+			<RegexErrMsg>Tax Code's maximum length is 30.</RegexErrMsg>  
+			<SQL>
+				<SQLItem>
+					<Query>SELECT COUNT(*) FROM CODE_MSTR WHERE CODE_CATEGORY='GST' AND CODE_ABBR=</Query>
+					<QueryErrMsg>Invalid Tax Code</QueryErrMsg>
+				</SQLItem>
+			</SQL>
+		</Column>
+		
+		<Column>
+			<ColNo>10</ColNo>
+			<ColName>Mgmt. Code</ColName>
+			<DBField>CODE_ABBR</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^\S{0,10}$</Regex>
+			<RegexErrMsg>Mgmt. Code's maximum length is 10.</RegexErrMsg>  
+			<SQL>
+				<SQLItem>
+					<Query>SELECT COUNT(*) FROM CODE_MSTR WHERE CODE_CATEGORY='MC' AND CODE_ABBR=</Query>
+					<QueryErrMsg>Invalid Mgmt. Code</QueryErrMsg>
+				</SQLItem>
+			</SQL>
+		</Column>
+		
+		<Column>
+			<ColNo>11</ColNo>
+			<ColName>Mgmt. Text</ColName>
+			<DBField>CODE_ABBR</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,30}$</Regex>
+			<RegexErrMsg>Mgmt. Text's maximum length is 30.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>12</ColNo>
+			<ColName>Vendor Item Code</ColName>
+			<DBField>PM_VENDOR_ITEM_CODE</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex>^[ |\S]{0,100}$</Regex>
+			<RegexErrMsg>Vendor Item Code's maximum length is 100.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>13</ColNo>
+			<ColName>Brand</ColName>
+			<DBField>PM_PRODUCT_BRAND</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,60}$</Regex>
+			<RegexErrMsg>Brand's maximum length is 60.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>14</ColNo>
+			<ColName>Model</ColName>
+			<DBField>PM_PRODUCT_MODEL</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,70}$</Regex>
+			<RegexErrMsg>Model's maximum length is 70.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>15</ColNo>
+			<ColName>Action</ColName>
+			<DBField>Action</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex>^[AMD]{1}$</Regex>
+			<RegexErrMsg>Action can only 'A','M' or 'D'.</RegexErrMsg> 
+		</Column>
+	</Catalog>
+</Format>
+

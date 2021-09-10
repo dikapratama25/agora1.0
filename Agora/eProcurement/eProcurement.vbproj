@@ -1,0 +1,472 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EAFCEA97-FF48-4923-AB3A-0C3EA47F610C}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>eProcurement</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Text</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>eProcurement</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>eProcurement.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>eProcurement.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CryptoFile">
+      <HintPath>..\..\lib\CryptoFile.dll</HintPath>
+    </Reference>
+    <Reference Include="eRFP_Component_VB">
+      <HintPath>..\..\lib\eRFP_Component_VB.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel">
+      <HintPath>..\..\lib\Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\ChgPassword.aspx.vb">
+      <DependentUpon>ChgPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\Dialog.aspx.designer.vb">
+      <DependentUpon>Dialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Initial\Dialog.aspx.vb">
+      <DependentUpon>Dialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\ForgotPwd.aspx.vb">
+      <DependentUpon>ForgotPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Initial\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\Login1.aspx.vb">
+      <DependentUpon>Login1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\Policy.aspx.designer.vb">
+      <DependentUpon>Policy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Initial\Policy.aspx.vb">
+      <DependentUpon>Policy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\SignOut.aspx.vb">
+      <DependentUpon>SignOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\Unauthorized.aspx.vb">
+      <DependentUpon>Unauthorized.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="package.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SPP.aspx.designer.vb">
+      <DependentUpon>SPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SPP.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>SPP.aspx</DependentUpon>
+    </Compile>
+    <Content Include="bin\SPP.xml" />
+    <Content Include="Common\Initial\ChgPassword.aspx" />
+    <Content Include="Common\Initial\default.aspx" />
+    <Content Include="Common\Initial\Dialog.aspx" />
+    <Content Include="Common\Initial\errorPage.html" />
+    <Content Include="Common\Initial\ForgotPwd.aspx" />
+    <Content Include="Common\Initial\Login.aspx" />
+    <Content Include="Common\Initial\Login1.aspx" />
+    <Content Include="Common\Initial\Maintenance.aspx" />
+    <Content Include="Common\Initial\Policy.aspx" />
+    <Content Include="Common\Initial\SignOut.aspx" />
+    <Content Include="Common\Initial\Styles.css" />
+    <Content Include="Common\Initial\Unauthorized.aspx" />
+    <Content Include="Common\Initial\vssver.scc" />
+    <Content Include="Common\Plugins\CSS\Styles.css" />
+    <Content Include="Common\Plugins\CSS\vssver.scc" />
+    <Content Include="Common\Plugins\CSS\vssver2.scc" />
+    <Content Include="Common\Plugins\Images\Agora.png" />
+    <Content Include="Common\Plugins\Images\Amsterdam Central Station.JPG" />
+    <Content Include="Common\Plugins\Images\arrowDown.gif" />
+    <Content Include="Common\Plugins\Images\ArrowUp.gif" />
+    <Content Include="Common\Plugins\Images\average_icon.gif" />
+    <Content Include="Common\Plugins\Images\average_icon_old.gif" />
+    <Content Include="Common\Plugins\Images\average_icon_old2.gif" />
+    <Content Include="Common\Plugins\Images\badmoney_icon.gif" />
+    <Content Include="Common\Plugins\Images\badmoney_icon_old.gif" />
+    <Content Include="Common\Plugins\Images\bad_icon.gif" />
+    <Content Include="Common\Plugins\Images\bad_icon1.gif" />
+    <Content Include="Common\Plugins\Images\bad_icon_old.gif" />
+    <Content Include="Common\Plugins\Images\bad_icon_old2.gif" />
+    <Content Include="Common\Plugins\Images\banner1_785x87.jpg" />
+    <Content Include="Common\Plugins\Images\banner2_785x87.jpg" />
+    <Content Include="Common\Plugins\Images\bestmoney_icon.gif" />
+    <Content Include="Common\Plugins\Images\bestmoney_icon_old.gif" />
+    <Content Include="Common\Plugins\Images\big_strateqgrp.jpg" />
+    <Content Include="Common\Plugins\Images\Brugge3.JPG" />
+    <Content Include="Common\Plugins\Images\calbutton.gif" />
+    <Content Include="Common\Plugins\Images\cells1.jpg" />
+    <Content Include="Common\Plugins\Images\cFood.jpg" />
+    <Content Include="Common\Plugins\Images\Cheme.jpg" />
+    <Content Include="Common\Plugins\Images\clip_icon.GIF" />
+    <Content Include="Common\Plugins\Images\CodeSetup.gif" />
+    <Content Include="Common\Plugins\Images\compare-trust-seal.gif" />
+    <Content Include="Common\Plugins\Images\computer.ico" />
+    <Content Include="Common\Plugins\Images\copy.bmp" />
+    <Content Include="Common\Plugins\Images\date_icon.gif" />
+    <Content Include="Common\Plugins\Images\date_icon_old.gif" />
+    <Content Include="Common\Plugins\Images\Delete.bmp" />
+    <Content Include="Common\Plugins\Images\Dell_Logo.jpg" />
+    <Content Include="Common\Plugins\Images\eAdmin.jpg" />
+    <Content Include="Common\Plugins\Images\earthRD.gif" />
+    <Content Include="Common\Plugins\Images\earthRD2.gif" />
+    <Content Include="Common\Plugins\Images\eAuction.jpg" />
+    <Content Include="Common\Plugins\Images\ebizprocurement logo smaller.jpg" />
+    <Content Include="Common\Plugins\Images\eContract.jpg" />
+    <Content Include="Common\Plugins\Images\enter.gif" />
+    <Content Include="Common\Plugins\Images\eProcure.jpg" />
+    <Content Include="Common\Plugins\Images\eProcure5iii.gif" />
+    <Content Include="Common\Plugins\Images\eProcure5iv.gif" />
+    <Content Include="Common\Plugins\Images\eProcure5v.gif" />
+    <Content Include="Common\Plugins\Images\eProcure5vi.gif" />
+    <Content Include="Common\Plugins\Images\eProcure5vii.gif" />
+    <Content Include="Common\Plugins\Images\eprocurementlogo.jpg" />
+    <Content Include="Common\Plugins\Images\eprocurementlogo2.jpg" />
+    <Content Include="Common\Plugins\Images\eProcure_Logo.gif" />
+    <Content Include="Common\Plugins\Images\eProcure_Logo_old.gif" />
+    <Content Include="Common\Plugins\Images\eProcure_Old.jpg" />
+    <Content Include="Common\Plugins\Images\eRFP.jpg" />
+    <Content Include="Common\Plugins\Images\FTN login shakehand.JPG" />
+    <Content Include="Common\Plugins\Images\get_adobe_reader.png" />
+    <Content Include="Common\Plugins\Images\GlobalSignSealLogo.png" />
+    <Content Include="Common\Plugins\Images\good_icon.gif" />
+    <Content Include="Common\Plugins\Images\good_icon_old.gif" />
+    <Content Include="Common\Plugins\Images\icon.jpg" />
+    <Content Include="Common\Plugins\Images\icon_TaskList.GIF" />
+    <Content Include="Common\Plugins\Images\icon_toolbox.gif" />
+    <Content Include="Common\Plugins\Images\IE8-DLnow.png" />
+    <Content Include="Common\Plugins\Images\Info.gif" />
+    <Content Include="Common\Plugins\Images\intro3.gif" />
+    <Content Include="Common\Plugins\Images\i_allcompanies.gif" />
+    <Content Include="Common\Plugins\Images\i_approvalsetup.gif" />
+    <Content Include="Common\Plugins\Images\i_bcm.gif" />
+    <Content Include="Common\Plugins\Images\i_calendar.gif" />
+    <Content Include="Common\Plugins\Images\i_calendar2.gif" />
+    <Content Include="Common\Plugins\Images\i_calendar_clear.GIF" />
+    <Content Include="Common\Plugins\Images\i_catalogue.gif" />
+    <Content Include="Common\Plugins\Images\i_check.gif" />
+    <Content Include="Common\Plugins\Images\i_collapse.gif" />
+    <Content Include="Common\Plugins\Images\i_companysetup.gif" />
+    <Content Include="Common\Plugins\Images\i_delete.gif" />
+    <Content Include="Common\Plugins\Images\i_delete2.gif" />
+    <Content Include="Common\Plugins\Images\i_duplicate.gif" />
+    <Content Include="Common\Plugins\Images\i_edit.gif" />
+    <Content Include="Common\Plugins\Images\i_edit2.gif" />
+    <Content Include="Common\Plugins\Images\i_email.gif" />
+    <Content Include="Common\Plugins\Images\i_expand.gif" />
+    <Content Include="Common\Plugins\Images\i_global.gif" />
+    <Content Include="Common\Plugins\Images\i_help.gif" />
+    <Content Include="Common\Plugins\Images\i_help2.gif" />
+    <Content Include="Common\Plugins\Images\i_InfoDistr.gif" />
+    <Content Include="Common\Plugins\Images\i_logout.gif" />
+    <Content Include="Common\Plugins\Images\i_manage.gif" />
+    <Content Include="Common\Plugins\Images\i_orders.gif" />
+    <Content Include="Common\Plugins\Images\i_personalset.gif" />
+    <Content Include="Common\Plugins\Images\i_printer.gif" />
+    <Content Include="Common\Plugins\Images\i_quotation2.gif" />
+    <Content Include="Common\Plugins\Images\i_remarks.gif" />
+    <Content Include="Common\Plugins\Images\i_report.gif" />
+    <Content Include="Common\Plugins\Images\i_save.gif" />
+    <Content Include="Common\Plugins\Images\i_save2.gif" />
+    <Content Include="Common\Plugins\Images\i_save3.gif" />
+    <Content Include="Common\Plugins\Images\i_start.gif" />
+    <Content Include="Common\Plugins\Images\i_submission.gif" />
+    <Content Include="Common\Plugins\Images\i_uncheck.gif" />
+    <Content Include="Common\Plugins\Images\i_usersetup.gif" />
+    <Content Include="Common\Plugins\Images\i_vendorctlg.gif" />
+    <Content Include="Common\Plugins\Images\i_vendormapping.gif" />
+    <Content Include="Common\Plugins\Images\KompakarLogo.gif" />
+    <Content Include="Common\Plugins\Images\leftHeader77.jpg" />
+    <Content Include="Common\Plugins\Images\login.jpg" />
+    <Content Include="Common\Plugins\Images\loginDown.jpg" />
+    <Content Include="Common\Plugins\Images\loginoff.jpg" />
+    <Content Include="Common\Plugins\Images\loginOn.jpg" />
+    <Content Include="Common\Plugins\Images\loginUp.jpg" />
+    <Content Include="Common\Plugins\Images\logout.gif" />
+    <Content Include="Common\Plugins\Images\logo_tx123.jpg" />
+    <Content Include="Common\Plugins\Images\logo_tx123_2.jpg" />
+    <Content Include="Common\Plugins\Images\logo_tx123_2_old.jpg" />
+    <Content Include="Common\Plugins\Images\manulink\e-pro1down.gif" />
+    <Content Include="Common\Plugins\Images\manulink\e-pro1up.gif" />
+    <Content Include="Common\Plugins\Images\manulink\e-pro2down.gif" />
+    <Content Include="Common\Plugins\Images\manulink\e-pro2up.gif" />
+    <Content Include="Common\Plugins\Images\manulink\e-pro3down.gif" />
+    <Content Include="Common\Plugins\Images\manulink\e-pro3up.gif" />
+    <Content Include="Common\Plugins\Images\manulink\e-pro4down.gif" />
+    <Content Include="Common\Plugins\Images\manulink\e-pro4up.gif" />
+    <Content Include="Common\Plugins\Images\manulink\Thumbs.db" />
+    <Content Include="Common\Plugins\Images\manulink\vssver.scc" />
+    <Content Include="Common\Plugins\Images\mscnyw03_web40.gif" />
+    <Content Include="Common\Plugins\Images\mscnyw04_web40.gif" />
+    <Content Include="Common\Plugins\Images\MyFairTradeNet_Login.gif" />
+    <Content Include="Common\Plugins\Images\New.gif" />
+    <Content Include="Common\Plugins\Images\pdf.bmp" />
+    <Content Include="Common\Plugins\Images\Powered by Strateq %28before%29.jpg" />
+    <Content Include="Common\Plugins\Images\ResetDown.jpg" />
+    <Content Include="Common\Plugins\Images\Resetoff.jpg" />
+    <Content Include="Common\Plugins\Images\ResetOn.jpg" />
+    <Content Include="Common\Plugins\Images\ResetUp.jpg" />
+    <Content Include="Common\Plugins\Images\rightHeader77.jpg" />
+    <Content Include="Common\Plugins\Images\Secured Seal_03.gif" />
+    <Content Include="Common\Plugins\Images\Secure_Seal.jpg" />
+    <Content Include="Common\Plugins\Images\SmallCalendar.gif" />
+    <Content Include="Common\Plugins\Images\small_strateqgrp.jpg" />
+    <Content Include="Common\Plugins\Images\SysAudit.gif" />
+    <Content Include="Common\Plugins\Images\Thumbs.db" />
+    <Content Include="Common\Plugins\Images\titleEPro.jpg" />
+    <Content Include="Common\Plugins\Images\titleEpro784x87.jpg" />
+    <Content Include="Common\Plugins\Images\titleEpro800x77.jpg" />
+    <Content Include="Common\Plugins\Images\titleEpro_banner1.jpg" />
+    <Content Include="Common\Plugins\Images\titleEpro_banner2.jpg" />
+    <Content Include="Common\Plugins\Images\tx_logo.jpg" />
+    <Content Include="Common\Plugins\Images\t_eAdmin.gif" />
+    <Content Include="Common\Plugins\Images\t_eAdmin.jpg" />
+    <Content Include="Common\Plugins\Images\t_eAuction.gif" />
+    <Content Include="Common\Plugins\Images\t_eAuction_Old.jpg" />
+    <Content Include="Common\Plugins\Images\t_eContract.gif" />
+    <Content Include="Common\Plugins\Images\t_eContract.jpg" />
+    <Content Include="Common\Plugins\Images\t_eProcure.gif" />
+    <Content Include="Common\Plugins\Images\t_eProcure.jpg" />
+    <Content Include="Common\Plugins\Images\t_eRFP.gif" />
+    <Content Include="Common\Plugins\Images\t_eRFP.jpg" />
+    <Content Include="Common\Plugins\Images\t_logout.gif" />
+    <Content Include="Common\Plugins\Images\Verify.gif" />
+    <Content Include="Common\Plugins\Images\vssver.scc" />
+    <Content Include="Common\Plugins\Images\wheelbody-785x376.jpg" />
+    <Content Include="Global.asax" />
+    <EmbeddedResource Include="Common\Initial\ChgPassword.aspx.resx">
+      <DependentUpon>ChgPassword.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\default.aspx.resx">
+      <DependentUpon>default.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\ForgotPwd.aspx.resx">
+      <DependentUpon>ForgotPwd.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\Login1.aspx.resx">
+      <DependentUpon>Login1.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\SignOut.aspx.resx">
+      <DependentUpon>SignOut.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\Unauthorized.aspx.resx">
+      <DependentUpon>Unauthorized.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SPP.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\PublishProfiles\Agora Deployment.pubxml" />
+    <None Include="My Project\PublishProfiles\Anas_Local.pubxml" />
+    <None Include="My Project\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="My Project\PublishProfiles\FolderProfile1.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AgoraLegacy\AgoraLegacy.vbproj">
+      <Project>{78c5faf2-eb1a-411b-b60e-7c8dba687ec0}</Project>
+      <Name>AgoraLegacy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>eProcurement.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>eProcurement.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4971</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/eProcurement</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LastKeyInNumber" targetNamespace="http://tempuri.org/LastKeyInNumber.xsd" xmlns:mstns="http://tempuri.org/LastKeyInNumber.xsd" xmlns="http://tempuri.org/LastKeyInNumber.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetLastKeyInNumberTableAdapter" GeneratorDataComponentClassName="DataSetLastKeyInNumberTableAdapter" Name="DataSetLastKeyInNumber" UserDataComponentName="DataSetLastKeyInNumberTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString1 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS POM_PO_NO, '' AS GM_GRN_NO, '' AS IRSM_IRS_NO FROM PO_MSTR</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="POM_PO_NO" DataSetColumn="POM_PO_NO" />
+              <Mapping SourceColumn="GM_GRN_NO" DataSetColumn="GM_GRN_NO" />
+              <Mapping SourceColumn="IRSM_IRS_NO" DataSetColumn="IRSM_IRS_NO" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LastKeyInNumber" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LastKeyInNumber" msprop:Generator_DataSetName="LastKeyInNumber">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetLastKeyInNumber" msprop:Generator_UserTableName="DataSetLastKeyInNumber" msprop:Generator_RowDeletedName="DataSetLastKeyInNumberRowDeleted" msprop:Generator_TableClassName="DataSetLastKeyInNumberDataTable" msprop:Generator_RowChangedName="DataSetLastKeyInNumberRowChanged" msprop:Generator_RowClassName="DataSetLastKeyInNumberRow" msprop:Generator_RowChangingName="DataSetLastKeyInNumberRowChanging" msprop:Generator_RowEvArgName="DataSetLastKeyInNumberRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetLastKeyInNumberRowChangeEventHandler" msprop:Generator_TablePropName="DataSetLastKeyInNumber" msprop:Generator_TableVarName="tableDataSetLastKeyInNumber" msprop:Generator_RowDeletingName="DataSetLastKeyInNumberRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="POM_PO_NO" msprop:Generator_UserColumnName="POM_PO_NO" msprop:Generator_ColumnPropNameInRow="POM_PO_NO" msprop:Generator_ColumnVarNameInTable="columnPOM_PO_NO" msprop:Generator_ColumnPropNameInTable="POM_PO_NOColumn" type="xs:string" />
+              <xs:element name="GM_GRN_NO" msprop:Generator_UserColumnName="GM_GRN_NO" msprop:Generator_ColumnPropNameInRow="GM_GRN_NO" msprop:Generator_ColumnVarNameInTable="columnGM_GRN_NO" msprop:Generator_ColumnPropNameInTable="GM_GRN_NOColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_NO" msprop:Generator_UserColumnName="IRSM_IRS_NO" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_NO" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_NO" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_NOColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

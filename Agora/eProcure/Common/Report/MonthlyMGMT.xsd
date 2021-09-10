@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MonthlyMGMT" targetNamespace="http://tempuri.org/MonthlyMGMT.xsd" xmlns:mstns="http://tempuri.org/MonthlyMGMT.xsd" xmlns="http://tempuri.org/MonthlyMGMT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetMonthlyMGMTTableAdapter" GeneratorDataComponentClassName="DataSetMonthlyMGMTTableAdapter" Name="DataSetMonthlyMGMT" UserDataComponentName="DataSetMonthlyMGMTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString1 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS PM_ACCT_CODE, '' AS AS_PERC, '' AS IM_ITEM_CODE, '' AS OPENINGBALANCE, '' AS RECEIVED, '' AS ISSUED, '' AS WRITEOFF, '' AS CLOSINGBALANCE, '' AS SLOWMOVING, '' AS DEADSTOCK, '' AS ACTIVESTOCK,  '' AS  CT_NAME, '' AS CB_PERC FROM INVENTORY_MSTR</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PM_ACCT_CODE" DataSetColumn="PM_ACCT_CODE" />
+              <Mapping SourceColumn="AS_PERC" DataSetColumn="AS_PERC" />
+              <Mapping SourceColumn="IM_ITEM_CODE" DataSetColumn="IM_ITEM_CODE" />
+              <Mapping SourceColumn="OPENINGBALANCE" DataSetColumn="OPENINGBALANCE" />
+              <Mapping SourceColumn="RECEIVED" DataSetColumn="RECEIVED" />
+              <Mapping SourceColumn="ISSUED" DataSetColumn="ISSUED" />
+              <Mapping SourceColumn="WRITEOFF" DataSetColumn="WRITEOFF" />
+              <Mapping SourceColumn="CLOSINGBALANCE" DataSetColumn="CLOSINGBALANCE" />
+              <Mapping SourceColumn="SLOWMOVING" DataSetColumn="SLOWMOVING" />
+              <Mapping SourceColumn="DEADSTOCK" DataSetColumn="DEADSTOCK" />
+              <Mapping SourceColumn="ACTIVESTOCK" DataSetColumn="ACTIVESTOCK" />
+              <Mapping SourceColumn="CT_NAME" DataSetColumn="CT_NAME" />
+              <Mapping SourceColumn="CB_PERC" DataSetColumn="CB_PERC" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MonthlyMGMT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MonthlyMGMT" msprop:Generator_DataSetName="MonthlyMGMT">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetMonthlyMGMT" msprop:Generator_UserTableName="DataSetMonthlyMGMT" msprop:Generator_RowDeletedName="DataSetMonthlyMGMTRowDeleted" msprop:Generator_TableClassName="DataSetMonthlyMGMTDataTable" msprop:Generator_RowChangedName="DataSetMonthlyMGMTRowChanged" msprop:Generator_RowClassName="DataSetMonthlyMGMTRow" msprop:Generator_RowChangingName="DataSetMonthlyMGMTRowChanging" msprop:Generator_RowEvArgName="DataSetMonthlyMGMTRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetMonthlyMGMTRowChangeEventHandler" msprop:Generator_TablePropName="DataSetMonthlyMGMT" msprop:Generator_TableVarName="tableDataSetMonthlyMGMT" msprop:Generator_RowDeletingName="DataSetMonthlyMGMTRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PM_ACCT_CODE" msprop:Generator_UserColumnName="PM_ACCT_CODE" msprop:Generator_ColumnPropNameInRow="PM_ACCT_CODE" msprop:Generator_ColumnVarNameInTable="columnPM_ACCT_CODE" msprop:Generator_ColumnPropNameInTable="PM_ACCT_CODEColumn" type="xs:string" />
+              <xs:element name="AS_PERC" msprop:Generator_UserColumnName="AS_PERC" msprop:Generator_ColumnPropNameInRow="AS_PERC" msprop:Generator_ColumnVarNameInTable="columnAS_PERC" msprop:Generator_ColumnPropNameInTable="AS_PERCColumn" type="xs:string" />
+              <xs:element name="IM_ITEM_CODE" msprop:Generator_UserColumnName="IM_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="IM_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="IM_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="OPENINGBALANCE" msprop:Generator_UserColumnName="OPENINGBALANCE" msprop:Generator_ColumnPropNameInRow="OPENINGBALANCE" msprop:Generator_ColumnVarNameInTable="columnOPENINGBALANCE" msprop:Generator_ColumnPropNameInTable="OPENINGBALANCEColumn" type="xs:string" />
+              <xs:element name="RECEIVED" msprop:Generator_UserColumnName="RECEIVED" msprop:Generator_ColumnPropNameInRow="RECEIVED" msprop:Generator_ColumnVarNameInTable="columnRECEIVED" msprop:Generator_ColumnPropNameInTable="RECEIVEDColumn" type="xs:string" />
+              <xs:element name="ISSUED" msprop:Generator_UserColumnName="ISSUED" msprop:Generator_ColumnPropNameInRow="ISSUED" msprop:Generator_ColumnVarNameInTable="columnISSUED" msprop:Generator_ColumnPropNameInTable="ISSUEDColumn" type="xs:string" />
+              <xs:element name="WRITEOFF" msprop:Generator_UserColumnName="WRITEOFF" msprop:Generator_ColumnPropNameInRow="WRITEOFF" msprop:Generator_ColumnVarNameInTable="columnWRITEOFF" msprop:Generator_ColumnPropNameInTable="WRITEOFFColumn" type="xs:string" />
+              <xs:element name="CLOSINGBALANCE" msprop:Generator_UserColumnName="CLOSINGBALANCE" msprop:Generator_ColumnPropNameInRow="CLOSINGBALANCE" msprop:Generator_ColumnVarNameInTable="columnCLOSINGBALANCE" msprop:Generator_ColumnPropNameInTable="CLOSINGBALANCEColumn" type="xs:string" />
+              <xs:element name="SLOWMOVING" msprop:Generator_UserColumnName="SLOWMOVING" msprop:Generator_ColumnPropNameInRow="SLOWMOVING" msprop:Generator_ColumnVarNameInTable="columnSLOWMOVING" msprop:Generator_ColumnPropNameInTable="SLOWMOVINGColumn" type="xs:string" />
+              <xs:element name="DEADSTOCK" msprop:Generator_UserColumnName="DEADSTOCK" msprop:Generator_ColumnPropNameInRow="DEADSTOCK" msprop:Generator_ColumnVarNameInTable="columnDEADSTOCK" msprop:Generator_ColumnPropNameInTable="DEADSTOCKColumn" type="xs:string" />
+              <xs:element name="ACTIVESTOCK" msprop:Generator_UserColumnName="ACTIVESTOCK" msprop:Generator_ColumnPropNameInRow="ACTIVESTOCK" msprop:Generator_ColumnVarNameInTable="columnACTIVESTOCK" msprop:Generator_ColumnPropNameInTable="ACTIVESTOCKColumn" type="xs:string" />
+              <xs:element name="CT_NAME" msprop:Generator_UserColumnName="CT_NAME" msprop:Generator_ColumnPropNameInRow="CT_NAME" msprop:Generator_ColumnVarNameInTable="columnCT_NAME" msprop:Generator_ColumnPropNameInTable="CT_NAMEColumn" type="xs:string" />
+              <xs:element name="CB_PERC" msprop:Generator_UserColumnName="CB_PERC" msprop:Generator_ColumnPropNameInRow="CB_PERC" msprop:Generator_ColumnVarNameInTable="columnCB_PERC" msprop:Generator_ColumnPropNameInTable="CB_PERCColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

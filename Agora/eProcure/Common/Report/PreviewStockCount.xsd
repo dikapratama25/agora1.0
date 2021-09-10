@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewStockCount" targetNamespace="http://tempuri.org/PreviewStockCount.xsd" xmlns:mstns="http://tempuri.org/PreviewStockCount.xsd" xmlns="http://tempuri.org/PreviewStockCount.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetStockCountTableAdapter" Name="DataSetStockCount">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     inventory_detail.ID_INVENTORY_INDEX, inventory_mstr.IM_ITEM_CODE, inventory_mstr.IM_INVENTORY_NAME, 
+                      inventory_detail.ID_LOCATION_INDEX, location_mstr.LM_LOCATION, location_mstr.LM_SUB_LOCATION, inventory_detail.ID_INVENTORY_QTY, 
+                      inventory_mstr.IM_COY_ID
+FROM         inventory_detail INNER JOIN
+                      inventory_mstr ON inventory_detail.ID_INVENTORY_INDEX = inventory_mstr.IM_INVENTORY_INDEX INNER JOIN
+                      location_mstr ON inventory_detail.ID_LOCATION_INDEX = location_mstr.LM_LOCATION_INDEX</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_INVENTORY_INDEX" DataSetColumn="ID_INVENTORY_INDEX" />
+              <Mapping SourceColumn="IM_ITEM_CODE" DataSetColumn="IM_ITEM_CODE" />
+              <Mapping SourceColumn="IM_INVENTORY_NAME" DataSetColumn="IM_INVENTORY_NAME" />
+              <Mapping SourceColumn="ID_LOCATION_INDEX" DataSetColumn="ID_LOCATION_INDEX" />
+              <Mapping SourceColumn="LM_LOCATION" DataSetColumn="LM_LOCATION" />
+              <Mapping SourceColumn="LM_SUB_LOCATION" DataSetColumn="LM_SUB_LOCATION" />
+              <Mapping SourceColumn="ID_INVENTORY_QTY" DataSetColumn="ID_INVENTORY_QTY" />
+              <Mapping SourceColumn="IM_COY_ID" DataSetColumn="IM_COY_ID" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewStockCount" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetStockCount">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_INVENTORY_INDEX" type="xs:long" />
+              <xs:element name="IM_ITEM_CODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_INVENTORY_NAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_LOCATION_INDEX" type="xs:long" />
+              <xs:element name="LM_LOCATION">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LM_SUB_LOCATION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_INVENTORY_QTY" type="xs:int" minOccurs="0" />
+              <xs:element name="IM_COY_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

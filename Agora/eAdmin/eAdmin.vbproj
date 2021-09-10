@@ -1,0 +1,1312 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FBA60059-C96C-4768-BB8B-1D91F2310CA0}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>eAdmin</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>eAdmin</RootNamespace>
+    <StartupObject>eAdmin.%28None%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>eAdmin.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>eAdmin.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="AjaxControlToolkit, Version=1.0.20229.25443, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>include\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CryptoFile">
+      <Name>CryptoFile</Name>
+      <HintPath>bin\CryptoFile.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DBAccess, Version=1.0.6661.35850, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DBAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="eRFP_Component_VB, Version=1.0.3904.19719, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\eRFP_Component\bin\eRFP_Component_VB.dll</HintPath>
+    </Reference>
+    <Reference Include="MenuEAD, Version=1.0.3903.26705, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MenuEAD\bin\MenuEAD.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.UI.WebControls">
+      <Name>Microsoft.Web.UI.WebControls</Name>
+      <HintPath>bin\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data, Version=6.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>bin\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>bin\System.Web.Extensions.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AgoraLegacy.dll" />
+    <Content Include="bin\AgoraLegacy.pdb" />
+    <Content Include="bin\AgoraLegacy.xml" />
+    <Content Include="Common\Initial\ApprovalRules.aspx" />
+    <Content Include="Common\AuthorityCodeSetup\CreateClassificationCode.aspx" />
+    <Content Include="Common\AuthorityCodeSetup\CreateGradeCode.aspx" />
+    <Content Include="Common\AuthorityCodeSetup\CreateRegAuthorityCode.aspx" />
+    <Content Include="Common\AuthorityCodeSetup\EligibilitySetup.aspx" />
+    <Content Include="Common\Calendar\viewCalendar.aspx" />
+    <Content Include="Common\Catalogue\CatBatchUpload.aspx" />
+    <Content Include="Common\Catalogue\HubAddCatalogue.aspx" />
+    <Content Include="Common\Catalogue\HubAddDiscountItem.aspx" />
+    <Content Include="Common\Catalogue\HubCatalogueApproval.aspx" />
+    <Content Include="Common\Catalogue\HubCatalogueConfirm.aspx" />
+    <Content Include="Common\Catalogue\HubCatalogueDetail.aspx" />
+    <Content Include="Common\Catalogue\HubCatalogueList.aspx" />
+    <Content Include="Common\Catalogue\HubCompanyAssign.aspx" />
+    <Content Include="Common\Catalogue\HubContractCatalogue.aspx" />
+    <Content Include="Common\Catalogue\HubContractPrice.aspx" />
+    <Content Include="Common\Catalogue\HubListPriceApproval.aspx" />
+    <Content Include="Common\Catalogue\HubListPriceCatalogue.aspx" />
+    <Content Include="Common\Catalogue\PageDownload.aspx" />
+    <Content Include="Common\Catalogue\ProductDetail.aspx" />
+    <Content Include="Common\Catalogue\viewRemark.aspx" />
+    <Content Include="Common\Initial\ChgPassword.aspx" />
+    <Content Include="Common\Companies\coAllCompany.aspx" />
+    <Content Include="Common\Companies\coCompanyDetail.aspx" />
+    <Content Include="Common\Misc\DailyPostingFileRecovery.aspx" />
+    <Content Include="Common\Misc\DailyPostingFileRecoveryConfirmList.aspx" />
+    <Content Include="Common\Misc\HolidayCalendar.aspx" />
+    <Content Include="Common\Misc\HolidayCalendarAdd.aspx" />
+    <Content Include="Common\Plugins\css\Styles.css" />
+    <Content Include="Common\Initial\ErrorPage.aspx" />
+    <Content Include="Common\Initial\ErrorPage1.aspx" />
+    <Content Include="Common\Initial\FileDownload.aspx" />
+    <Content Include="Common\Initial\ForgotPwd.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Common\Global\PolicySetup.aspx" />
+    <Content Include="Common\Global\UsSearchUsrGrp.aspx" />
+    <Content Include="Common\Global\UsUsrGrp.aspx" />
+    <Content Include="Common\Initial\Header.aspx" />
+    <Content Include="Common\Initial\HeaderCurve.aspx" />
+    <Content Include="Common\Initial\Homepage.aspx" />
+    <Content Include="Common\Plugins\images\Amsterdam Central Station.JPG" />
+    <Content Include="Common\Plugins\images\arrowDown.gif" />
+    <Content Include="Common\Plugins\images\ArrowUp.gif" />
+    <Content Include="Common\Plugins\images\average_icon.gif" />
+    <Content Include="Common\Plugins\images\average_icon_old.gif" />
+    <Content Include="Common\Plugins\images\average_icon_old2.gif" />
+    <Content Include="Common\Plugins\images\badmoney_icon.gif" />
+    <Content Include="Common\Plugins\images\badmoney_icon_old.gif" />
+    <Content Include="Common\Plugins\images\bad_icon.gif" />
+    <Content Include="Common\Plugins\images\bad_icon1.gif" />
+    <Content Include="Common\Plugins\images\bad_icon_old.gif" />
+    <Content Include="Common\Plugins\images\bad_icon_old2.gif" />
+    <Content Include="Common\Plugins\images\bestmoney_icon.gif" />
+    <Content Include="Common\Plugins\images\bestmoney_icon_old.gif" />
+    <Content Include="Common\Plugins\images\Brugge3.JPG" />
+    <Content Include="Common\Plugins\images\calbutton.gif" />
+    <Content Include="Common\Plugins\images\cells1.jpg" />
+    <Content Include="Common\Plugins\images\cFood.jpg" />
+    <Content Include="Common\Plugins\images\Cheme.jpg" />
+    <Content Include="Common\Plugins\images\clip_icon.GIF" />
+    <Content Include="Common\Plugins\images\CodeSetup.gif" />
+    <Content Include="Common\Plugins\images\computer.ico" />
+    <Content Include="Common\Plugins\images\copy.bmp" />
+    <Content Include="Common\Plugins\images\date_icon.gif" />
+    <Content Include="Common\Plugins\images\date_icon_old.gif" />
+    <Content Include="Common\Plugins\images\Delete.bmp" />
+    <Content Include="Common\Plugins\images\earthRD.gif" />
+    <Content Include="Common\Plugins\images\earthRD2.gif" />
+    <Content Include="Common\Plugins\images\ebizprocurement logo smaller.jpg" />
+    <Content Include="Common\Plugins\images\enter.gif" />
+    <Content Include="Common\Plugins\images\eProcure5iii.gif" />
+    <Content Include="Common\Plugins\images\eProcure5iv.gif" />
+    <Content Include="Common\Plugins\images\eProcure5v.gif" />
+    <Content Include="Common\Plugins\images\eProcure5vi.gif" />
+    <Content Include="Common\Plugins\images\eProcure5vii.gif" />
+    <Content Include="Common\Plugins\images\eprocurement logo orange bg.jpg" />
+    <Content Include="Common\Plugins\images\eprocurementlogo.jpg" />
+    <Content Include="Common\Plugins\images\eprocurementlogo2.jpg" />
+    <Content Include="Common\Plugins\images\eProcure_Logo.gif" />
+    <Content Include="Common\Plugins\images\eProcure_Logo_old.gif" />
+    <Content Include="Common\Plugins\images\good_icon.gif" />
+    <Content Include="Common\Plugins\images\good_icon_old.gif" />
+    <Content Include="Common\Plugins\images\icon.jpg" />
+    <Content Include="Common\Plugins\images\icon_TaskList.GIF" />
+    <Content Include="Common\Plugins\images\icon_toolbox.gif" />
+    <Content Include="Common\Plugins\images\Info.gif" />
+    <Content Include="Common\Plugins\images\intro3.gif" />
+    <Content Include="Common\Plugins\images\i_allcompanies.gif" />
+    <Content Include="Common\Plugins\images\i_approvalsetup.gif" />
+    <Content Include="Common\Plugins\images\i_bcm.gif" />
+    <Content Include="Common\Plugins\images\i_calendar.gif" />
+    <Content Include="Common\Plugins\images\i_calendar2.gif" />
+    <Content Include="Common\Plugins\images\i_calendar_clear.GIF" />
+    <Content Include="Common\Plugins\images\i_catalogue.gif" />
+    <Content Include="Common\Plugins\images\i_check.gif" />
+    <Content Include="Common\Plugins\images\i_collapse.gif" />
+    <Content Include="Common\Plugins\images\i_companysetup.gif" />
+    <Content Include="Common\Plugins\images\i_delete.gif" />
+    <Content Include="Common\Plugins\images\i_delete2.gif" />
+    <Content Include="Common\Plugins\images\i_duplicate.gif" />
+    <Content Include="Common\Plugins\images\i_edit.gif" />
+    <Content Include="Common\Plugins\images\i_edit2.gif" />
+    <Content Include="Common\Plugins\images\i_email.gif" />
+    <Content Include="Common\Plugins\images\i_expand.gif" />
+    <Content Include="Common\Plugins\images\i_global.gif" />
+    <Content Include="Common\Plugins\images\i_help.gif" />
+    <Content Include="Common\Plugins\images\i_help2.gif" />
+    <Content Include="Common\Plugins\images\i_InfoDistr.gif" />
+    <Content Include="Common\Plugins\images\i_logout.gif" />
+    <Content Include="Common\Plugins\images\i_manage.gif" />
+    <Content Include="Common\Plugins\images\i_orders.gif" />
+    <Content Include="Common\Plugins\images\i_personalset.gif" />
+    <Content Include="Common\Plugins\images\i_printer.gif" />
+    <Content Include="Common\Plugins\images\i_quotation2.gif" />
+    <Content Include="Common\Plugins\images\i_remarks.gif" />
+    <Content Include="Common\Plugins\images\i_report.gif" />
+    <Content Include="Common\Plugins\images\i_save.gif" />
+    <Content Include="Common\Plugins\images\i_save2.gif" />
+    <Content Include="Common\Plugins\images\i_save3.gif" />
+    <Content Include="Common\Plugins\images\i_start.gif" />
+    <Content Include="Common\Plugins\images\i_submission.gif" />
+    <Content Include="Common\Plugins\images\i_uncheck.gif" />
+    <Content Include="Common\Plugins\images\i_usersetup.gif" />
+    <Content Include="Common\Plugins\images\i_vendorctlg.gif" />
+    <Content Include="Common\Plugins\images\i_vendormapping.gif" />
+    <Content Include="Common\Plugins\images\leftHeader77.jpg" />
+    <Content Include="Common\Plugins\images\login.jpg" />
+    <Content Include="Common\Plugins\images\loginDown.jpg" />
+    <Content Include="Common\Plugins\images\loginoff.jpg" />
+    <Content Include="Common\Plugins\images\loginOn.jpg" />
+    <Content Include="Common\Plugins\images\loginUp.jpg" />
+    <Content Include="Common\Plugins\images\logout.gif" />
+    <Content Include="Common\Plugins\images\logo_tx123.jpg" />
+    <Content Include="Common\Plugins\images\logo_tx123_2.jpg" />
+    <Content Include="Common\Plugins\images\logo_tx123_2_old.jpg" />
+    <Content Include="Common\Plugins\images\mscnyw03_web40.gif" />
+    <Content Include="Common\Plugins\images\mscnyw04_web40.gif" />
+    <Content Include="Common\Plugins\images\pdf.bmp" />
+    <Content Include="Common\Plugins\images\ResetDown.jpg" />
+    <Content Include="Common\Plugins\images\Resetoff.jpg" />
+    <Content Include="Common\Plugins\images\ResetOn.jpg" />
+    <Content Include="Common\Plugins\images\ResetUp.jpg" />
+    <Content Include="Common\Plugins\images\rightHeader77.jpg" />
+    <Content Include="Common\Plugins\images\SmallCalendar.gif" />
+    <Content Include="Common\Plugins\images\SysAudit.gif" />
+    <Content Include="Common\Plugins\images\titleEPro.jpg" />
+    <Content Include="Common\Plugins\images\titleEpro784x87.jpg" />
+    <Content Include="Common\Plugins\images\titleEpro800x77.jpg" />
+    <Content Include="Common\Plugins\images\tx_logo.jpg" />
+    <Content Include="Common\Plugins\images\Verify.gif" />
+    <Content Include="Common\Plugins\images\wheelbody-785x376.jpg" />
+    <Content Include="Common\Plugins\include\eRFPCDClock.js" />
+    <Content Include="Common\Plugins\include\eRFPScript.js" />
+    <Content Include="Common\Plugins\include\WheelScript.js" />
+    <Content Include="Common\Initial\Index.aspx" />
+    <Content Include="Common\Initial\Info.aspx" />
+    <Content Include="Common\Initial\LocMapping.aspx" />
+    <Content Include="Common\Initial\Login.aspx" />
+    <Content Include="Common\Initial\MassEmail.aspx" />
+    <Content Include="Common\Initial\MenuCurve.aspx" />
+    <Content Include="Common\PublicRFP\ViewRFPInvitation.aspx" />
+    <Content Include="Common\PublicVendorReg\PublicVendorRegAppr.aspx" />
+    <Content Include="Common\PublicVendorReg\ViewPublicVendorRegApprHubadmin.aspx" />
+    <Content Include="Common\Initial\RegenerateAllPassword.aspx" />
+    <Content Include="Common\Report\AlwaysRequiredSteps.asp" />
+    <Content Include="Common\Report\callReport.asp" />
+    <Content Include="Common\Report\callReport.aspx" />
+    <Content Include="Common\Report\Cleanup.asp" />
+    <Content Include="Common\Report\MoreRequiredSteps.asp" />
+    <Content Include="Common\Report\OpenServerConn.asp" />
+    <Content Include="Common\Report\ReportFormat1.aspx" />
+    <Content Include="Common\Report\ReportFormat10.aspx" />
+    <Content Include="Common\Report\ReportFormat11.aspx" />
+    <Content Include="Common\Report\ReportFormat12.aspx" />
+    <Content Include="Common\Report\ReportFormat13.aspx" />
+    <Content Include="Common\Report\ReportFormat2.aspx" />
+    <Content Include="Common\Report\ReportFormat3.aspx" />
+    <Content Include="Common\Report\ReportFormat4.aspx" />
+    <Content Include="Common\Report\ReportFormat5.aspx" />
+    <Content Include="Common\Report\ReportFormat6.aspx" />
+    <Content Include="Common\Report\ReportFormat7.aspx" />
+    <Content Include="Common\Report\ReportFormat8.aspx" />
+    <Content Include="Common\Report\ReportFormat9.aspx" />
+    <Content Include="Common\Report\ReportMatrix.aspx" />
+    <Content Include="Common\Report\ReportSelection.aspx" />
+    <Content Include="Common\Report\rptserver.asp" />
+    <Content Include="Common\Report\SmartViewerActiveX.asp" />
+    <Content Include="Common\Report\viewrpt.asp" />
+    <Content Include="Common\Report\WebForm5.aspx" />
+    <Content Include="Common\Initial\TimeOut.aspx" />
+    <Content Include="Common\Initial\Unauthorized.aspx" />
+    <Content Include="Common\Users\Dialog.asp" />
+    <Content Include="Common\Users\UsSearchUserHub.aspx" />
+    <Content Include="Common\Users\UsUserHub.aspx" />
+    <Content Include="Common\Users\UsUserHub2.aspx" />
+    <Content Include="Common\Initial\VendorMapping.aspx" />
+    <Content Include="Common\xml\ItemList.xml" />
+    <Compile Include="Common\AuthorityCodeSetup\CompanyEligibilitySetup.aspx.vb">
+      <DependentUpon>CompanyEligibilitySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Global\DashboardMaster.aspx.designer.vb">
+      <DependentUpon>DashboardMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Global\DashboardMaster.aspx.vb">
+      <DependentUpon>DashboardMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Global\DashboardMatrix.aspx.designer.vb">
+      <DependentUpon>DashboardMatrix.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Global\DashboardMatrix.aspx.vb">
+      <DependentUpon>DashboardMatrix.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Global\DashboardSearch.aspx.designer.vb">
+      <DependentUpon>DashboardSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Global\DashboardSearch.aspx.vb">
+      <DependentUpon>DashboardSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Global\DashboardTypeAhead.aspx.designer.vb">
+      <DependentUpon>DashboardTypeAhead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Global\DashboardTypeAhead.aspx.vb">
+      <DependentUpon>DashboardTypeAhead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Global\GSTTaxCodeMaint.aspx.designer.vb">
+      <DependentUpon>GSTTaxCodeMaint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Global\GSTTaxCodeMaint.aspx.vb">
+      <DependentUpon>GSTTaxCodeMaint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Global\MenuAccessRight.aspx.designer.vb">
+      <DependentUpon>MenuAccessRight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Global\MenuAccessRight.aspx.vb">
+      <DependentUpon>MenuAccessRight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Global\MenuAdd.aspx.vb">
+      <DependentUpon>MenuAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Global\MenuAddNode.aspx.vb">
+      <DependentUpon>MenuAddNode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Global\MenuMtn.aspx.vb">
+      <DependentUpon>MenuMtn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Global\MenuSequence.aspx.designer.vb">
+      <DependentUpon>MenuSequence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Global\MenuSequence.aspx.vb">
+      <DependentUpon>MenuSequence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\ApprovalRules.aspx.vb">
+      <DependentUpon>ApprovalRules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\AuthorityCodeSetup\CreateClassificationCode.aspx.vb">
+      <DependentUpon>CreateClassificationCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AuthorityCodeSetup\CreateGradeCode.aspx.vb">
+      <DependentUpon>CreateGradeCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AuthorityCodeSetup\CreateRegAuthorityCode.aspx.vb">
+      <DependentUpon>CreateRegAuthorityCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AuthorityCodeSetup\EligibilitySetup.aspx.vb">
+      <DependentUpon>EligibilitySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AutoComplete\AutoComplete.asmx.vb">
+      <SubType>Component</SubType>
+      <DependentUpon>AutoComplete.asmx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AutoComplete\WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AutoComplete\WebForm1.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Calendar\viewCalendar.aspx.vb">
+      <DependentUpon>viewCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\catBatchUpload.aspx.vb">
+      <DependentUpon>CatBatchUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\CommodityType.aspx.designer.vb">
+      <DependentUpon>CommodityType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Catalogue\CommodityType.aspx.vb">
+      <DependentUpon>CommodityType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\HubAddCatalogue.aspx.vb">
+      <DependentUpon>HubAddCatalogue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\HubAddDiscountItem.aspx.vb">
+      <DependentUpon>HubAddDiscountItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\HubCatalogueApproval.aspx.vb">
+      <DependentUpon>HubCatalogueApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\HubCatalogueConfirm.aspx.vb">
+      <DependentUpon>HubCatalogueConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\HubCatalogueDetail.aspx.vb">
+      <DependentUpon>HubCatalogueDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\HubCatalogueList.aspx.vb">
+      <DependentUpon>HubCatalogueList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\HubCompanyAssign.aspx.vb">
+      <DependentUpon>HubCompanyAssign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\HubContractCatalogue.aspx.vb">
+      <DependentUpon>HubContractCatalogue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\HubContractPrice.aspx.vb">
+      <DependentUpon>HubContractPrice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\HubListPriceApproval.aspx.vb">
+      <DependentUpon>HubListPriceApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\HubListPriceCatalogue.aspx.vb">
+      <DependentUpon>HubListPriceCatalogue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\PageDownload.aspx.vb">
+      <DependentUpon>PageDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\ProductDetail.aspx.vb">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Catalogue\viewRemark.aspx.vb">
+      <DependentUpon>viewRemark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\ChgPassword.aspx.vb">
+      <DependentUpon>ChgPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Companies\coAllCompany.aspx.vb">
+      <DependentUpon>coAllCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Companies\coCompanyDetail.aspx.vb">
+      <DependentUpon>coCompanyDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\Menu.aspx.vb">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\TypeAhead.aspx.designer.vb">
+      <DependentUpon>TypeAhead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Initial\TypeAhead.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>TypeAhead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Misc\DailyPostingFileRecovery.aspx.designer.vb">
+      <DependentUpon>DailyPostingFileRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Misc\DailyPostingFileRecovery.aspx.vb">
+      <DependentUpon>DailyPostingFileRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Common\Misc\DailyPostingFileRecoveryConfirmList.aspx.designer.vb">
+      <DependentUpon>DailyPostingFileRecoveryConfirmList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Misc\DailyPostingFileRecoveryConfirmList.aspx.vb">
+      <DependentUpon>DailyPostingFileRecoveryConfirmList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Common\Misc\HolidayCalendar.aspx.designer.vb">
+      <DependentUpon>HolidayCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Misc\HolidayCalendar.aspx.vb">
+      <DependentUpon>HolidayCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Misc\HolidayCalendarAdd.aspx.designer.vb">
+      <DependentUpon>HolidayCalendarAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Misc\HolidayCalendarAdd.aspx.vb">
+      <DependentUpon>HolidayCalendarAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\InvDetails_xls.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvDetails_xls.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Report\InvSummary_xls.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvSummary_xls.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Report\OutstandingPO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutstandingPO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Report\OverduePO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OverduePO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Report\PODetails_xls.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PODetails_xls.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Report\POSummary.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POSummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Initial\ErrorPage.aspx.vb">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\ErrorPage1.aspx.vb">
+      <DependentUpon>ErrorPage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\FileDownload.aspx.vb">
+      <DependentUpon>FileDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\ForgotPwd.aspx.vb">
+      <DependentUpon>ForgotPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormatN5.aspx.designer.vb">
+      <DependentUpon>ReportFormatN5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormatN5.aspx.vb">
+      <DependentUpon>ReportFormatN5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormatN6.aspx.designer.vb">
+      <DependentUpon>ReportFormatN6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormatN6.aspx.vb">
+      <DependentUpon>ReportFormatN6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FTN\Report\ReportFormatN2.aspx.designer.vb">
+      <DependentUpon>ReportFormatN2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FTN\Report\ReportFormatN2.aspx.vb">
+      <DependentUpon>ReportFormatN2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FTN\Report\ReportFormatN4.aspx.designer.vb">
+      <DependentUpon>ReportFormatN4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FTN\Report\ReportFormatN4.aspx.vb">
+      <DependentUpon>ReportFormatN4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Global\PolicySetup.aspx.vb">
+      <DependentUpon>PolicySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Global\usSearchUsrGrp.aspx.vb">
+      <DependentUpon>UsSearchUsrGrp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Global\usUsrGrp.aspx.vb">
+      <DependentUpon>UsUsrGrp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\Header.aspx.vb">
+      <DependentUpon>Header.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\HeaderCurve.aspx.vb">
+      <DependentUpon>HeaderCurve.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\Homepage.aspx.vb">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\Index.aspx.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\Info.aspx.vb">
+      <DependentUpon>Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\LocMapping.aspx.vb">
+      <DependentUpon>LocMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\MassEmail.aspx.vb">
+      <DependentUpon>MassEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\MenuCurve.aspx.vb">
+      <DependentUpon>MenuCurve.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\ModWheel.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\Package.vb" />
+    <Compile Include="Common\PublicRFP\ViewRFPInvitation.aspx.vb">
+      <DependentUpon>ViewRFPInvitation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\PublicVendorReg\PublicVendorRegAppr.aspx.vb">
+      <DependentUpon>PublicVendorRegAppr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\PublicVendorReg\ViewPublicVendorRegApprHubadmin.aspx.vb">
+      <DependentUpon>ViewPublicVendorRegApprHubadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\RegenerateAllPassword.aspx.vb">
+      <DependentUpon>RegenerateAllPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\callReport.aspx.vb">
+      <DependentUpon>callReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormat1.aspx.vb">
+      <DependentUpon>ReportFormat1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormat10.aspx.vb">
+      <DependentUpon>ReportFormat10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormat11.aspx.vb">
+      <DependentUpon>ReportFormat11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormat12.aspx.vb">
+      <DependentUpon>ReportFormat12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormat13.aspx.vb">
+      <DependentUpon>ReportFormat13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormat2.aspx.vb">
+      <DependentUpon>ReportFormat2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormat3.aspx.vb">
+      <DependentUpon>ReportFormat3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormat4.aspx.vb">
+      <DependentUpon>ReportFormat4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormat5.aspx.vb">
+      <DependentUpon>ReportFormat5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormat6.aspx.vb">
+      <DependentUpon>ReportFormat6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormat7.aspx.vb">
+      <DependentUpon>ReportFormat7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormat8.aspx.vb">
+      <DependentUpon>ReportFormat8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormat9.aspx.vb">
+      <DependentUpon>ReportFormat9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormatN1.aspx.designer.vb">
+      <DependentUpon>ReportFormatN1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormatN1.aspx.vb">
+      <DependentUpon>ReportFormatN1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormatN2.aspx.designer.vb">
+      <DependentUpon>ReportFormatN2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormatN2.aspx.vb">
+      <DependentUpon>ReportFormatN2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormatN3.aspx.designer.vb">
+      <DependentUpon>ReportFormatN3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormatN3.aspx.vb">
+      <DependentUpon>ReportFormatN3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormatN4.aspx.designer.vb">
+      <DependentUpon>ReportFormatN4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Report\ReportFormatN4.aspx.vb">
+      <DependentUpon>ReportFormatN4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportMatrix.aspx.vb">
+      <DependentUpon>ReportMatrix.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\ReportSelection.aspx.vb">
+      <DependentUpon>ReportSelection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Report\WebForm5.aspx.vb">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\TimeOut.aspx.vb">
+      <DependentUpon>TimeOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\UI.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\Unauthorized.aspx.vb">
+      <DependentUpon>Unauthorized.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Users\usSearchUserHub.aspx.vb">
+      <DependentUpon>UsSearchUserHub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Users\usUserHub.aspx.vb">
+      <DependentUpon>UsUserHub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Users\usUserHub2.aspx.vb">
+      <DependentUpon>UsUserHub2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Initial\VendorMapping.aspx.vb">
+      <DependentUpon>VendorMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SPP.aspx.designer.vb">
+      <DependentUpon>SPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SPP.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>SPP.aspx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Common\AuthorityCodeSetup\CompanyEligibilitySetup.aspx.resx">
+      <DependentUpon>CompanyEligibilitySetup.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Global\MenuAdd.aspx.resx">
+      <DependentUpon>MenuAdd.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Global\MenuAddNode.aspx.resx">
+      <DependentUpon>MenuAddNode.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Global\MenuMtn.aspx.resx">
+      <DependentUpon>MenuMtn.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\ApprovalRules.aspx.resx">
+      <DependentUpon>ApprovalRules.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\AuthorityCodeSetup\CreateClassificationCode.aspx.resx">
+      <DependentUpon>CreateClassificationCode.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\AuthorityCodeSetup\CreateGradeCode.aspx.resx">
+      <DependentUpon>CreateGradeCode.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\AuthorityCodeSetup\CreateRegAuthorityCode.aspx.resx">
+      <DependentUpon>CreateRegAuthorityCode.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\AuthorityCodeSetup\EligibilitySetup.aspx.resx">
+      <DependentUpon>EligibilitySetup.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Calendar\viewCalendar.aspx.resx">
+      <DependentUpon>viewCalendar.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\catBatchUpload.aspx.resx">
+      <DependentUpon>catBatchUpload.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\HubAddCatalogue.aspx.resx">
+      <DependentUpon>HubAddCatalogue.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\HubAddDiscountItem.aspx.resx">
+      <DependentUpon>HubAddDiscountItem.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\HubCatalogueApproval.aspx.resx">
+      <DependentUpon>HubCatalogueApproval.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\HubCatalogueConfirm.aspx.resx">
+      <DependentUpon>HubCatalogueConfirm.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\HubCatalogueDetail.aspx.resx">
+      <DependentUpon>HubCatalogueDetail.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\HubCatalogueList.aspx.resx">
+      <DependentUpon>HubCatalogueList.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\HubCompanyAssign.aspx.resx">
+      <DependentUpon>HubCompanyAssign.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\HubContractCatalogue.aspx.resx">
+      <DependentUpon>HubContractCatalogue.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\HubContractPrice.aspx.resx">
+      <DependentUpon>HubContractPrice.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\HubListPriceApproval.aspx.resx">
+      <DependentUpon>HubListPriceApproval.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\HubListPriceCatalogue.aspx.resx">
+      <DependentUpon>HubListPriceCatalogue.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\PageDownload.aspx.resx">
+      <DependentUpon>PageDownload.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\ProductDetail.aspx.resx">
+      <DependentUpon>ProductDetail.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Catalogue\viewRemark.aspx.resx">
+      <DependentUpon>viewRemark.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\ChgPassword.aspx.resx">
+      <DependentUpon>ChgPassword.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Companies\coAllCompany.aspx.resx">
+      <DependentUpon>coAllCompany.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Companies\coCompanyDetail.aspx.resx">
+      <DependentUpon>coCompanyDetail.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\ErrorPage.aspx.resx">
+      <DependentUpon>ErrorPage.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\ErrorPage1.aspx.resx">
+      <DependentUpon>ErrorPage1.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\FileDownload.aspx.resx">
+      <DependentUpon>FileDownload.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\ForgotPwd.aspx.resx">
+      <DependentUpon>ForgotPwd.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\Menu.aspx.resx">
+      <DependentUpon>Menu.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\OutstandingPO_pdf.rdlc" />
+    <EmbeddedResource Include="Common\Report\OverduePO_pdf.rdlc" />
+    <EmbeddedResource Include="FTN\Report\InvDetails_pdf_ftn.rdlc" />
+    <EmbeddedResource Include="FTN\Report\PODetails_pdf_ftn.rdlc" />
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Global\PolicySetup.aspx.resx">
+      <DependentUpon>PolicySetup.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Global\usSearchUsrGrp.aspx.resx">
+      <DependentUpon>usSearchUsrGrp.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Global\usUsrGrp.aspx.resx">
+      <DependentUpon>usUsrGrp.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\Header.aspx.resx">
+      <DependentUpon>Header.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\HeaderCurve.aspx.resx">
+      <DependentUpon>HeaderCurve.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\Homepage.aspx.resx">
+      <DependentUpon>Homepage.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\Index.aspx.resx">
+      <DependentUpon>Index.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\Info.aspx.resx">
+      <DependentUpon>Info.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\LocMapping.aspx.resx">
+      <DependentUpon>LocMapping.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\Login.aspx.resx">
+      <DependentUpon>Login.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\MassEmail.aspx.resx">
+      <DependentUpon>MassEmail.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\MenuCurve.aspx.resx">
+      <DependentUpon>MenuCurve.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\PublicRFP\ViewRFPInvitation.aspx.resx">
+      <DependentUpon>ViewRFPInvitation.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\PublicVendorReg\PublicVendorRegAppr.aspx.resx">
+      <DependentUpon>PublicVendorRegAppr.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\PublicVendorReg\ViewPublicVendorRegApprHubadmin.aspx.resx">
+      <DependentUpon>ViewPublicVendorRegApprHubadmin.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\RegenerateAllPassword.aspx.resx">
+      <DependentUpon>RegenerateAllPassword.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\callReport.aspx.resx">
+      <DependentUpon>callReport.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\InvDetails_pdf.rdlc" />
+    <EmbeddedResource Include="Common\Report\InvDetails_xls.rdlc" />
+    <EmbeddedResource Include="Common\Report\InvSummary_pdf.rdlc" />
+    <EmbeddedResource Include="Common\Report\InvSummary_xls.rdlc" />
+    <EmbeddedResource Include="Common\Report\PODetails_pdf.rdlc" />
+    <EmbeddedResource Include="Common\Report\PODetails_xls.rdlc" />
+    <EmbeddedResource Include="Common\Report\POSummary.rdlc" />
+    <EmbeddedResource Include="Common\Report\POSummary_pdf.rdlc" />
+    <EmbeddedResource Include="Common\Report\ReportFormat1.aspx.resx">
+      <DependentUpon>ReportFormat1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportFormat10.aspx.resx">
+      <DependentUpon>ReportFormat10.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportFormat11.aspx.resx">
+      <DependentUpon>ReportFormat11.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportFormat12.aspx.resx">
+      <DependentUpon>ReportFormat12.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportFormat13.aspx.resx">
+      <DependentUpon>ReportFormat13.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportFormat2.aspx.resx">
+      <DependentUpon>ReportFormat2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportFormat3.aspx.resx">
+      <DependentUpon>ReportFormat3.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportFormat4.aspx.resx">
+      <DependentUpon>ReportFormat4.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportFormat5.aspx.resx">
+      <DependentUpon>ReportFormat5.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportFormat6.aspx.resx">
+      <DependentUpon>ReportFormat6.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportFormat7.aspx.resx">
+      <DependentUpon>ReportFormat7.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportFormat8.aspx.resx">
+      <DependentUpon>ReportFormat8.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportFormat9.aspx.resx">
+      <DependentUpon>ReportFormat9.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportMatrix.aspx.resx">
+      <DependentUpon>ReportMatrix.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\ReportSelection.aspx.resx">
+      <DependentUpon>ReportSelection.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Report\WebForm5.aspx.resx">
+      <DependentUpon>WebForm5.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\TimeOut.aspx.resx">
+      <DependentUpon>TimeOut.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\Unauthorized.aspx.resx">
+      <DependentUpon>Unauthorized.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Users\usSearchUserHub.aspx.resx">
+      <DependentUpon>usSearchUserHub.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Users\usUserHub.aspx.resx">
+      <DependentUpon>usUserHub.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Users\usUserHub2.aspx.resx">
+      <DependentUpon>usUserHub2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Initial\VendorMapping.aspx.resx">
+      <DependentUpon>VendorMapping.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\SPP.xml" />
+    <Content Include="Common\AuthorityCodeSetup\CompanyEligibilitySetup.aspx" />
+    <Content Include="Common\AutoComplete\AutoComplete.asmx" />
+    <Content Include="Common\AutoComplete\WebForm1.aspx" />
+    <Content Include="Common\Catalogue\CommodityType.aspx" />
+    <Content Include="Common\Global\DashboardMaster.aspx" />
+    <Content Include="Common\Global\DashboardMatrix.aspx" />
+    <Content Include="Common\Global\DashboardSearch.aspx" />
+    <Content Include="Common\Global\DashboardTypeAhead.aspx" />
+    <Content Include="Common\Global\GSTTaxCodeMaint.aspx" />
+    <Content Include="Common\Global\MenuAccessRight.aspx" />
+    <Content Include="Common\Global\MenuAdd.aspx" />
+    <Content Include="Common\Global\MenuAddNode.aspx" />
+    <Content Include="Common\Global\MenuMtn.aspx" />
+    <Content Include="Common\Global\MenuSequence.aspx" />
+    <Content Include="Common\Initial\Menu.aspx" />
+    <Content Include="Common\Initial\TypeAhead.aspx" />
+    <Content Include="Common\Plugins\css\AutoComplete.css" />
+    <Content Include="Common\Plugins\css\Images\header-background.jpg" />
+    <Content Include="Common\Plugins\css\Images\tab_selectable_lt.jpg" />
+    <Content Include="Common\Plugins\css\Images\tab_selectable_rt.jpg" />
+    <Content Include="Common\Plugins\css\Images\tab_selected_lt.jpg" />
+    <Content Include="Common\Plugins\css\Images\tab_selected_rt.jpg" />
+    <Content Include="Common\Plugins\css\reset.css" />
+    <Content Include="Common\Plugins\css\SPP.css" />
+    <Content Include="Common\Plugins\images\arrow_down.gif" />
+    <Content Include="Common\Plugins\images\compare-trust-seal.gif" />
+    <Content Include="Common\Plugins\images\eProcure2.gif" />
+    <Content Include="Common\Plugins\images\FTN login shakehand.JPG" />
+    <Content Include="Common\Plugins\images\get_adobe_reader.png" />
+    <Content Include="Common\Plugins\images\IE8-DLnow.png" />
+    <Content Include="Common\Plugins\images\MyFairTrade.jpg" />
+    <Content Include="Common\Plugins\images\MyFairTradeNet_header.png" />
+    <Content Include="Common\Plugins\images\MyFairTradeNet_Login.gif" />
+    <Content Include="Common\Plugins\images\MyFairTrade_t.gif" />
+    <Content Include="Common\Plugins\images\m_back.jpg" />
+    <Content Include="Common\Plugins\images\m_home.jpg" />
+    <Content Include="Common\Plugins\images\m_logout.gif" />
+    <Content Include="Common\Plugins\images\m_logout.PNG" />
+    <Content Include="Common\Plugins\images\m_next.jpg" />
+    <Content Include="Common\Plugins\images\strateqgrp.jpg" />
+    <Content Include="Common\Plugins\include\AjaxControlToolkit.dll" />
+    <Content Include="Common\Plugins\include\JQuery.js" />
+    <Content Include="Common\Plugins\include\JqueryAjaxQueue.js" />
+    <Content Include="Common\Plugins\include\JqueryAutoComplete.js" />
+    <Content Include="Common\Plugins\include\JqueryBgiFrame.min.js" />
+    <Content Include="Common\Plugins\include\PNGFix.js" />
+    <Content Include="Common\Plugins\include\ThickboxCompressed.js" />
+    <Content Include="Common\Report\ReportFormatN1.aspx" />
+    <Content Include="Common\Report\ReportFormatN2.aspx" />
+    <Content Include="Common\Report\ReportFormatN3.aspx" />
+    <Content Include="Common\Report\ReportFormatN4.aspx" />
+    <Content Include="Common\Report\ReportFormatN5.aspx" />
+    <Content Include="Common\Report\ReportFormatN6.aspx" />
+    <Content Include="FTN\Report\ReportFormatN2.aspx" />
+    <Content Include="FTN\Report\ReportFormatN4.aspx" />
+    <Content Include="SPP.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AgoraLegacy.dll.config" />
+    <None Include="Common\Report\InvDetails_xls.xsc">
+      <DependentUpon>InvDetails_xls.xsd</DependentUpon>
+    </None>
+    <None Include="Common\Report\InvDetails_xls.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvDetails_xls.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Common\Report\InvDetails_xls.xss">
+      <DependentUpon>InvDetails_xls.xsd</DependentUpon>
+    </None>
+    <None Include="Common\Report\InvSummary_xls.xsc">
+      <DependentUpon>InvSummary_xls.xsd</DependentUpon>
+    </None>
+    <None Include="Common\Report\InvSummary_xls.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvSummary_xls.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Common\Report\InvSummary_xls.xss">
+      <DependentUpon>InvSummary_xls.xsd</DependentUpon>
+    </None>
+    <None Include="Common\Report\OutstandingPO.xsc">
+      <DependentUpon>OutstandingPO.xsd</DependentUpon>
+    </None>
+    <None Include="Common\Report\OutstandingPO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OutstandingPO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Common\Report\OutstandingPO.xss">
+      <DependentUpon>OutstandingPO.xsd</DependentUpon>
+    </None>
+    <None Include="Common\Report\OverduePO.xsc">
+      <DependentUpon>OverduePO.xsd</DependentUpon>
+    </None>
+    <None Include="Common\Report\OverduePO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OverduePO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Common\Report\OverduePO.xss">
+      <DependentUpon>OverduePO.xsd</DependentUpon>
+    </None>
+    <None Include="Common\Report\PODetails_xls.xsc">
+      <DependentUpon>PODetails_xls.xsd</DependentUpon>
+    </None>
+    <None Include="Common\Report\PODetails_xls.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PODetails_xls.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Common\Report\PODetails_xls.xss">
+      <DependentUpon>PODetails_xls.xsd</DependentUpon>
+    </None>
+    <None Include="Common\Report\POSummary.xsc">
+      <DependentUpon>POSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Common\Report\POSummary.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POSummary.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Common\Report\POSummary.xss">
+      <DependentUpon>POSummary.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\PublishProfiles\Agora Local Deployment.pubxml" />
+    <None Include="My Project\PublishProfiles\CustomProfile.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\Template\" />
+    <Folder Include="SEH\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AgoraLegacy\AgoraLegacy.vbproj">
+      <Project>{78c5faf2-eb1a-411b-b60e-7c8dba687ec0}</Project>
+      <Name>AgoraLegacy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4562</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/eAdmin</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

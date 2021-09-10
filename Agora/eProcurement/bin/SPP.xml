@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SPP>
+	<folder name="Common" path="../../Common/" type="wl"></folder>
+	
+	<folder name="whitelabel">
+		<folder name="FTN" path="../../../WL/FTN/" type="wl"></folder>
+		<folder name="SEH" path="../../../WL/SEH/" type="wl"></folder>
+	</folder>
+</SPP>

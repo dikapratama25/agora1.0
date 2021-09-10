@@ -1,0 +1,2295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="ConnectionString">
+      <rd:DataSourceID>143b9d20-fbfa-4c55-b079-4f3b0e5f0e93</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>OLEDB</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+    <DataSource Name="eprocureConnectionString1">
+      <rd:DataSourceID>32708290-56db-4d46-9f5e-8aa4a5b9f518</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="par1">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>par1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:GridSpacing>0.029in</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>0.01in</RightMargin>
+  <LeftMargin>0.1in</LeftMargin>
+  <PageHeader>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox45">
+        <Top>1.885in</Top>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>33</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.235in</Left>
+        <Height>0.15in</Height>
+        <Value>=Code.CurrencyVar</Value>
+      </Textbox>
+      <Textbox Name="textbox43">
+        <Top>2.755in</Top>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>32</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.235in</Left>
+        <Height>0.15in</Height>
+        <Value>=Code.DelTermVar</Value>
+      </Textbox>
+      <Textbox Name="textbox29">
+        <Top>2.755in</Top>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>31</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.945in</Left>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox33">
+        <Top>2.755in</Top>
+        <Width>1.74in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Bottom</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>30</ZIndex>
+        <Left>4.089in</Left>
+        <Height>0.145in</Height>
+        <Value>Delivery Term</Value>
+      </Textbox>
+      <Textbox Name="textbox31">
+        <Top>1.885in</Top>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>29</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.945in</Left>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox32">
+        <Top>1.885in</Top>
+        <Width>1.74in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Bottom</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>28</ZIndex>
+        <Left>4.089in</Left>
+        <Height>0.145in</Height>
+        <Value>Currency</Value>
+      </Textbox>
+      <Textbox Name="textbox7">
+        <Top>1.537in</Top>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>27</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.945in</Left>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="ExpDate">
+        <Top>1.537in</Top>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>26</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.235in</Left>
+        <Height>0.15in</Height>
+        <Value>= format(Code.RMExpDateVar, "dd/MM/yyyy")</Value>
+      </Textbox>
+      <Textbox Name="textbox2">
+        <Top>1.711in</Top>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>25</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.945in</Left>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="QuoteValidityDate">
+        <Top>1.711in</Top>
+        <Width>1.785in</Width>
+        <Style>
+          <FontWeight>500</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>24</ZIndex>
+        <Left>6.235in</Left>
+        <Height>0.15in</Height>
+        <Value>=format(Code.RMReqQuoteValidityVar, "dd/MM/yyyy")</Value>
+      </Textbox>
+      <Textbox Name="textbox18">
+        <Top>1.537in</Top>
+        <Width>1.769in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Bottom</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>23</ZIndex>
+        <Left>4.089in</Left>
+        <Height>0.145in</Height>
+        <Value>RFQ Expiry Date</Value>
+      </Textbox>
+      <Textbox Name="textbox20">
+        <Top>1.711in</Top>
+        <Width>2.175in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>22</ZIndex>
+        <Left>4.089in</Left>
+        <Height>0.145in</Height>
+        <Value>Requested Qutotation Validity</Value>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <Top>2.407in</Top>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>21</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.945in</Left>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Top>2.233in</Top>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>20</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.945in</Left>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox21">
+        <rd:DefaultName>textbox21</rd:DefaultName>
+        <Top>1.373in</Top>
+        <Width>3.799in</Width>
+        <Style>
+          <FontWeight>500</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <LineHeight>16pt</LineHeight>
+        </Style>
+        <ZIndex>19</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>1.856in</Height>
+        <Value>=Code.BuyerAddrVar &amp; " " &amp; Code.buyerComInforVar</Value>
+      </Textbox>
+      <Textbox Name="textbox9">
+        <rd:DefaultName>textbox9</rd:DefaultName>
+        <Top>2.059in</Top>
+        <Width>1.785in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>18</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.235in</Left>
+        <Height>0.15in</Height>
+        <Value>=Code.RMPaymentTermVar</Value>
+      </Textbox>
+      <Textbox Name="textbox16">
+        <Top>2.581in</Top>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>17</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.945in</Left>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox10">
+        <Top>2.059in</Top>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>16</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.945in</Left>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <Top>1.363in</Top>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>15</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.945in</Left>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>1.199in</Top>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>14</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.945in</Left>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="BuyerCompanyName">
+        <Top>1.199in</Top>
+        <Width>3.8in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>13</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>0.16in</Height>
+        <Value>=Code.BuyerCompanyNameVar</Value>
+      </Textbox>
+      <Textbox Name="PaymentMethod">
+        <Top>2.407in</Top>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>12</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.235in</Left>
+        <Height>0.15in</Height>
+        <Value>=Code.RMShipmentTermVar</Value>
+      </Textbox>
+      <Textbox Name="ShipmentTerms">
+        <Top>2.581in</Top>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>11</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.235in</Left>
+        <Height>0.15in</Height>
+        <Value>=Code.RMShipmentModeVar</Value>
+      </Textbox>
+      <Textbox Name="PaymentTerm">
+        <Top>2.233in</Top>
+        <Width>1.785in</Width>
+        <Style>
+          <FontWeight>500</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>10</ZIndex>
+        <Left>6.235in</Left>
+        <Height>0.15in</Height>
+        <Value>=Code.RMPaymentMethodVar</Value>
+      </Textbox>
+      <Textbox Name="Date">
+        <Top>1.363in</Top>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>9</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.235in</Left>
+        <Height>0.15in</Height>
+        <Value>= format(Code.RMDateVar, "dd/MM/yyyy")</Value>
+      </Textbox>
+      <Textbox Name="PONo">
+        <Top>1.199in</Top>
+        <Width>1.785in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.235in</Left>
+        <Height>0.15in</Height>
+        <Value>=Code.RMRFQNoVar</Value>
+      </Textbox>
+      <Textbox Name="ShipmentModesLabel">
+        <Top>2.581in</Top>
+        <Width>1.74in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>4.089in</Left>
+        <Height>0.145in</Height>
+        <Value>Shipment Mode</Value>
+      </Textbox>
+      <Textbox Name="DateLabel">
+        <Top>1.363in</Top>
+        <Width>1.769in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>4.089in</Left>
+        <Height>0.145in</Height>
+        <Value>Date</Value>
+      </Textbox>
+      <Textbox Name="PaymentTermsLabel">
+        <Top>2.059in</Top>
+        <Width>1.74in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Bottom</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <Left>4.089in</Left>
+        <Height>0.145in</Height>
+        <Value>Payment Terms</Value>
+      </Textbox>
+      <Textbox Name="PaymentMethodLabel">
+        <Top>2.233in</Top>
+        <Width>1.74in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <Left>4.089in</Left>
+        <Height>0.145in</Height>
+        <Value>Payment Method</Value>
+      </Textbox>
+      <Textbox Name="ShipmentTermsLabel">
+        <Top>2.407in</Top>
+        <Width>1.74in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>4.089in</Left>
+        <Height>0.145in</Height>
+        <Value>Shipment Terms</Value>
+      </Textbox>
+      <Textbox Name="DoNoLabel">
+        <Top>1.199in</Top>
+        <Width>1.798in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>4.089in</Left>
+        <Height>0.145in</Height>
+        <Value>RFQ No.    </Value>
+      </Textbox>
+      <Image Name="image1">
+        <Sizing>Fit</Sizing>
+        <Top>0.164in</Top>
+        <Width>2.01in</Width>
+        <MIMEType>image/jpeg</MIMEType>
+        <Source>External</Source>
+        <Style />
+        <ZIndex>1</ZIndex>
+        <Height>0.9in</Height>
+        <Value>=Parameters!par1.Value</Value>
+      </Image>
+      <Textbox Name="textbox4">
+        <rd:DefaultName>textbox4</rd:DefaultName>
+        <Top>0.434in</Top>
+        <Width>3.93in</Width>
+        <Style>
+          <FontFamily>Verdana</FontFamily>
+          <FontSize>20pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>4.031in</Left>
+        <Height>0.425in</Height>
+        <Value>Request For Quotation</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>3.248in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <BottomMargin>0.1in</BottomMargin>
+  <rd:ReportID>72a8651e-0703-45c3-9fc1-fa44e3b2fb54</rd:ReportID>
+  <PageWidth>8.27in</PageWidth>
+  <DataSets>
+    <DataSet Name="PreviewRFQ_FTN_DataTablePreviewRFQ">
+      <Fields>
+        <Field Name="RM_RFQ_ID">
+          <DataField>RM_RFQ_ID</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="RM_Coy_ID">
+          <DataField>RM_Coy_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_RFQ_No">
+          <DataField>RM_RFQ_No</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_RFQ_Name">
+          <DataField>RM_RFQ_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_Expiry_Date">
+          <DataField>RM_Expiry_Date</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RM_Status">
+          <DataField>RM_Status</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_Remark">
+          <DataField>RM_Remark</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_Created_By">
+          <DataField>RM_Created_By</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_Created_On">
+          <DataField>RM_Created_On</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RM_Currency_Code">
+          <DataField>RM_Currency_Code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_Payment_Term">
+          <DataField>RM_Payment_Term</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_Payment_Type">
+          <DataField>RM_Payment_Type</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_Shipment_Term">
+          <DataField>RM_Shipment_Term</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_Shipment_Mode">
+          <DataField>RM_Shipment_Mode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_Prefix">
+          <DataField>RM_Prefix</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_B_Display_Status">
+          <DataField>RM_B_Display_Status</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_Reqd_Quote_Validity">
+          <DataField>RM_Reqd_Quote_Validity</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RM_Contact_Person">
+          <DataField>RM_Contact_Person</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_Contact_Number">
+          <DataField>RM_Contact_Number</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_Email">
+          <DataField>RM_Email</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_RFQ_OPTION">
+          <DataField>RM_RFQ_OPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RM_VEN_DISTR_LIST_INDEX">
+          <DataField>RM_VEN_DISTR_LIST_INDEX</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RD_RFQ_ID">
+          <DataField>RD_RFQ_ID</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="RD_Coy_ID">
+          <DataField>RD_Coy_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RD_RFQ_Line">
+          <DataField>RD_RFQ_Line</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RD_Product_Code">
+          <DataField>RD_Product_Code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RD_Vendor_Item_Code">
+          <DataField>RD_Vendor_Item_Code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RD_Quantity">
+          <DataField>RD_Quantity</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RD_Product_Desc">
+          <DataField>RD_Product_Desc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RD_UOM">
+          <DataField>RD_UOM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RD_Delivery_Lead_Time">
+          <DataField>RD_Delivery_Lead_Time</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RD_Warranty_Terms">
+          <DataField>RD_Warranty_Terms</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RD_Product_Name">
+          <DataField>RD_Product_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RIV_RFQ_ID">
+          <DataField>RIV_RFQ_ID</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="RIV_S_Coy_ID">
+          <DataField>RIV_S_Coy_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RIV_S_Coy_Name">
+          <DataField>RIV_S_Coy_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RIV_S_Addr_Line1">
+          <DataField>RIV_S_Addr_Line1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RIV_S_Addr_Line2">
+          <DataField>RIV_S_Addr_Line2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RIV_S_Addr_Line3">
+          <DataField>RIV_S_Addr_Line3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RIV_S_PostCode">
+          <DataField>RIV_S_PostCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RIV_S_City">
+          <DataField>RIV_S_City</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RIV_S_State">
+          <DataField>RIV_S_State</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RIV_S_Country">
+          <DataField>RIV_S_Country</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RIV_S_Phone">
+          <DataField>RIV_S_Phone</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RIV_S_Fax">
+          <DataField>RIV_S_Fax</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RIV_S_Email">
+          <DataField>RIV_S_Email</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CMState">
+          <DataField>CMState</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CMCtry">
+          <DataField>CMCtry</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SupplierAddrState">
+          <DataField>SupplierAddrState</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SupplierAddrCtry">
+          <DataField>SupplierAddrCtry</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="sUPPBUSSREGNO">
+          <DataField>sUPPBUSSREGNO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RFQ_PaymentTerm">
+          <DataField>RFQ_PaymentTerm</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RFQ_ShipmentTerm">
+          <DataField>RFQ_ShipmentTerm</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RFQ_ShipmentMode">
+          <DataField>RFQ_ShipmentMode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_COY_ID">
+          <DataField>CM_COY_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_COY_NAME">
+          <DataField>CM_COY_NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_COY_TYPE">
+          <DataField>CM_COY_TYPE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_PARENT_COY_ID">
+          <DataField>CM_PARENT_COY_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_ACCT_NO">
+          <DataField>CM_ACCT_NO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_BANK">
+          <DataField>CM_BANK</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_BRANCH">
+          <DataField>CM_BRANCH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_ADDR_LINE1">
+          <DataField>CM_ADDR_LINE1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_ADDR_LINE2">
+          <DataField>CM_ADDR_LINE2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_ADDR_LINE3">
+          <DataField>CM_ADDR_LINE3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_POSTCODE">
+          <DataField>CM_POSTCODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_CITY">
+          <DataField>CM_CITY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_STATE">
+          <DataField>CM_STATE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_COUNTRY">
+          <DataField>CM_COUNTRY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_PHONE">
+          <DataField>CM_PHONE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_FAX">
+          <DataField>CM_FAX</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_EMAIL">
+          <DataField>CM_EMAIL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_COY_LOGO">
+          <DataField>CM_COY_LOGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_BUSINESS_REG_NO">
+          <DataField>CM_BUSINESS_REG_NO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_TAX_REG_NO">
+          <DataField>CM_TAX_REG_NO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_PAYMENT_TERM">
+          <DataField>CM_PAYMENT_TERM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_PAYMENT_METHOD">
+          <DataField>CM_PAYMENT_METHOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_ACTUAL_TERMSANDCONDFILE">
+          <DataField>CM_ACTUAL_TERMSANDCONDFILE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_HUB_TERMSANDCONDFILE">
+          <DataField>CM_HUB_TERMSANDCONDFILE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_PWD_DURATION">
+          <DataField>CM_PWD_DURATION</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CM_TAX_CALC_BY">
+          <DataField>CM_TAX_CALC_BY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_CURRENCY_CODE">
+          <DataField>CM_CURRENCY_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_BCM_SET">
+          <DataField>CM_BCM_SET</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_BUDGET_FROM_DATE">
+          <DataField>CM_BUDGET_FROM_DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CM_BUDGET_TO_DATE">
+          <DataField>CM_BUDGET_TO_DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CM_RFQ_OPTION">
+          <DataField>CM_RFQ_OPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_LICENCE_PACKAGE">
+          <DataField>CM_LICENCE_PACKAGE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_LICENSE_USERS">
+          <DataField>CM_LICENSE_USERS</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CM_SUB_START_DT">
+          <DataField>CM_SUB_START_DT</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CM_SUB_END_DT">
+          <DataField>CM_SUB_END_DT</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CM_LICENSE_PRODUCTS">
+          <DataField>CM_LICENSE_PRODUCTS</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CM_FINDEPT_MODE">
+          <DataField>CM_FINDEPT_MODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_PRIV_LABELING">
+          <DataField>CM_PRIV_LABELING</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_SKINS_ID">
+          <DataField>CM_SKINS_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_TRAINING">
+          <DataField>CM_TRAINING</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_STATUS">
+          <DataField>CM_STATUS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_DELETED">
+          <DataField>CM_DELETED</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_MOD_BY">
+          <DataField>CM_MOD_BY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_MOD_DT">
+          <DataField>CM_MOD_DT</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CM_ENT_BY">
+          <DataField>CM_ENT_BY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_ENT_DT">
+          <DataField>CM_ENT_DT</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CM_SKU">
+          <DataField>CM_SKU</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CM_TRANS_NO">
+          <DataField>CM_TRANS_NO</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CM_CONTACT">
+          <DataField>CM_CONTACT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_REPORT_USERS">
+          <DataField>CM_REPORT_USERS</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CM_INV_APPR">
+          <DataField>CM_INV_APPR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_MULTI_PO">
+          <DataField>CM_MULTI_PO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM_BA_CANCEL">
+          <DataField>CM_BA_CANCEL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RFQ_PaymentMethod">
+          <DataField>RFQ_PaymentMethod</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RD_ITEM_TYPE">
+          <DataField>RD_ITEM_TYPE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DeliveryTerm">
+          <DataField>DeliveryTerm</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>eprocureConnectionString1</DataSourceName>
+        <CommandText>SELECT   RFQ_MSTR.RM_RFQ_ID, RFQ_MSTR.RM_Coy_ID, RFQ_MSTR.RM_RFQ_No, RFQ_MSTR.RM_RFQ_Name,  RFQ_MSTR.RM_Expiry_Date, RFQ_MSTR.RM_Status, RFQ_MSTR.RM_Remark, RFQ_MSTR.RM_Created_By, RFQ_MSTR.RM_Created_On, RFQ_MSTR.RM_Currency_Code, RFQ_MSTR.RM_Payment_Term, RFQ_MSTR.RM_Payment_Type, RFQ_MSTR.RM_Shipment_Term, RFQ_MSTR.RM_Shipment_Mode, RFQ_MSTR.RM_Prefix, RFQ_MSTR.RM_B_Display_Status, RFQ_MSTR.RM_Reqd_Quote_Validity, 
+RFQ_MSTR.RM_Contact_Person, RFQ_MSTR.RM_Contact_Number, RFQ_MSTR.RM_Email, 
+RFQ_MSTR.RM_RFQ_OPTION, RFQ_MSTR.RM_VEN_DISTR_LIST_INDEX, RFQ_DETAIL.RD_RFQ_ID, 
+RFQ_DETAIL.RD_Coy_ID, RFQ_DETAIL.RD_RFQ_Line, RFQ_DETAIL.RD_Product_Code, 
+RFQ_DETAIL.RD_Vendor_Item_Code, RFQ_DETAIL.RD_Quantity, RFQ_DETAIL.RD_Product_Desc, 
+RFQ_DETAIL.RD_UOM, RFQ_DETAIL.RD_Delivery_Lead_Time, RFQ_DETAIL.RD_Warranty_Terms, 
+RFQ_DETAIL.RD_Product_Name, RFQ_INVITED_VENLIST.RIV_RFQ_ID, '' AS RD_ITEM_TYPE, RFQ_INVITED_VENLIST.RIV_S_Coy_ID, 
+RFQ_INVITED_VENLIST.RIV_S_Coy_Name, RFQ_INVITED_VENLIST.RIV_S_Addr_Line1, 
+RFQ_INVITED_VENLIST.RIV_S_Addr_Line2, RFQ_INVITED_VENLIST.RIV_S_Addr_Line3, 
+                RFQ_INVITED_VENLIST.RIV_S_PostCode, RFQ_INVITED_VENLIST.RIV_S_City, 
+                RFQ_INVITED_VENLIST.RIV_S_State, RFQ_INVITED_VENLIST.RIV_S_Country, 
+                RFQ_INVITED_VENLIST.RIV_S_Phone, RFQ_INVITED_VENLIST.RIV_S_Fax, 
+                RFQ_INVITED_VENLIST.RIV_S_Email, COMPANY_MSTR.CM_COY_ID, COMPANY_MSTR.CM_COY_NAME, 
+                COMPANY_MSTR.CM_COY_TYPE, COMPANY_MSTR.CM_PARENT_COY_ID, COMPANY_MSTR.CM_ACCT_NO, 
+                COMPANY_MSTR.CM_BANK, COMPANY_MSTR.CM_BRANCH, COMPANY_MSTR.CM_ADDR_LINE1, 
+                COMPANY_MSTR.CM_ADDR_LINE2, COMPANY_MSTR.CM_ADDR_LINE3, COMPANY_MSTR.CM_POSTCODE, 
+                COMPANY_MSTR.CM_CITY, COMPANY_MSTR.CM_STATE, COMPANY_MSTR.CM_COUNTRY, 
+                COMPANY_MSTR.CM_PHONE, COMPANY_MSTR.CM_FAX, COMPANY_MSTR.CM_EMAIL, 
+                COMPANY_MSTR.CM_COY_LOGO, COMPANY_MSTR.CM_BUSINESS_REG_NO, 
+                COMPANY_MSTR.CM_TAX_REG_NO, COMPANY_MSTR.CM_PAYMENT_TERM, 
+                COMPANY_MSTR.CM_PAYMENT_METHOD, COMPANY_MSTR.CM_ACTUAL_TERMSANDCONDFILE, 
+                COMPANY_MSTR.CM_HUB_TERMSANDCONDFILE, COMPANY_MSTR.CM_PWD_DURATION, 
+                COMPANY_MSTR.CM_TAX_CALC_BY, COMPANY_MSTR.CM_CURRENCY_CODE, 
+                COMPANY_MSTR.CM_BCM_SET, COMPANY_MSTR.CM_BUDGET_FROM_DATE, 
+                COMPANY_MSTR.CM_BUDGET_TO_DATE, COMPANY_MSTR.CM_RFQ_OPTION, 
+                COMPANY_MSTR.CM_LICENCE_PACKAGE, COMPANY_MSTR.CM_LICENSE_USERS, 
+                COMPANY_MSTR.CM_SUB_START_DT, COMPANY_MSTR.CM_SUB_END_DT, 
+                COMPANY_MSTR.CM_LICENSE_PRODUCTS, COMPANY_MSTR.CM_FINDEPT_MODE, 
+                COMPANY_MSTR.CM_PRIV_LABELING, COMPANY_MSTR.CM_SKINS_ID, COMPANY_MSTR.CM_TRAINING, 
+                COMPANY_MSTR.CM_STATUS, COMPANY_MSTR.CM_DELETED, COMPANY_MSTR.CM_MOD_BY, 
+                COMPANY_MSTR.CM_MOD_DT, COMPANY_MSTR.CM_ENT_BY, COMPANY_MSTR.CM_ENT_DT, 
+                COMPANY_MSTR.CM_SKU, COMPANY_MSTR.CM_TRANS_NO, COMPANY_MSTR.CM_CONTACT, 
+                COMPANY_MSTR.CM_REPORT_USERS, COMPANY_MSTR.CM_INV_APPR, COMPANY_MSTR.CM_MULTI_PO, COMPANY_MSTR.CM_BA_CANCEL,
+'' AS CMState,'' AS CMCtry,'' AS SupplierAddrCtry,'' AS RFQ_PaymentTerm,'' AS RFQ_PaymentMethod, ''AS RFQ_ShipmentTerm, ''AS RFQ_ShipmentMode, ''  AS sUPPBUSSREGNO, '' AS DeliveryTerm
+FROM      RFQ_MSTR INNER JOIN
+                RFQ_DETAIL ON RFQ_MSTR.RM_RFQ_ID = RFQ_DETAIL.RD_RFQ_ID INNER JOIN
+                RFQ_INVITED_VENLIST ON RFQ_MSTR.RM_RFQ_ID = RFQ_INVITED_VENLIST.RIV_RFQ_ID INNER JOIN
+                COMPANY_MSTR ON RFQ_MSTR.RM_Coy_ID = COMPANY_MSTR.CM_COY_ID
+WHERE   (RFQ_MSTR.RM_RFQ_No = 'etrx/rfq/09/0010') AND (RFQ_MSTR.RM_Coy_ID = 'demo') AND 
+                (RFQ_INVITED_VENLIST.RIV_S_Coy_ID = 'supplier')</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>PreviewRFQ_FTN</rd:DataSetName>
+        <rd:TableName>DataTablePreviewRFQ</rd:TableName>
+        <rd:TableAdapterName>DataTablePreviewRFQTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>FillPreviewRFQ</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetDataPreviewRFQ</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Code>Public shared RMRFQNoVar as string
+Public shared RMDateVar  as date
+Public shared RMExpDateVar  as date
+Public shared RMReqQuoteValidityVar  as date
+
+Public shared RMPaymentTermVar as string
+Public shared RMPaymentMethodVar as string
+Public shared RMShipmentTermVar as string
+Public shared RMShipmentModeVar as string
+
+Public shared BuyerCompanyNameVar   as string
+Public shared SupplierCompanyNameVar  as string
+
+Public shared buyerComInforVar  as string
+Public shared buyerAddrVar  as string
+Public shared RMHeaderRemarkVar  as string
+Public shared suppComInforVar  as string
+Public shared suppAddrVar  as string
+
+Public shared CurrencyVar  as string
+Public shared DelTermVar  as string
+
+public function GetCurrency(Currency as string) As string
+     CurrencyVar = Currency
+     return CurrencyVar
+End function
+
+public function GetDelTerm(DelCode as string) As string
+     DelTermVar = DelCode
+     return DelTermVar 
+End function
+
+public function GetRFQNo(RMRFQNo as string) As string
+     RMRFQNoVar = RMRFQNo 
+     return RMRFQNoVar 
+End function
+
+public function GetRMDate(RMDate as date) As date
+     RMDateVar    = RMDate 
+     return RMDateVar  
+End function
+
+public function GetRMExpDate(RMExpDate as date) As date
+    RMExpDateVar    = RMExpDate
+     return RMExpDateVar   
+End function
+
+public function GetRMQuoteValDate( RMReqQuoteValDate as date) As date
+    RMReqQuoteValidityVar    = RMReqQuoteValDate
+     return RMReqQuoteValidityVar 
+End function
+
+public function GetRMPaymentTerm(RMPaymentTerm as String) As string
+     RMPaymentTermVar = RMPaymentTerm
+     return RMPaymentTermVar 
+End function
+
+public function GetRMPaymentMethod(RMPaymentMethod as String) As string
+     RMPaymentMethodVar = RMPaymentMethod 
+     return RMPaymentMethodVar
+End function
+
+public function GetRMShipmentTerm(RMShipmentTerm as String) As string
+     RMShipmentTermVar = RMShipmentTerm
+     return RMShipmentTermVar 
+End function
+
+public function GetRMShipmentMode(RMShipmentMode as String) As string
+     RMShipmentModeVar = RMShipmentMode
+     return RMShipmentModeVar 
+End function
+
+public function GetBuyerCompanyName(BuyerCompanyName as string) As string
+     BuyerCompanyNameVar  = BuyerCompanyName
+     return BuyerCompanyNameVar  
+End function
+
+public function GetSupplierCoyName(SupplierCompanyName as string) As string
+     SupplierCompanyNameVar  = SupplierCompanyName
+     return SupplierCompanyNameVar  
+End function
+
+public function GetBuyerAddr(buyerAddr1 as String, buyerAddr2 as String, buyerAddr3 as String, buyerPostcode as string, buyerCity as string, buyerState as string, buyerCountry as string ) As string
+     buyerAddrVar = buyerAddr1 
+
+     If Not IsDBNull( buyerAddr2 ) And buyerAddr2 &lt;&gt; "" Then
+            buyerAddrVar = buyerAddrVar &amp;  VbCrLf  &amp;   buyerAddr2 
+     End If
+
+     If Not IsDBNull( buyerAddr3 ) And buyerAddr3 &lt;&gt; "" Then
+           buyerAddrVar = buyerAddrVar &amp; VbCrLf  &amp;   buyerAddr3 
+     End If
+
+    If Not IsDBNull( buyerPostcode ) And buyerPostcode &lt;&gt; "" Then
+           buyerAddrVar = buyerAddrVar &amp; VbCrLf &amp;  buyerPostcode 
+     End If
+
+    If Not IsDBNull( buyerCity ) And buyerCity &lt;&gt; "" Then
+           buyerAddrVar = buyerAddrVar &amp; " " &amp; buyerCity 
+     End If
+
+    If Not IsDBNull( buyerState ) And buyerState &lt;&gt; "" Then
+           buyerAddrVar = buyerAddrVar &amp; VbCrLf &amp;  buyerState 
+     End If
+
+    If Not IsDBNull( buyerCountry ) And buyerCountry &lt;&gt; "" Then
+           buyerAddrVar = buyerAddrVar &amp; " " &amp; buyerCountry 
+     End If
+
+return buyerAddrVar 
+
+End function
+
+public function GetBuyerComInfor(buyerBussRegNo as String, buyerCRName as String, buyerTel as String, buyerEmail as string) As string
+     buyerComInforVar = VbCrLf  &amp; "Business Reg. No."  &amp; space(6) &amp; ":  "  &amp; buyerBussRegNo 
+     buyerComInforVar = buyerComInforVar  &amp; VbCrLf  &amp; "Contact Person"  &amp; space(11) &amp; ":  "  &amp; buyerCRName 
+     buyerComInforVar = buyerComInforVar  &amp; VbCrLf  &amp; "Tel"  &amp; space(31) &amp; ":  "  &amp; buyerTel 
+     buyerComInforVar = buyerComInforVar  &amp; VbCrLf  &amp; "Email"  &amp; space(27) &amp; ":  "  &amp; buyerEmail 
+    
+
+    return buyerComInforVar 
+
+End function
+
+public function GetRMRemark(RMHeaderRemark as string) As string
+     RMHeaderRemarkVar  = RMHeaderRemark 
+     return RMHeaderRemarkVar  
+End function
+
+
+
+public function GetSuppAddr(suppAddr1 as String, suppAddr2 as String, suppAddr3 as String, suppPostcode as string, suppCity as string, suppState as string, suppCountry as string ) As string
+     suppAddrVar  = suppAddr1 
+
+     If Not IsDBNull( suppAddr2 ) And suppAddr2 &lt;&gt; "" Then
+            suppAddrVar  = suppAddrVar  &amp;  VbCrLf  &amp;   suppAddr2 
+     End If
+
+     If Not IsDBNull( suppAddr3 ) And suppAddr3 &lt;&gt; "" Then
+           suppAddrVar  = suppAddrVar  &amp; VbCrLf  &amp;   suppAddr3 
+     End If
+
+    If Not IsDBNull( suppPostcode ) And suppPostcode &lt;&gt; "" Then
+           suppAddrVar  = suppAddrVar  &amp; VbCrLf &amp;  suppPostcode 
+     End If
+
+    If Not IsDBNull( suppCity ) And suppCity &lt;&gt; "" Then
+           suppAddrVar  = suppAddrVar  &amp; " " &amp; suppCity 
+     End If
+
+    If Not IsDBNull( suppState ) And suppState &lt;&gt; "" Then
+           suppAddrVar  = suppAddrVar  &amp; VbCrLf &amp;  suppState 
+     End If
+
+    If Not IsDBNull( suppCountry ) And suppCountry &lt;&gt; "" Then
+           suppAddrVar  = suppAddrVar  &amp; " " &amp; suppCountry 
+     End If
+
+return suppAddrVar  
+
+End function
+
+public function GetSuppComInfor(suppBussRegNo as String, suppTel as String, suppEmail as string) As string
+     suppComInforVar  = VbCrLf  &amp; "Business Reg. No."  &amp; space(6) &amp; ":  "  &amp; suppBussRegNo 
+
+      
+     suppComInforVar  = suppComInforVar  &amp; VbCrLf  &amp; "Tel"  &amp; space(31) &amp; ":  "  &amp; suppTel 
+
+     suppComInforVar  = suppComInforVar  &amp; VbCrLf  &amp; "Email"  &amp; space(27) &amp; ":  "  &amp; suppEmail 
+
+    return suppComInforVar  
+
+End function</Code>
+  <Width>8.078in</Width>
+  <Body>
+    <ReportItems>
+      <Table Name="table1">
+        <ZIndex>17</ZIndex>
+        <DataSetName>PreviewRFQ_FTN_DataTablePreviewRFQ</DataSetName>
+        <KeepTogether>true</KeepTogether>
+        <TableGroups>
+          <TableGroup>
+            <Grouping Name="table1_Group1">
+              <GroupExpressions>
+                <GroupExpression>=Fields!RIV_S_Coy_ID.Value</GroupExpression>
+              </GroupExpressions>
+              <PageBreakAtStart>true</PageBreakAtStart>
+            </Grouping>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ColSpan>6</ColSpan>
+                      <ReportItems>
+                        <Textbox Name="textbox14">
+                          <rd:DefaultName>textbox14</rd:DefaultName>
+                          <Style>
+                            <FontWeight>700</FontWeight>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>21</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>="To:" &amp; vbNewLine &amp;
+ Fields!RIV_S_Coy_Name.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox19">
+                          <rd:DefaultName>textbox19</rd:DefaultName>
+                          <Style>
+                            <FontWeight>700</FontWeight>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>20</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox35">
+                          <rd:DefaultName>textbox35</rd:DefaultName>
+                          <Style>
+                            <FontWeight>700</FontWeight>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>19</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.46594in</Height>
+                </TableRow>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ColSpan>7</ColSpan>
+                      <ReportItems>
+                        <Textbox Name="textbox17">
+                          <rd:DefaultName>textbox17</rd:DefaultName>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>18</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=iif( (Fields!RIV_S_Addr_Line2.Value) &lt;&gt; "" and not isdbnull(Fields!RIV_S_Addr_Line2.Value) ,
+       
+		 IIf( (Fields!RIV_S_Addr_Line3.Value) &lt;&gt; "" and not isdbnull(Fields!RIV_S_Addr_Line3.Value) ,
+				Fields!RIV_S_Addr_Line1.Value &amp; vbcrlf &amp; Fields!RIV_S_Addr_Line2.Value   &amp; vbcrlf  &amp; Fields!RIV_S_Addr_Line3.Value &amp; vbcrlf  &amp; Fields!RIV_S_PostCode.Value &amp; " " &amp; Fields!RIV_S_City.Value &amp;  vbcrlf  &amp;  Fields!SupplierAddrState.Value &amp; " " &amp; Fields!SupplierAddrCtry.Value &amp; vbcrlf &amp; "Business Reg. No."  &amp; space(6) &amp; ":  "  &amp; Fields!sUPPBUSSREGNO.Value &amp; VbCrLf  &amp; "Tel"  &amp; space(31) &amp; ":  "  &amp;  Fields!RIV_S_Fax.Value &amp; VbCrLf  &amp; "Email"  &amp; space(27) &amp; ":  "  &amp; Fields!RIV_S_Email.Value,
+				Fields!RIV_S_Addr_Line1.Value &amp; vbcrlf &amp; Fields!RIV_S_Addr_Line2.Value &amp; vbcrlf  &amp; Fields!RIV_S_PostCode.Value &amp; " " &amp; Fields!RIV_S_City.Value &amp;  vbcrlf  &amp;  Fields!SupplierAddrState.Value &amp; " " &amp; Fields!SupplierAddrCtry.Value &amp; vbcrlf &amp; "Business Reg. No."  &amp; space(6) &amp; ":  "  &amp; Fields!sUPPBUSSREGNO.Value &amp; VbCrLf  &amp; "Tel"  &amp; space(31) &amp; ":  "  &amp;  Fields!RIV_S_Fax.Value &amp; VbCrLf  &amp; "Email"  &amp; space(27) &amp; ":  "  &amp; Fields!RIV_S_Email.Value
+	     
+			)    
+     
+     ,
+     
+     
+		 IIf( (Fields!RIV_S_Addr_Line3.Value) &lt;&gt; "" and not isdbnull(Fields!RIV_S_Addr_Line3.Value),
+				Fields!RIV_S_Addr_Line1.Value &amp; vbcrlf  &amp; Fields!RIV_S_Addr_Line3.Value &amp; vbcrlf  &amp; Fields!RIV_S_PostCode.Value &amp; " " &amp; Fields!RIV_S_City.Value &amp;  vbcrlf  &amp;  Fields!SupplierAddrState.Value &amp; " " &amp; Fields!SupplierAddrCtry.Value &amp; vbcrlf &amp; "Business Reg. No."  &amp; space(6) &amp; ":  "  &amp; Fields!sUPPBUSSREGNO.Value &amp; VbCrLf  &amp; "Tel"  &amp; space(31) &amp; ":  "  &amp;  Fields!RIV_S_Fax.Value &amp; VbCrLf  &amp; "Email"  &amp; space(27) &amp; ":  "  &amp; Fields!RIV_S_Email.Value,
+				Fields!RIV_S_Addr_Line1.Value &amp; vbcrlf &amp; Fields!RIV_S_Addr_Line3.Value &amp; vbcrlf  &amp; Fields!RIV_S_PostCode.Value &amp; " " &amp; Fields!RIV_S_City.Value &amp;  vbcrlf  &amp;  Fields!SupplierAddrState.Value &amp; " " &amp; Fields!SupplierAddrCtry.Value &amp; vbcrlf &amp; "Business Reg. No."  &amp; space(6) &amp; ":  "  &amp; Fields!sUPPBUSSREGNO.Value &amp; VbCrLf  &amp; "Tel"  &amp; space(31) &amp; ":  "  &amp;  Fields!RIV_S_Fax.Value &amp; VbCrLf  &amp; "Email"  &amp; space(27) &amp; ":  "  &amp; Fields!RIV_S_Email.Value
+	     
+			)
+     
+     )</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox37">
+                          <rd:DefaultName>textbox37</rd:DefaultName>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>17</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>1.00357in</Height>
+                </TableRow>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ColSpan>2</ColSpan>
+                      <ReportItems>
+                        <Textbox Name="textbox23">
+                          <rd:DefaultName>textbox23</rd:DefaultName>
+                          <Style>
+                            <FontWeight>700</FontWeight>
+                            <TextAlign>Left</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>16</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>Remarks          </Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ColSpan>5</ColSpan>
+                      <ReportItems>
+                        <Textbox Name="RM_Remark">
+                          <rd:DefaultName>RM_Remark</rd:DefaultName>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>15</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=":" &amp; " " &amp; First(Fields!RM_Remark.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox38">
+                          <rd:DefaultName>textbox38</rd:DefaultName>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>14</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.53763in</Height>
+                </TableRow>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox50">
+                          <rd:DefaultName>textbox50</rd:DefaultName>
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontWeight>700</FontWeight>
+                            <TextAlign>Right</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>13</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=vbNullChar &amp; vbNewLine &amp; "NO."</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ColSpan>2</ColSpan>
+                      <ReportItems>
+                        <Textbox Name="textbox51">
+                          <rd:DefaultName>textbox51</rd:DefaultName>
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontWeight>700</FontWeight>
+                            <TextAlign>Left</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>12</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=vbNullChar &amp; vbNewLine &amp; "Item Description"</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox52">
+                          <rd:DefaultName>textbox52</rd:DefaultName>
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontWeight>700</FontWeight>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>11</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=vbNullChar &amp; vbNewLine &amp; "UOM"</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox53">
+                          <rd:DefaultName>textbox53</rd:DefaultName>
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontWeight>700</FontWeight>
+                            <TextAlign>Right</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>10</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=vbNullChar &amp; vbNewLine &amp; "Qty"</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox54">
+                          <rd:DefaultName>textbox54</rd:DefaultName>
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontWeight>700</FontWeight>
+                            <TextAlign>Right</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>9</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>="Delivery Lead Time" &amp; vbNewLine &amp; "(Days)"</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox26">
+                          <rd:DefaultName>textbox26</rd:DefaultName>
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontWeight>700</FontWeight>
+                            <TextAlign>Right</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>8</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=vbNullChar &amp; vbNewLine &amp; "W. T. (Mths)"</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox39">
+                          <rd:DefaultName>textbox39</rd:DefaultName>
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                            </BorderStyle>
+                            <FontWeight>700</FontWeight>
+                            <TextAlign>Left</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>7</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=vbNullChar &amp; vbNewLine &amp; "Item Type"</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.30898in</Height>
+                </TableRow>
+              </TableRows>
+              <RepeatOnNewPage>true</RepeatOnNewPage>
+            </Header>
+          </TableGroup>
+        </TableGroups>
+        <Width>7.95407in</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="RD_RFQ_Line">
+                      <rd:DefaultName>RD_RFQ_Line</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!RD_RFQ_Line.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ColSpan>2</ColSpan>
+                  <ReportItems>
+                    <Textbox Name="RD_Product_Desc">
+                      <rd:DefaultName>RD_Product_Desc</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!RD_Product_Desc.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="RD_UOM">
+                      <rd:DefaultName>RD_UOM</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!RD_UOM.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="RD_Quantity">
+                      <rd:DefaultName>RD_Quantity</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!RD_Quantity.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="RD_Delivery_Lead_Time">
+                      <rd:DefaultName>RD_Delivery_Lead_Time</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>3pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=IIf(Fields!RD_Delivery_Lead_Time.Value = 0 , "Ex-Stock",
+Fields!RD_Delivery_Lead_Time.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox28">
+                      <rd:DefaultName>textbox28</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!RD_Warranty_Terms.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox40">
+                      <rd:DefaultName>textbox40</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!RD_ITEM_TYPE.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.261in</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Style>
+          <TextAlign>Left</TextAlign>
+        </Style>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <Visibility>
+                <Hidden>true</Hidden>
+              </Visibility>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox13">
+                      <rd:DefaultName>textbox13</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>29</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=vbNullChar &amp; vbNewLine &amp; "NO."</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox11">
+                      <rd:DefaultName>textbox11</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>28</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=vbNullChar &amp; vbNewLine &amp; "Item Description"</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox41">
+                      <rd:DefaultName>textbox41</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>27</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox24">
+                      <rd:DefaultName>textbox24</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>26</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=vbNullChar &amp; vbNewLine &amp; "UOM"</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox27">
+                      <rd:DefaultName>textbox27</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>25</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=vbNullChar &amp; vbNewLine &amp; "Qty"</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox30">
+                      <rd:DefaultName>textbox30</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>24</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>="Delivery Lead Time" &amp; vbNewLine &amp; "(Days)"</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox15">
+                      <rd:DefaultName>textbox15</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>23</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox34">
+                      <rd:DefaultName>textbox34</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>22</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.10753in</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>0.31478in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.05879in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.291in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.957in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.638in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.725in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.0415in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.928in</Width>
+          </TableColumn>
+        </TableColumns>
+        <Height>2.68465in</Height>
+        <Left>0.029in</Left>
+      </Table>
+      <Textbox Name="RFQRemarkVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.595in</Top>
+        <Width>0.319in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>16</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7.685in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetRMRemark(First(Fields!RM_Remark.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="SuppCoyInforVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.16in</Top>
+        <Width>0.319in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>15</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7.395in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetSuppComInfor(First(Fields!sUPPBUSSREGNO.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!RIV_S_Phone.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"),First(Fields!RIV_S_Email.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="SuppAddrVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.16in</Top>
+        <Width>0.261in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>14</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7.076in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetSuppAddr(First(Fields!RIV_S_Addr_Line1.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!RIV_S_Addr_Line2.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!RIV_S_Addr_Line3.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!RIV_S_PostCode.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!RIV_S_City.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!SupplierAddrState.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!SupplierAddrCtry.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ") )</Value>
+      </Textbox>
+      <Textbox Name="SuppCoyNameVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.16in</Top>
+        <Width>0.232in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>13</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.815in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetSupplierCoyName(First(Fields!RIV_S_Coy_Name.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="BuyerInforVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.189in</Top>
+        <Width>0.261in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>12</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.554in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetBuyerComInfor(First(Fields!CM_BUSINESS_REG_NO.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!RM_Contact_Person.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!RM_Contact_Number.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!RM_Email.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="BuyerAddrVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.189in</Top>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>11</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.235in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetBuyerAddr(First(Fields!CM_ADDR_LINE1.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!CM_ADDR_LINE2.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!CM_ADDR_LINE3.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!CM_POSTCODE.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"),First(Fields!CM_CITY.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!CMState.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"), First(Fields!CMCtry.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="BuyerCoyNameVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.189in</Top>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>10</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.916in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetBuyerCompanyName(First(Fields!CM_COY_NAME.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="ShipmentModeVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.189in</Top>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>9</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.597in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetRMShipmentMode(First(Fields!RFQ_ShipmentMode.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="ShipmentTermVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.189in</Top>
+        <Width>0.261in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.307in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetRMShipmentTerm(First(Fields!RFQ_ShipmentTerm.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="PaymentMethodVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.537in</Top>
+        <Width>0.232in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7.192in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetRMPaymentMethod(First(Fields!RFQ_PaymentMethod.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="PaymentTermVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.189in</Top>
+        <Width>0.261in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>4.756in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetRMPaymentTerm(First(Fields!RFQ_PaymentTerm.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="QuoteValidityDateVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.189in</Top>
+        <Width>0.319in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>4.379in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetRMQuoteValDate(First(Fields!RM_Reqd_Quote_Validity.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="ExpiryDateVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.189in</Top>
+        <Width>0.319in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>4.002in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetRMExpDate(First(Fields!RM_Expiry_Date.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="RFQDateVar">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.189in</Top>
+        <Width>0.348in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.625in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetRMDate(First(Fields!RM_Created_On.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="RFQNo">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>1.189in</Top>
+        <Width>0.406in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.306in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetRFQNo(First(Fields!RM_RFQ_No.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="textbox42">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>0.754in</Top>
+        <Width>0.319in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7.453in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetDelTerm(First(Fields!DeliveryTerm.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+      <Textbox Name="textbox44">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>0.377in</Top>
+        <Width>0.319in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>7.279in</Left>
+        <Height>0.25in</Height>
+        <Value>=Code.GetCurrency(First(Fields!RM_Currency_Code.Value, "PreviewRFQ_FTN_DataTablePreviewRFQ"))</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>2.755in</Height>
+  </Body>
+  <Language>en-US</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox36">
+        <Top>0.029in</Top>
+        <Width>7.6945in</Width>
+        <Style>
+          <BorderStyle>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.0195in</Left>
+        <Height>0.18in</Height>
+        <Value />
+      </Textbox>
+      <Textbox Name="textbox8">
+        <Top>0.551in</Top>
+        <Width>7.7235in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.0195in</Left>
+        <Height>0.21in</Height>
+        <Value>="Page " &amp; Globals.PageNumber &amp; " of " &amp; Globals.TotalPages</Value>
+      </Textbox>
+      <Textbox Name="textbox12">
+        <Top>0.261in</Top>
+        <Width>7.6945in</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>0.0195in</Left>
+        <Height>0.208in</Height>
+        <Value>= "This is a computer generated document. No signature is required."</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.812in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>0.1in</TopMargin>
+  <PageHeight>11.69in</PageHeight>
+</Report>

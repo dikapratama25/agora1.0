@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Format>
+	<Catalog>
+		<CoyName>
+			<Sheet>GL Debits</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>I</ColTo>
+			<RowFrom>2</RowFrom>
+			<RowTo>2</RowTo>
+		</CoyName>
+		
+		<DocNo>
+			<Sheet>GL Debits</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>E</ColTo>
+			<RowFrom>3</RowFrom>
+			<RowTo>3</RowTo>
+		</DocNo>
+		
+		<MasterDoc>
+			<Sheet>GL Debits</Sheet>
+			<ColFrom>F</ColFrom>
+			<ColTo>I</ColTo>
+			<RowFrom>3</RowFrom>
+			<RowTo>3</RowTo>
+		</MasterDoc>	
+		
+		<DocDate>
+			<Sheet>GL Debits</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>I</ColTo>
+			<RowFrom>4</RowFrom>
+			<RowTo>4</RowTo>
+		</DocDate>
+				
+	    <ReadArea>
+			<Sheet>GL Debits</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>X</ColTo>
+			<RowFrom>9</RowFrom>
+			<RowTo>2008</RowTo>
+		</ReadArea>
+		
+		<IPPSubDocs>
+			<Sheet>Sub Document</Sheet>
+			<ColFrom>B</ColFrom>
+			<ColTo>E</ColTo>
+			<RowFrom>3</RowFrom>
+			<RowTo>2002</RowTo>
+		</IPPSubDocs>
+		
+		<Version>
+			<Sheet>PredefineCode</Sheet>
+			<ColFrom>Q</ColFrom>
+			<ColTo>Q</ColTo>
+			<RowFrom>2</RowFrom>
+			<RowTo>2</RowTo>
+		</Version>
+		
+		<Column>
+			<ColNo>0</ColNo>
+			<ColName>No</ColName>
+			<DBField></DBField>
+			<AllowNUll>FALSE</AllowNUll>                 
+			<Regex>^\d*$</Regex>
+			<RegexErrMsg>Row No is expecting integer value.</RegexErrMsg> 
+		</Column>
+		
+		<Column>
+			<ColNo>1</ColNo>
+			<ColName>Pay For</ColName>
+			<DBField>ID_PAY_FOR</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex></Regex>
+			<RegexErrMsg></RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>2</ColNo>
+			<ColName>Description</ColName>
+			<DBField>ID_PRODUCT_DESC</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex></Regex>
+			<RegexErrMsg>Item Code Description maximum length is 500.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>3</ColNo>
+			<ColName>UOM</ColName>
+			<DBField>ID_UOM</DBField>
+			<AllowNUll>FALSE</AllowNUll>  			
+		</Column>
+		
+		<Column>
+			<ColNo>4</ColNo>
+			<ColName>Quantity</ColName>
+			<DBField>ID_RECEIVED_QTY</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex>^\d*$</Regex>
+			<RegexErrMsg>Numeric Only</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>5</ColNo>
+			<ColName>Unit Price</ColName>
+			<DBField>ID_UNIT_COST</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex>^\d{1,10}(\.\d{1,4})?$</Regex>
+			<RegexErrMsg>Price is expecting decimal value.</RegexErrMsg> 			
+		</Column>
+		
+		<Column>
+			<ColNo>6</ColNo>
+			<ColName>Amount</ColName>
+			<DBField>IM_INVOICE_TOTAL</DBField>
+			<AllowNUll>FALSE</AllowNUll>
+			<Regex>^\d{1,10}(\.\d{1,4})?$</Regex>
+			<RegexErrMsg>Amount is expecting decimal value.</RegexErrMsg> 
+		</Column>
+		
+		<Column>
+			<ColNo>7</ColNo>
+			<ColName>GL Code</ColName>
+			<DBField>ID_B_GL_CODE</DBField>
+			<AllowNUll>FALSE</AllowNUll>
+			<Regex>^[ |\S]{0,30}$</Regex>
+			<RegexErrMsg>GL Code maximum length is 100.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>8</ColNo>
+			<ColName>HO/BR</ColName>
+			<DBField>ID_BRANCH_CODE</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,30}$</Regex>
+			<RegexErrMsg>HO/BR Code maximum length is 30.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>9</ColNo>
+			<ColName>Cost Center</ColName>
+			<DBField>ID_COST_CENTER</DBField>
+			<AllowNUll>TRUE</AllowNUll> 
+			<Regex>^[ |\S]{0,30}$</Regex>
+			<RegexErrMsg>Cost Center maximum length is 30.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>10</ColNo>
+			<ColName>Cost Allocation</ColName>
+			<DBField>ID_COST_ALLOC_CODE</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S]{0,30}$</Regex>
+			<RegexErrMsg>Cost Allocation maximum length is 30.</RegexErrMsg>  
+		</Column>
+		
+	</Catalog>
+</Format>
+

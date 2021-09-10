@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IPPCompanyAuditTrail" targetNamespace="http://tempuri.org/IPPCompanyAuditTrail.xsd" xmlns:mstns="http://tempuri.org/IPPCompanyAuditTrail.xsd" xmlns="http://tempuri.org/IPPCompanyAuditTrail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString2.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetIPPCompanyAuditTrailTableAdapter" GeneratorDataComponentClassName="DataSetIPPCompanyAuditTrailTableAdapter" Name="DataSetIPPCompanyAuditTrail" UserDataComponentName="DataSetIPPCompanyAuditTrailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString2 (Web.config)" DbObjectName="eprocure.au_ipp_company" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT IC_COY_NAME, IC_COMPANY_CATEGORY, IC_RESIDENT_TYPE, IC_MOD_BY, AU_DATE FROM AU_IPP_COMPANY
+WHERE IC_COY_ID = 'hlb' 
+ORDER BY AU_LOG_INDEX DESC, IC_INDEX</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IC_COY_NAME" DataSetColumn="IC_COY_NAME" />
+              <Mapping SourceColumn="IC_COMPANY_CATEGORY" DataSetColumn="IC_COMPANY_CATEGORY" />
+              <Mapping SourceColumn="IC_RESIDENT_TYPE" DataSetColumn="IC_RESIDENT_TYPE" />
+              <Mapping SourceColumn="IC_MOD_BY" DataSetColumn="IC_MOD_BY" />
+              <Mapping SourceColumn="AU_DATE" DataSetColumn="AU_DATE" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IPPCompanyAuditTrail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="IPPCompanyAuditTrail" msprop:Generator_DataSetName="IPPCompanyAuditTrail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetIPPCompanyAuditTrail" msprop:Generator_UserTableName="DataSetIPPCompanyAuditTrail" msprop:Generator_RowDeletedName="DataSetIPPCompanyAuditTrailRowDeleted" msprop:Generator_TableClassName="DataSetIPPCompanyAuditTrailDataTable" msprop:Generator_RowChangedName="DataSetIPPCompanyAuditTrailRowChanged" msprop:Generator_RowClassName="DataSetIPPCompanyAuditTrailRow" msprop:Generator_RowChangingName="DataSetIPPCompanyAuditTrailRowChanging" msprop:Generator_RowEvArgName="DataSetIPPCompanyAuditTrailRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetIPPCompanyAuditTrailRowChangeEventHandler" msprop:Generator_TablePropName="DataSetIPPCompanyAuditTrail" msprop:Generator_TableVarName="tableDataSetIPPCompanyAuditTrail" msprop:Generator_RowDeletingName="DataSetIPPCompanyAuditTrailRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IC_COY_NAME" msprop:Generator_UserColumnName="IC_COY_NAME" msprop:Generator_ColumnPropNameInRow="IC_COY_NAME" msprop:Generator_ColumnVarNameInTable="columnIC_COY_NAME" msprop:Generator_ColumnPropNameInTable="IC_COY_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IC_COMPANY_CATEGORY" msprop:Generator_UserColumnName="IC_COMPANY_CATEGORY" msprop:Generator_ColumnPropNameInRow="IC_COMPANY_CATEGORY" msprop:Generator_ColumnVarNameInTable="columnIC_COMPANY_CATEGORY" msprop:Generator_ColumnPropNameInTable="IC_COMPANY_CATEGORYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IC_RESIDENT_TYPE" msprop:Generator_UserColumnName="IC_RESIDENT_TYPE" msprop:Generator_ColumnPropNameInRow="IC_RESIDENT_TYPE" msprop:Generator_ColumnVarNameInTable="columnIC_RESIDENT_TYPE" msprop:Generator_ColumnPropNameInTable="IC_RESIDENT_TYPEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IC_MOD_BY" msprop:Generator_UserColumnName="IC_MOD_BY" msprop:Generator_ColumnPropNameInRow="IC_MOD_BY" msprop:Generator_ColumnVarNameInTable="columnIC_MOD_BY" msprop:Generator_ColumnPropNameInTable="IC_MOD_BYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AU_DATE" msprop:Generator_UserColumnName="AU_DATE" msprop:Generator_ColumnPropNameInRow="AU_DATE" msprop:Generator_ColumnVarNameInTable="columnAU_DATE" msprop:Generator_ColumnPropNameInTable="AU_DATEColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

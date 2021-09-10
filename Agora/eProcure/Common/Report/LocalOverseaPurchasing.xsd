@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LocalOverseaPurchasing" targetNamespace="http://tempuri.org/LocalOverseaPurchasing.xsd" xmlns:mstns="http://tempuri.org/LocalOverseaPurchasing.xsd" xmlns="http://tempuri.org/LocalOverseaPurchasing.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetLocalOverseaPurchasingTableAdapter" GeneratorDataComponentClassName="DataSetLocalOverseaPurchasingTableAdapter" Name="DataSetLocalOverseaPurchasing" UserDataComponentName="DataSetLocalOverseaPurchasingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString1 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS POM_DATE, '' AS NO_PR, '' AS NO_PO, '' AS POM_PO_COST, '' AS PM_LOCAL_PO_AMT, '' AS PM_OVERSEA_PO_AMT FROM PO_MSTR</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="POM_DATE" DataSetColumn="POM_DATE" />
+              <Mapping SourceColumn="NO_PR" DataSetColumn="NO_PR" />
+              <Mapping SourceColumn="NO_PO" DataSetColumn="NO_PO" />
+              <Mapping SourceColumn="POM_PO_COST" DataSetColumn="POM_PO_COST" />
+              <Mapping SourceColumn="PM_LOCAL_PO_AMT" DataSetColumn="PM_LOCAL_PO_AMT" />
+              <Mapping SourceColumn="PM_OVERSEA_PO_AMT" DataSetColumn="PM_OVERSEA_PO_AMT" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LocalOverseaPurchasing" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LocalOverseaPurchasing" msprop:Generator_DataSetName="LocalOverseaPurchasing">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetLocalOverseaPurchasing" msprop:Generator_UserTableName="DataSetLocalOverseaPurchasing" msprop:Generator_RowDeletedName="DataSetLocalOverseaPurchasingRowDeleted" msprop:Generator_TableClassName="DataSetLocalOverseaPurchasingDataTable" msprop:Generator_RowChangedName="DataSetLocalOverseaPurchasingRowChanged" msprop:Generator_RowClassName="DataSetLocalOverseaPurchasingRow" msprop:Generator_RowChangingName="DataSetLocalOverseaPurchasingRowChanging" msprop:Generator_RowEvArgName="DataSetLocalOverseaPurchasingRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetLocalOverseaPurchasingRowChangeEventHandler" msprop:Generator_TablePropName="DataSetLocalOverseaPurchasing" msprop:Generator_TableVarName="tableDataSetLocalOverseaPurchasing" msprop:Generator_RowDeletingName="DataSetLocalOverseaPurchasingRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="POM_DATE" msprop:Generator_UserColumnName="POM_DATE" msprop:Generator_ColumnPropNameInRow="POM_DATE" msprop:Generator_ColumnVarNameInTable="columnPOM_DATE" msprop:Generator_ColumnPropNameInTable="POM_DATEColumn" type="xs:string" />
+              <xs:element name="NO_PR" msprop:Generator_UserColumnName="NO_PR" msprop:Generator_ColumnPropNameInRow="NO_PR" msprop:Generator_ColumnVarNameInTable="columnNO_PR" msprop:Generator_ColumnPropNameInTable="NO_PRColumn" type="xs:string" />
+              <xs:element name="NO_PO" msprop:Generator_UserColumnName="NO_PO" msprop:Generator_ColumnPropNameInRow="NO_PO" msprop:Generator_ColumnVarNameInTable="columnNO_PO" msprop:Generator_ColumnPropNameInTable="NO_POColumn" type="xs:string" />
+              <xs:element name="POM_PO_COST" msprop:Generator_UserColumnName="POM_PO_COST" msprop:Generator_ColumnPropNameInRow="POM_PO_COST" msprop:Generator_ColumnVarNameInTable="columnPOM_PO_COST" msprop:Generator_ColumnPropNameInTable="POM_PO_COSTColumn" type="xs:string" />
+              <xs:element name="PM_LOCAL_PO_AMT" msprop:Generator_UserColumnName="PM_LOCAL_PO_AMT" msprop:Generator_ColumnPropNameInRow="PM_LOCAL_PO_AMT" msprop:Generator_ColumnVarNameInTable="columnPM_LOCAL_PO_AMT" msprop:Generator_ColumnPropNameInTable="PM_LOCAL_PO_AMTColumn" type="xs:string" />
+              <xs:element name="PM_OVERSEA_PO_AMT" msprop:Generator_UserColumnName="PM_OVERSEA_PO_AMT" msprop:Generator_ColumnPropNameInRow="PM_OVERSEA_PO_AMT" msprop:Generator_ColumnVarNameInTable="columnPM_OVERSEA_PO_AMT" msprop:Generator_ColumnPropNameInTable="PM_OVERSEA_PO_AMTColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewAuditTrailBIM" targetNamespace="http://tempuri.org/PreviewAuditTrailBIM.xsd" xmlns:mstns="http://tempuri.org/PreviewAuditTrailBIM.xsd" xmlns="http://tempuri.org/PreviewAuditTrailBIM.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetAuditTrailBIMTableAdapter" GeneratorDataComponentClassName="DataSetAuditTrailBIMTableAdapter" Name="DataSetAuditTrailBIM" UserDataComponentName="DataSetAuditTrailBIMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString1 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     aup_index, aup_refer_ID, aup_module, aup_action, aup_fieldName, aup_old_value, aup_new_value, aup_enterby, aup_coy_id, 
+                      aup_changed_date,user_mstr.UM_USER_name
+FROM         au_product_log  INNER JOIN
+                      user_mstr ON au_product_log.aup_enterby = user_mstr.UM_USER_ID AND user_mstr.UM_COY_ID = aup_coy_id</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="aup_index" DataSetColumn="aup_index" />
+              <Mapping SourceColumn="aup_refer_ID" DataSetColumn="aup_refer_ID" />
+              <Mapping SourceColumn="aup_module" DataSetColumn="aup_module" />
+              <Mapping SourceColumn="aup_action" DataSetColumn="aup_action" />
+              <Mapping SourceColumn="aup_fieldName" DataSetColumn="aup_fieldName" />
+              <Mapping SourceColumn="aup_enterby" DataSetColumn="aup_enterby" />
+              <Mapping SourceColumn="aup_coy_id" DataSetColumn="aup_coy_id" />
+              <Mapping SourceColumn="aup_changed_date" DataSetColumn="aup_changed_date" />
+              <Mapping SourceColumn="UM_USER_NAME" DataSetColumn="UM_USER_NAME" />
+              <Mapping SourceColumn="aup_old_value" DataSetColumn="aup_old_value" />
+              <Mapping SourceColumn="aup_new_value" DataSetColumn="aup_new_value" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewAuditTrailBIM" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PreviewAuditTrailBIM" msprop:Generator_DataSetName="PreviewAuditTrailBIM">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetAuditTrailBIM" msprop:Generator_UserTableName="DataSetAuditTrailBIM" msprop:Generator_RowDeletedName="DataSetAuditTrailBIMRowDeleted" msprop:Generator_RowChangedName="DataSetAuditTrailBIMRowChanged" msprop:Generator_RowClassName="DataSetAuditTrailBIMRow" msprop:Generator_RowChangingName="DataSetAuditTrailBIMRowChanging" msprop:Generator_RowEvArgName="DataSetAuditTrailBIMRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetAuditTrailBIMRowChangeEventHandler" msprop:Generator_TableClassName="DataSetAuditTrailBIMDataTable" msprop:Generator_TableVarName="tableDataSetAuditTrailBIM" msprop:Generator_RowDeletingName="DataSetAuditTrailBIMRowDeleting" msprop:Generator_TablePropName="DataSetAuditTrailBIM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="aup_index" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="aup_index" msprop:Generator_ColumnVarNameInTable="columnaup_index" msprop:Generator_ColumnPropNameInRow="aup_index" msprop:Generator_ColumnPropNameInTable="aup_indexColumn" type="xs:int" />
+              <xs:element name="aup_refer_ID" msprop:Generator_UserColumnName="aup_refer_ID" msprop:Generator_ColumnVarNameInTable="columnaup_refer_ID" msprop:Generator_ColumnPropNameInRow="aup_refer_ID" msprop:Generator_ColumnPropNameInTable="aup_refer_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="aup_module" msprop:Generator_UserColumnName="aup_module" msprop:Generator_ColumnVarNameInTable="columnaup_module" msprop:Generator_ColumnPropNameInRow="aup_module" msprop:Generator_ColumnPropNameInTable="aup_moduleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aup_action" msprop:Generator_UserColumnName="aup_action" msprop:Generator_ColumnVarNameInTable="columnaup_action" msprop:Generator_ColumnPropNameInRow="aup_action" msprop:Generator_ColumnPropNameInTable="aup_actionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aup_fieldName" msprop:Generator_UserColumnName="aup_fieldName" msprop:Generator_ColumnVarNameInTable="columnaup_fieldName" msprop:Generator_ColumnPropNameInRow="aup_fieldName" msprop:Generator_ColumnPropNameInTable="aup_fieldNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aup_enterby" msprop:Generator_UserColumnName="aup_enterby" msprop:Generator_ColumnVarNameInTable="columnaup_enterby" msprop:Generator_ColumnPropNameInRow="aup_enterby" msprop:Generator_ColumnPropNameInTable="aup_enterbyColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aup_coy_id" msprop:Generator_UserColumnName="aup_coy_id" msprop:Generator_ColumnVarNameInTable="columnaup_coy_id" msprop:Generator_ColumnPropNameInRow="aup_coy_id" msprop:Generator_ColumnPropNameInTable="aup_coy_idColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aup_changed_date" msprop:Generator_UserColumnName="aup_changed_date" msprop:Generator_ColumnVarNameInTable="columnaup_changed_date" msprop:Generator_ColumnPropNameInRow="aup_changed_date" msprop:Generator_ColumnPropNameInTable="aup_changed_dateColumn" type="xs:dateTime" />
+              <xs:element name="UM_USER_NAME" msprop:Generator_UserColumnName="UM_USER_NAME" msprop:Generator_ColumnPropNameInRow="UM_USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUM_USER_NAME" msprop:Generator_ColumnPropNameInTable="UM_USER_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aup_old_value" msprop:Generator_UserColumnName="aup_old_value" msprop:Generator_ColumnPropNameInRow="aup_old_value" msprop:Generator_ColumnVarNameInTable="columnaup_old_value" msprop:Generator_ColumnPropNameInTable="aup_old_valueColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aup_new_value" msprop:Generator_UserColumnName="aup_new_value" msprop:Generator_ColumnPropNameInRow="aup_new_value" msprop:Generator_ColumnVarNameInTable="columnaup_new_value" msprop:Generator_ColumnPropNameInTable="aup_new_valueColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataSetAuditTrailBIM" />
+      <xs:field xpath="mstns:aup_index" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

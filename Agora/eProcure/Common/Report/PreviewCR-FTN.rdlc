@@ -1,0 +1,2845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="ConnectionString">
+      <ConnectionProperties>
+        <ConnectString />
+        <DataProvider>OLEDB</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>068b6c17-8e27-46a3-896a-4fb67e5c6e66</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>0.1in</BottomMargin>
+  <RightMargin>0.01in</RightMargin>
+  <PageWidth>8.27in</PageWidth>
+  <ReportParameters>
+    <ReportParameter Name="par1">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>par1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:GridSpacing>0.029in</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ReportItems>
+      <Table Name="table1">
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox28">
+                      <rd:DefaultName>textbox28</rd:DefaultName>
+                      <ZIndex>12</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox29">
+                      <rd:DefaultName>textbox29</rd:DefaultName>
+                      <ZIndex>11</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox54">
+                      <rd:DefaultName>textbox54</rd:DefaultName>
+                      <ZIndex>10</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox30">
+                      <rd:DefaultName>textbox30</rd:DefaultName>
+                      <ZIndex>9</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox34">
+                      <rd:DefaultName>textbox34</rd:DefaultName>
+                      <ZIndex>8</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox37">
+                      <rd:DefaultName>textbox37</rd:DefaultName>
+                      <ZIndex>7</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox40">
+                      <rd:DefaultName>textbox40</rd:DefaultName>
+                      <ZIndex>6</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox43">
+                      <rd:DefaultName>textbox43</rd:DefaultName>
+                      <ZIndex>5</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox46">
+                      <rd:DefaultName>textbox46</rd:DefaultName>
+                      <ZIndex>4</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox49">
+                      <rd:DefaultName>textbox49</rd:DefaultName>
+                      <ZIndex>3</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.25in</Height>
+            </TableRow>
+          </TableRows>
+        </Footer>
+        <Left>0.029in</Left>
+        <DataSetName>PreviewCR_FTN_DataTable1</DataSetName>
+        <Top>0.232in</Top>
+        <ZIndex>18</ZIndex>
+        <Width>7.734in</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="POD_PO_LINE">
+                      <rd:DefaultName>POD_PO_LINE</rd:DefaultName>
+                      <ZIndex>21</ZIndex>
+                      <Style>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!POD_PO_LINE.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ColSpan>2</ColSpan>
+                  <ReportItems>
+                    <Textbox Name="POD_PRODUCT_DESC">
+                      <rd:DefaultName>POD_PRODUCT_DESC</rd:DefaultName>
+                      <ZIndex>20</ZIndex>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!POD_PRODUCT_DESC.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="POD_UOM">
+                      <rd:DefaultName>POD_UOM</rd:DefaultName>
+                      <ZIndex>19</ZIndex>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!POD_UOM.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="POD_MIN_PACK_QTY">
+                      <rd:DefaultName>POD_MIN_PACK_QTY</rd:DefaultName>
+                      <ZIndex>18</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!POD_MIN_PACK_QTY.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="POD_ORDERED_QTY">
+                      <rd:DefaultName>POD_ORDERED_QTY</rd:DefaultName>
+                      <ZIndex>17</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!POD_ORDERED_QTY.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="POD_RECEIVED_QTY">
+                      <rd:DefaultName>POD_RECEIVED_QTY</rd:DefaultName>
+                      <ZIndex>16</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!POD_RECEIVED_QTY.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="POD_REJECTED_QTY">
+                      <rd:DefaultName>POD_REJECTED_QTY</rd:DefaultName>
+                      <ZIndex>15</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!POD_REJECTED_QTY.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox45">
+                      <rd:DefaultName>textbox45</rd:DefaultName>
+                      <ZIndex>14</ZIndex>
+                      <Style>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!POD_ORDERED_QTY.Value - Fields!POD_CANCELLED_QTY.Value - Fields!POD_DELIVERED_QTY.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="PCD_CANCELLED_QTY">
+                      <rd:DefaultName>PCD_CANCELLED_QTY</rd:DefaultName>
+                      <ZIndex>13</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!PCD_CANCELLED_QTY.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.319in</Height>
+            </TableRow>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox25">
+                      <rd:DefaultName>textbox25</rd:DefaultName>
+                      <ZIndex>2</ZIndex>
+                      <Style>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox26">
+                      <rd:DefaultName>textbox26</rd:DefaultName>
+                      <ZIndex>1</ZIndex>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Remarks:</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ColSpan>8</ColSpan>
+                  <ReportItems>
+                    <Textbox Name="PCD_REMARKS">
+                      <rd:DefaultName>PCD_REMARKS</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!PCD_REMARKS.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.319in</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox22">
+                      <rd:DefaultName>textbox22</rd:DefaultName>
+                      <ZIndex>30</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>PO 
+Line</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ColSpan>2</ColSpan>
+                  <ReportItems>
+                    <Textbox Name="textbox23">
+                      <rd:DefaultName>textbox23</rd:DefaultName>
+                      <ZIndex>29</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=vbNullChar &amp; vbNewLine &amp; "Item Description"</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox24">
+                      <rd:DefaultName>textbox24</rd:DefaultName>
+                      <ZIndex>28</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=vbNullChar &amp; vbNewLine &amp; "UOM"</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox31">
+                      <rd:DefaultName>textbox31</rd:DefaultName>
+                      <ZIndex>27</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=vbNullChar &amp; vbNewLine &amp; "Pack Qty"</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox35">
+                      <rd:DefaultName>textbox35</rd:DefaultName>
+                      <ZIndex>26</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=vbNullChar &amp; vbNewLine &amp; "Ordered"</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox38">
+                      <rd:DefaultName>textbox38</rd:DefaultName>
+                      <ZIndex>25</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Received Qty</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox41">
+                      <rd:DefaultName>textbox41</rd:DefaultName>
+                      <ZIndex>24</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Reject Qty</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox44">
+                      <rd:DefaultName>textbox44</rd:DefaultName>
+                      <ZIndex>23</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=vbNullChar &amp; vbNewLine &amp; "Outstanding"</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox47">
+                      <rd:DefaultName>textbox47</rd:DefaultName>
+                      <ZIndex>22</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Qty To Cancel</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.406in</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>0.435in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.696in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.914in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.812in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.464in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.725in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.754in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.638in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.696in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.6in</Width>
+          </TableColumn>
+        </TableColumns>
+        <Height>1.294in</Height>
+      </Table>
+      <Textbox Name="POMPONoVar">
+        <Left>6.322in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>17</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.406in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetPONo(First(Fields!POM_PO_NO.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="CRRemarkVar">
+        <Left>5.974in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>16</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetCRHeaderRemark(First(Fields!PCM_CR_REMARKS.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="suppCoyInforVar">
+        <Left>5.481in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>15</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.348in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetSuppComInfor(First(Fields!sUPPBUSSREGNO.Value, "PreviewCR_FTN_DataTable1"), First(Fields!SUPPPHONE.Value, "PreviewCR_FTN_DataTable1"), First(Fields!SUPPEMAIL.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="suppAddrVar">
+        <Left>5.191in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>14</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.232in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetSuppAddr(First(Fields!POM_S_ADDR_LINE1.Value, "PreviewCR_FTN_DataTable1"), First(Fields!POM_S_ADDR_LINE2.Value, "PreviewCR_FTN_DataTable1"), First(Fields!POM_S_ADDR_LINE3.Value, "PreviewCR_FTN_DataTable1"), First(Fields!POM_S_POSTCODE.Value, "PreviewCR_FTN_DataTable1"), First(Fields!POM_S_CITY.Value, "PreviewCR_FTN_DataTable1"),First(Fields!SupplierAddrState.Value, "PreviewCR_FTN_DataTable1"), First(Fields!SupplierAddrCtry.Value, "PreviewCR_FTN_DataTable1") )</Value>
+      </Textbox>
+      <Textbox Name="BillAddrVar">
+        <Left>4.872in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>13</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetBuyerBillAddr(First(Fields!POM_B_ADDR_LINE1.Value, "PreviewCR_FTN_DataTable1"), First(Fields!POM_B_ADDR_LINE2.Value, "PreviewCR_FTN_DataTable1"), First(Fields!POM_B_ADDR_LINE3.Value, "PreviewCR_FTN_DataTable1"), First(Fields!POM_B_POSTCODE.Value, "PreviewCR_FTN_DataTable1"), First(Fields!POM_B_CITY.Value, "PreviewCR_FTN_DataTable1"), First(Fields!BillAddrState.Value, "PreviewCR_FTN_DataTable1"), First(Fields!BillAddrCtry.Value, "PreviewCR_FTN_DataTable1") )</Value>
+      </Textbox>
+      <Textbox Name="BuyerCompanyInforVar">
+        <Left>4.524in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>12</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetBuyerComInfor(First(Fields!CM_BUSINESS_REG_NO.Value, "PreviewCR_FTN_DataTable1"),First(Fields!PCMCRBUYERNAME.Value, "PreviewCR_FTN_DataTable1"),First(Fields!UM_TEL_NO.Value, "PreviewCR_FTN_DataTable1") , First(Fields!UM_EMAIL.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="BuyerAddrVar">
+        <Left>4.176in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>11</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetBuyerAddr(First(Fields!CM_ADDR_LINE1.Value, "PreviewCR_FTN_DataTable1"), First(Fields!CM_ADDR_LINE2.Value, "PreviewCR_FTN_DataTable1"), First(Fields!CM_ADDR_LINE3.Value, "PreviewCR_FTN_DataTable1"), First(Fields!CM_POSTCODE.Value, "PreviewCR_FTN_DataTable1"), First(Fields!CM_CITY.Value, "PreviewCR_FTN_DataTable1"), First(Fields!CMState.Value, "PreviewCR_FTN_DataTable1"), First(Fields!CMCtry.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="SupplierCoyNameVar">
+        <Left>3.828in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>10</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetSupplierCoyName(First(Fields!POM_S_COY_NAME.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="BuyerCoyNameVar">
+        <Left>3.48in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>9</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetBuyerCompanyName(First(Fields!CM_COY_NAME.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="shipViaVar">
+        <Left>3.161in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>8</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetPomShipVia(First(Fields!POM_SHIP_VIA.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="POMFreightTermsVar">
+        <Left>2.842in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>7</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetPomFreightTerms(First(Fields!POM_FREIGHT_TERMS.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="ShipmentModeVar">
+        <Left>2.523in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>6</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetPomShipmentMode(First(Fields!POM_SHIPMENT_MODE.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="ShipmentTermsVar">
+        <Left>2.175in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>5</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetPomShipmentTerm(First(Fields!POM_SHIPMENT_TERM.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="PaymentMethodVar">
+        <Left>1.827in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>4</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetPomPaymentMethod(First(Fields!POM_PAYMENT_METHOD.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="PaymentTermsVar">
+        <Left>1.479in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>3</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetPomPaymentTerm(First(Fields!POM_PAYMENT_TERM.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="PODateVar">
+        <Left>1.102in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>2</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.29in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetPODate(First(Fields!POM_PO_DATE.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="PCM_CR_Date">
+        <Left>0.638in</Left>
+        <Top>1.682in</Top>
+        <ZIndex>1</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.406in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetCRDate(First(Fields!PCM_REQ_DATE.Value, "PreviewCR_FTN_DataTable1"))</Value>
+      </Textbox>
+      <Textbox Name="PCM_CR_NO">
+        <Left>0.116in</Left>
+        <Top>1.682in</Top>
+        <rd:DefaultName>PCM_CR_NO</rd:DefaultName>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Width>0.464in</Width>
+        <ToggleImage>
+          <InitialState>true</InitialState>
+        </ToggleImage>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Code.GetCRNo(First(Fields!PCM_CR_NO.Value))</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>2.001in</Height>
+  </Body>
+  <PageHeader>
+    <ReportItems>
+      <Textbox Name="textbox2">
+        <Left>5.481in</Left>
+        <Top>1.827in</Top>
+        <ZIndex>42</ZIndex>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox8">
+        <Left>5.781in</Left>
+        <Top>1.653in</Top>
+        <ZIndex>41</ZIndex>
+        <Width>1.785in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>=Code.POMPONoVar</Value>
+      </Textbox>
+      <Textbox Name="textbox12">
+        <Left>5.481in</Left>
+        <Top>1.653in</Top>
+        <ZIndex>40</ZIndex>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox13">
+        <Left>5.781in</Left>
+        <Top>1.827in</Top>
+        <ZIndex>39</ZIndex>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>500</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <Height>0.15in</Height>
+        <Value>=Code.POMPODateVar</Value>
+      </Textbox>
+      <Textbox Name="textbox18">
+        <Left>4.182in</Left>
+        <Top>1.653in</Top>
+        <ZIndex>38</ZIndex>
+        <Width>1.247in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <VerticalAlign>Bottom</VerticalAlign>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <Height>0.145in</Height>
+        <Value>PO No.</Value>
+      </Textbox>
+      <Textbox Name="textbox20">
+        <Left>4.182in</Left>
+        <Top>1.827in</Top>
+        <ZIndex>37</ZIndex>
+        <Width>1.247in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <Height>0.145in</Height>
+        <Value>PO Date</Value>
+      </Textbox>
+      <Textbox Name="DomDoHeaderRemark">
+        <Left>1.508in</Left>
+        <Top>5.191in</Top>
+        <ZIndex>36</ZIndex>
+        <Width>6.235in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>1.102in</Height>
+        <Value>=Code.PCMCRHeaderRemarkVar</Value>
+      </Textbox>
+      <Textbox Name="textbox32">
+        <Left>1.247in</Left>
+        <Top>5.191in</Top>
+        <ZIndex>35</ZIndex>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.16in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="DOheaderRemark">
+        <Left>0.017in</Left>
+        <Top>5.191in</Top>
+        <ZIndex>34</ZIndex>
+        <Width>0.9in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.16in</Height>
+        <Value>Remarks</Value>
+      </Textbox>
+      <Textbox Name="textbox17">
+        <Left>4.2in</Left>
+        <Top>3.741in</Top>
+        <rd:DefaultName>textbox17</rd:DefaultName>
+        <ZIndex>33</ZIndex>
+        <Width>3.543in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <LineHeight>16pt</LineHeight>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontWeight>500</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.96in</Height>
+        <Value>=Code.buyerBillAddrVar</Value>
+      </Textbox>
+      <Textbox Name="SupplierCompanyName">
+        <Top>3.596in</Top>
+        <ZIndex>32</ZIndex>
+        <Width>3.45in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>=Code.SupplierCompanyNameVar</Value>
+      </Textbox>
+      <Textbox Name="ShipToLabel">
+        <Top>3.422in</Top>
+        <ZIndex>31</ZIndex>
+        <Width>1.125in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>To:</Value>
+      </Textbox>
+      <Textbox Name="BillCompanyName">
+        <Left>4.2in</Left>
+        <Top>3.596in</Top>
+        <ZIndex>30</ZIndex>
+        <Width>3.543in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>=Code.BuyerCompanyNameVar</Value>
+      </Textbox>
+      <Textbox Name="BillToLabel">
+        <Left>4.2in</Left>
+        <Top>3.422in</Top>
+        <ZIndex>29</ZIndex>
+        <Width>1.125in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>Bill To:</Value>
+      </Textbox>
+      <Textbox Name="textbox15">
+        <Top>3.741in</Top>
+        <rd:DefaultName>textbox15</rd:DefaultName>
+        <ZIndex>28</ZIndex>
+        <Width>3.794in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <LineHeight>16pt</LineHeight>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontWeight>500</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>1.392in</Height>
+        <Value>=Code.suppAddrVar  &amp; " " &amp; Code.suppComInforVar</Value>
+      </Textbox>
+      <Textbox Name="textbox11">
+        <Left>5.475in</Left>
+        <Top>2.871in</Top>
+        <ZIndex>27</ZIndex>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="ShipTo">
+        <Left>5.775in</Left>
+        <Top>2.871in</Top>
+        <ZIndex>26</ZIndex>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>="See Below"</Value>
+      </Textbox>
+      <Textbox Name="textbox14">
+        <Left>4.176in</Left>
+        <Top>2.871in</Top>
+        <ZIndex>25</ZIndex>
+        <Width>1.247in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.145in</Height>
+        <Value>Ship To</Value>
+      </Textbox>
+      <Textbox Name="textbox7">
+        <Left>5.475in</Left>
+        <Top>2.697in</Top>
+        <ZIndex>24</ZIndex>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="ShipVia">
+        <Left>5.775in</Left>
+        <Top>2.697in</Top>
+        <ZIndex>23</ZIndex>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>=Code.PomShipViaVar</Value>
+      </Textbox>
+      <Textbox Name="ShipViaLabel">
+        <Left>4.176in</Left>
+        <Top>2.697in</Top>
+        <ZIndex>22</ZIndex>
+        <Width>1.247in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.145in</Height>
+        <Value>Ship Via</Value>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <Left>5.475in</Left>
+        <Top>2.349in</Top>
+        <ZIndex>21</ZIndex>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Left>5.475in</Left>
+        <Top>2.175in</Top>
+        <ZIndex>20</ZIndex>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox21">
+        <Top>1.467in</Top>
+        <rd:DefaultName>textbox21</rd:DefaultName>
+        <ZIndex>19</ZIndex>
+        <Width>3.799in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <LineHeight>16pt</LineHeight>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontWeight>500</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>1.856in</Height>
+        <Value>=Code.BuyerAddrVar &amp; " " &amp; Code.buyerComInforVar</Value>
+      </Textbox>
+      <Textbox Name="textbox9">
+        <Left>5.775in</Left>
+        <Top>2.001in</Top>
+        <rd:DefaultName>textbox9</rd:DefaultName>
+        <ZIndex>18</ZIndex>
+        <Width>1.785in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>=Code.PomPaymentTermVar</Value>
+      </Textbox>
+      <Textbox Name="textbox16">
+        <Left>5.475in</Left>
+        <Top>2.523in</Top>
+        <ZIndex>17</ZIndex>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox10">
+        <Left>5.475in</Left>
+        <Top>2.001in</Top>
+        <ZIndex>16</ZIndex>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <Left>5.475in</Left>
+        <Top>1.479in</Top>
+        <ZIndex>15</ZIndex>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <Left>5.481in</Left>
+        <Top>1.293in</Top>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <ZIndex>14</ZIndex>
+        <Width>0.25in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="BuyerCompanyName">
+        <Top>1.293in</Top>
+        <ZIndex>13</ZIndex>
+        <Width>3.8in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.16in</Height>
+        <Value>=Code.BuyerCompanyNameVar</Value>
+      </Textbox>
+      <Textbox Name="PaymentMethod">
+        <Left>5.775in</Left>
+        <Top>2.349in</Top>
+        <ZIndex>12</ZIndex>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>=Code.PomShipmentTermVar</Value>
+      </Textbox>
+      <Textbox Name="ShipmentTerms">
+        <Left>5.775in</Left>
+        <Top>2.523in</Top>
+        <ZIndex>11</ZIndex>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>=Code.PomShipmentModeVar</Value>
+      </Textbox>
+      <Textbox Name="PaymentTerm">
+        <Left>5.775in</Left>
+        <Top>2.175in</Top>
+        <ZIndex>10</ZIndex>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>500</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <Height>0.15in</Height>
+        <Value>=Code.PomPaymentMethodVar</Value>
+      </Textbox>
+      <Textbox Name="Date">
+        <Left>5.775in</Left>
+        <Top>1.479in</Top>
+        <ZIndex>9</ZIndex>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>= format(Code.PCMCRDateVar, "dd/MM/yyyy")</Value>
+      </Textbox>
+      <Textbox Name="PONo">
+        <Left>5.775in</Left>
+        <Top>1.293in</Top>
+        <ZIndex>8</ZIndex>
+        <Width>1.785in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.15in</Height>
+        <Value>=Code.PCMCRNoVar</Value>
+      </Textbox>
+      <Textbox Name="ShipmentModesLabel">
+        <Left>4.176in</Left>
+        <Top>2.523in</Top>
+        <ZIndex>7</ZIndex>
+        <Width>1.247in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.145in</Height>
+        <Value>Shipment Mode</Value>
+      </Textbox>
+      <Textbox Name="DateLabel">
+        <Left>4.176in</Left>
+        <Top>1.479in</Top>
+        <ZIndex>6</ZIndex>
+        <Width>1.247in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.145in</Height>
+        <Value>CR Date</Value>
+      </Textbox>
+      <Textbox Name="PaymentTermsLabel">
+        <Left>4.176in</Left>
+        <Top>2.001in</Top>
+        <ZIndex>5</ZIndex>
+        <Width>1.247in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <VerticalAlign>Bottom</VerticalAlign>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <Height>0.145in</Height>
+        <Value>Payment Terms</Value>
+      </Textbox>
+      <Textbox Name="PaymentMethodLabel">
+        <Left>4.176in</Left>
+        <Top>2.175in</Top>
+        <ZIndex>4</ZIndex>
+        <Width>1.247in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <Height>0.145in</Height>
+        <Value>Payment Method</Value>
+      </Textbox>
+      <Textbox Name="ShipmentTermsLabel">
+        <Left>4.176in</Left>
+        <Top>2.349in</Top>
+        <ZIndex>3</ZIndex>
+        <Width>1.247in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.145in</Height>
+        <Value>Shipment Terms</Value>
+      </Textbox>
+      <Textbox Name="DoNoLabel">
+        <Left>4.176in</Left>
+        <Top>1.293in</Top>
+        <ZIndex>2</ZIndex>
+        <Width>1.247in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.145in</Height>
+        <Value>CR No.    </Value>
+      </Textbox>
+      <Image Name="image1">
+        <Sizing>Fit</Sizing>
+        <MIMEType>image/jpeg</MIMEType>
+        <Top>0.258in</Top>
+        <ZIndex>1</ZIndex>
+        <Width>2.01in</Width>
+        <Source>External</Source>
+        <Style />
+        <Height>0.9in</Height>
+        <Value>=Parameters!par1.Value</Value>
+      </Image>
+      <Textbox Name="textbox4">
+        <Left>3.799in</Left>
+        <Top>0.528in</Top>
+        <rd:DefaultName>textbox4</rd:DefaultName>
+        <Width>3.944in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Verdana</FontFamily>
+          <FontWeight>700</FontWeight>
+          <FontSize>20pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.425in</Height>
+        <Value>PO Cancellation Request</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>6.38in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageHeader>
+  <rd:ReportID>425fe85b-eb76-4a07-813e-043e92c0535c</rd:ReportID>
+  <LeftMargin>0.1in</LeftMargin>
+  <DataSets>
+    <DataSet Name="PreviewCR_FTN_DataTable1">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetDataPreviewCR</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>PreviewCR_FTN</rd:DataSetName>
+        <rd:TableAdapterFillMethod>FillPreviewCR</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>DataTable1TableAdapter</rd:TableAdapterName>
+        <rd:TableName>DataTable1</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT   PO_MSTR.POM_PO_INDEX, PO_MSTR.POM_PO_NO, PO_MSTR.POM_B_COY_ID, PO_MSTR.POM_BUYER_ID, 
+                PO_MSTR.POM_BUYER_NAME, PO_MSTR.POM_BUYER_PHONE, PO_MSTR.POM_BUYER_FAX, 
+                PO_MSTR.POM_S_COY_ID, PO_MSTR.POM_S_COY_NAME, PO_MSTR.POM_S_ATTN, 
+                PO_MSTR.POM_S_REMARK, PO_MSTR.POM_S_ADDR_LINE1, PO_MSTR.POM_S_ADDR_LINE2, 
+                PO_MSTR.POM_S_ADDR_LINE3, PO_MSTR.POM_S_POSTCODE, PO_MSTR.POM_S_CITY, 
+                PO_MSTR.POM_S_STATE, PO_MSTR.POM_S_COUNTRY, PO_MSTR.POM_S_PHONE, PO_MSTR.POM_S_FAX, 
+                PO_MSTR.POM_S_EMAIL, PO_MSTR.POM_PO_DATE, PO_MSTR.POM_FREIGHT_TERMS, 
+                PO_MSTR.POM_PAYMENT_TERM, PO_MSTR.POM_PAYMENT_METHOD, PO_MSTR.POM_SHIPMENT_MODE, 
+                PO_MSTR.POM_SHIPMENT_TERM, PO_MSTR.POM_CURRENCY_CODE, PO_MSTR.POM_EXCHANGE_RATE, 
+                PO_MSTR.POM_PAYMENT_TERM_CODE, PO_MSTR.POM_SHIP_VIA, PO_MSTR.POM_PO_STATUS, 
+                PO_MSTR.POM_STATUS_CHANGED_BY, PO_MSTR.POM_STATUS_CHANGED_ON, 
+                PO_MSTR.POM_EXTERNAL_REMARK, PO_MSTR.POM_CREATED_BY, PO_MSTR.POM_PO_COST, 
+                PO_MSTR.POM_BILLING_METHOD, PO_MSTR.POM_PO_PREFIX, PO_MSTR.POM_B_ADDR_CODE, 
+                PO_MSTR.POM_B_ADDR_LINE1, PO_MSTR.POM_B_ADDR_LINE2, PO_MSTR.POM_B_ADDR_LINE3, 
+                PO_MSTR.POM_B_POSTCODE, PO_MSTR.POM_B_CITY, PO_MSTR.POM_B_STATE, 
+                PO_MSTR.POM_B_COUNTRY, PO_MSTR.POM_FULFILMENT, PO_MSTR.POM_DEPT_INDEX, 
+                PO_MSTR.POM_ACCEPTED_DATE, PO_MSTR.POM_DOWNLOADED_DATE, PO_MSTR.POM_ARCHIVE_IND, 
+                PO_MSTR.POM_TERMANDCOND, PO_MSTR.POM_REFERENCE_NO, PO_MSTR.POM_EXTERNAL_IND, 
+                PO_MSTR.POM_PRINT_CUSTOM_FIELDS, PO_MSTR.POM_PRINT_REMARK, PO_DETAILS.POD_COY_ID, 
+                PO_DETAILS.POD_PO_NO, PO_DETAILS.POD_PO_LINE, PO_DETAILS.POD_PRODUCT_CODE, 
+                PO_DETAILS.POD_VENDOR_ITEM_CODE, PO_DETAILS.POD_PRODUCT_DESC, PO_DETAILS.POD_UOM, 
+                PO_DETAILS.POD_ORDERED_QTY, PO_DETAILS.POD_RECEIVED_QTY, PO_DETAILS.POD_REJECTED_QTY, 
+                PO_DETAILS.POD_DELIVERED_QTY, PO_DETAILS.POD_CANCELLED_QTY, PO_DETAILS.POD_MIN_PACK_QTY, 
+                PO_DETAILS.POD_MIN_ORDER_QTY, PO_DETAILS.POD_ETD, PO_DETAILS.POD_WARRANTY_TERMS, 
+                PO_DETAILS.POD_UNIT_COST, PO_DETAILS.POD_REMARK, PO_DETAILS.POD_GST, 
+                PO_DETAILS.POD_PR_INDEX, PO_DETAILS.POD_PR_LINE, PO_DETAILS.POD_ACCT_INDEX, 
+                PO_DETAILS.POD_PRODUCT_TYPE, PO_DETAILS.POD_B_ITEM_CODE, PO_DETAILS.POD_SOURCE, 
+                PO_DETAILS.POD_D_ADDR_CODE, PO_DETAILS.POD_D_ADDR_LINE1, PO_DETAILS.POD_D_ADDR_LINE2, 
+                PO_DETAILS.POD_D_ADDR_LINE3, PO_DETAILS.POD_D_POSTCODE, PO_DETAILS.POD_D_CITY, 
+                PO_DETAILS.POD_D_STATE, PO_DETAILS.POD_D_COUNTRY, PO_DETAILS.POD_B_CATEGORY_CODE, 
+                PO_DETAILS.POD_B_GL_CODE, COMPANY_MSTR.CM_COY_ID, COMPANY_MSTR.CM_COY_NAME, 
+                COMPANY_MSTR.CM_COY_TYPE, COMPANY_MSTR.CM_PARENT_COY_ID, COMPANY_MSTR.CM_ACCT_NO, 
+                COMPANY_MSTR.CM_BANK, COMPANY_MSTR.CM_BRANCH, COMPANY_MSTR.CM_ADDR_LINE1, 
+                COMPANY_MSTR.CM_ADDR_LINE2, COMPANY_MSTR.CM_ADDR_LINE3, COMPANY_MSTR.CM_POSTCODE, 
+                COMPANY_MSTR.CM_CITY, COMPANY_MSTR.CM_STATE, COMPANY_MSTR.CM_COUNTRY, 
+                COMPANY_MSTR.CM_PHONE, COMPANY_MSTR.CM_FAX, COMPANY_MSTR.CM_EMAIL, 
+                COMPANY_MSTR.CM_COY_LOGO, COMPANY_MSTR.CM_BUSINESS_REG_NO, 
+                COMPANY_MSTR.CM_TAX_REG_NO, COMPANY_MSTR.CM_PAYMENT_TERM, 
+                COMPANY_MSTR.CM_PAYMENT_METHOD, COMPANY_MSTR.CM_ACTUAL_TERMSANDCONDFILE, 
+                COMPANY_MSTR.CM_HUB_TERMSANDCONDFILE, COMPANY_MSTR.CM_PWD_DURATION, 
+                COMPANY_MSTR.CM_TAX_CALC_BY, COMPANY_MSTR.CM_CURRENCY_CODE, 
+                COMPANY_MSTR.CM_BCM_SET, COMPANY_MSTR.CM_BUDGET_FROM_DATE, 
+                COMPANY_MSTR.CM_BUDGET_TO_DATE, COMPANY_MSTR.CM_RFQ_OPTION, 
+                COMPANY_MSTR.CM_LICENCE_PACKAGE, COMPANY_MSTR.CM_LICENSE_USERS, 
+                COMPANY_MSTR.CM_SUB_START_DT, COMPANY_MSTR.CM_SUB_END_DT, 
+                COMPANY_MSTR.CM_LICENSE_PRODUCTS, COMPANY_MSTR.CM_FINDEPT_MODE, 
+                COMPANY_MSTR.CM_PRIV_LABELING, COMPANY_MSTR.CM_SKINS_ID, COMPANY_MSTR.CM_TRAINING, 
+                COMPANY_MSTR.CM_STATUS, COMPANY_MSTR.CM_DELETED, COMPANY_MSTR.CM_MOD_BY, 
+                COMPANY_MSTR.CM_MOD_DT, COMPANY_MSTR.CM_ENT_BY, COMPANY_MSTR.CM_ENT_DT, 
+                COMPANY_MSTR.CM_SKU, COMPANY_MSTR.CM_TRANS_NO, COMPANY_MSTR.CM_CONTACT, 
+                COMPANY_MSTR.CM_REPORT_USERS, COMPANY_MSTR.CM_INV_APPR, COMPANY_MSTR.CM_MULTI_PO, 
+                COMPANY_MSTR.CM_BA_CANCEL, PO_CR_MSTR.PCM_CR_NO, PO_CR_MSTR.PCM_B_COY_ID, 
+                PO_CR_MSTR.PCM_S_COY_ID, PO_CR_MSTR.PCM_PO_INDEX, PO_CR_MSTR.PCM_CR_STATUS, 
+                PO_CR_MSTR.PCM_REQ_BY, PO_CR_MSTR.PCM_REQ_DATE, PO_CR_MSTR.PCM_CR_REMARKS, 
+                PO_CR_DETAILS.PCD_CR_NO, PO_CR_DETAILS.PCD_COY_ID, PO_CR_DETAILS.PCD_PO_LINE, 
+                PO_CR_DETAILS.PCD_CANCELLED_QTY, PO_CR_DETAILS.PCD_REMARKS, USER_MSTR.UM_AUTO_NO, 
+                USER_MSTR.UM_USER_ID, USER_MSTR.UM_DELETED, USER_MSTR.UM_PASSWORD, 
+                USER_MSTR.UM_USER_NAME, USER_MSTR.UM_COY_ID, USER_MSTR.UM_DEPT_ID, 
+                USER_MSTR.UM_EMAIL, USER_MSTR.UM_APP_LIMIT, USER_MSTR.UM_DESIGNATION, 
+                USER_MSTR.UM_TEL_NO, USER_MSTR.UM_FAX_NO, USER_MSTR.UM_USER_SUSPEND_IND, 
+                USER_MSTR.UM_PASSWORD_LAST_CHANGED, USER_MSTR.UM_NEW_PASSWORD_IND, 
+                USER_MSTR.UM_NEXT_EXPIRE_DT, USER_MSTR.UM_LAST_LOGIN_DT, USER_MSTR.UM_QUESTION, 
+                USER_MSTR.UM_ANSWER, USER_MSTR.UM_MASS_APP, USER_MSTR.UM_STATUS, 
+                USER_MSTR.UM_MOD_BY, USER_MSTR.UM_MOD_DT, USER_MSTR.UM_ENT_BY, 
+                USER_MSTR.UM_ENT_DATE, USER_MSTR.UM_RECORD_COUNT, USER_MSTR.UM_EMAIL_CC, 
+                USER_MSTR.UM_INVOICE_APP_LIMIT, USER_MSTR.UM_INVOICE_MASS_APP,
+                    (SELECT   CODE_DESC
+                     FROM      CODE_MSTR AS a
+                     WHERE   (CODE_ABBR = COMPANY_MSTR.CM_STATE) AND (CODE_CATEGORY = 's') AND 
+                                     (CODE_VALUE = COMPANY_MSTR.CM_COUNTRY)) AS CMState,
+                    (SELECT   CODE_DESC
+                     FROM      CODE_MSTR AS a
+                     WHERE   (CODE_ABBR = COMPANY_MSTR.CM_COUNTRY) AND (CODE_CATEGORY = 'ct')) AS CMCtry,
+                    (SELECT   CODE_DESC
+                     FROM      CODE_MSTR AS a
+                     WHERE   (CODE_ABBR = PO_MSTR.POM_S_STATE) AND (CODE_CATEGORY = 's') AND 
+                                     (CODE_VALUE = PO_MSTR.POM_S_COUNTRY)) AS SupplierAddrState,
+                    (SELECT   CODE_DESC
+                     FROM      CODE_MSTR AS a
+                     WHERE   (CODE_ABBR = PO_MSTR.POM_S_COUNTRY) AND (CODE_CATEGORY = 'ct')) AS SupplierAddrCtry,
+                    (SELECT   CODE_DESC
+                     FROM      CODE_MSTR AS a
+                     WHERE   (CODE_ABBR = PO_MSTR.POM_B_STATE) AND (CODE_CATEGORY = 's') AND 
+                                     (CODE_VALUE = PO_MSTR.POM_B_COUNTRY)) AS BillAddrState,
+                    (SELECT   CODE_DESC
+                     FROM      CODE_MSTR AS a
+                     WHERE   (CODE_ABBR = PO_MSTR.POM_B_COUNTRY) AND (CODE_CATEGORY = 'ct')) AS BillAddrCtry,
+                    (SELECT   CM_BUSINESS_REG_NO
+                     FROM      COMPANY_MSTR AS B
+                     WHERE   (PO_MSTR.POM_S_COY_ID = CM_COY_ID)) AS sUPPBUSSREGNO,
+                    (SELECT   CM_EMAIL
+                     FROM      COMPANY_MSTR AS B
+                     WHERE   (PO_MSTR.POM_S_COY_ID = CM_COY_ID)) AS SUPPEMAIL,
+                    (SELECT   CM_PHONE
+                     FROM      COMPANY_MSTR AS B
+                     WHERE   (PO_MSTR.POM_S_COY_ID = CM_COY_ID)) AS SUPPPHONE,
+(SELECT   um_User_name FROM User_MSTR AS B WHERE   (PCM_REQ_By = UM_User_ID and PCM_B_COY_ID = UM_coy_ID)) AS PCMCRBUYERNAME
+FROM      PO_MSTR INNER JOIN
+                PO_DETAILS ON PO_MSTR.POM_PO_NO = PO_DETAILS.POD_PO_NO AND 
+                PO_MSTR.POM_B_COY_ID = PO_DETAILS.POD_COY_ID INNER JOIN
+                COMPANY_MSTR ON PO_MSTR.POM_B_COY_ID = COMPANY_MSTR.CM_COY_ID INNER JOIN
+                PO_CR_MSTR ON PO_MSTR.POM_PO_INDEX = PO_CR_MSTR.PCM_PO_INDEX AND 
+                PO_MSTR.POM_B_COY_ID = PO_CR_MSTR.PCM_B_COY_ID INNER JOIN
+                PO_CR_DETAILS ON PO_CR_MSTR.PCM_CR_NO = PO_CR_DETAILS.PCD_CR_NO AND 
+                PO_CR_MSTR.PCM_B_COY_ID = PO_CR_DETAILS.PCD_COY_ID AND 
+                PO_DETAILS.POD_PO_LINE = PO_CR_DETAILS.PCD_PO_LINE INNER JOIN
+                USER_MSTR ON PO_MSTR.POM_BUYER_ID = USER_MSTR.UM_USER_ID AND 
+                PO_MSTR.POM_B_COY_ID = USER_MSTR.UM_COY_ID
+WHERE   (PO_MSTR.POM_B_COY_ID = 'demo') AND (PO_MSTR.POM_PO_NO = 'ETRX/PO/09/0027') AND 
+                (PO_CR_MSTR.PCM_CR_NO = 'ETRX/CR/09/0016')</CommandText>
+        <DataSourceName>ConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="POM_PO_INDEX">
+          <rd:TypeName>System.Int64</rd:TypeName>
+          <DataField>POM_PO_INDEX</DataField>
+        </Field>
+        <Field Name="POM_PO_NO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_PO_NO</DataField>
+        </Field>
+        <Field Name="POM_B_COY_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_B_COY_ID</DataField>
+        </Field>
+        <Field Name="POM_BUYER_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_BUYER_ID</DataField>
+        </Field>
+        <Field Name="POM_BUYER_NAME">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_BUYER_NAME</DataField>
+        </Field>
+        <Field Name="POM_BUYER_PHONE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_BUYER_PHONE</DataField>
+        </Field>
+        <Field Name="POM_BUYER_FAX">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_BUYER_FAX</DataField>
+        </Field>
+        <Field Name="POM_S_COY_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_COY_ID</DataField>
+        </Field>
+        <Field Name="POM_S_COY_NAME">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_COY_NAME</DataField>
+        </Field>
+        <Field Name="POM_S_ATTN">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_ATTN</DataField>
+        </Field>
+        <Field Name="POM_S_REMARK">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_REMARK</DataField>
+        </Field>
+        <Field Name="POM_S_ADDR_LINE1">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_ADDR_LINE1</DataField>
+        </Field>
+        <Field Name="POM_S_ADDR_LINE2">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_ADDR_LINE2</DataField>
+        </Field>
+        <Field Name="POM_S_ADDR_LINE3">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_ADDR_LINE3</DataField>
+        </Field>
+        <Field Name="POM_S_POSTCODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_POSTCODE</DataField>
+        </Field>
+        <Field Name="POM_S_CITY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_CITY</DataField>
+        </Field>
+        <Field Name="POM_S_STATE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_STATE</DataField>
+        </Field>
+        <Field Name="POM_S_COUNTRY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_COUNTRY</DataField>
+        </Field>
+        <Field Name="POM_S_PHONE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_PHONE</DataField>
+        </Field>
+        <Field Name="POM_S_FAX">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_FAX</DataField>
+        </Field>
+        <Field Name="POM_S_EMAIL">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_S_EMAIL</DataField>
+        </Field>
+        <Field Name="POM_PO_DATE">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>POM_PO_DATE</DataField>
+        </Field>
+        <Field Name="POM_FREIGHT_TERMS">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_FREIGHT_TERMS</DataField>
+        </Field>
+        <Field Name="POM_PAYMENT_TERM">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_PAYMENT_TERM</DataField>
+        </Field>
+        <Field Name="POM_PAYMENT_METHOD">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_PAYMENT_METHOD</DataField>
+        </Field>
+        <Field Name="POM_SHIPMENT_MODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_SHIPMENT_MODE</DataField>
+        </Field>
+        <Field Name="POM_SHIPMENT_TERM">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_SHIPMENT_TERM</DataField>
+        </Field>
+        <Field Name="POM_CURRENCY_CODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_CURRENCY_CODE</DataField>
+        </Field>
+        <Field Name="POM_EXCHANGE_RATE">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>POM_EXCHANGE_RATE</DataField>
+        </Field>
+        <Field Name="POM_PAYMENT_TERM_CODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_PAYMENT_TERM_CODE</DataField>
+        </Field>
+        <Field Name="POM_SHIP_VIA">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_SHIP_VIA</DataField>
+        </Field>
+        <Field Name="POM_PO_STATUS">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POM_PO_STATUS</DataField>
+        </Field>
+        <Field Name="POM_STATUS_CHANGED_BY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_STATUS_CHANGED_BY</DataField>
+        </Field>
+        <Field Name="POM_STATUS_CHANGED_ON">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>POM_STATUS_CHANGED_ON</DataField>
+        </Field>
+        <Field Name="POM_EXTERNAL_REMARK">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_EXTERNAL_REMARK</DataField>
+        </Field>
+        <Field Name="POM_CREATED_BY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_CREATED_BY</DataField>
+        </Field>
+        <Field Name="POM_PO_COST">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>POM_PO_COST</DataField>
+        </Field>
+        <Field Name="POM_BILLING_METHOD">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_BILLING_METHOD</DataField>
+        </Field>
+        <Field Name="POM_PO_PREFIX">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_PO_PREFIX</DataField>
+        </Field>
+        <Field Name="POM_B_ADDR_CODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_B_ADDR_CODE</DataField>
+        </Field>
+        <Field Name="POM_B_ADDR_LINE1">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_B_ADDR_LINE1</DataField>
+        </Field>
+        <Field Name="POM_B_ADDR_LINE2">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_B_ADDR_LINE2</DataField>
+        </Field>
+        <Field Name="POM_B_ADDR_LINE3">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_B_ADDR_LINE3</DataField>
+        </Field>
+        <Field Name="POM_B_POSTCODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_B_POSTCODE</DataField>
+        </Field>
+        <Field Name="POM_B_CITY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_B_CITY</DataField>
+        </Field>
+        <Field Name="POM_B_STATE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_B_STATE</DataField>
+        </Field>
+        <Field Name="POM_B_COUNTRY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_B_COUNTRY</DataField>
+        </Field>
+        <Field Name="POM_FULFILMENT">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POM_FULFILMENT</DataField>
+        </Field>
+        <Field Name="POM_DEPT_INDEX">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POM_DEPT_INDEX</DataField>
+        </Field>
+        <Field Name="POM_ACCEPTED_DATE">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>POM_ACCEPTED_DATE</DataField>
+        </Field>
+        <Field Name="POM_DOWNLOADED_DATE">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>POM_DOWNLOADED_DATE</DataField>
+        </Field>
+        <Field Name="POM_ARCHIVE_IND">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_ARCHIVE_IND</DataField>
+        </Field>
+        <Field Name="POM_TERMANDCOND">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_TERMANDCOND</DataField>
+        </Field>
+        <Field Name="POM_REFERENCE_NO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_REFERENCE_NO</DataField>
+        </Field>
+        <Field Name="POM_EXTERNAL_IND">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_EXTERNAL_IND</DataField>
+        </Field>
+        <Field Name="POM_PRINT_CUSTOM_FIELDS">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_PRINT_CUSTOM_FIELDS</DataField>
+        </Field>
+        <Field Name="POM_PRINT_REMARK">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POM_PRINT_REMARK</DataField>
+        </Field>
+        <Field Name="POD_COY_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_COY_ID</DataField>
+        </Field>
+        <Field Name="POD_PO_NO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_PO_NO</DataField>
+        </Field>
+        <Field Name="POD_PO_LINE">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POD_PO_LINE</DataField>
+        </Field>
+        <Field Name="POD_PRODUCT_CODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_PRODUCT_CODE</DataField>
+        </Field>
+        <Field Name="POD_VENDOR_ITEM_CODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_VENDOR_ITEM_CODE</DataField>
+        </Field>
+        <Field Name="POD_PRODUCT_DESC">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_PRODUCT_DESC</DataField>
+        </Field>
+        <Field Name="POD_UOM">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_UOM</DataField>
+        </Field>
+        <Field Name="POD_ORDERED_QTY">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POD_ORDERED_QTY</DataField>
+        </Field>
+        <Field Name="POD_RECEIVED_QTY">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POD_RECEIVED_QTY</DataField>
+        </Field>
+        <Field Name="POD_REJECTED_QTY">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POD_REJECTED_QTY</DataField>
+        </Field>
+        <Field Name="POD_DELIVERED_QTY">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POD_DELIVERED_QTY</DataField>
+        </Field>
+        <Field Name="POD_CANCELLED_QTY">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POD_CANCELLED_QTY</DataField>
+        </Field>
+        <Field Name="POD_MIN_PACK_QTY">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POD_MIN_PACK_QTY</DataField>
+        </Field>
+        <Field Name="POD_MIN_ORDER_QTY">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POD_MIN_ORDER_QTY</DataField>
+        </Field>
+        <Field Name="POD_ETD">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POD_ETD</DataField>
+        </Field>
+        <Field Name="POD_WARRANTY_TERMS">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POD_WARRANTY_TERMS</DataField>
+        </Field>
+        <Field Name="POD_UNIT_COST">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>POD_UNIT_COST</DataField>
+        </Field>
+        <Field Name="POD_REMARK">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_REMARK</DataField>
+        </Field>
+        <Field Name="POD_GST">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>POD_GST</DataField>
+        </Field>
+        <Field Name="POD_PR_INDEX">
+          <rd:TypeName>System.Int64</rd:TypeName>
+          <DataField>POD_PR_INDEX</DataField>
+        </Field>
+        <Field Name="POD_PR_LINE">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>POD_PR_LINE</DataField>
+        </Field>
+        <Field Name="POD_ACCT_INDEX">
+          <rd:TypeName>System.Int64</rd:TypeName>
+          <DataField>POD_ACCT_INDEX</DataField>
+        </Field>
+        <Field Name="POD_PRODUCT_TYPE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_PRODUCT_TYPE</DataField>
+        </Field>
+        <Field Name="POD_B_ITEM_CODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_B_ITEM_CODE</DataField>
+        </Field>
+        <Field Name="POD_SOURCE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_SOURCE</DataField>
+        </Field>
+        <Field Name="POD_D_ADDR_CODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_D_ADDR_CODE</DataField>
+        </Field>
+        <Field Name="POD_D_ADDR_LINE1">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_D_ADDR_LINE1</DataField>
+        </Field>
+        <Field Name="POD_D_ADDR_LINE2">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_D_ADDR_LINE2</DataField>
+        </Field>
+        <Field Name="POD_D_ADDR_LINE3">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_D_ADDR_LINE3</DataField>
+        </Field>
+        <Field Name="POD_D_POSTCODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_D_POSTCODE</DataField>
+        </Field>
+        <Field Name="POD_D_CITY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_D_CITY</DataField>
+        </Field>
+        <Field Name="POD_D_STATE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_D_STATE</DataField>
+        </Field>
+        <Field Name="POD_D_COUNTRY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_D_COUNTRY</DataField>
+        </Field>
+        <Field Name="POD_B_CATEGORY_CODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_B_CATEGORY_CODE</DataField>
+        </Field>
+        <Field Name="POD_B_GL_CODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>POD_B_GL_CODE</DataField>
+        </Field>
+        <Field Name="CM_COY_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_COY_ID</DataField>
+        </Field>
+        <Field Name="CM_COY_NAME">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_COY_NAME</DataField>
+        </Field>
+        <Field Name="CM_COY_TYPE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_COY_TYPE</DataField>
+        </Field>
+        <Field Name="CM_PARENT_COY_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_PARENT_COY_ID</DataField>
+        </Field>
+        <Field Name="CM_ACCT_NO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_ACCT_NO</DataField>
+        </Field>
+        <Field Name="CM_BANK">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_BANK</DataField>
+        </Field>
+        <Field Name="CM_BRANCH">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_BRANCH</DataField>
+        </Field>
+        <Field Name="CM_ADDR_LINE1">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_ADDR_LINE1</DataField>
+        </Field>
+        <Field Name="CM_ADDR_LINE2">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_ADDR_LINE2</DataField>
+        </Field>
+        <Field Name="CM_ADDR_LINE3">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_ADDR_LINE3</DataField>
+        </Field>
+        <Field Name="CM_POSTCODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_POSTCODE</DataField>
+        </Field>
+        <Field Name="CM_CITY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_CITY</DataField>
+        </Field>
+        <Field Name="CM_STATE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_STATE</DataField>
+        </Field>
+        <Field Name="CM_COUNTRY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_COUNTRY</DataField>
+        </Field>
+        <Field Name="CM_PHONE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_PHONE</DataField>
+        </Field>
+        <Field Name="CM_FAX">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_FAX</DataField>
+        </Field>
+        <Field Name="CM_EMAIL">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_EMAIL</DataField>
+        </Field>
+        <Field Name="CM_COY_LOGO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_COY_LOGO</DataField>
+        </Field>
+        <Field Name="CM_BUSINESS_REG_NO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_BUSINESS_REG_NO</DataField>
+        </Field>
+        <Field Name="CM_TAX_REG_NO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_TAX_REG_NO</DataField>
+        </Field>
+        <Field Name="CM_PAYMENT_TERM">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_PAYMENT_TERM</DataField>
+        </Field>
+        <Field Name="CM_PAYMENT_METHOD">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_PAYMENT_METHOD</DataField>
+        </Field>
+        <Field Name="CM_ACTUAL_TERMSANDCONDFILE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_ACTUAL_TERMSANDCONDFILE</DataField>
+        </Field>
+        <Field Name="CM_HUB_TERMSANDCONDFILE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_HUB_TERMSANDCONDFILE</DataField>
+        </Field>
+        <Field Name="CM_PWD_DURATION">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>CM_PWD_DURATION</DataField>
+        </Field>
+        <Field Name="CM_TAX_CALC_BY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_TAX_CALC_BY</DataField>
+        </Field>
+        <Field Name="CM_CURRENCY_CODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_CURRENCY_CODE</DataField>
+        </Field>
+        <Field Name="CM_BCM_SET">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_BCM_SET</DataField>
+        </Field>
+        <Field Name="CM_BUDGET_FROM_DATE">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>CM_BUDGET_FROM_DATE</DataField>
+        </Field>
+        <Field Name="CM_BUDGET_TO_DATE">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>CM_BUDGET_TO_DATE</DataField>
+        </Field>
+        <Field Name="CM_RFQ_OPTION">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_RFQ_OPTION</DataField>
+        </Field>
+        <Field Name="CM_LICENCE_PACKAGE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_LICENCE_PACKAGE</DataField>
+        </Field>
+        <Field Name="CM_LICENSE_USERS">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>CM_LICENSE_USERS</DataField>
+        </Field>
+        <Field Name="CM_SUB_START_DT">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>CM_SUB_START_DT</DataField>
+        </Field>
+        <Field Name="CM_SUB_END_DT">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>CM_SUB_END_DT</DataField>
+        </Field>
+        <Field Name="CM_LICENSE_PRODUCTS">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>CM_LICENSE_PRODUCTS</DataField>
+        </Field>
+        <Field Name="CM_FINDEPT_MODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_FINDEPT_MODE</DataField>
+        </Field>
+        <Field Name="CM_PRIV_LABELING">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_PRIV_LABELING</DataField>
+        </Field>
+        <Field Name="CM_SKINS_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_SKINS_ID</DataField>
+        </Field>
+        <Field Name="CM_TRAINING">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_TRAINING</DataField>
+        </Field>
+        <Field Name="CM_STATUS">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_STATUS</DataField>
+        </Field>
+        <Field Name="CM_DELETED">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_DELETED</DataField>
+        </Field>
+        <Field Name="CM_MOD_BY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_MOD_BY</DataField>
+        </Field>
+        <Field Name="CM_MOD_DT">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>CM_MOD_DT</DataField>
+        </Field>
+        <Field Name="CM_ENT_BY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_ENT_BY</DataField>
+        </Field>
+        <Field Name="CM_ENT_DT">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>CM_ENT_DT</DataField>
+        </Field>
+        <Field Name="CM_SKU">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>CM_SKU</DataField>
+        </Field>
+        <Field Name="CM_TRANS_NO">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>CM_TRANS_NO</DataField>
+        </Field>
+        <Field Name="CM_CONTACT">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_CONTACT</DataField>
+        </Field>
+        <Field Name="CM_REPORT_USERS">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>CM_REPORT_USERS</DataField>
+        </Field>
+        <Field Name="CM_INV_APPR">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_INV_APPR</DataField>
+        </Field>
+        <Field Name="CM_MULTI_PO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_MULTI_PO</DataField>
+        </Field>
+        <Field Name="CM_BA_CANCEL">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CM_BA_CANCEL</DataField>
+        </Field>
+        <Field Name="PCM_CR_NO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PCM_CR_NO</DataField>
+        </Field>
+        <Field Name="PCM_B_COY_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PCM_B_COY_ID</DataField>
+        </Field>
+        <Field Name="PCM_S_COY_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PCM_S_COY_ID</DataField>
+        </Field>
+        <Field Name="PCM_PO_INDEX">
+          <rd:TypeName>System.Int64</rd:TypeName>
+          <DataField>PCM_PO_INDEX</DataField>
+        </Field>
+        <Field Name="PCM_CR_STATUS">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>PCM_CR_STATUS</DataField>
+        </Field>
+        <Field Name="PCM_REQ_BY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PCM_REQ_BY</DataField>
+        </Field>
+        <Field Name="PCM_REQ_DATE">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>PCM_REQ_DATE</DataField>
+        </Field>
+        <Field Name="PCM_CR_REMARKS">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PCM_CR_REMARKS</DataField>
+        </Field>
+        <Field Name="PCD_CR_NO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PCD_CR_NO</DataField>
+        </Field>
+        <Field Name="PCD_COY_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PCD_COY_ID</DataField>
+        </Field>
+        <Field Name="PCD_PO_LINE">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>PCD_PO_LINE</DataField>
+        </Field>
+        <Field Name="PCD_CANCELLED_QTY">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>PCD_CANCELLED_QTY</DataField>
+        </Field>
+        <Field Name="PCD_REMARKS">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PCD_REMARKS</DataField>
+        </Field>
+        <Field Name="CMState">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CMState</DataField>
+        </Field>
+        <Field Name="CMCtry">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CMCtry</DataField>
+        </Field>
+        <Field Name="SupplierAddrState">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SupplierAddrState</DataField>
+        </Field>
+        <Field Name="SupplierAddrCtry">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SupplierAddrCtry</DataField>
+        </Field>
+        <Field Name="BillAddrState">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BillAddrState</DataField>
+        </Field>
+        <Field Name="BillAddrCtry">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BillAddrCtry</DataField>
+        </Field>
+        <Field Name="sUPPBUSSREGNO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>sUPPBUSSREGNO</DataField>
+        </Field>
+        <Field Name="SUPPEMAIL">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SUPPEMAIL</DataField>
+        </Field>
+        <Field Name="SUPPPHONE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SUPPPHONE</DataField>
+        </Field>
+        <Field Name="UM_AUTO_NO">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>UM_AUTO_NO</DataField>
+        </Field>
+        <Field Name="UM_USER_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_USER_ID</DataField>
+        </Field>
+        <Field Name="UM_DELETED">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_DELETED</DataField>
+        </Field>
+        <Field Name="UM_PASSWORD">
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+          <DataField>UM_PASSWORD</DataField>
+        </Field>
+        <Field Name="UM_USER_NAME">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_USER_NAME</DataField>
+        </Field>
+        <Field Name="UM_COY_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_COY_ID</DataField>
+        </Field>
+        <Field Name="UM_DEPT_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_DEPT_ID</DataField>
+        </Field>
+        <Field Name="UM_EMAIL">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_EMAIL</DataField>
+        </Field>
+        <Field Name="UM_APP_LIMIT">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>UM_APP_LIMIT</DataField>
+        </Field>
+        <Field Name="UM_DESIGNATION">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_DESIGNATION</DataField>
+        </Field>
+        <Field Name="UM_TEL_NO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_TEL_NO</DataField>
+        </Field>
+        <Field Name="UM_FAX_NO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_FAX_NO</DataField>
+        </Field>
+        <Field Name="UM_USER_SUSPEND_IND">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>UM_USER_SUSPEND_IND</DataField>
+        </Field>
+        <Field Name="UM_PASSWORD_LAST_CHANGED">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>UM_PASSWORD_LAST_CHANGED</DataField>
+        </Field>
+        <Field Name="UM_NEW_PASSWORD_IND">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_NEW_PASSWORD_IND</DataField>
+        </Field>
+        <Field Name="UM_NEXT_EXPIRE_DT">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>UM_NEXT_EXPIRE_DT</DataField>
+        </Field>
+        <Field Name="UM_LAST_LOGIN_DT">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>UM_LAST_LOGIN_DT</DataField>
+        </Field>
+        <Field Name="UM_QUESTION">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>UM_QUESTION</DataField>
+        </Field>
+        <Field Name="UM_ANSWER">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_ANSWER</DataField>
+        </Field>
+        <Field Name="UM_MASS_APP">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_MASS_APP</DataField>
+        </Field>
+        <Field Name="UM_STATUS">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_STATUS</DataField>
+        </Field>
+        <Field Name="UM_MOD_BY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_MOD_BY</DataField>
+        </Field>
+        <Field Name="UM_MOD_DT">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>UM_MOD_DT</DataField>
+        </Field>
+        <Field Name="UM_ENT_BY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_ENT_BY</DataField>
+        </Field>
+        <Field Name="UM_ENT_DATE">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>UM_ENT_DATE</DataField>
+        </Field>
+        <Field Name="UM_RECORD_COUNT">
+          <rd:TypeName>System.Int16</rd:TypeName>
+          <DataField>UM_RECORD_COUNT</DataField>
+        </Field>
+        <Field Name="UM_EMAIL_CC">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_EMAIL_CC</DataField>
+        </Field>
+        <Field Name="UM_INVOICE_APP_LIMIT">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>UM_INVOICE_APP_LIMIT</DataField>
+        </Field>
+        <Field Name="UM_INVOICE_MASS_APP">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UM_INVOICE_MASS_APP</DataField>
+        </Field>
+        <Field Name="PCMCRBUYERNAME">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PCMCRBUYERNAME</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Author>linll</Author>
+  <Code>Public shared POMPONoVar as string
+Public shared POMPODateVar  as string
+Public shared PCMCRNoVar as string
+Public shared PCMCRDateVar  as date
+
+Public shared PomPaymentTermVar as string
+Public shared PomPaymentMethodVar as string
+Public shared PomShipmentTermVar as string
+Public shared PomShipmentModeVar as string
+Public shared PomFreightTermsVar as string
+Public shared PomShipViaVar as string
+
+
+Public shared BuyerCompanyNameVar   as string
+Public shared SupplierCompanyNameVar  as string
+
+
+Public shared buyerBillAddrVar as string
+Public shared buyerComInforVar  as string
+Public shared buyerAddrVar  as string
+Public shared PCMCRHeaderRemarkVar  as string
+Public shared suppComInforVar  as string
+Public shared suppAddrVar  as string
+
+
+public function GetPONo(POmPONo as string) As string
+     POMPONoVar= POmPONo 
+     return POMPONoVar
+End function
+
+public function GetCRNo(PCmCRNo as string) As string
+     PCMCRNoVar = PCmCRNo 
+     return PCMCRNoVar 
+End function
+
+ 
+public function GetCRDate(CRDate as date) As date
+     PCMCRDateVar   = CRDate 
+     return PCMCRDateVar   
+End function
+
+public function GetPODate(PODate as object) As date
+  if isnothing(PODate) then
+	POMPODateVar=""
+  else
+	POMPODateVar  =format(cdate(PODate),"dd/MM/yyyy")
+  end if  
+     return POMPODateVar  
+End function
+
+public function GetPomPaymentTerm(PomPaymentTerm as String) As string
+     PomPaymentTermVar = PomPaymentTerm
+     return PomPaymentTermVar 
+End function
+
+public function GetPomPaymentMethod(PomPaymentMethod as String) As string
+     PomPaymentMethodVar = PomPaymentMethod 
+     return PomPaymentMethodVar
+End function
+
+public function GetPomShipmentTerm(PomShipmentTerm as String) As string
+     PomShipmentTermVar = PomShipmentTerm
+     return PomShipmentTermVar 
+End function
+
+public function GetPomShipmentMode(PomShipmentMode as String) As string
+     PomShipmentModeVar = PomShipmentMode
+     return PomShipmentModeVar 
+End function
+
+public function GetPomFreightTerms (PomFreightTerms as String) As string
+     PomFreightTermsVar = PomFreightTerms 
+     return PomFreightTermsVar 
+End function
+
+public function GetPomShipVia(PomShipVia as String) As string
+     PomShipViaVar = PomShipVia
+     return PomShipViaVar 
+End function
+
+public function GetBuyerCompanyName(BuyerCompanyName as string) As string
+     BuyerCompanyNameVar  = BuyerCompanyName
+     return BuyerCompanyNameVar  
+End function
+
+public function GetSupplierCoyName(SupplierCompanyName as string) As string
+     SupplierCompanyNameVar  = SupplierCompanyName
+     return SupplierCompanyNameVar  
+End function
+
+
+
+public function GetBuyerBillAddr(buyerBillAddr1 as String, buyerBillAddr2 as String, buyerBillAddr3 as String, buyerBillPostcode as string, buyerBillCity as string, buyerBillState as string, buyerBillCountry as string ) As string
+     buyerBillAddrVar = buyerBillAddr1 
+
+     If Not IsDBNull( buyerBillAddr2 ) And buyerBillAddr2 &lt;&gt; "" Then
+            buyerBillAddrVar = buyerBillAddrVar &amp;  VbCrLf  &amp;   buyerBillAddr2 
+     End If
+
+     If Not IsDBNull( buyerBillAddr3 ) And buyerBillAddr3 &lt;&gt; "" Then
+           buyerBillAddrVar = buyerBillAddrVar &amp; VbCrLf  &amp;   buyerBillAddr3 
+     End If
+
+    If Not IsDBNull( buyerBillPostcode ) And buyerBillPostcode &lt;&gt; "" Then
+           buyerBillAddrVar = buyerBillAddrVar &amp; VbCrLf &amp;  buyerBillPostcode 
+     End If
+
+    If Not IsDBNull( buyerBillCity ) And buyerBillCity &lt;&gt; "" Then
+           buyerBillAddrVar = buyerBillAddrVar &amp; " " &amp; buyerBillCity 
+     End If
+
+    If Not IsDBNull( buyerBillState ) And buyerBillState &lt;&gt; "" Then
+           buyerBillAddrVar = buyerBillAddrVar &amp; VbCrLf &amp;  buyerBillState 
+     End If
+
+    If Not IsDBNull( buyerBillCountry ) And buyerBillCountry &lt;&gt; "" Then
+           buyerBillAddrVar = buyerBillAddrVar &amp; " " &amp; buyerBillCountry 
+     End If
+
+return buyerBillAddrVar 
+
+End function
+
+public function GetBuyerAddr(buyerAddr1 as String, buyerAddr2 as String, buyerAddr3 as String, buyerPostcode as string, buyerCity as string, buyerState as string, buyerCountry as string ) As string
+     buyerAddrVar = buyerAddr1 
+
+     If Not IsDBNull( buyerAddr2 ) And buyerAddr2 &lt;&gt; "" Then
+            buyerAddrVar = buyerAddrVar &amp;  VbCrLf  &amp;   buyerAddr2 
+     End If
+
+     If Not IsDBNull( buyerAddr3 ) And buyerAddr3 &lt;&gt; "" Then
+           buyerAddrVar = buyerAddrVar &amp; VbCrLf  &amp;   buyerAddr3 
+     End If
+
+    If Not IsDBNull( buyerPostcode ) And buyerPostcode &lt;&gt; "" Then
+           buyerAddrVar = buyerAddrVar &amp; VbCrLf &amp;  buyerPostcode 
+     End If
+
+    If Not IsDBNull( buyerCity ) And buyerCity &lt;&gt; "" Then
+           buyerAddrVar = buyerAddrVar &amp; " " &amp; buyerCity 
+     End If
+
+    If Not IsDBNull( buyerState ) And buyerState &lt;&gt; "" Then
+           buyerAddrVar = buyerAddrVar &amp; VbCrLf &amp;  buyerState 
+     End If
+
+    If Not IsDBNull( buyerCountry ) And buyerCountry &lt;&gt; "" Then
+           buyerAddrVar = buyerAddrVar &amp; " " &amp; buyerCountry 
+     End If
+
+return buyerAddrVar 
+
+End function
+
+public function GetBuyerComInfor(buyerBussRegNo as String, buyerCRName as String, buyerTel as String, buyerEmail as string) As string
+     buyerComInforVar = VbCrLf  &amp; "Business Reg. No."  &amp; space(6) &amp; ":  "  &amp; buyerBussRegNo 
+     buyerComInforVar = buyerComInforVar  &amp; VbCrLf  &amp; "CR Request By"  &amp; space(11) &amp; ":  "  &amp; buyerCRName 
+     buyerComInforVar = buyerComInforVar  &amp; VbCrLf  &amp; "Tel"  &amp; space(31) &amp; ":  "  &amp; buyerTel 
+     buyerComInforVar = buyerComInforVar  &amp; VbCrLf  &amp; "Email"  &amp; space(27) &amp; ":  "  &amp; buyerEmail 
+    
+
+    return buyerComInforVar 
+
+End function
+
+public function GetCRHeaderRemark(PCMCRHeaderRemark as string) As string
+     PCMCRHeaderRemarkVar  = PCMCRHeaderRemark 
+     return PCMCRHeaderRemarkVar  
+End function
+
+
+
+public function GetSuppAddr(suppAddr1 as String, suppAddr2 as String, suppAddr3 as String, suppPostcode as string, suppCity as string, suppState as string, suppCountry as string ) As string
+     suppAddrVar  = suppAddr1 
+
+     If Not IsDBNull( suppAddr2 ) And suppAddr2 &lt;&gt; "" Then
+            suppAddrVar  = suppAddrVar  &amp;  VbCrLf  &amp;   suppAddr2 
+     End If
+
+     If Not IsDBNull( suppAddr3 ) And suppAddr3 &lt;&gt; "" Then
+           suppAddrVar  = suppAddrVar  &amp; VbCrLf  &amp;   suppAddr3 
+     End If
+
+    If Not IsDBNull( suppPostcode ) And suppPostcode &lt;&gt; "" Then
+           suppAddrVar  = suppAddrVar  &amp; VbCrLf &amp;  suppPostcode 
+     End If
+
+    If Not IsDBNull( suppCity ) And suppCity &lt;&gt; "" Then
+           suppAddrVar  = suppAddrVar  &amp; " " &amp; suppCity 
+     End If
+
+    If Not IsDBNull( suppState ) And suppState &lt;&gt; "" Then
+           suppAddrVar  = suppAddrVar  &amp; VbCrLf &amp;  suppState 
+     End If
+
+    If Not IsDBNull( suppCountry ) And suppCountry &lt;&gt; "" Then
+           suppAddrVar  = suppAddrVar  &amp; " " &amp; suppCountry 
+     End If
+
+return suppAddrVar  
+
+End function
+
+public function GetSuppComInfor(suppBussRegNo as String, suppTel as String, suppEmail as string) As string
+     suppComInforVar  = VbCrLf  &amp; "Business Reg. No."  &amp; space(6) &amp; ":  "  &amp; suppBussRegNo 
+
+      
+     suppComInforVar  = suppComInforVar  &amp; VbCrLf  &amp; "Tel"  &amp; space(31) &amp; ":  "  &amp; suppTel 
+
+     suppComInforVar  = suppComInforVar  &amp; VbCrLf  &amp; "Email"  &amp; space(27) &amp; ":  "  &amp; suppEmail 
+
+    return suppComInforVar  
+
+End function
+</Code>
+  <Width>8.13in</Width>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <Language>en-US</Language>
+  <PageFooter>
+    <ReportItems>
+      <Textbox Name="textbox36">
+        <Left>0.0195in</Left>
+        <Top>0.029in</Top>
+        <ZIndex>2</ZIndex>
+        <Width>7.7815in</Width>
+        <Style>
+          <BorderStyle>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.18in</Height>
+        <Value />
+      </Textbox>
+      <Textbox Name="textbox27">
+        <Left>0.0195in</Left>
+        <Top>0.58in</Top>
+        <ZIndex>1</ZIndex>
+        <Width>7.7815in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.21in</Height>
+        <Value>="Page " &amp; Globals.PageNumber &amp; " of " &amp; Globals.TotalPages</Value>
+      </Textbox>
+      <Textbox Name="textbox33">
+        <Left>0.0195in</Left>
+        <Top>0.261in</Top>
+        <Width>7.7815in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontSize>8pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.208in</Height>
+        <Value>= "This is a computer generated document. No signature is required."</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.87in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageFooter>
+  <TopMargin>0.1in</TopMargin>
+  <PageHeight>11.69in</PageHeight>
+</Report>

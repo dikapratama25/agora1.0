@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewRI" targetNamespace="http://tempuri.org/PreviewRI.xsd" xmlns:mstns="http://tempuri.org/PreviewRI.xsd" xmlns="http://tempuri.org/PreviewRI.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString3 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString3.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DateSetRITableAdapter" GeneratorDataComponentClassName="DateSetRITableAdapter" Name="DateSetRI" UserDataComponentName="DateSetRITableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString3 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>Select '' AS  IRIM_RI_NO, '' AS IRIM_RI_DATE, '' AS IRIM_RI_STATUS, '' AS IRIM_IR_NO, '' AS IRIM_RI_REJECT_REMARK, '' AS IM_ITEM_CODE, '' AS IRID_INVENTORY_NAME, '' AS IRID_UOM, ''AS DOL_LOT_NO, '' AS LM_LOCATION, '' AS LM_SUB_LOCATION, '' AS TQTY, '' AS IRIL_REMARK FROM inventory_return_inward_mstr</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IRIM_RI_DATE" DataSetColumn="IRIM_RI_DATE" />
+              <Mapping SourceColumn="IRIM_RI_STATUS" DataSetColumn="IRIM_RI_STATUS" />
+              <Mapping SourceColumn="IRIM_IR_NO" DataSetColumn="IRIM_IR_NO" />
+              <Mapping SourceColumn="IRIM_RI_REJECT_REMARK" DataSetColumn="IRIM_RI_REJECT_REMARK" />
+              <Mapping SourceColumn="IM_ITEM_CODE" DataSetColumn="IM_ITEM_CODE" />
+              <Mapping SourceColumn="IRID_INVENTORY_NAME" DataSetColumn="IRID_INVENTORY_NAME" />
+              <Mapping SourceColumn="DOL_LOT_NO" DataSetColumn="DOL_LOT_NO" />
+              <Mapping SourceColumn="LM_LOCATION" DataSetColumn="LM_LOCATION" />
+              <Mapping SourceColumn="LM_SUB_LOCATION" DataSetColumn="LM_SUB_LOCATION" />
+              <Mapping SourceColumn="TQTY" DataSetColumn="TQTY" />
+              <Mapping SourceColumn="IRIM_RI_NO" DataSetColumn="IRIM_RI_NO" />
+              <Mapping SourceColumn="IRIL_REMARK" DataSetColumn="IRIL_REMARK" />
+              <Mapping SourceColumn="IRID_UOM" DataSetColumn="IRID_UOM" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewRI" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PreviewRI" msprop:Generator_DataSetName="PreviewRI">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DateSetRI" msprop:Generator_UserTableName="DateSetRI" msprop:Generator_RowDeletedName="DateSetRIRowDeleted" msprop:Generator_RowChangedName="DateSetRIRowChanged" msprop:Generator_RowClassName="DateSetRIRow" msprop:Generator_RowChangingName="DateSetRIRowChanging" msprop:Generator_RowEvArgName="DateSetRIRowChangeEvent" msprop:Generator_RowEvHandlerName="DateSetRIRowChangeEventHandler" msprop:Generator_TableClassName="DateSetRIDataTable" msprop:Generator_TableVarName="tableDateSetRI" msprop:Generator_RowDeletingName="DateSetRIRowDeleting" msprop:Generator_TablePropName="DateSetRI">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IRIM_RI_DATE" msprop:Generator_UserColumnName="IRIM_RI_DATE" msprop:Generator_ColumnVarNameInTable="columnIRIM_RI_DATE" msprop:Generator_ColumnPropNameInRow="IRIM_RI_DATE" msprop:Generator_ColumnPropNameInTable="IRIM_RI_DATEColumn" type="xs:string" />
+              <xs:element name="IRIM_RI_STATUS" msprop:Generator_UserColumnName="IRIM_RI_STATUS" msprop:Generator_ColumnVarNameInTable="columnIRIM_RI_STATUS" msprop:Generator_ColumnPropNameInRow="IRIM_RI_STATUS" msprop:Generator_ColumnPropNameInTable="IRIM_RI_STATUSColumn" type="xs:string" />
+              <xs:element name="IRIM_IR_NO" msprop:Generator_UserColumnName="IRIM_IR_NO" msprop:Generator_ColumnVarNameInTable="columnIRIM_IR_NO" msprop:Generator_ColumnPropNameInRow="IRIM_IR_NO" msprop:Generator_ColumnPropNameInTable="IRIM_IR_NOColumn" type="xs:string" />
+              <xs:element name="IRIM_RI_REJECT_REMARK" msprop:Generator_UserColumnName="IRIM_RI_REJECT_REMARK" msprop:Generator_ColumnVarNameInTable="columnIRIM_RI_REJECT_REMARK" msprop:Generator_ColumnPropNameInRow="IRIM_RI_REJECT_REMARK" msprop:Generator_ColumnPropNameInTable="IRIM_RI_REJECT_REMARKColumn" type="xs:string" />
+              <xs:element name="IM_ITEM_CODE" msprop:Generator_UserColumnName="IM_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="IM_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="IM_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="IRID_INVENTORY_NAME" msprop:Generator_UserColumnName="IRID_INVENTORY_NAME" msprop:Generator_ColumnVarNameInTable="columnIRID_INVENTORY_NAME" msprop:Generator_ColumnPropNameInRow="IRID_INVENTORY_NAME" msprop:Generator_ColumnPropNameInTable="IRID_INVENTORY_NAMEColumn" type="xs:string" />
+              <xs:element name="DOL_LOT_NO" msprop:Generator_UserColumnName="DOL_LOT_NO" msprop:Generator_ColumnVarNameInTable="columnDOL_LOT_NO" msprop:Generator_ColumnPropNameInRow="DOL_LOT_NO" msprop:Generator_ColumnPropNameInTable="DOL_LOT_NOColumn" type="xs:string" />
+              <xs:element name="LM_LOCATION" msprop:Generator_UserColumnName="LM_LOCATION" msprop:Generator_ColumnVarNameInTable="columnLM_LOCATION" msprop:Generator_ColumnPropNameInRow="LM_LOCATION" msprop:Generator_ColumnPropNameInTable="LM_LOCATIONColumn" type="xs:string" />
+              <xs:element name="LM_SUB_LOCATION" msprop:Generator_UserColumnName="LM_SUB_LOCATION" msprop:Generator_ColumnVarNameInTable="columnLM_SUB_LOCATION" msprop:Generator_ColumnPropNameInRow="LM_SUB_LOCATION" msprop:Generator_ColumnPropNameInTable="LM_SUB_LOCATIONColumn" type="xs:string" />
+              <xs:element name="TQTY" msprop:Generator_UserColumnName="TQTY" msprop:Generator_ColumnVarNameInTable="columnTQTY" msprop:Generator_ColumnPropNameInRow="TQTY" msprop:Generator_ColumnPropNameInTable="TQTYColumn" type="xs:string" />
+              <xs:element name="IRIM_RI_NO" msprop:Generator_UserColumnName="IRIM_RI_NO" msprop:Generator_ColumnPropNameInRow="IRIM_RI_NO" msprop:Generator_ColumnVarNameInTable="columnIRIM_RI_NO" msprop:Generator_ColumnPropNameInTable="IRIM_RI_NOColumn" type="xs:string" />
+              <xs:element name="IRIL_REMARK" msprop:Generator_UserColumnName="IRIL_REMARK" msprop:Generator_ColumnVarNameInTable="columnIRIL_REMARK" msprop:Generator_ColumnPropNameInRow="IRIL_REMARK" msprop:Generator_ColumnPropNameInTable="IRIL_REMARKColumn" type="xs:string" />
+              <xs:element name="IRID_UOM" msprop:Generator_UserColumnName="IRID_UOM" msprop:Generator_ColumnPropNameInRow="IRID_UOM" msprop:Generator_ColumnVarNameInTable="columnIRID_UOM" msprop:Generator_ColumnPropNameInTable="IRID_UOMColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

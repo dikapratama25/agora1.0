@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewRO" targetNamespace="http://tempuri.org/PreviewRO.xsd" xmlns:mstns="http://tempuri.org/PreviewRO.xsd" xmlns="http://tempuri.org/PreviewRO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString2.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetROTableAdapter" GeneratorDataComponentClassName="DataSetROTableAdapter" Name="DataSetRO" UserDataComponentName="DataSetROTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString2 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>Select '' AS IROD_RO_LINE, ''AS IROD_RO_NO, ''AS POD_VENDOR_ITEM_CODE, '' AS POD_PRODUCT_DESC, '' AS POD_UOM, '' AS POD_MIN_PACK_QTY, '' AS POD_ORDERED_QTY, '' AS GD_RECEIVED_QTY, '' AS GD_REJECTED_QTY, '' AS IROD_QTY, '' AS IROD_LOT_NO, '' AS IROD_REMARK, ''AS IROM_RO_NO, '' AS IROM_RO_DATE, '' AS GM_GRN_NO, '' AS GM_CREATED_DATE, '' AS VENDOR_NAME, '' AS POM_PO_NO, '' AS POM_CREATED_DATE, '' AS DOM_DO_NO, '' AS DOM_DO_DATE, '' AS GM_DATE_RECEIVED, '' AS IROL_LOT_QTY, '' AS DOL_LOT_NO, '' AS LM_LOCATION, '' AS LM_SUB_LOCATION  FROM INVENTORY_RETURN_OUTWARD_DETAILS
+
+
+</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IROD_RO_NO" DataSetColumn="IROD_RO_NO" />
+              <Mapping SourceColumn="POD_VENDOR_ITEM_CODE" DataSetColumn="POD_VENDOR_ITEM_CODE" />
+              <Mapping SourceColumn="POD_PRODUCT_DESC" DataSetColumn="POD_PRODUCT_DESC" />
+              <Mapping SourceColumn="POD_UOM" DataSetColumn="POD_UOM" />
+              <Mapping SourceColumn="POD_MIN_PACK_QTY" DataSetColumn="POD_MIN_PACK_QTY" />
+              <Mapping SourceColumn="POD_ORDERED_QTY" DataSetColumn="POD_ORDERED_QTY" />
+              <Mapping SourceColumn="GD_RECEIVED_QTY" DataSetColumn="GD_RECEIVED_QTY" />
+              <Mapping SourceColumn="GD_REJECTED_QTY" DataSetColumn="GD_REJECTED_QTY" />
+              <Mapping SourceColumn="IROD_QTY" DataSetColumn="IROD_QTY" />
+              <Mapping SourceColumn="IROD_LOT_NO" DataSetColumn="IROD_LOT_NO" />
+              <Mapping SourceColumn="IROD_REMARK" DataSetColumn="IROD_REMARK" />
+              <Mapping SourceColumn="IROM_RO_NO" DataSetColumn="IROM_RO_NO" />
+              <Mapping SourceColumn="IROM_RO_DATE" DataSetColumn="IROM_RO_DATE" />
+              <Mapping SourceColumn="GM_GRN_NO" DataSetColumn="GM_GRN_NO" />
+              <Mapping SourceColumn="GM_CREATED_DATE" DataSetColumn="GM_CREATED_DATE" />
+              <Mapping SourceColumn="POM_PO_NO" DataSetColumn="POM_PO_NO" />
+              <Mapping SourceColumn="POM_CREATED_DATE" DataSetColumn="POM_CREATED_DATE" />
+              <Mapping SourceColumn="DOM_DO_NO" DataSetColumn="DOM_DO_NO" />
+              <Mapping SourceColumn="DOM_DO_DATE" DataSetColumn="DOM_DO_DATE" />
+              <Mapping SourceColumn="GM_DATE_RECEIVED" DataSetColumn="GM_DATE_RECEIVED" />
+              <Mapping SourceColumn="IROD_RO_LINE" DataSetColumn="IROD_RO_LINE" />
+              <Mapping SourceColumn="VENDOR_NAME" DataSetColumn="VENDOR_NAME" />
+              <Mapping SourceColumn="IROL_LOT_QTY" DataSetColumn="IROL_LOT_QTY" />
+              <Mapping SourceColumn="DOL_LOT_NO" DataSetColumn="DOL_LOT_NO" />
+              <Mapping SourceColumn="LM_LOCATION" DataSetColumn="LM_LOCATION" />
+              <Mapping SourceColumn="LM_SUB_LOCATION" DataSetColumn="LM_SUB_LOCATION" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewRO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PreviewRO" msprop:Generator_DataSetName="PreviewRO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetRO" msprop:Generator_UserTableName="DataSetRO" msprop:Generator_RowDeletedName="DataSetRORowDeleted" msprop:Generator_RowChangedName="DataSetRORowChanged" msprop:Generator_RowClassName="DataSetRORow" msprop:Generator_RowChangingName="DataSetRORowChanging" msprop:Generator_RowEvArgName="DataSetRORowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetRORowChangeEventHandler" msprop:Generator_TableClassName="DataSetRODataTable" msprop:Generator_TableVarName="tableDataSetRO" msprop:Generator_RowDeletingName="DataSetRORowDeleting" msprop:Generator_TablePropName="DataSetRO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IROD_RO_NO" msprop:Generator_UserColumnName="IROD_RO_NO" msprop:Generator_ColumnPropNameInRow="IROD_RO_NO" msprop:Generator_ColumnVarNameInTable="columnIROD_RO_NO" msprop:Generator_ColumnPropNameInTable="IROD_RO_NOColumn" type="xs:string" />
+              <xs:element name="POD_VENDOR_ITEM_CODE" msprop:Generator_UserColumnName="POD_VENDOR_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="POD_VENDOR_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnPOD_VENDOR_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="POD_VENDOR_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="POD_PRODUCT_DESC" msprop:Generator_UserColumnName="POD_PRODUCT_DESC" msprop:Generator_ColumnPropNameInRow="POD_PRODUCT_DESC" msprop:Generator_ColumnVarNameInTable="columnPOD_PRODUCT_DESC" msprop:Generator_ColumnPropNameInTable="POD_PRODUCT_DESCColumn" type="xs:string" />
+              <xs:element name="POD_UOM" msprop:Generator_UserColumnName="POD_UOM" msprop:Generator_ColumnPropNameInRow="POD_UOM" msprop:Generator_ColumnVarNameInTable="columnPOD_UOM" msprop:Generator_ColumnPropNameInTable="POD_UOMColumn" type="xs:string" />
+              <xs:element name="POD_MIN_PACK_QTY" msprop:Generator_UserColumnName="POD_MIN_PACK_QTY" msprop:Generator_ColumnPropNameInRow="POD_MIN_PACK_QTY" msprop:Generator_ColumnVarNameInTable="columnPOD_MIN_PACK_QTY" msprop:Generator_ColumnPropNameInTable="POD_MIN_PACK_QTYColumn" type="xs:string" />
+              <xs:element name="POD_ORDERED_QTY" msprop:Generator_UserColumnName="POD_ORDERED_QTY" msprop:Generator_ColumnPropNameInRow="POD_ORDERED_QTY" msprop:Generator_ColumnVarNameInTable="columnPOD_ORDERED_QTY" msprop:Generator_ColumnPropNameInTable="POD_ORDERED_QTYColumn" type="xs:string" />
+              <xs:element name="GD_RECEIVED_QTY" msprop:Generator_UserColumnName="GD_RECEIVED_QTY" msprop:Generator_ColumnPropNameInRow="GD_RECEIVED_QTY" msprop:Generator_ColumnVarNameInTable="columnGD_RECEIVED_QTY" msprop:Generator_ColumnPropNameInTable="GD_RECEIVED_QTYColumn" type="xs:string" />
+              <xs:element name="GD_REJECTED_QTY" msprop:Generator_UserColumnName="GD_REJECTED_QTY" msprop:Generator_ColumnPropNameInRow="GD_REJECTED_QTY" msprop:Generator_ColumnVarNameInTable="columnGD_REJECTED_QTY" msprop:Generator_ColumnPropNameInTable="GD_REJECTED_QTYColumn" type="xs:string" />
+              <xs:element name="IROD_QTY" msprop:Generator_UserColumnName="IROD_QTY" msprop:Generator_ColumnPropNameInRow="IROD_QTY" msprop:Generator_ColumnVarNameInTable="columnIROD_QTY" msprop:Generator_ColumnPropNameInTable="IROD_QTYColumn" type="xs:string" />
+              <xs:element name="IROD_LOT_NO" msprop:Generator_UserColumnName="IROD_LOT_NO" msprop:Generator_ColumnPropNameInRow="IROD_LOT_NO" msprop:Generator_ColumnVarNameInTable="columnIROD_LOT_NO" msprop:Generator_ColumnPropNameInTable="IROD_LOT_NOColumn" type="xs:string" />
+              <xs:element name="IROD_REMARK" msprop:Generator_UserColumnName="IROD_REMARK" msprop:Generator_ColumnPropNameInRow="IROD_REMARK" msprop:Generator_ColumnVarNameInTable="columnIROD_REMARK" msprop:Generator_ColumnPropNameInTable="IROD_REMARKColumn" type="xs:string" />
+              <xs:element name="IROM_RO_NO" msprop:Generator_UserColumnName="IROM_RO_NO" msprop:Generator_ColumnPropNameInRow="IROM_RO_NO" msprop:Generator_ColumnVarNameInTable="columnIROM_RO_NO" msprop:Generator_ColumnPropNameInTable="IROM_RO_NOColumn" type="xs:string" />
+              <xs:element name="IROM_RO_DATE" msprop:Generator_UserColumnName="IROM_RO_DATE" msprop:Generator_ColumnPropNameInRow="IROM_RO_DATE" msprop:Generator_ColumnVarNameInTable="columnIROM_RO_DATE" msprop:Generator_ColumnPropNameInTable="IROM_RO_DATEColumn" type="xs:string" />
+              <xs:element name="GM_GRN_NO" msprop:Generator_UserColumnName="GM_GRN_NO" msprop:Generator_ColumnPropNameInRow="GM_GRN_NO" msprop:Generator_ColumnVarNameInTable="columnGM_GRN_NO" msprop:Generator_ColumnPropNameInTable="GM_GRN_NOColumn" type="xs:string" />
+              <xs:element name="GM_CREATED_DATE" msprop:Generator_UserColumnName="GM_CREATED_DATE" msprop:Generator_ColumnPropNameInRow="GM_CREATED_DATE" msprop:Generator_ColumnVarNameInTable="columnGM_CREATED_DATE" msprop:Generator_ColumnPropNameInTable="GM_CREATED_DATEColumn" type="xs:string" />
+              <xs:element name="POM_PO_NO" msprop:Generator_UserColumnName="POM_PO_NO" msprop:Generator_ColumnPropNameInRow="POM_PO_NO" msprop:Generator_ColumnVarNameInTable="columnPOM_PO_NO" msprop:Generator_ColumnPropNameInTable="POM_PO_NOColumn" type="xs:string" />
+              <xs:element name="POM_CREATED_DATE" msprop:Generator_UserColumnName="POM_CREATED_DATE" msprop:Generator_ColumnPropNameInRow="POM_CREATED_DATE" msprop:Generator_ColumnVarNameInTable="columnPOM_CREATED_DATE" msprop:Generator_ColumnPropNameInTable="POM_CREATED_DATEColumn" type="xs:string" />
+              <xs:element name="DOM_DO_NO" msprop:Generator_UserColumnName="DOM_DO_NO" msprop:Generator_ColumnPropNameInRow="DOM_DO_NO" msprop:Generator_ColumnVarNameInTable="columnDOM_DO_NO" msprop:Generator_ColumnPropNameInTable="DOM_DO_NOColumn" type="xs:string" />
+              <xs:element name="DOM_DO_DATE" msprop:Generator_UserColumnName="DOM_DO_DATE" msprop:Generator_ColumnPropNameInRow="DOM_DO_DATE" msprop:Generator_ColumnVarNameInTable="columnDOM_DO_DATE" msprop:Generator_ColumnPropNameInTable="DOM_DO_DATEColumn" type="xs:string" />
+              <xs:element name="GM_DATE_RECEIVED" msprop:Generator_UserColumnName="GM_DATE_RECEIVED" msprop:Generator_ColumnPropNameInRow="GM_DATE_RECEIVED" msprop:Generator_ColumnVarNameInTable="columnGM_DATE_RECEIVED" msprop:Generator_ColumnPropNameInTable="GM_DATE_RECEIVEDColumn" type="xs:string" />
+              <xs:element name="IROD_RO_LINE" msprop:Generator_UserColumnName="IROD_RO_LINE" msprop:Generator_ColumnVarNameInTable="columnIROD_RO_LINE" msprop:Generator_ColumnPropNameInRow="IROD_RO_LINE" msprop:Generator_ColumnPropNameInTable="IROD_RO_LINEColumn" type="xs:string" />
+              <xs:element name="VENDOR_NAME" msprop:Generator_UserColumnName="VENDOR_NAME" msprop:Generator_ColumnPropNameInRow="VENDOR_NAME" msprop:Generator_ColumnVarNameInTable="columnVENDOR_NAME" msprop:Generator_ColumnPropNameInTable="VENDOR_NAMEColumn" type="xs:string" />
+              <xs:element name="IROL_LOT_QTY" msprop:Generator_UserColumnName="IROL_LOT_QTY" msprop:Generator_ColumnPropNameInRow="IROL_LOT_QTY" msprop:Generator_ColumnVarNameInTable="columnIROL_LOT_QTY" msprop:Generator_ColumnPropNameInTable="IROL_LOT_QTYColumn" type="xs:string" />
+              <xs:element name="DOL_LOT_NO" msprop:Generator_UserColumnName="DOL_LOT_NO" msprop:Generator_ColumnPropNameInRow="DOL_LOT_NO" msprop:Generator_ColumnVarNameInTable="columnDOL_LOT_NO" msprop:Generator_ColumnPropNameInTable="DOL_LOT_NOColumn" type="xs:string" />
+              <xs:element name="LM_LOCATION" msprop:Generator_UserColumnName="LM_LOCATION" msprop:Generator_ColumnPropNameInRow="LM_LOCATION" msprop:Generator_ColumnVarNameInTable="columnLM_LOCATION" msprop:Generator_ColumnPropNameInTable="LM_LOCATIONColumn" type="xs:string" />
+              <xs:element name="LM_SUB_LOCATION" msprop:Generator_UserColumnName="LM_SUB_LOCATION" msprop:Generator_ColumnPropNameInRow="LM_SUB_LOCATION" msprop:Generator_ColumnVarNameInTable="columnLM_SUB_LOCATION" msprop:Generator_ColumnPropNameInTable="LM_SUB_LOCATIONColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

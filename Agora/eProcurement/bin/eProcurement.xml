@@ -1,0 +1,269 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+eProcurement
+</name>
+</assembly>
+<members>
+<member name="T:eProcurement.Dialog">
+<summary>
+Dialog class.
+</summary>
+<remarks>
+Auto-generated class.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._frmLogin">
+<summary>
+frmLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._lblTitle">
+<summary>
+lblTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._lblTitle2">
+<summary>
+lblTitle2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._txtCompID">
+<summary>
+txtCompID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._txtUserID">
+<summary>
+txtUserID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._txtPassword">
+<summary>
+txtPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._chkCookies">
+<summary>
+chkCookies control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._lnkForgotPwd">
+<summary>
+lnkForgotPwd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._Hyperlink5">
+<summary>
+Hyperlink5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._Hyperlink6">
+<summary>
+Hyperlink6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._lnkpubNotice">
+<summary>
+lnkpubNotice control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._btnHidden1">
+<summary>
+btnHidden1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._lblMsg2">
+<summary>
+lblMsg2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._Hyperlink1">
+<summary>
+Hyperlink1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._Hyperlink2">
+<summary>
+Hyperlink2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._Hyperlink3">
+<summary>
+Hyperlink3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._Hyperlink7">
+<summary>
+Hyperlink7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._Hyperlink4">
+<summary>
+Hyperlink4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._Hyperlink8">
+<summary>
+Hyperlink8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._span1">
+<summary>
+span1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.LWebForm1._Hyperlink9">
+<summary>
+Hyperlink9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:eProcurement.Policy">
+<summary>
+Policy class.
+</summary>
+<remarks>
+Auto-generated class.
+</remarks>
+</member>
+<member name="F:eProcurement.Policy._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.Policy._frame1">
+<summary>
+frame1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.Policy._trSave">
+<summary>
+trSave control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.Policy._cmdAgree">
+<summary>
+cmdAgree control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:eProcurement.Policy._cmdDecline">
+<summary>
+cmdDecline control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

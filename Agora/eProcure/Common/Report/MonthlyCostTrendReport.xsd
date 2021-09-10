@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MonthlyCostTrendReport" targetNamespace="http://tempuri.org/MonthlyCostTrendReport.xsd" xmlns:mstns="http://tempuri.org/MonthlyCostTrendReport.xsd" xmlns="http://tempuri.org/MonthlyCostTrendReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString2.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetMonthlyCostTrendTableAdapter" GeneratorDataComponentClassName="DataSetMonthlyCostTrendTableAdapter" Name="DataSetMonthlyCostTrend" UserDataComponentName="DataSetMonthlyCostTrendTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString2 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS IC_inventory_type, '' AS IM_INVENTORY_INDEX, '' AS IC_INVENTORY_NAME, '' AS MONTHCONSUMPTION, '' AS IM_ITEM_CODE, '' AS PM_SPEC1, '' AS PM_SPEC2, '' AS PM_SPEC3, ''AS PM_BUDGET_PRICE, '' AS PM_ACCT_CODE, '' AS PM_UOM, '' AS  PUR_SPEC_NO, 0.00 AS PAST_1_MTH_UG,  0.00 AS PAST_2_MTH_UG, 0.00 AS PAST_3_MTH_UG, 0.00 AS PAST_4_MTH_UG, 0.00 AS PAST_5_MTH_UG, 0.00 AS PAST_6_MTH_UG,
+0.00 AS PAST_1_MTH_MA, 0.00 AS PAST_2_MTH_MA, 0.00 AS PAST_3_MTH_MA, 0.00 AS PAST_4_MTH_MA, 0.00 AS PAST_5_MTH_MA, 0.00 AS PAST_6_MTH_MA, 0.00 AS PAST_1_MTH_LC, 0.00 AS PAST_2_MTH_LC, 0.00 AS PAST_3_MTH_LC, 0.00 AS PAST_4_MTH_LC, 0.00 AS PAST_5_MTH_LC, 0.00 AS PAST_6_MTH_LC FROM INVENTORY_COST
+
+</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IM_INVENTORY_INDEX" DataSetColumn="IM_INVENTORY_INDEX" />
+              <Mapping SourceColumn="IC_INVENTORY_NAME" DataSetColumn="IC_INVENTORY_NAME" />
+              <Mapping SourceColumn="MONTHCONSUMPTION" DataSetColumn="MONTHCONSUMPTION" />
+              <Mapping SourceColumn="IM_ITEM_CODE" DataSetColumn="IM_ITEM_CODE" />
+              <Mapping SourceColumn="PM_BUDGET_PRICE" DataSetColumn="PM_BUDGET_PRICE" />
+              <Mapping SourceColumn="PM_ACCT_CODE" DataSetColumn="PM_ACCT_CODE" />
+              <Mapping SourceColumn="PM_UOM" DataSetColumn="PM_UOM" />
+              <Mapping SourceColumn="PUR_SPEC_NO" DataSetColumn="PUR_SPEC_NO" />
+              <Mapping SourceColumn="PAST_1_MTH_UG" DataSetColumn="PAST_1_MTH_UG" />
+              <Mapping SourceColumn="PAST_2_MTH_UG" DataSetColumn="PAST_2_MTH_UG" />
+              <Mapping SourceColumn="PAST_3_MTH_UG" DataSetColumn="PAST_3_MTH_UG" />
+              <Mapping SourceColumn="PAST_4_MTH_UG" DataSetColumn="PAST_4_MTH_UG" />
+              <Mapping SourceColumn="PAST_5_MTH_UG" DataSetColumn="PAST_5_MTH_UG" />
+              <Mapping SourceColumn="PAST_6_MTH_UG" DataSetColumn="PAST_6_MTH_UG" />
+              <Mapping SourceColumn="PAST_1_MTH_MA" DataSetColumn="PAST_1_MTH_MA" />
+              <Mapping SourceColumn="PAST_2_MTH_MA" DataSetColumn="PAST_2_MTH_MA" />
+              <Mapping SourceColumn="PAST_3_MTH_MA" DataSetColumn="PAST_3_MTH_MA" />
+              <Mapping SourceColumn="PAST_4_MTH_MA" DataSetColumn="PAST_4_MTH_MA" />
+              <Mapping SourceColumn="PAST_5_MTH_MA" DataSetColumn="PAST_5_MTH_MA" />
+              <Mapping SourceColumn="PAST_6_MTH_MA" DataSetColumn="PAST_6_MTH_MA" />
+              <Mapping SourceColumn="PAST_1_MTH_LC" DataSetColumn="PAST_1_MTH_LC" />
+              <Mapping SourceColumn="PAST_2_MTH_LC" DataSetColumn="PAST_2_MTH_LC" />
+              <Mapping SourceColumn="PAST_3_MTH_LC" DataSetColumn="PAST_3_MTH_LC" />
+              <Mapping SourceColumn="PAST_4_MTH_LC" DataSetColumn="PAST_4_MTH_LC" />
+              <Mapping SourceColumn="PAST_5_MTH_LC" DataSetColumn="PAST_5_MTH_LC" />
+              <Mapping SourceColumn="PAST_6_MTH_LC" DataSetColumn="PAST_6_MTH_LC" />
+              <Mapping SourceColumn="IC_inventory_type" DataSetColumn="IC_inventory_type" />
+              <Mapping SourceColumn="PM_SPEC1" DataSetColumn="PM_SPEC1" />
+              <Mapping SourceColumn="PM_SPEC2" DataSetColumn="PM_SPEC2" />
+              <Mapping SourceColumn="PM_SPEC3" DataSetColumn="PM_SPEC3" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MonthlyCostTrendReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MonthlyCostTrendReport" msprop:Generator_DataSetName="MonthlyCostTrendReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetMonthlyCostTrend" msprop:Generator_UserTableName="DataSetMonthlyCostTrend" msprop:Generator_RowDeletedName="DataSetMonthlyCostTrendRowDeleted" msprop:Generator_RowChangedName="DataSetMonthlyCostTrendRowChanged" msprop:Generator_RowClassName="DataSetMonthlyCostTrendRow" msprop:Generator_RowChangingName="DataSetMonthlyCostTrendRowChanging" msprop:Generator_RowEvArgName="DataSetMonthlyCostTrendRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetMonthlyCostTrendRowChangeEventHandler" msprop:Generator_TableClassName="DataSetMonthlyCostTrendDataTable" msprop:Generator_TableVarName="tableDataSetMonthlyCostTrend" msprop:Generator_RowDeletingName="DataSetMonthlyCostTrendRowDeleting" msprop:Generator_TablePropName="DataSetMonthlyCostTrend">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IM_INVENTORY_INDEX" msprop:Generator_UserColumnName="IM_INVENTORY_INDEX" msprop:Generator_ColumnPropNameInRow="IM_INVENTORY_INDEX" msprop:Generator_ColumnVarNameInTable="columnIM_INVENTORY_INDEX" msprop:Generator_ColumnPropNameInTable="IM_INVENTORY_INDEXColumn" type="xs:string" />
+              <xs:element name="IC_INVENTORY_NAME" msprop:Generator_UserColumnName="IC_INVENTORY_NAME" msprop:Generator_ColumnPropNameInRow="IC_INVENTORY_NAME" msprop:Generator_ColumnVarNameInTable="columnIC_INVENTORY_NAME" msprop:Generator_ColumnPropNameInTable="IC_INVENTORY_NAMEColumn" type="xs:string" />
+              <xs:element name="MONTHCONSUMPTION" msprop:Generator_UserColumnName="MONTHCONSUMPTION" msprop:Generator_ColumnPropNameInRow="MONTHCONSUMPTION" msprop:Generator_ColumnVarNameInTable="columnMONTHCONSUMPTION" msprop:Generator_ColumnPropNameInTable="MONTHCONSUMPTIONColumn" type="xs:string" />
+              <xs:element name="IM_ITEM_CODE" msprop:Generator_UserColumnName="IM_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="IM_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="IM_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="PM_BUDGET_PRICE" msprop:Generator_UserColumnName="PM_BUDGET_PRICE" msprop:Generator_ColumnPropNameInRow="PM_BUDGET_PRICE" msprop:Generator_ColumnVarNameInTable="columnPM_BUDGET_PRICE" msprop:Generator_ColumnPropNameInTable="PM_BUDGET_PRICEColumn" type="xs:string" />
+              <xs:element name="PM_ACCT_CODE" msprop:Generator_UserColumnName="PM_ACCT_CODE" msprop:Generator_ColumnPropNameInRow="PM_ACCT_CODE" msprop:Generator_ColumnVarNameInTable="columnPM_ACCT_CODE" msprop:Generator_ColumnPropNameInTable="PM_ACCT_CODEColumn" type="xs:string" />
+              <xs:element name="PM_UOM" msprop:Generator_UserColumnName="PM_UOM" msprop:Generator_ColumnPropNameInRow="PM_UOM" msprop:Generator_ColumnVarNameInTable="columnPM_UOM" msprop:Generator_ColumnPropNameInTable="PM_UOMColumn" type="xs:string" />
+              <xs:element name="PUR_SPEC_NO" msprop:Generator_UserColumnName="PUR_SPEC_NO" msprop:Generator_ColumnVarNameInTable="columnPUR_SPEC_NO" msprop:Generator_ColumnPropNameInRow="PUR_SPEC_NO" msprop:Generator_ColumnPropNameInTable="PUR_SPEC_NOColumn" type="xs:string" />
+              <xs:element name="PAST_1_MTH_UG" msprop:Generator_UserColumnName="PAST_1_MTH_UG" msprop:Generator_ColumnVarNameInTable="columnPAST_1_MTH_UG" msprop:Generator_ColumnPropNameInRow="PAST_1_MTH_UG" msprop:Generator_ColumnPropNameInTable="PAST_1_MTH_UGColumn" type="xs:decimal" />
+              <xs:element name="PAST_2_MTH_UG" msprop:Generator_UserColumnName="PAST_2_MTH_UG" msprop:Generator_ColumnVarNameInTable="columnPAST_2_MTH_UG" msprop:Generator_ColumnPropNameInRow="PAST_2_MTH_UG" msprop:Generator_ColumnPropNameInTable="PAST_2_MTH_UGColumn" type="xs:decimal" />
+              <xs:element name="PAST_3_MTH_UG" msprop:Generator_UserColumnName="PAST_3_MTH_UG" msprop:Generator_ColumnVarNameInTable="columnPAST_3_MTH_UG" msprop:Generator_ColumnPropNameInRow="PAST_3_MTH_UG" msprop:Generator_ColumnPropNameInTable="PAST_3_MTH_UGColumn" type="xs:decimal" />
+              <xs:element name="PAST_4_MTH_UG" msprop:Generator_UserColumnName="PAST_4_MTH_UG" msprop:Generator_ColumnVarNameInTable="columnPAST_4_MTH_UG" msprop:Generator_ColumnPropNameInRow="PAST_4_MTH_UG" msprop:Generator_ColumnPropNameInTable="PAST_4_MTH_UGColumn" type="xs:decimal" />
+              <xs:element name="PAST_5_MTH_UG" msprop:Generator_UserColumnName="PAST_5_MTH_UG" msprop:Generator_ColumnVarNameInTable="columnPAST_5_MTH_UG" msprop:Generator_ColumnPropNameInRow="PAST_5_MTH_UG" msprop:Generator_ColumnPropNameInTable="PAST_5_MTH_UGColumn" type="xs:decimal" />
+              <xs:element name="PAST_6_MTH_UG" msprop:Generator_UserColumnName="PAST_6_MTH_UG" msprop:Generator_ColumnVarNameInTable="columnPAST_6_MTH_UG" msprop:Generator_ColumnPropNameInRow="PAST_6_MTH_UG" msprop:Generator_ColumnPropNameInTable="PAST_6_MTH_UGColumn" type="xs:decimal" />
+              <xs:element name="PAST_1_MTH_MA" msprop:Generator_UserColumnName="PAST_1_MTH_MA" msprop:Generator_ColumnVarNameInTable="columnPAST_1_MTH_MA" msprop:Generator_ColumnPropNameInRow="PAST_1_MTH_MA" msprop:Generator_ColumnPropNameInTable="PAST_1_MTH_MAColumn" type="xs:decimal" />
+              <xs:element name="PAST_2_MTH_MA" msprop:Generator_UserColumnName="PAST_2_MTH_MA" msprop:Generator_ColumnVarNameInTable="columnPAST_2_MTH_MA" msprop:Generator_ColumnPropNameInRow="PAST_2_MTH_MA" msprop:Generator_ColumnPropNameInTable="PAST_2_MTH_MAColumn" type="xs:decimal" />
+              <xs:element name="PAST_3_MTH_MA" msprop:Generator_UserColumnName="PAST_3_MTH_MA" msprop:Generator_ColumnVarNameInTable="columnPAST_3_MTH_MA" msprop:Generator_ColumnPropNameInRow="PAST_3_MTH_MA" msprop:Generator_ColumnPropNameInTable="PAST_3_MTH_MAColumn" type="xs:decimal" />
+              <xs:element name="PAST_4_MTH_MA" msprop:Generator_UserColumnName="PAST_4_MTH_MA" msprop:Generator_ColumnVarNameInTable="columnPAST_4_MTH_MA" msprop:Generator_ColumnPropNameInRow="PAST_4_MTH_MA" msprop:Generator_ColumnPropNameInTable="PAST_4_MTH_MAColumn" type="xs:decimal" />
+              <xs:element name="PAST_5_MTH_MA" msprop:Generator_UserColumnName="PAST_5_MTH_MA" msprop:Generator_ColumnVarNameInTable="columnPAST_5_MTH_MA" msprop:Generator_ColumnPropNameInRow="PAST_5_MTH_MA" msprop:Generator_ColumnPropNameInTable="PAST_5_MTH_MAColumn" type="xs:decimal" />
+              <xs:element name="PAST_6_MTH_MA" msprop:Generator_UserColumnName="PAST_6_MTH_MA" msprop:Generator_ColumnVarNameInTable="columnPAST_6_MTH_MA" msprop:Generator_ColumnPropNameInRow="PAST_6_MTH_MA" msprop:Generator_ColumnPropNameInTable="PAST_6_MTH_MAColumn" type="xs:decimal" />
+              <xs:element name="PAST_1_MTH_LC" msprop:Generator_UserColumnName="PAST_1_MTH_LC" msprop:Generator_ColumnVarNameInTable="columnPAST_1_MTH_LC" msprop:Generator_ColumnPropNameInRow="PAST_1_MTH_LC" msprop:Generator_ColumnPropNameInTable="PAST_1_MTH_LCColumn" type="xs:decimal" />
+              <xs:element name="PAST_2_MTH_LC" msprop:Generator_UserColumnName="PAST_2_MTH_LC" msprop:Generator_ColumnVarNameInTable="columnPAST_2_MTH_LC" msprop:Generator_ColumnPropNameInRow="PAST_2_MTH_LC" msprop:Generator_ColumnPropNameInTable="PAST_2_MTH_LCColumn" type="xs:decimal" />
+              <xs:element name="PAST_3_MTH_LC" msprop:Generator_UserColumnName="PAST_3_MTH_LC" msprop:Generator_ColumnVarNameInTable="columnPAST_3_MTH_LC" msprop:Generator_ColumnPropNameInRow="PAST_3_MTH_LC" msprop:Generator_ColumnPropNameInTable="PAST_3_MTH_LCColumn" type="xs:decimal" />
+              <xs:element name="PAST_4_MTH_LC" msprop:Generator_UserColumnName="PAST_4_MTH_LC" msprop:Generator_ColumnVarNameInTable="columnPAST_4_MTH_LC" msprop:Generator_ColumnPropNameInRow="PAST_4_MTH_LC" msprop:Generator_ColumnPropNameInTable="PAST_4_MTH_LCColumn" type="xs:decimal" />
+              <xs:element name="PAST_5_MTH_LC" msprop:Generator_UserColumnName="PAST_5_MTH_LC" msprop:Generator_ColumnVarNameInTable="columnPAST_5_MTH_LC" msprop:Generator_ColumnPropNameInRow="PAST_5_MTH_LC" msprop:Generator_ColumnPropNameInTable="PAST_5_MTH_LCColumn" type="xs:decimal" />
+              <xs:element name="PAST_6_MTH_LC" msprop:Generator_UserColumnName="PAST_6_MTH_LC" msprop:Generator_ColumnVarNameInTable="columnPAST_6_MTH_LC" msprop:Generator_ColumnPropNameInRow="PAST_6_MTH_LC" msprop:Generator_ColumnPropNameInTable="PAST_6_MTH_LCColumn" type="xs:decimal" />
+              <xs:element name="IC_inventory_type" msprop:Generator_UserColumnName="IC_inventory_type" msprop:Generator_ColumnVarNameInTable="columnIC_inventory_type" msprop:Generator_ColumnPropNameInRow="IC_inventory_type" msprop:Generator_ColumnPropNameInTable="IC_inventory_typeColumn" type="xs:string" />
+              <xs:element name="PM_SPEC1" msprop:Generator_UserColumnName="PM_SPEC1" msprop:Generator_ColumnPropNameInRow="PM_SPEC1" msprop:Generator_ColumnVarNameInTable="columnPM_SPEC1" msprop:Generator_ColumnPropNameInTable="PM_SPEC1Column" type="xs:string" />
+              <xs:element name="PM_SPEC2" msprop:Generator_UserColumnName="PM_SPEC2" msprop:Generator_ColumnPropNameInRow="PM_SPEC2" msprop:Generator_ColumnVarNameInTable="columnPM_SPEC2" msprop:Generator_ColumnPropNameInTable="PM_SPEC2Column" type="xs:string" />
+              <xs:element name="PM_SPEC3" msprop:Generator_UserColumnName="PM_SPEC3" msprop:Generator_ColumnPropNameInRow="PM_SPEC3" msprop:Generator_ColumnVarNameInTable="columnPM_SPEC3" msprop:Generator_ColumnPropNameInTable="PM_SPEC3Column" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

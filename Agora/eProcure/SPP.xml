@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SPP>
+  <folder name="Common" path="../../Common/" type="wl"></folder>
+  <folder name="FTN" path="../../FTN/" type="wl">
+    <folder name="Admin">
+      <file name="ConfigDefValue">Admin/ConfigDefValue.aspx</file>
+      <file name="ApprovedVendor">Admin/ApprovedVendor.aspx</file>
+      <file name="adddept">Admin/adddept.aspx</file>
+      <file name="DeptSetup">Admin/DeptSetup.aspx</file>
+	  <file name="BComParam">Admin/BComParam.aspx</file>
+	  <file name="Buyer_ItemCode">Admin/Buyer_ItemCode.aspx</file>
+	  <file name="GLCode">Admin/GLCode.aspx</file>
+    </folder>  
+    <folder name="Invoice">
+      <file name="InvList">Invoice/InvList.aspx</file>
+	  <file name="InvDetail">Invoice/InvDetail.aspx</file>
+	  <file name="InvTaxDetail">Invoice/InvTaxDetail.aspx</file>
+    </folder>
+    <folder name="Report">
+      <file name="PreviewPO">Report/PreviewPO.aspx</file>
+      <file name="PreviewDO">Report/PreviewDO.aspx</file>
+      <file name="PreviewGRN">Report/PreviewGRN.aspx</file>
+      <file name="PreviewInvoice">Report/PreviewInvoice.aspx</file>
+      <file name="PreviewQuotation">Report/PreviewQuotation.aspx</file>
+      <file name="PreviewRFQ">Report/PreviewRFQ.aspx</file> 
+	  <file name="PreviewIRSlip">Report/PreviewIRSlip.aspx</file>
+	  <file name="PreviewDO_ftn">Report/PreviewDO_ftn.rdlc</file>
+	  <file name="PreveiwDO-FTN_ftn">Report/PreveiwDO-FTN_ftn.rdlc</file>
+	  <file name="PreviewGRN-FTN_ftn">Report/PreviewGRN-FTN_ftn.rdlc</file>
+	  <file name="PreviewINVOICE-FTN_ftn">Report/PreviewINVOICE-FTN_ftn.rdlc</file>
+	  <file name="PreviewPO-FTN2">Report/PreviewPO-FTN2.rdlc</file>
+	  <file name="PreviewQuotation-FTN_ftn">Report/PreviewQuotation-FTN_ftn.rdlc</file>
+	  <file name="PreviewRFQ-FTN2_ftn">Report/PreviewRFQ-FTN2_ftn.rdlc</file>
+	  <file name="PreviewIRSlip_ftn">Report/PreviewIRSlip_ftn.rdlc</file>
+	  <file name="PreviewIRSlip_WithoutSubLoc_ftn">Report/PreviewIRSlip_WithoutSubLoc_ftn.rdlc</file>
+	  <file name="PreviewTaxINVOICE-FTN_ftn">Report/PreviewTaxINVOICE-FTN_ftn.rdlc</file>
+	  <file name="PreviewQuotation-FTN_ftn-GST">Report/PreviewQuotation-FTN_ftn-GST.rdlc</file>
+      <file name="PreviewDebitNote">Report/PreviewDebitAdvice.rdlc</file>
+      <file name="PreviewDebitNote">Report/PreviewDebitNote.rdlc</file>
+      <file name="PreviewDebitNote">Report/PreviewCreditAdvice.rdlc</file>
+      <file name="PreviewDebitNote">Report/PreviewCreditNote.rdlc</file>
+    </folder>
+	<folder name="Inventory">
+	  <file name="InventoryReq">Inventory/InventoryReq.aspx</file>
+	  <file name="InventoryReqInfo">Inventory/InventoryReqInfo.aspx</file>
+	  <file name="InventoryReqList">Inventory/InventoryReqList.aspx</file>
+	</folder>
+    <folder name="Tracking">		  
+      <file name="InvoiceDetails">Tracking/InvoiceDetails.aspx</file>
+      <file name="InvoiceTrackingList">Tracking/InvoiceTrackingList.aspx</file>
+      <file name="InvoiceVerified">Tracking/InvoiceVerified.aspx</file>
+      <file name="InvoicePaidTrackingList">Tracking/InvoicePaidTrackingList.aspx</file>
+	  <file name="InvoiceVerifiedTrackingList">Tracking/InvoiceVerifiedTrackingList.aspx</file>
+    </folder>
+    <folder name="Users">
+      <file name="usUser">Users/usUser.aspx</file>
+      <file name="usDeliveryAddr">Users/usDeliveryAddr.aspx</file>
+	  <file name="usCommodity">Users/usCommodity.aspx</file>
+	  <file name="usSearchUser">Users/usSearchUser.aspx</file>
+    </folder>
+	  <folder name="BuyerCat">
+      <file name="BIMBatchUpload">BuyerCat/BIMBatchUpload.aspx</file>
+      <file name="BIM">BuyerCat/BIM.aspx</file>
+      <file name="BIMAuditTrail">BuyerCat/BIMAuditTrail.aspx</file>
+      <file name="ItemCatalogue">BuyerCat/ItemCatalogue.aspx</file>
+    </folder>
+    <folder name="Product">
+      <file name="ProductDetail">Product/ProductDetail.aspx</file>
+    </folder>
+    <folder name="PO">
+      <file name="PODetail">PO/PODetail.aspx</file>
+      <file name="POApprovalSetup">PO/POApprovalSetup.aspx</file>
+	  <file name="RaisePO">PO/RaisePO.aspx</file>
+      <file name="SearchPO_AO">PO/SearchPO_AO.aspx</file>
+      <file name="cancelitem">PO/cancelitem.aspx</file>
+      <file name="POApprDetail">PO/POApprDetail.aspx</file>
+	  <file name="POViewB2">PO/POViewB2.aspx</file>
+	  <file name="SearchPO_All">PO/SearchPO_All.aspx</file>
+	  <file name="CR_DETAIL">PO/CR_DETAIL.aspx</file>
+	  <file name="POLineDetail">PO/POLineDetail.aspx</file>
+	  <file name="POViewB2Cancel">PO/POViewB2Cancel.aspx</file>
+    </folder>
+    <folder name="DO">
+      <file name="PreviewDODetails">DO/PreviewDODetails.aspx</file>
+    </folder>
+    <folder name="GRN">
+      <file name="GRNDetails">GRN/GRNDetails.aspx</file>
+      <file name="AddGRN1">GRN/AddGRN1.aspx</file>
+    </folder>
+    <folder name="RFQ">
+      <file name="Create_RFQ">RFQ/Create_RFQ.aspx</file>
+      <file name="RFQDetail">RFQ/RFQDetail.aspx</file>
+      <file name="CreateQuotationNew">RFQ/CreateQuotationNew.aspx</file>
+      <file name="VendorList">RFQ/VendorList.aspx</file>
+	  <file name="RFQComSummary">RFQ/RFQComSummary.aspx</file>
+	  <file name="ViewQoute">RFQ/ViewQoute.aspx</file>
+    </folder>
+    <folder name="PR">
+      <file name="SearchPR_AO">PR/SearchPR_AO.aspx</file>
+      <file name="RaisePR">PR/RaisePR.aspx</file>
+      <file name="ApprovalSetup">PR/ApprovalSetup.aspx</file>
+      <file name="PRApprDetail">PR/PRApprDetail.aspx</file>
+	  <file name="ConvertPR">PR/ConvertPR.aspx</file>
+	  <file name="PRDetail">PR/PRDetail.aspx</file>
+	  <file name="SearchApp_All">PR/SearchApp_All.aspx</file>
+	  <file name="SearchPR_All">PR/SearchPR_All.aspx</file>
+	  <file name="ViewPR_All">PR/ViewPR_All.aspx</file>
+	  <file name="ConvertPRListing">PR/ConvertPRListing.aspx</file>
+	  <file name="PRDetailTransTracking">PR/PRDetailTransTracking.aspx</file>
+    </folder>
+	<folder name="ApprWorkFlow">
+      <file name="AsgAppOfficer">ApprWorkFlow/AsgAppOfficer.aspx</file>
+      <file name="AppGrpAsg">ApprWorkFlow/AppGrpAsg.aspx</file>
+      <file name="AppGrpAsgPur">ApprWorkFlow/AppGrpAsgPur.aspx</file>
+      <file name="ApprovalWorkFlow">ApprWorkFlow/ApprovalWorkFlow.aspx</file>
+    </folder>
+    <folder name="PersonalSetting">
+      <file name="PersonalDetails">PersonalSetting/PersonalDetails.aspx</file>
+      <file name="RFQAddVendList">PersonalSetting/RFQAddVendList.aspx</file>
+    </folder>
+	<folder name="Dashboard">
+      <file name="AllDashBoard">Dashboard/AllDashBoard.aspx</file>
+    </folder>	
+	<folder name="Catalogue">
+      <file name="ConCat_AssignUser">Catalogue/ConCat_AssignUser.aspx</file>
+	  <file name="ContractCatalogue">Catalogue/ContractCatalogue.aspx</file>
+	  <file name="ContractItem">Catalogue/ContractItem.aspx</file>
+	  <file name="ConCatBatchUploadDownload">Catalogue/ConCatBatchUploadDownload.aspx</file>
+	  <file name="AuditTrail">Catalogue/AuditTrail.aspx</file>
+    </folder>
+	<folder name="Initial">
+      <file name="Header">Initial/Header.aspx</file>
+    </folder>
+	<folder name="Search">
+      <file name="VendorSearch">Search/VendorSearch.aspx</file>
+	  <file name="InventoryItemSearchPopup">Search/InventoryItemSearchPopup.aspx</file>
+    </folder>
+  </folder>
+  <folder name="SEH" path="../../SEH/" type="wl">
+	<folder name="Admin">
+      <file name="ApprovedVendor">Admin/ApprovedVendor.aspx</file>
+	  <file name="VendorCodeMaster">Admin/VendorCodeMaster.aspx</file>
+    </folder>
+	<folder name="BuyerCat">
+      <file name="BIM">BuyerCat/BIM.aspx</file>
+	  <file name="UnitPriceMaster">BuyerCat/UnitPriceMaster.aspx</file>
+	  <file name="SearchBItem">BuyerCat/SearchBItem.aspx</file>
+	  <file name="BIMBatchUpload">BuyerCat/BIMBatchUpload.aspx</file>
+    </folder>
+	<folder name="DO">
+	  <file name="DOListing_Buyer">DO/DOListing_Buyer.aspx</file>
+	  <file name="PreviewDODetails">DO/PreviewDODetails.aspx</file>
+    </folder>
+	<folder name="Product">
+	  <file name="ProductDetail">Product/ProductDetail.aspx</file>
+    </folder>
+	<folder name="PR">
+	  <file name="PRDetail">PR/PRDetail.aspx</file>
+	  <file name="PRApprDetail">PR/PRApprDetail.aspx</file>
+	  <file name="ConvertPR">PR/ConvertPR.aspx</file>
+	  <file name="RaisePR">PR/RaisePR.aspx</file>
+	  <file name="Add_Buyer_Catalogue_Item">PR/Add_Buyer_Catalogue_Item.aspx</file>
+	  <file name="ConvertPRListing">PR/ConvertPRListing.aspx</file>
+	  <file name="ApprovalSetup">PR/ApprovalSetup.aspx</file>
+	  <file name="ExceedBCM">PR/ExceedBCM.aspx</file>
+	</folder>
+	<folder name="Catalogue">
+	  <file name="AddContractItem">Catalogue/AddContractItem.aspx</file>
+	</folder>
+	<folder name="PO">
+	  <file name="POApprDetail">PO/POApprDetail.aspx</file>
+	  <file name="RaisePO">PO/RaisePO.aspx</file>
+	  <file name="POListS">PO/POListS.aspx</file>
+	  <file name="POApprovalSetup">PO/POApprovalSetup.aspx</file>
+	  <file name="ExceedBCMPO">PO/ExceedBCMPO.aspx</file>
+    </folder>
+	<folder name="Search">
+	  <file name="BuyerCatalogueSearch">Search/BuyerCatalogueSearch.aspx</file>
+	  <file name="BuyerCatSearch">Search/BuyerCatSearch.aspx</file>
+	  <file name="ContractCatSearch">Search/ContractCatSearch.aspx</file>
+	  <file name="BuyerCatalogueSearchPopup">Search/BuyerCatalogueSearchPopup.aspx</file>
+    </folder>
+	<folder name="RFQ">
+      <file name="Create_RFQ">RFQ/Create_RFQ.aspx</file>
+	  <file name="RFQComSummary">RFQ/RFQComSummary.aspx</file>
+	  <file name="Add_Catalogue_Item">RFQ/Add_Catalogue_Item.aspx</file>
+	  <file name="RFQ_List">RFQ/RFQ_List.aspx</file>
+	  <file name="RFQ_Outstg_List">RFQ/RFQ_Outstg_List.aspx</file>
+    </folder>
+	<folder name="Report">
+	  <file name="BudgetListing_pdf">Report/BudgetListing_pdf.rdlc</file>
+	  <file name="PreviewStockCount">Report/PreviewStockCount.aspx</file>
+	  <file name="PreviewInvStockCounts">Report/PreviewInvStockCounts.rdlc</file>
+	  <file name="PreviewCostListing">Report/PreviewCostListing.aspx</file>
+	  <file name="PreviewCostList">Report/PreviewCostList.rdlc</file>
+    </folder>
+	<folder name="GRN">
+	  <file name="AddGRN1">GRN/AddGRN1.aspx</file>
+	  <file name="GRNDetails">GRN/GRNDetails.aspx</file>
+	  <file name="GRNLotList">GRN/GRNLotList.aspx</file>
+	  <file name="LocationMaster">GRN/LocationMaster.aspx</file>
+    </folder>
+	<folder name="Inventory">
+	  <file name="InventoryListing">Inventory/InventoryListing.aspx</file>
+	  <file name="InvTransHistory">Inventory/InvTransHistory.aspx</file>
+	  <file name="CostListing">Inventory/CostListing.aspx</file>
+    </folder>
+	<folder name="Dashboard">
+	  <file name="AllDashBoard">Dashboard/AllDashBoard.aspx</file>
+    </folder>
+  </folder>
+ <folder name="Vendor" path="../../Vendor/" type="wl">
+	 
+	<folder name="PO">
+      <file name="PODetail">PO/PODetail.aspx</file>
+    </folder>
+
+    <folder name="Users">	  
+      <file name="usUser">Users/usUser.aspx</file>
+    </folder>
+  </folder>
+	<folder name="whitelabel">
+		<folder name="FTN" path="../../../WL/FTN/" type="wl"></folder>
+		<folder name="SEH" path="../../../WL/SEH/" type="wl"></folder>
+	</folder>
+</SPP>

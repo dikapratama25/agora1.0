@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewAuditTrail" targetNamespace="http://tempuri.org/PreviewAuditTrail.xsd" xmlns:mstns="http://tempuri.org/PreviewAuditTrail.xsd" xmlns="http://tempuri.org/PreviewAuditTrail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetAuditTrailTableAdapter" Name="DataSetAuditTrail">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString1 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillAD" GenerateMethods="Both" GenerateShortCommands="False" GetMethodModifier="Public" GetMethodName="GetDataAD" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     au_contract.AU_LOG_INDEX, au_contract.AU_GROUP_INDEX, contract_dist_mstr.CDM_GROUP_CODE, au_contract.AU_DATE, 
+                      au_contract.AU_MODULE, au_contract.AU_ACTION, au_contract.AU_DESC, au_contract.AU_BEFORE, au_contract.AU_AFTER, 
+                      user_mstr.UM_USER_NAME
+FROM         au_contract INNER JOIN
+                      contract_dist_mstr ON contract_dist_mstr.CDM_GROUP_INDEX = au_contract.AU_GROUP_INDEX INNER JOIN
+                      user_mstr ON au_contract.AU_USER = user_mstr.UM_USER_ID AND user_mstr.UM_COY_ID = au_contract.AU_COY
+WHERE     (au_contract.AU_GROUP_INDEX = 207) AND (au_contract.AU_COY = 'tanac')
+ORDER BY au_contract.AU_LOG_INDEX</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AU_LOG_INDEX" DataSetColumn="AU_LOG_INDEX" />
+              <Mapping SourceColumn="AU_GROUP_INDEX" DataSetColumn="AU_GROUP_INDEX" />
+              <Mapping SourceColumn="CDM_GROUP_CODE" DataSetColumn="CDM_GROUP_CODE" />
+              <Mapping SourceColumn="AU_DATE" DataSetColumn="AU_DATE" />
+              <Mapping SourceColumn="AU_MODULE" DataSetColumn="AU_MODULE" />
+              <Mapping SourceColumn="AU_ACTION" DataSetColumn="AU_ACTION" />
+              <Mapping SourceColumn="AU_DESC" DataSetColumn="AU_DESC" />
+              <Mapping SourceColumn="AU_BEFORE" DataSetColumn="AU_BEFORE" />
+              <Mapping SourceColumn="AU_AFTER" DataSetColumn="AU_AFTER" />
+              <Mapping SourceColumn="UM_USER_NAME" DataSetColumn="UM_USER_NAME" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewAuditTrail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetAuditTrail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AU_LOG_INDEX" msdata:AutoIncrement="true" type="xs:long" />
+              <xs:element name="AU_GROUP_INDEX" type="xs:long" />
+              <xs:element name="CDM_GROUP_CODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AU_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AU_MODULE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AU_ACTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AU_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AU_BEFORE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AU_AFTER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UM_USER_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataSetAuditTrail" />
+      <xs:field xpath="mstns:AU_LOG_INDEX" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewITSlip" targetNamespace="http://tempuri.org/PreviewITSlip.xsd" xmlns:mstns="http://tempuri.org/PreviewITSlip.xsd" xmlns="http://tempuri.org/PreviewITSlip.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetPreviewITSlipTableAdapter" Name="DataSetPreviewITSlip">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     inventory_trans.IT_TRANS_REF_NO, inventory_trans.IT_TRANS_DATE, inventory_trans.IT_REF_NO, inventory_trans.IT_REMARK, 
+                      inventory_mstr.IM_ITEM_CODE, inventory_mstr.IM_INVENTORY_NAME, inventory_trans.IT_TRANS_QTY, inventory_trans.IT_FRM_LOCATION_INDEX, 
+                      a.LM_LOCATION AS FrLoc, a.LM_SUB_LOCATION AS FrSubLoc, inventory_trans.IT_TO_LOCATION_INDEX, b.LM_LOCATION AS ToLoc, 
+                      b.LM_SUB_LOCATION AS ToSubLoc
+FROM         inventory_trans INNER JOIN
+                      inventory_mstr ON inventory_mstr.IM_INVENTORY_INDEX = inventory_trans.IT_INVENTORY_INDEX INNER JOIN
+                      location_mstr a ON inventory_trans.IT_FRM_LOCATION_INDEX = a.LM_LOCATION_INDEX INNER JOIN
+                      location_mstr b ON inventory_trans.IT_TO_LOCATION_INDEX = b.LM_LOCATION_INDEX</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IT_TRANS_REF_NO" DataSetColumn="IT_TRANS_REF_NO" />
+              <Mapping SourceColumn="IT_TRANS_DATE" DataSetColumn="IT_TRANS_DATE" />
+              <Mapping SourceColumn="IT_REF_NO" DataSetColumn="IT_REF_NO" />
+              <Mapping SourceColumn="IT_REMARK" DataSetColumn="IT_REMARK" />
+              <Mapping SourceColumn="IM_ITEM_CODE" DataSetColumn="IM_ITEM_CODE" />
+              <Mapping SourceColumn="IM_INVENTORY_NAME" DataSetColumn="IM_INVENTORY_NAME" />
+              <Mapping SourceColumn="IT_TRANS_QTY" DataSetColumn="IT_TRANS_QTY" />
+              <Mapping SourceColumn="IT_FRM_LOCATION_INDEX" DataSetColumn="IT_FRM_LOCATION_INDEX" />
+              <Mapping SourceColumn="FrLoc" DataSetColumn="FrLoc" />
+              <Mapping SourceColumn="FrSubLoc" DataSetColumn="FrSubLoc" />
+              <Mapping SourceColumn="IT_TO_LOCATION_INDEX" DataSetColumn="IT_TO_LOCATION_INDEX" />
+              <Mapping SourceColumn="ToLoc" DataSetColumn="ToLoc" />
+              <Mapping SourceColumn="ToSubLoc" DataSetColumn="ToSubLoc" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewITSlip" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetPreviewITSlip">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IT_TRANS_REF_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IT_TRANS_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IT_REF_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IT_REMARK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_ITEM_CODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_INVENTORY_NAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IT_TRANS_QTY" type="xs:int" />
+              <xs:element name="IT_FRM_LOCATION_INDEX" type="xs:long" minOccurs="0" />
+              <xs:element name="FrLoc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FrSubLoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IT_TO_LOCATION_INDEX" type="xs:long" minOccurs="0" />
+              <xs:element name="ToLoc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ToSubLoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InvoiceAgeingSD" targetNamespace="http://tempuri.org/InvoiceAgeingSD.xsd" xmlns:mstns="http://tempuri.org/InvoiceAgeingSD.xsd" xmlns="http://tempuri.org/InvoiceAgeingSD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="InvoiceAgeingSDTableAdapter" GeneratorDataComponentClassName="InvoiceAgeingSDTableAdapter" Name="InvoiceAgeingSD" UserDataComponentName="InvoiceAgeingSDTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString1 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT DISTINCT INV.IM_INVOICE_NO, INV.IM_DOC_DATE, INV.IM_DUE_DATE, 
+INV.IM_CURRENCY_CODE, INV.IM_INVOICE_TOTAL, IM_CREATED_BY, 
+INV.IM_S_COY_NAME, INV.IM_PRCS_SENT, INV.IM_PRCS_RECV, SM.STATUS_DESC
+FROM invoice_mstr INV 
+INNER JOIN company_mstr COM ON INV.IM_B_COY_ID = COM.CM_COY_ID 
+INNER JOIN holiday_mstr HLD ON COM.CM_STATE = HLD.hm_state AND COM.CM_COUNTRY = HLD.hm_country
+LEFT OUTER JOIN status_mstr SM ON INV.im_invoice_status = SM.STATUS_NO AND INV.IM_INVOICE_TYPE = SM.STATUS_TYPE
+WHERE INV.IM_B_COY_ID = 'hlb'  AND INV.IM_INVOICE_TYPE IS NOT NULL
+AND INV.IM_INVOICE_STATUS NOT IN ( '4' , '14' , '15') 
+ORDER BY COM.CM_COY_TYPE</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IM_INVOICE_NO" DataSetColumn="IM_INVOICE_NO" />
+              <Mapping SourceColumn="IM_DOC_DATE" DataSetColumn="IM_DOC_DATE" />
+              <Mapping SourceColumn="IM_DUE_DATE" DataSetColumn="IM_DUE_DATE" />
+              <Mapping SourceColumn="IM_CURRENCY_CODE" DataSetColumn="IM_CURRENCY_CODE" />
+              <Mapping SourceColumn="IM_INVOICE_TOTAL" DataSetColumn="IM_INVOICE_TOTAL" />
+              <Mapping SourceColumn="IM_CREATED_BY" DataSetColumn="IM_CREATED_BY" />
+              <Mapping SourceColumn="IM_S_COY_NAME" DataSetColumn="IM_S_COY_NAME" />
+              <Mapping SourceColumn="IM_PRCS_SENT" DataSetColumn="IM_PRCS_SENT" />
+              <Mapping SourceColumn="IM_PRCS_RECV" DataSetColumn="IM_PRCS_RECV" />
+              <Mapping SourceColumn="STATUS_DESC" DataSetColumn="STATUS_DESC" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InvoiceAgeingSD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="InvoiceAgeingSD" msprop:Generator_DataSetName="InvoiceAgeingSD">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="InvoiceAgeingSD" msprop:Generator_UserTableName="InvoiceAgeingSD" msprop:Generator_RowDeletedName="InvoiceAgeingSDRowDeleted" msprop:Generator_RowChangedName="InvoiceAgeingSDRowChanged" msprop:Generator_RowClassName="InvoiceAgeingSDRow" msprop:Generator_RowChangingName="InvoiceAgeingSDRowChanging" msprop:Generator_RowEvArgName="InvoiceAgeingSDRowChangeEvent" msprop:Generator_RowEvHandlerName="InvoiceAgeingSDRowChangeEventHandler" msprop:Generator_TableClassName="InvoiceAgeingSDDataTable" msprop:Generator_TableVarName="tableInvoiceAgeingSD" msprop:Generator_RowDeletingName="InvoiceAgeingSDRowDeleting" msprop:Generator_TablePropName="_InvoiceAgeingSD">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IM_INVOICE_NO" msprop:Generator_UserColumnName="IM_INVOICE_NO" msprop:Generator_ColumnVarNameInTable="columnIM_INVOICE_NO" msprop:Generator_ColumnPropNameInRow="IM_INVOICE_NO" msprop:Generator_ColumnPropNameInTable="IM_INVOICE_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_DOC_DATE" msprop:Generator_UserColumnName="IM_DOC_DATE" msprop:Generator_ColumnVarNameInTable="columnIM_DOC_DATE" msprop:Generator_ColumnPropNameInRow="IM_DOC_DATE" msprop:Generator_ColumnPropNameInTable="IM_DOC_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IM_DUE_DATE" msprop:Generator_UserColumnName="IM_DUE_DATE" msprop:Generator_ColumnVarNameInTable="columnIM_DUE_DATE" msprop:Generator_ColumnPropNameInRow="IM_DUE_DATE" msprop:Generator_ColumnPropNameInTable="IM_DUE_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IM_CURRENCY_CODE" msprop:Generator_UserColumnName="IM_CURRENCY_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInRow="IM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInTable="IM_CURRENCY_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_INVOICE_TOTAL" msprop:Generator_UserColumnName="IM_INVOICE_TOTAL" msprop:Generator_ColumnVarNameInTable="columnIM_INVOICE_TOTAL" msprop:Generator_ColumnPropNameInRow="IM_INVOICE_TOTAL" msprop:Generator_ColumnPropNameInTable="IM_INVOICE_TOTALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IM_CREATED_BY" msprop:Generator_UserColumnName="IM_CREATED_BY" msprop:Generator_ColumnVarNameInTable="columnIM_CREATED_BY" msprop:Generator_ColumnPropNameInRow="IM_CREATED_BY" msprop:Generator_ColumnPropNameInTable="IM_CREATED_BYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_S_COY_NAME" msprop:Generator_UserColumnName="IM_S_COY_NAME" msprop:Generator_ColumnVarNameInTable="columnIM_S_COY_NAME" msprop:Generator_ColumnPropNameInRow="IM_S_COY_NAME" msprop:Generator_ColumnPropNameInTable="IM_S_COY_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_PRCS_SENT" msprop:Generator_UserColumnName="IM_PRCS_SENT" msprop:Generator_ColumnVarNameInTable="columnIM_PRCS_SENT" msprop:Generator_ColumnPropNameInRow="IM_PRCS_SENT" msprop:Generator_ColumnPropNameInTable="IM_PRCS_SENTColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IM_PRCS_RECV" msprop:Generator_UserColumnName="IM_PRCS_RECV" msprop:Generator_ColumnVarNameInTable="columnIM_PRCS_RECV" msprop:Generator_ColumnPropNameInRow="IM_PRCS_RECV" msprop:Generator_ColumnPropNameInTable="IM_PRCS_RECVColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="STATUS_DESC" msprop:Generator_UserColumnName="STATUS_DESC" msprop:Generator_ColumnVarNameInTable="columnSTATUS_DESC" msprop:Generator_ColumnPropNameInRow="STATUS_DESC" msprop:Generator_ColumnPropNameInTable="STATUS_DESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Format>
+	<Catalog>
+	    <ReadArea>
+			<Sheet>VENDOR</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>L</ColTo>
+			<RowFrom>2</RowFrom>
+			<RowTo>501</RowTo>
+		</ReadArea>
+		
+		<Column>
+			<ColNo>0</ColNo>
+			<ColName>No</ColName>
+			<DBField></DBField>
+			<AllowNUll>FALSE</AllowNUll>                 
+			<Regex>^\d*$</Regex>
+			<RegexErrMsg>Row No is expecting integer value.</RegexErrMsg> 
+		</Column>
+		
+		<Column>
+			<ColNo>1</ColNo>
+			<ColName>Item Code</ColName>
+			<DBField>PM_VENDOR_ITEM_CODE</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex>^[ |\S]{0,100}$</Regex>
+			<RegexErrMsg>Item Code maximum length is 100.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>3</ColNo>
+			<ColName>Vendor Supplier Code</ColName>
+			<DBField>PV_SUPP_CODE</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S\r\n]{0,20}$</Regex>
+			<RegexErrMsg>Vendor Supplier Code maximum length is 20.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>4</ColNo>
+			<ColName>Vendor Delivery Term</ColName>
+			<DBField>PV_DELIVERY_TERM</DBField>
+			<AllowNUll>TRUE</AllowNUll>                 
+		</Column>
+		
+		<Column>
+			<ColNo>6</ColNo>
+			<ColName>Vendor Payment Term</ColName>
+			<DBField>PV_PAYMENT_CODE</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S\r\n]{0,20}$</Regex>
+			<RegexErrMsg>Vendor Payment Term maximum length is 20.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>7</ColNo>
+			<ColName>Vendor Currency</ColName>
+			<DBField>PV_CURR</DBField>
+			<AllowNUll>TRUE</AllowNUll>
+		</Column>
+		
+		<Column>
+			<ColNo>8</ColNo>
+			<ColName>Vendor Purchaser Spec No.</ColName>
+			<DBField>PV_PUR_SPEC_NO</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S\r\n]{0,50}$</Regex>
+			<RegexErrMsg>Vendor Purchaser Spec No. maximum length is 50.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>9</ColNo>
+			<ColName>Vendor Revision</ColName>
+			<DBField>PV_REVISION</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S\r\n]{0,50}$</Regex>
+			<RegexErrMsg>Vendor Revision maximum length is 50.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+		  <ColNo>10</ColNo>
+		  <ColName>Vendor Order Lead Time(Days)</ColName>
+		  <DBField>Vendor Order Lead Time(Days)</DBField>
+		  <AllowNUll>TRUE</AllowNUll>
+		  <Regex>^\d*$</Regex>
+		  <RegexErrMsg>Vendor Order Lead Time(Days) is expecting integer value.</RegexErrMsg>
+		</Column>
+
+		<Version>
+			<Sheet>PredefineCode</Sheet>
+			<ColFrom>J</ColFrom>
+			<ColTo>J</ColTo>
+			<RowFrom>2</RowFrom>
+			<RowTo>2</RowTo>
+		</Version>		
+		
+	</Catalog>
+</Format>
+

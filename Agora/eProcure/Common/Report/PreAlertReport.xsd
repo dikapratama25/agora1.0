@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreAlertReport" targetNamespace="http://tempuri.org/PreAlertReport.xsd" xmlns:mstns="http://tempuri.org/PreAlertReport.xsd" xmlns="http://tempuri.org/PreAlertReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString2.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetPreAlertTableAdapter" GeneratorDataComponentClassName="DataSetPreAlertTableAdapter" Name="DataSetPreAlert" UserDataComponentName="DataSetPreAlertTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString2 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS POD_PRODUCT_CODE, ''AS POD_PRODUCT_DESC, ''  AS PM_SPEC1, '' AS PM_SPEC2, '' AS PM_SPEC3, '' AS DOL_LOT_NO, '' AS DOL_LOT_INDEX, '' AS GRNRECEIVEDQTY, '' AS DOL_DO_EXP_DT, ''STOCKONHANDQTY FROM grn_mstr</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="POD_PRODUCT_CODE" DataSetColumn="POD_PRODUCT_CODE" />
+              <Mapping SourceColumn="POD_PRODUCT_DESC" DataSetColumn="POD_PRODUCT_DESC" />
+              <Mapping SourceColumn="DOL_LOT_NO" DataSetColumn="DOL_LOT_NO" />
+              <Mapping SourceColumn="DOL_LOT_INDEX" DataSetColumn="DOL_LOT_INDEX" />
+              <Mapping SourceColumn="GRNRECEIVEDQTY" DataSetColumn="GRNRECEIVEDQTY" />
+              <Mapping SourceColumn="DOL_DO_EXP_DT" DataSetColumn="DOL_DO_EXP_DT" />
+              <Mapping SourceColumn="STOCKONHANDQTY" DataSetColumn="STOCKONHANDQTY" />
+              <Mapping SourceColumn="PM_SPEC1" DataSetColumn="PM_SPEC1" />
+              <Mapping SourceColumn="PM_SPEC2" DataSetColumn="PM_SPEC2" />
+              <Mapping SourceColumn="PM_SPEC3" DataSetColumn="PM_SPEC3" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreAlertReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PreAlertReport" msprop:Generator_DataSetName="PreAlertReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetPreAlert" msprop:Generator_UserTableName="DataSetPreAlert" msprop:Generator_RowDeletedName="DataSetPreAlertRowDeleted" msprop:Generator_RowChangedName="DataSetPreAlertRowChanged" msprop:Generator_RowClassName="DataSetPreAlertRow" msprop:Generator_RowChangingName="DataSetPreAlertRowChanging" msprop:Generator_RowEvArgName="DataSetPreAlertRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetPreAlertRowChangeEventHandler" msprop:Generator_TableClassName="DataSetPreAlertDataTable" msprop:Generator_TableVarName="tableDataSetPreAlert" msprop:Generator_RowDeletingName="DataSetPreAlertRowDeleting" msprop:Generator_TablePropName="DataSetPreAlert">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="POD_PRODUCT_CODE" msprop:Generator_UserColumnName="POD_PRODUCT_CODE" msprop:Generator_ColumnPropNameInRow="POD_PRODUCT_CODE" msprop:Generator_ColumnVarNameInTable="columnPOD_PRODUCT_CODE" msprop:Generator_ColumnPropNameInTable="POD_PRODUCT_CODEColumn" type="xs:string" />
+              <xs:element name="POD_PRODUCT_DESC" msprop:Generator_UserColumnName="POD_PRODUCT_DESC" msprop:Generator_ColumnPropNameInRow="POD_PRODUCT_DESC" msprop:Generator_ColumnVarNameInTable="columnPOD_PRODUCT_DESC" msprop:Generator_ColumnPropNameInTable="POD_PRODUCT_DESCColumn" type="xs:string" />
+              <xs:element name="DOL_LOT_NO" msprop:Generator_UserColumnName="DOL_LOT_NO" msprop:Generator_ColumnPropNameInRow="DOL_LOT_NO" msprop:Generator_ColumnVarNameInTable="columnDOL_LOT_NO" msprop:Generator_ColumnPropNameInTable="DOL_LOT_NOColumn" type="xs:string" />
+              <xs:element name="DOL_LOT_INDEX" msprop:Generator_UserColumnName="DOL_LOT_INDEX" msprop:Generator_ColumnPropNameInRow="DOL_LOT_INDEX" msprop:Generator_ColumnVarNameInTable="columnDOL_LOT_INDEX" msprop:Generator_ColumnPropNameInTable="DOL_LOT_INDEXColumn" type="xs:string" />
+              <xs:element name="GRNRECEIVEDQTY" msprop:Generator_UserColumnName="GRNRECEIVEDQTY" msprop:Generator_ColumnPropNameInRow="GRNRECEIVEDQTY" msprop:Generator_ColumnVarNameInTable="columnGRNRECEIVEDQTY" msprop:Generator_ColumnPropNameInTable="GRNRECEIVEDQTYColumn" type="xs:string" />
+              <xs:element name="DOL_DO_EXP_DT" msprop:Generator_UserColumnName="DOL_DO_EXP_DT" msprop:Generator_ColumnPropNameInRow="DOL_DO_EXP_DT" msprop:Generator_ColumnVarNameInTable="columnDOL_DO_EXP_DT" msprop:Generator_ColumnPropNameInTable="DOL_DO_EXP_DTColumn" type="xs:string" />
+              <xs:element name="STOCKONHANDQTY" msprop:Generator_UserColumnName="STOCKONHANDQTY" msprop:Generator_ColumnPropNameInRow="STOCKONHANDQTY" msprop:Generator_ColumnVarNameInTable="columnSTOCKONHANDQTY" msprop:Generator_ColumnPropNameInTable="STOCKONHANDQTYColumn" type="xs:string" />
+              <xs:element name="PM_SPEC1" msprop:Generator_UserColumnName="PM_SPEC1" msprop:Generator_ColumnPropNameInRow="PM_SPEC1" msprop:Generator_ColumnVarNameInTable="columnPM_SPEC1" msprop:Generator_ColumnPropNameInTable="PM_SPEC1Column" type="xs:string" />
+              <xs:element name="PM_SPEC2" msprop:Generator_UserColumnName="PM_SPEC2" msprop:Generator_ColumnPropNameInRow="PM_SPEC2" msprop:Generator_ColumnVarNameInTable="columnPM_SPEC2" msprop:Generator_ColumnPropNameInTable="PM_SPEC2Column" type="xs:string" />
+              <xs:element name="PM_SPEC3" msprop:Generator_UserColumnName="PM_SPEC3" msprop:Generator_ColumnPropNameInRow="PM_SPEC3" msprop:Generator_ColumnVarNameInTable="columnPM_SPEC3" msprop:Generator_ColumnPropNameInTable="PM_SPEC3Column" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

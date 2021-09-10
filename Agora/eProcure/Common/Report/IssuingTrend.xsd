@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IssuingTrend" targetNamespace="http://tempuri.org/IssuingTrend.xsd" xmlns:mstns="http://tempuri.org/IssuingTrend.xsd" xmlns="http://tempuri.org/IssuingTrend.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetIssuingTrendTableAdapter" GeneratorDataComponentClassName="DataSetIssuingTrendTableAdapter" Name="DataSetIssuingTrend" UserDataComponentName="DataSetIssuingTrendTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString1 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS IM_ITEM_CODE, '' AS PAST_6TH_IRSD_QTY, '' AS PAST_5TH_IRSD_QTY, '' AS PAST_4TH_IRSD_QTY, '' AS PAST_3RD_IRSD_QTY, '' AS PAST_2ND_IRSD_QTY, '' AS PAST_1ST_IRSD_QTY, '' AS CURR_MTH_IRSD_QTY, '' AS IRSM_IRS_APPROVED_DATE FROM INVENTORY_MSTR</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IM_ITEM_CODE" DataSetColumn="IM_ITEM_CODE" />
+              <Mapping SourceColumn="PAST_6TH_IRSD_QTY" DataSetColumn="PAST_6TH_IRSD_QTY" />
+              <Mapping SourceColumn="PAST_5TH_IRSD_QTY" DataSetColumn="PAST_5TH_IRSD_QTY" />
+              <Mapping SourceColumn="PAST_4TH_IRSD_QTY" DataSetColumn="PAST_4TH_IRSD_QTY" />
+              <Mapping SourceColumn="PAST_3RD_IRSD_QTY" DataSetColumn="PAST_3RD_IRSD_QTY" />
+              <Mapping SourceColumn="PAST_2ND_IRSD_QTY" DataSetColumn="PAST_2ND_IRSD_QTY" />
+              <Mapping SourceColumn="PAST_1ST_IRSD_QTY" DataSetColumn="PAST_1ST_IRSD_QTY" />
+              <Mapping SourceColumn="CURR_MTH_IRSD_QTY" DataSetColumn="CURR_MTH_IRSD_QTY" />
+              <Mapping SourceColumn="IRSM_IRS_APPROVED_DATE" DataSetColumn="IRSM_IRS_APPROVED_DATE" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IssuingTrend" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="IssuingTrend" msprop:Generator_DataSetName="IssuingTrend">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetIssuingTrend" msprop:Generator_UserTableName="DataSetIssuingTrend" msprop:Generator_RowDeletedName="DataSetIssuingTrendRowDeleted" msprop:Generator_TableClassName="DataSetIssuingTrendDataTable" msprop:Generator_RowChangedName="DataSetIssuingTrendRowChanged" msprop:Generator_RowClassName="DataSetIssuingTrendRow" msprop:Generator_RowChangingName="DataSetIssuingTrendRowChanging" msprop:Generator_RowEvArgName="DataSetIssuingTrendRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetIssuingTrendRowChangeEventHandler" msprop:Generator_TablePropName="DataSetIssuingTrend" msprop:Generator_TableVarName="tableDataSetIssuingTrend" msprop:Generator_RowDeletingName="DataSetIssuingTrendRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IM_ITEM_CODE" msprop:Generator_UserColumnName="IM_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="IM_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="IM_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="PAST_6TH_IRSD_QTY" msprop:Generator_UserColumnName="PAST_6TH_IRSD_QTY" msprop:Generator_ColumnPropNameInRow="PAST_6TH_IRSD_QTY" msprop:Generator_ColumnVarNameInTable="columnPAST_6TH_IRSD_QTY" msprop:Generator_ColumnPropNameInTable="PAST_6TH_IRSD_QTYColumn" type="xs:string" />
+              <xs:element name="PAST_5TH_IRSD_QTY" msprop:Generator_UserColumnName="PAST_5TH_IRSD_QTY" msprop:Generator_ColumnPropNameInRow="PAST_5TH_IRSD_QTY" msprop:Generator_ColumnVarNameInTable="columnPAST_5TH_IRSD_QTY" msprop:Generator_ColumnPropNameInTable="PAST_5TH_IRSD_QTYColumn" type="xs:string" />
+              <xs:element name="PAST_4TH_IRSD_QTY" msprop:Generator_UserColumnName="PAST_4TH_IRSD_QTY" msprop:Generator_ColumnPropNameInRow="PAST_4TH_IRSD_QTY" msprop:Generator_ColumnVarNameInTable="columnPAST_4TH_IRSD_QTY" msprop:Generator_ColumnPropNameInTable="PAST_4TH_IRSD_QTYColumn" type="xs:string" />
+              <xs:element name="PAST_3RD_IRSD_QTY" msprop:Generator_UserColumnName="PAST_3RD_IRSD_QTY" msprop:Generator_ColumnPropNameInRow="PAST_3RD_IRSD_QTY" msprop:Generator_ColumnVarNameInTable="columnPAST_3RD_IRSD_QTY" msprop:Generator_ColumnPropNameInTable="PAST_3RD_IRSD_QTYColumn" type="xs:string" />
+              <xs:element name="PAST_2ND_IRSD_QTY" msprop:Generator_UserColumnName="PAST_2ND_IRSD_QTY" msprop:Generator_ColumnPropNameInRow="PAST_2ND_IRSD_QTY" msprop:Generator_ColumnVarNameInTable="columnPAST_2ND_IRSD_QTY" msprop:Generator_ColumnPropNameInTable="PAST_2ND_IRSD_QTYColumn" type="xs:string" />
+              <xs:element name="PAST_1ST_IRSD_QTY" msprop:Generator_UserColumnName="PAST_1ST_IRSD_QTY" msprop:Generator_ColumnPropNameInRow="PAST_1ST_IRSD_QTY" msprop:Generator_ColumnVarNameInTable="columnPAST_1ST_IRSD_QTY" msprop:Generator_ColumnPropNameInTable="PAST_1ST_IRSD_QTYColumn" type="xs:string" />
+              <xs:element name="CURR_MTH_IRSD_QTY" msprop:Generator_UserColumnName="CURR_MTH_IRSD_QTY" msprop:Generator_ColumnPropNameInRow="CURR_MTH_IRSD_QTY" msprop:Generator_ColumnVarNameInTable="columnCURR_MTH_IRSD_QTY" msprop:Generator_ColumnPropNameInTable="CURR_MTH_IRSD_QTYColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_APPROVED_DATE" msprop:Generator_UserColumnName="IRSM_IRS_APPROVED_DATE" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_APPROVED_DATE" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_APPROVED_DATE" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_APPROVED_DATEColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

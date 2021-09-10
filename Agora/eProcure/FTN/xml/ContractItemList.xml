@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Format>
+	<Catalog>
+		<Action>
+			<Sheet>ContractCatalogue</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>H</ColTo>
+			<RowFrom>2</RowFrom>
+			<RowTo>2</RowTo>
+		</Action>
+		
+		<CoyName>
+			<Sheet>ContractCatalogue</Sheet>
+			<ColFrom>B</ColFrom>
+			<ColTo>H</ColTo>
+			<RowFrom>5</RowFrom>
+			<RowTo>5</RowTo>
+		</CoyName>
+		
+		<ConRefNo>
+			<Sheet>ContractCatalogue</Sheet>
+			<ColFrom>B</ColFrom>
+			<ColTo>H</ColTo>
+			<RowFrom>6</RowFrom>
+			<RowTo>6</RowTo>
+		</ConRefNo>
+		
+		<ConDesc>
+			<Sheet>ContractCatalogue</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>H</ColTo>
+			<RowFrom>7</RowFrom>
+			<RowTo>7</RowTo>
+		</ConDesc>
+		
+		<ValidFrom>
+			<Sheet>ContractCatalogue</Sheet>
+			<ColFrom>B</ColFrom>
+			<ColTo>H</ColTo>
+			<RowFrom>5</RowFrom>
+			<RowTo>5</RowTo>
+		</ValidFrom>
+		
+		<ValidTo>
+			<Sheet>ContractCatalogue</Sheet>
+			<ColFrom>B</ColFrom>
+			<ColTo>H</ColTo>
+			<RowFrom>6</RowFrom>
+			<RowTo>6</RowTo>
+		</ValidTo>
+		
+	    <ReadArea>
+			<Sheet>ContractCatalogue</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>I</ColTo>
+			<RowFrom>11</RowFrom>
+			<RowTo>510</RowTo>
+		</ReadArea>
+		
+		<Column>
+			<ColNo>0</ColNo>
+			<ColName>No</ColName>
+			<DBField></DBField>
+			<AllowNUll>FALSE</AllowNUll>                 
+			<Regex>^\d*$</Regex>
+			<RegexErrMsg>Row No is expecting integer value.</RegexErrMsg> 
+		</Column>
+		
+		<Column>
+			<ColNo>1</ColNo>
+			<ColName>Item Code</ColName>
+			<DBField>CDI_VENDOR_ITEM_CODE</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex>^[ |\S]{0,100}$</Regex>
+			<RegexErrMsg>Item Code maximum length is 100.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>2</ColNo>
+			<ColName>Item Name</ColName>
+			<DBField>CDI_PRODUCT_DESC</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S\r\n\t]{0,500}$</Regex>
+			<RegexErrMsg>Item Code Description maximum length is 500.</RegexErrMsg>  
+		</Column>
+				
+		<Column>
+			<ColNo>3</ColNo>
+			<ColName>UOM</ColName>
+			<DBField>CDI_UOM</DBField>
+			<AllowNUll>TRUE</AllowNUll>
+		</Column>
+		
+		<Column>
+			<ColNo>4</ColNo>
+			<ColName>Currency</ColName>
+			<DBField>CDI_CURRENCY_CODE</DBField>
+			<AllowNUll>FALSE</AllowNUll>
+		</Column>
+		
+		<Column>
+			<ColNo>5</ColNo>
+			<ColName>Contract Price</ColName>
+			<DBField>CDI_UNIT_COST</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex>^\d{1,10}(\.\d{1,4})?$</Regex>
+			<RegexErrMsg>Contract Price is expecting decimal value.</RegexErrMsg>  
+		</Column>
+
+		<Column>
+		  <ColNo>6</ColNo>
+		  <ColName>GST Rate</ColName>
+		  <DBField>CDI_GST_RATE</DBField>
+		  <AllowNUll>TRUE</AllowNUll>
+		</Column>
+
+		<Column>
+		  <ColNo>7</ColNo>
+		  <ColName>GST Tax Code</ColName>
+		  <DBField>CDI_GST_TAX_CODE</DBField>
+		  <AllowNUll>TRUE</AllowNUll>
+		</Column>		
+			
+		<Column>
+			<ColNo>8</ColNo>
+			<ColName>Remarks</ColName>
+			<DBField>CDI_REMARK</DBField>
+			<AllowNUll>TRUE</AllowNUll>                
+			<Regex>^[ |\S\r\n]{0,400}$</Regex>
+			<RegexErrMsg>Item remarks maximum length is 400.</RegexErrMsg>  
+		</Column>	
+	
+		<Version>
+			<Sheet>PredefineCode</Sheet>
+			<ColFrom>I</ColFrom>
+			<ColTo>I</ColTo>
+			<RowFrom>2</RowFrom>
+			<RowTo>2</RowTo>
+		</Version>
+		
+	</Catalog>
+</Format>
+

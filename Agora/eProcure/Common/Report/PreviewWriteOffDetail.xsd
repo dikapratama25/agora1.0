@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewWriteOffDetail" targetNamespace="http://tempuri.org/PreviewWriteOffDetail.xsd" xmlns:mstns="http://tempuri.org/PreviewWriteOffDetail.xsd" xmlns="http://tempuri.org/PreviewWriteOffDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString2.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetWOTableAdapter" GeneratorDataComponentClassName="DataSetWOTableAdapter" Name="DataSetWO" UserDataComponentName="DataSetWOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString2 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS IWOM_WO_INDEX, '' AS IWOM_WO_COY_ID, '' AS IWOM_WO_NO, '' AS IWOM_WO_DATE, '' AS IWOM_WO_REMARK, '' AS IWOM_WO_STATUS, 
+'' AS IWOM_STATUS_CHANGED_BY, '' AS IWOM_STATUS_CHANGED_ON, '' AS IWOM_CREATED_BY, '' AS IWOM_CREATED_DATE, '' AS IWOD_WO_COY_ID, 
+'' AS IWOD_WO_NO, '' AS IWOD_WO_LINE, '' AS IWOD_UOM, '' AS IWOD_WO_LOT_NO, '' AS IWOD_INVENTORY_INDEX, '' AS IWOD_INVENTORY_NAME, '' AS IWOD_QTY_VAL, 
+ '' AS IWOD_FRM_LOCATION_INDEX, '' AS IWOD_TO_LOCATION_INDEX, '' AS  IWOD_TO_LOCATION_INDEX, '' AS IM_ITEM_CODE, '' AS LM_LOCATION, '' AS LM_SUB_LOCATION 
+FROM inventory_write_off_details
+
+</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IWOM_WO_INDEX" DataSetColumn="IWOM_WO_INDEX" />
+              <Mapping SourceColumn="IWOM_WO_COY_ID" DataSetColumn="IWOM_WO_COY_ID" />
+              <Mapping SourceColumn="IWOM_WO_NO" DataSetColumn="IWOM_WO_NO" />
+              <Mapping SourceColumn="IWOM_WO_DATE" DataSetColumn="IWOM_WO_DATE" />
+              <Mapping SourceColumn="IWOM_WO_REMARK" DataSetColumn="IWOM_WO_REMARK" />
+              <Mapping SourceColumn="IWOM_WO_STATUS" DataSetColumn="IWOM_WO_STATUS" />
+              <Mapping SourceColumn="IWOM_STATUS_CHANGED_BY" DataSetColumn="IWOM_STATUS_CHANGED_BY" />
+              <Mapping SourceColumn="IWOM_STATUS_CHANGED_ON" DataSetColumn="IWOM_STATUS_CHANGED_ON" />
+              <Mapping SourceColumn="IWOM_CREATED_BY" DataSetColumn="IWOM_CREATED_BY" />
+              <Mapping SourceColumn="IWOM_CREATED_DATE" DataSetColumn="IWOM_CREATED_DATE" />
+              <Mapping SourceColumn="IWOD_WO_COY_ID" DataSetColumn="IWOD_WO_COY_ID" />
+              <Mapping SourceColumn="IWOD_WO_NO" DataSetColumn="IWOD_WO_NO" />
+              <Mapping SourceColumn="IWOD_WO_LINE" DataSetColumn="IWOD_WO_LINE" />
+              <Mapping SourceColumn="IWOD_WO_LOT_NO" DataSetColumn="IWOD_WO_LOT_NO" />
+              <Mapping SourceColumn="IWOD_INVENTORY_INDEX" DataSetColumn="IWOD_INVENTORY_INDEX" />
+              <Mapping SourceColumn="IWOD_INVENTORY_NAME" DataSetColumn="IWOD_INVENTORY_NAME" />
+              <Mapping SourceColumn="IWOD_QTY_VAL" DataSetColumn="IWOD_QTY_VAL" />
+              <Mapping SourceColumn="IWOD_FRM_LOCATION_INDEX" DataSetColumn="IWOD_FRM_LOCATION_INDEX" />
+              <Mapping SourceColumn="IWOD_TO_LOCATION_INDEX" DataSetColumn="IWOD_TO_LOCATION_INDEX" />
+              <Mapping SourceColumn="IWOD_TO_LOCATION_INDEX1" DataSetColumn="IWOD_TO_LOCATION_INDEX1" />
+              <Mapping SourceColumn="IM_ITEM_CODE" DataSetColumn="IM_ITEM_CODE" />
+              <Mapping SourceColumn="LM_LOCATION" DataSetColumn="LM_LOCATION" />
+              <Mapping SourceColumn="LM_SUB_LOCATION" DataSetColumn="LM_SUB_LOCATION" />
+              <Mapping SourceColumn="IWOD_UOM" DataSetColumn="IWOD_UOM" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewWriteOffDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PreviewWriteOffDetail" msprop:Generator_DataSetName="PreviewWriteOffDetail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetWO" msprop:Generator_UserTableName="DataSetWO" msprop:Generator_RowDeletedName="DataSetWORowDeleted" msprop:Generator_RowChangedName="DataSetWORowChanged" msprop:Generator_RowClassName="DataSetWORow" msprop:Generator_RowChangingName="DataSetWORowChanging" msprop:Generator_RowEvArgName="DataSetWORowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetWORowChangeEventHandler" msprop:Generator_TableClassName="DataSetWODataTable" msprop:Generator_TableVarName="tableDataSetWO" msprop:Generator_RowDeletingName="DataSetWORowDeleting" msprop:Generator_TablePropName="DataSetWO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IWOM_WO_INDEX" msprop:Generator_UserColumnName="IWOM_WO_INDEX" msprop:Generator_ColumnVarNameInTable="columnIWOM_WO_INDEX" msprop:Generator_ColumnPropNameInRow="IWOM_WO_INDEX" msprop:Generator_ColumnPropNameInTable="IWOM_WO_INDEXColumn" type="xs:string" />
+              <xs:element name="IWOM_WO_COY_ID" msprop:Generator_UserColumnName="IWOM_WO_COY_ID" msprop:Generator_ColumnVarNameInTable="columnIWOM_WO_COY_ID" msprop:Generator_ColumnPropNameInRow="IWOM_WO_COY_ID" msprop:Generator_ColumnPropNameInTable="IWOM_WO_COY_IDColumn" type="xs:string" />
+              <xs:element name="IWOM_WO_NO" msprop:Generator_UserColumnName="IWOM_WO_NO" msprop:Generator_ColumnVarNameInTable="columnIWOM_WO_NO" msprop:Generator_ColumnPropNameInRow="IWOM_WO_NO" msprop:Generator_ColumnPropNameInTable="IWOM_WO_NOColumn" type="xs:string" />
+              <xs:element name="IWOM_WO_DATE" msprop:Generator_UserColumnName="IWOM_WO_DATE" msprop:Generator_ColumnVarNameInTable="columnIWOM_WO_DATE" msprop:Generator_ColumnPropNameInRow="IWOM_WO_DATE" msprop:Generator_ColumnPropNameInTable="IWOM_WO_DATEColumn" type="xs:string" />
+              <xs:element name="IWOM_WO_REMARK" msprop:Generator_UserColumnName="IWOM_WO_REMARK" msprop:Generator_ColumnVarNameInTable="columnIWOM_WO_REMARK" msprop:Generator_ColumnPropNameInRow="IWOM_WO_REMARK" msprop:Generator_ColumnPropNameInTable="IWOM_WO_REMARKColumn" type="xs:string" />
+              <xs:element name="IWOM_WO_STATUS" msprop:Generator_UserColumnName="IWOM_WO_STATUS" msprop:Generator_ColumnVarNameInTable="columnIWOM_WO_STATUS" msprop:Generator_ColumnPropNameInRow="IWOM_WO_STATUS" msprop:Generator_ColumnPropNameInTable="IWOM_WO_STATUSColumn" type="xs:string" />
+              <xs:element name="IWOM_STATUS_CHANGED_BY" msprop:Generator_UserColumnName="IWOM_STATUS_CHANGED_BY" msprop:Generator_ColumnVarNameInTable="columnIWOM_STATUS_CHANGED_BY" msprop:Generator_ColumnPropNameInRow="IWOM_STATUS_CHANGED_BY" msprop:Generator_ColumnPropNameInTable="IWOM_STATUS_CHANGED_BYColumn" type="xs:string" />
+              <xs:element name="IWOM_STATUS_CHANGED_ON" msprop:Generator_UserColumnName="IWOM_STATUS_CHANGED_ON" msprop:Generator_ColumnVarNameInTable="columnIWOM_STATUS_CHANGED_ON" msprop:Generator_ColumnPropNameInRow="IWOM_STATUS_CHANGED_ON" msprop:Generator_ColumnPropNameInTable="IWOM_STATUS_CHANGED_ONColumn" type="xs:string" />
+              <xs:element name="IWOM_CREATED_BY" msprop:Generator_UserColumnName="IWOM_CREATED_BY" msprop:Generator_ColumnVarNameInTable="columnIWOM_CREATED_BY" msprop:Generator_ColumnPropNameInRow="IWOM_CREATED_BY" msprop:Generator_ColumnPropNameInTable="IWOM_CREATED_BYColumn" type="xs:string" />
+              <xs:element name="IWOM_CREATED_DATE" msprop:Generator_UserColumnName="IWOM_CREATED_DATE" msprop:Generator_ColumnVarNameInTable="columnIWOM_CREATED_DATE" msprop:Generator_ColumnPropNameInRow="IWOM_CREATED_DATE" msprop:Generator_ColumnPropNameInTable="IWOM_CREATED_DATEColumn" type="xs:string" />
+              <xs:element name="IWOD_WO_COY_ID" msprop:Generator_UserColumnName="IWOD_WO_COY_ID" msprop:Generator_ColumnVarNameInTable="columnIWOD_WO_COY_ID" msprop:Generator_ColumnPropNameInRow="IWOD_WO_COY_ID" msprop:Generator_ColumnPropNameInTable="IWOD_WO_COY_IDColumn" type="xs:string" />
+              <xs:element name="IWOD_WO_NO" msprop:Generator_UserColumnName="IWOD_WO_NO" msprop:Generator_ColumnVarNameInTable="columnIWOD_WO_NO" msprop:Generator_ColumnPropNameInRow="IWOD_WO_NO" msprop:Generator_ColumnPropNameInTable="IWOD_WO_NOColumn" type="xs:string" />
+              <xs:element name="IWOD_WO_LINE" msprop:Generator_UserColumnName="IWOD_WO_LINE" msprop:Generator_ColumnVarNameInTable="columnIWOD_WO_LINE" msprop:Generator_ColumnPropNameInRow="IWOD_WO_LINE" msprop:Generator_ColumnPropNameInTable="IWOD_WO_LINEColumn" type="xs:string" />
+              <xs:element name="IWOD_WO_LOT_NO" msprop:Generator_UserColumnName="IWOD_WO_LOT_NO" msprop:Generator_ColumnVarNameInTable="columnIWOD_WO_LOT_NO" msprop:Generator_ColumnPropNameInRow="IWOD_WO_LOT_NO" msprop:Generator_ColumnPropNameInTable="IWOD_WO_LOT_NOColumn" type="xs:string" />
+              <xs:element name="IWOD_INVENTORY_INDEX" msprop:Generator_UserColumnName="IWOD_INVENTORY_INDEX" msprop:Generator_ColumnVarNameInTable="columnIWOD_INVENTORY_INDEX" msprop:Generator_ColumnPropNameInRow="IWOD_INVENTORY_INDEX" msprop:Generator_ColumnPropNameInTable="IWOD_INVENTORY_INDEXColumn" type="xs:string" />
+              <xs:element name="IWOD_INVENTORY_NAME" msprop:Generator_UserColumnName="IWOD_INVENTORY_NAME" msprop:Generator_ColumnVarNameInTable="columnIWOD_INVENTORY_NAME" msprop:Generator_ColumnPropNameInRow="IWOD_INVENTORY_NAME" msprop:Generator_ColumnPropNameInTable="IWOD_INVENTORY_NAMEColumn" type="xs:string" />
+              <xs:element name="IWOD_QTY_VAL" msprop:Generator_UserColumnName="IWOD_QTY_VAL" msprop:Generator_ColumnVarNameInTable="columnIWOD_QTY_VAL" msprop:Generator_ColumnPropNameInRow="IWOD_QTY_VAL" msprop:Generator_ColumnPropNameInTable="IWOD_QTY_VALColumn" type="xs:string" />
+              <xs:element name="IWOD_FRM_LOCATION_INDEX" msprop:Generator_UserColumnName="IWOD_FRM_LOCATION_INDEX" msprop:Generator_ColumnVarNameInTable="columnIWOD_FRM_LOCATION_INDEX" msprop:Generator_ColumnPropNameInRow="IWOD_FRM_LOCATION_INDEX" msprop:Generator_ColumnPropNameInTable="IWOD_FRM_LOCATION_INDEXColumn" type="xs:string" />
+              <xs:element name="IWOD_TO_LOCATION_INDEX" msprop:Generator_UserColumnName="IWOD_TO_LOCATION_INDEX" msprop:Generator_ColumnVarNameInTable="columnIWOD_TO_LOCATION_INDEX" msprop:Generator_ColumnPropNameInRow="IWOD_TO_LOCATION_INDEX" msprop:Generator_ColumnPropNameInTable="IWOD_TO_LOCATION_INDEXColumn" type="xs:string" />
+              <xs:element name="IWOD_TO_LOCATION_INDEX1" msprop:Generator_UserColumnName="IWOD_TO_LOCATION_INDEX1" msprop:Generator_ColumnVarNameInTable="columnIWOD_TO_LOCATION_INDEX1" msprop:Generator_ColumnPropNameInRow="IWOD_TO_LOCATION_INDEX1" msprop:Generator_ColumnPropNameInTable="IWOD_TO_LOCATION_INDEX1Column" type="xs:string" />
+              <xs:element name="IM_ITEM_CODE" msprop:Generator_UserColumnName="IM_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="IM_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="IM_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="LM_LOCATION" msprop:Generator_UserColumnName="LM_LOCATION" msprop:Generator_ColumnVarNameInTable="columnLM_LOCATION" msprop:Generator_ColumnPropNameInRow="LM_LOCATION" msprop:Generator_ColumnPropNameInTable="LM_LOCATIONColumn" type="xs:string" />
+              <xs:element name="LM_SUB_LOCATION" msprop:Generator_UserColumnName="LM_SUB_LOCATION" msprop:Generator_ColumnVarNameInTable="columnLM_SUB_LOCATION" msprop:Generator_ColumnPropNameInRow="LM_SUB_LOCATION" msprop:Generator_ColumnPropNameInTable="LM_SUB_LOCATIONColumn" type="xs:string" />
+              <xs:element name="IWOD_UOM" msprop:Generator_UserColumnName="IWOD_UOM" msprop:Generator_ColumnPropNameInRow="IWOD_UOM" msprop:Generator_ColumnVarNameInTable="columnIWOD_UOM" msprop:Generator_ColumnPropNameInTable="IWOD_UOMColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="TypeAheadVendor.aspx.vb" Inherits="eProcure.TypeAheadVendor" %>

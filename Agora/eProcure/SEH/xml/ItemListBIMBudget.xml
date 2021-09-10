@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Format>
+	<Catalog>
+	    <ReadArea>
+			<Sheet>BudgetPrice</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>I</ColTo>
+			<RowFrom>2</RowFrom>
+			<RowTo>501</RowTo>
+		</ReadArea>
+		
+		<Column>
+			<ColNo>1</ColNo>
+			<ColName>Item Code</ColName>
+			<DBField>PM_VENDOR_ITEM_CODE</DBField>
+			<AllowNUll>FALSE</AllowNUll>                 
+			<Regex>^[ |\S]{0,100}$</Regex>
+			<RegexErrMsg>Item Code maximum length is 100.</RegexErrMsg> 
+		</Column>
+				
+		<Column>
+			<ColNo>6</ColNo>
+			<ColName>Propose Budget</ColName>
+			<DBField>PM_PURPOSE_BUDGET_PRICE</DBField>
+			<AllowNUll>FALSE</AllowNUll>                 
+			<Regex>^\d{1,6}(?:\.(?:\d{0,1})?\d)?$</Regex>
+			<RegexErrMsg>Propose Budget price is expecting numeric value. Range should be from 0 to 999999.99</RegexErrMsg> 
+		</Column>		
+	</Catalog>
+</Format>
+

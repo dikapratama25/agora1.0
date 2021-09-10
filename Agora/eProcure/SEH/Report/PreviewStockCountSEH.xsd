@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewStockCounts" targetNamespace="http://tempuri.org/PreviewStockCounts.xsd" xmlns:mstns="http://tempuri.org/PreviewStockCounts.xsd" xmlns="http://tempuri.org/PreviewStockCounts.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetInventoryListTableAdapter" GeneratorDataComponentClassName="DataSetInventoryListTableAdapter" Name="DataSetInventoryList" UserDataComponentName="DataSetInventoryListTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText> SELECT '' AS ID_INVENTORY_INDEX,  '' AS IM_ITEM_CODE,  '' AS IM_INVENTORY_NAME,  '' AS IL_lot_qty,  '' AS dol_Lot_no,  '' AS ID_LOCATION_INDEX,  '' AS LM_LOCATION,  '' AS LM_SUB_LOCATION,  '' AS ID_INVENTORY_QTY,  
+'' AS IM_COY_ID FROM inventory_detail
+
+</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_INVENTORY_INDEX" DataSetColumn="ID_INVENTORY_INDEX" />
+              <Mapping SourceColumn="IM_ITEM_CODE" DataSetColumn="IM_ITEM_CODE" />
+              <Mapping SourceColumn="IM_INVENTORY_NAME" DataSetColumn="IM_INVENTORY_NAME" />
+              <Mapping SourceColumn="IL_lot_qty" DataSetColumn="IL_lot_qty" />
+              <Mapping SourceColumn="dol_Lot_no" DataSetColumn="dol_Lot_no" />
+              <Mapping SourceColumn="ID_LOCATION_INDEX" DataSetColumn="ID_LOCATION_INDEX" />
+              <Mapping SourceColumn="LM_LOCATION" DataSetColumn="LM_LOCATION" />
+              <Mapping SourceColumn="LM_SUB_LOCATION" DataSetColumn="LM_SUB_LOCATION" />
+              <Mapping SourceColumn="ID_INVENTORY_QTY" DataSetColumn="ID_INVENTORY_QTY" />
+              <Mapping SourceColumn="IM_COY_ID" DataSetColumn="IM_COY_ID" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewStockCounts" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PreviewStockCounts" msprop:Generator_DataSetName="PreviewStockCounts">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetInventoryList" msprop:Generator_UserTableName="DataSetInventoryList" msprop:Generator_RowDeletedName="DataSetInventoryListRowDeleted" msprop:Generator_RowChangedName="DataSetInventoryListRowChanged" msprop:Generator_RowClassName="DataSetInventoryListRow" msprop:Generator_RowChangingName="DataSetInventoryListRowChanging" msprop:Generator_RowEvArgName="DataSetInventoryListRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetInventoryListRowChangeEventHandler" msprop:Generator_TableClassName="DataSetInventoryListDataTable" msprop:Generator_TableVarName="tableDataSetInventoryList" msprop:Generator_RowDeletingName="DataSetInventoryListRowDeleting" msprop:Generator_TablePropName="DataSetInventoryList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_INVENTORY_INDEX" msprop:Generator_UserColumnName="ID_INVENTORY_INDEX" msprop:Generator_ColumnVarNameInTable="columnID_INVENTORY_INDEX" msprop:Generator_ColumnPropNameInRow="ID_INVENTORY_INDEX" msprop:Generator_ColumnPropNameInTable="ID_INVENTORY_INDEXColumn" type="xs:string" />
+              <xs:element name="IM_ITEM_CODE" msprop:Generator_UserColumnName="IM_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="IM_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="IM_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="IM_INVENTORY_NAME" msprop:Generator_UserColumnName="IM_INVENTORY_NAME" msprop:Generator_ColumnVarNameInTable="columnIM_INVENTORY_NAME" msprop:Generator_ColumnPropNameInRow="IM_INVENTORY_NAME" msprop:Generator_ColumnPropNameInTable="IM_INVENTORY_NAMEColumn" type="xs:string" />
+              <xs:element name="IL_lot_qty" msprop:Generator_UserColumnName="IL_lot_qty" msprop:Generator_ColumnVarNameInTable="columnIL_lot_qty" msprop:Generator_ColumnPropNameInRow="IL_lot_qty" msprop:Generator_ColumnPropNameInTable="IL_lot_qtyColumn" type="xs:string" />
+              <xs:element name="dol_Lot_no" msprop:Generator_UserColumnName="dol_Lot_no" msprop:Generator_ColumnVarNameInTable="columndol_Lot_no" msprop:Generator_ColumnPropNameInRow="dol_Lot_no" msprop:Generator_ColumnPropNameInTable="dol_Lot_noColumn" type="xs:string" />
+              <xs:element name="ID_LOCATION_INDEX" msprop:Generator_UserColumnName="ID_LOCATION_INDEX" msprop:Generator_ColumnVarNameInTable="columnID_LOCATION_INDEX" msprop:Generator_ColumnPropNameInRow="ID_LOCATION_INDEX" msprop:Generator_ColumnPropNameInTable="ID_LOCATION_INDEXColumn" type="xs:string" />
+              <xs:element name="LM_LOCATION" msprop:Generator_UserColumnName="LM_LOCATION" msprop:Generator_ColumnVarNameInTable="columnLM_LOCATION" msprop:Generator_ColumnPropNameInRow="LM_LOCATION" msprop:Generator_ColumnPropNameInTable="LM_LOCATIONColumn" type="xs:string" />
+              <xs:element name="LM_SUB_LOCATION" msprop:Generator_UserColumnName="LM_SUB_LOCATION" msprop:Generator_ColumnVarNameInTable="columnLM_SUB_LOCATION" msprop:Generator_ColumnPropNameInRow="LM_SUB_LOCATION" msprop:Generator_ColumnPropNameInTable="LM_SUB_LOCATIONColumn" type="xs:string" />
+              <xs:element name="ID_INVENTORY_QTY" msprop:Generator_UserColumnName="ID_INVENTORY_QTY" msprop:Generator_ColumnVarNameInTable="columnID_INVENTORY_QTY" msprop:Generator_ColumnPropNameInRow="ID_INVENTORY_QTY" msprop:Generator_ColumnPropNameInTable="ID_INVENTORY_QTYColumn" type="xs:string" />
+              <xs:element name="IM_COY_ID" msprop:Generator_UserColumnName="IM_COY_ID" msprop:Generator_ColumnVarNameInTable="columnIM_COY_ID" msprop:Generator_ColumnPropNameInRow="IM_COY_ID" msprop:Generator_ColumnPropNameInTable="IM_COY_IDColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

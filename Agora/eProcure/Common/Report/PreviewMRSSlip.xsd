@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewMRSSlip" targetNamespace="http://tempuri.org/PreviewMRSSlip.xsd" xmlns:mstns="http://tempuri.org/PreviewMRSSlip.xsd" xmlns="http://tempuri.org/PreviewMRSSlip.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString2.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString3 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString3.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetPreviewMRSSlipTableAdapter" GeneratorDataComponentClassName="DataSetPreviewMRSSlipTableAdapter" Name="DataSetPreviewMRSSlip" UserDataComponentName="DataSetPreviewMRSSlipTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString3 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS TB, '' AS IRSM_IRS_NO, '' AS IRSM_IRS_DATE, '' AS IRSM_IRS_APPROVED_DATE, '' AS IRSM_IRS_REF_NO, '' AS IRSM_IRS_REQUESTOR_NAME, '' AS IRSM_IRS_ISSUE_TO, '' AS IRSM_IRS_ISSUE_REMARK, '' AS IRSM_IRS_ACKCANCEL_REMARK, '' AS CDM_DEPT_NAME, '' AS IRSM_IRS_SECTION, '' AS IRSM_IRS_REMARK, '' AS STATUS_DESC, '' AS IM_ITEM_CODE, '' AS IRSD_INVENTORY_NAME, '' AS IRSD_IRS_LINE, '' AS IRSD_QTY, '' AS IRSD_IRS_MTHISSUE, '' AS IRSD_IRS_LAST3MTH, '' AS IRSD_UOM, '' AS IRSL_LOT_QTY, '' AS DOL_LOT_NO, '' AS LM_LOCATION, '' AS LM_SUB_LOCATION, '' AS AO, '' AS AAO, '' AS SEQ, '' AS ACTION_DATE, '' AS REMARK, '' AS APPROVAL_TYPE FROM INVENTORY_REQUISITION_SLIP_MSTR</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IRSM_IRS_NO" DataSetColumn="IRSM_IRS_NO" />
+              <Mapping SourceColumn="IRSM_IRS_DATE" DataSetColumn="IRSM_IRS_DATE" />
+              <Mapping SourceColumn="IRSM_IRS_APPROVED_DATE" DataSetColumn="IRSM_IRS_APPROVED_DATE" />
+              <Mapping SourceColumn="IRSM_IRS_REF_NO" DataSetColumn="IRSM_IRS_REF_NO" />
+              <Mapping SourceColumn="IRSM_IRS_REQUESTOR_NAME" DataSetColumn="IRSM_IRS_REQUESTOR_NAME" />
+              <Mapping SourceColumn="IRSM_IRS_ISSUE_TO" DataSetColumn="IRSM_IRS_ISSUE_TO" />
+              <Mapping SourceColumn="CDM_DEPT_NAME" DataSetColumn="CDM_DEPT_NAME" />
+              <Mapping SourceColumn="IRSM_IRS_SECTION" DataSetColumn="IRSM_IRS_SECTION" />
+              <Mapping SourceColumn="IRSM_IRS_REMARK" DataSetColumn="IRSM_IRS_REMARK" />
+              <Mapping SourceColumn="STATUS_DESC" DataSetColumn="STATUS_DESC" />
+              <Mapping SourceColumn="IM_ITEM_CODE" DataSetColumn="IM_ITEM_CODE" />
+              <Mapping SourceColumn="IRSD_INVENTORY_NAME" DataSetColumn="IRSD_INVENTORY_NAME" />
+              <Mapping SourceColumn="IRSD_IRS_LINE" DataSetColumn="IRSD_IRS_LINE" />
+              <Mapping SourceColumn="IRSD_QTY" DataSetColumn="IRSD_QTY" />
+              <Mapping SourceColumn="IRSL_LOT_QTY" DataSetColumn="IRSL_LOT_QTY" />
+              <Mapping SourceColumn="DOL_LOT_NO" DataSetColumn="DOL_LOT_NO" />
+              <Mapping SourceColumn="LM_LOCATION" DataSetColumn="LM_LOCATION" />
+              <Mapping SourceColumn="LM_SUB_LOCATION" DataSetColumn="LM_SUB_LOCATION" />
+              <Mapping SourceColumn="TB" DataSetColumn="TB" />
+              <Mapping SourceColumn="AO" DataSetColumn="AO" />
+              <Mapping SourceColumn="AAO" DataSetColumn="AAO" />
+              <Mapping SourceColumn="SEQ" DataSetColumn="SEQ" />
+              <Mapping SourceColumn="ACTION_DATE" DataSetColumn="ACTION_DATE" />
+              <Mapping SourceColumn="REMARK" DataSetColumn="REMARK" />
+              <Mapping SourceColumn="IRSM_IRS_ISSUE_REMARK" DataSetColumn="IRSM_IRS_ISSUE_REMARK" />
+              <Mapping SourceColumn="IRSM_IRS_ACKCANCEL_REMARK" DataSetColumn="IRSM_IRS_ACKCANCEL_REMARK" />
+              <Mapping SourceColumn="APPROVAL_TYPE" DataSetColumn="APPROVAL_TYPE" />
+              <Mapping SourceColumn="IRSD_IRS_MTHISSUE" DataSetColumn="IRSD_IRS_MTHISSUE" />
+              <Mapping SourceColumn="IRSD_IRS_LAST3MTH" DataSetColumn="IRSD_IRS_LAST3MTH" />
+              <Mapping SourceColumn="IRSD_UOM" DataSetColumn="IRSD_UOM" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewMRSSlip" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PreviewMRSSlip" msprop:Generator_DataSetName="PreviewMRSSlip">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetPreviewMRSSlip" msprop:Generator_UserTableName="DataSetPreviewMRSSlip" msprop:Generator_RowDeletedName="DataSetPreviewMRSSlipRowDeleted" msprop:Generator_RowChangedName="DataSetPreviewMRSSlipRowChanged" msprop:Generator_RowClassName="DataSetPreviewMRSSlipRow" msprop:Generator_RowChangingName="DataSetPreviewMRSSlipRowChanging" msprop:Generator_RowEvArgName="DataSetPreviewMRSSlipRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetPreviewMRSSlipRowChangeEventHandler" msprop:Generator_TableClassName="DataSetPreviewMRSSlipDataTable" msprop:Generator_TableVarName="tableDataSetPreviewMRSSlip" msprop:Generator_RowDeletingName="DataSetPreviewMRSSlipRowDeleting" msprop:Generator_TablePropName="DataSetPreviewMRSSlip">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IRSM_IRS_NO" msprop:Generator_UserColumnName="IRSM_IRS_NO" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_NO" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_NO" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_NOColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_DATE" msprop:Generator_UserColumnName="IRSM_IRS_DATE" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_DATE" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_DATE" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_DATEColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_APPROVED_DATE" msprop:Generator_UserColumnName="IRSM_IRS_APPROVED_DATE" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_APPROVED_DATE" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_APPROVED_DATE" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_APPROVED_DATEColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_REF_NO" msprop:Generator_UserColumnName="IRSM_IRS_REF_NO" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_REF_NO" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_REF_NO" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_REF_NOColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_REQUESTOR_NAME" msprop:Generator_UserColumnName="IRSM_IRS_REQUESTOR_NAME" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_REQUESTOR_NAME" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_REQUESTOR_NAME" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_REQUESTOR_NAMEColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_ISSUE_TO" msprop:Generator_UserColumnName="IRSM_IRS_ISSUE_TO" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_ISSUE_TO" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_ISSUE_TO" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_ISSUE_TOColumn" type="xs:string" />
+              <xs:element name="CDM_DEPT_NAME" msprop:Generator_UserColumnName="CDM_DEPT_NAME" msprop:Generator_ColumnVarNameInTable="columnCDM_DEPT_NAME" msprop:Generator_ColumnPropNameInRow="CDM_DEPT_NAME" msprop:Generator_ColumnPropNameInTable="CDM_DEPT_NAMEColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_SECTION" msprop:Generator_UserColumnName="IRSM_IRS_SECTION" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_SECTION" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_SECTION" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_SECTIONColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_REMARK" msprop:Generator_UserColumnName="IRSM_IRS_REMARK" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_REMARK" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_REMARK" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_REMARKColumn" type="xs:string" />
+              <xs:element name="STATUS_DESC" msprop:Generator_UserColumnName="STATUS_DESC" msprop:Generator_ColumnVarNameInTable="columnSTATUS_DESC" msprop:Generator_ColumnPropNameInRow="STATUS_DESC" msprop:Generator_ColumnPropNameInTable="STATUS_DESCColumn" type="xs:string" />
+              <xs:element name="IM_ITEM_CODE" msprop:Generator_UserColumnName="IM_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="IM_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="IM_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="IRSD_INVENTORY_NAME" msprop:Generator_UserColumnName="IRSD_INVENTORY_NAME" msprop:Generator_ColumnVarNameInTable="columnIRSD_INVENTORY_NAME" msprop:Generator_ColumnPropNameInRow="IRSD_INVENTORY_NAME" msprop:Generator_ColumnPropNameInTable="IRSD_INVENTORY_NAMEColumn" type="xs:string" />
+              <xs:element name="IRSD_IRS_LINE" msprop:Generator_UserColumnName="IRSD_IRS_LINE" msprop:Generator_ColumnVarNameInTable="columnIRSD_IRS_LINE" msprop:Generator_ColumnPropNameInRow="IRSD_IRS_LINE" msprop:Generator_ColumnPropNameInTable="IRSD_IRS_LINEColumn" type="xs:string" />
+              <xs:element name="IRSD_QTY" msprop:Generator_UserColumnName="IRSD_QTY" msprop:Generator_ColumnVarNameInTable="columnIRSD_QTY" msprop:Generator_ColumnPropNameInRow="IRSD_QTY" msprop:Generator_ColumnPropNameInTable="IRSD_QTYColumn" type="xs:string" />
+              <xs:element name="IRSL_LOT_QTY" msprop:Generator_UserColumnName="IRSL_LOT_QTY" msprop:Generator_ColumnVarNameInTable="columnIRSL_LOT_QTY" msprop:Generator_ColumnPropNameInRow="IRSL_LOT_QTY" msprop:Generator_ColumnPropNameInTable="IRSL_LOT_QTYColumn" type="xs:string" />
+              <xs:element name="DOL_LOT_NO" msprop:Generator_UserColumnName="DOL_LOT_NO" msprop:Generator_ColumnVarNameInTable="columnDOL_LOT_NO" msprop:Generator_ColumnPropNameInRow="DOL_LOT_NO" msprop:Generator_ColumnPropNameInTable="DOL_LOT_NOColumn" type="xs:string" />
+              <xs:element name="LM_LOCATION" msprop:Generator_UserColumnName="LM_LOCATION" msprop:Generator_ColumnVarNameInTable="columnLM_LOCATION" msprop:Generator_ColumnPropNameInRow="LM_LOCATION" msprop:Generator_ColumnPropNameInTable="LM_LOCATIONColumn" type="xs:string" />
+              <xs:element name="LM_SUB_LOCATION" msprop:Generator_UserColumnName="LM_SUB_LOCATION" msprop:Generator_ColumnVarNameInTable="columnLM_SUB_LOCATION" msprop:Generator_ColumnPropNameInRow="LM_SUB_LOCATION" msprop:Generator_ColumnPropNameInTable="LM_SUB_LOCATIONColumn" type="xs:string" />
+              <xs:element name="TB" msprop:Generator_UserColumnName="TB" msprop:Generator_ColumnVarNameInTable="columnTB" msprop:Generator_ColumnPropNameInRow="TB" msprop:Generator_ColumnPropNameInTable="TBColumn" type="xs:string" />
+              <xs:element name="AO" msprop:Generator_UserColumnName="AO" msprop:Generator_ColumnVarNameInTable="columnAO" msprop:Generator_ColumnPropNameInRow="AO" msprop:Generator_ColumnPropNameInTable="AOColumn" type="xs:string" />
+              <xs:element name="AAO" msprop:Generator_UserColumnName="AAO" msprop:Generator_ColumnVarNameInTable="columnAAO" msprop:Generator_ColumnPropNameInRow="AAO" msprop:Generator_ColumnPropNameInTable="AAOColumn" type="xs:string" />
+              <xs:element name="SEQ" msprop:Generator_UserColumnName="SEQ" msprop:Generator_ColumnVarNameInTable="columnSEQ" msprop:Generator_ColumnPropNameInRow="SEQ" msprop:Generator_ColumnPropNameInTable="SEQColumn" type="xs:string" />
+              <xs:element name="ACTION_DATE" msprop:Generator_UserColumnName="ACTION_DATE" msprop:Generator_ColumnVarNameInTable="columnACTION_DATE" msprop:Generator_ColumnPropNameInRow="ACTION_DATE" msprop:Generator_ColumnPropNameInTable="ACTION_DATEColumn" type="xs:string" />
+              <xs:element name="REMARK" msprop:Generator_UserColumnName="REMARK" msprop:Generator_ColumnVarNameInTable="columnREMARK" msprop:Generator_ColumnPropNameInRow="REMARK" msprop:Generator_ColumnPropNameInTable="REMARKColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_ISSUE_REMARK" msprop:Generator_UserColumnName="IRSM_IRS_ISSUE_REMARK" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_ISSUE_REMARK" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_ISSUE_REMARK" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_ISSUE_REMARKColumn" type="xs:string" />
+              <xs:element name="IRSM_IRS_ACKCANCEL_REMARK" msprop:Generator_UserColumnName="IRSM_IRS_ACKCANCEL_REMARK" msprop:Generator_ColumnPropNameInRow="IRSM_IRS_ACKCANCEL_REMARK" msprop:Generator_ColumnVarNameInTable="columnIRSM_IRS_ACKCANCEL_REMARK" msprop:Generator_ColumnPropNameInTable="IRSM_IRS_ACKCANCEL_REMARKColumn" type="xs:string" />
+              <xs:element name="APPROVAL_TYPE" msprop:Generator_UserColumnName="APPROVAL_TYPE" msprop:Generator_ColumnPropNameInRow="APPROVAL_TYPE" msprop:Generator_ColumnVarNameInTable="columnAPPROVAL_TYPE" msprop:Generator_ColumnPropNameInTable="APPROVAL_TYPEColumn" type="xs:string" />
+              <xs:element name="IRSD_IRS_MTHISSUE" msprop:Generator_UserColumnName="IRSD_IRS_MTHISSUE" msprop:Generator_ColumnVarNameInTable="columnIRSD_IRS_MTHISSUE" msprop:Generator_ColumnPropNameInRow="IRSD_IRS_MTHISSUE" msprop:Generator_ColumnPropNameInTable="IRSD_IRS_MTHISSUEColumn" type="xs:string" />
+              <xs:element name="IRSD_IRS_LAST3MTH" msprop:Generator_UserColumnName="IRSD_IRS_LAST3MTH" msprop:Generator_ColumnVarNameInTable="columnIRSD_IRS_LAST3MTH" msprop:Generator_ColumnPropNameInRow="IRSD_IRS_LAST3MTH" msprop:Generator_ColumnPropNameInTable="IRSD_IRS_LAST3MTHColumn" type="xs:string" />
+              <xs:element name="IRSD_UOM" msprop:Generator_UserColumnName="IRSD_UOM" msprop:Generator_ColumnPropNameInRow="IRSD_UOM" msprop:Generator_ColumnVarNameInTable="columnIRSD_UOM" msprop:Generator_ColumnPropNameInTable="IRSD_UOMColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewIQC" targetNamespace="http://tempuri.org/PreviewIQC.xsd" xmlns:mstns="http://tempuri.org/PreviewIQC.xsd" xmlns="http://tempuri.org/PreviewIQC.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString2.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetPreviewIQCTableAdapter" GeneratorDataComponentClassName="DataSetPreviewIQCTableAdapter" Name="DataSetPreviewIQC" UserDataComponentName="DataSetPreviewIQCTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString2 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT '' AS tb, '' AS IVL_IQC_NO, '' AS IM_ITEM_CODE, '' AS IM_INVENTORY_NAME, '' AS PM_IQC_TYPE, '' AS DOL_LOT_NO, '' AS IVL_LOT_QTY, '' AS PM_UOM, '' AS IVL_STATUS, '' AS POM_PO_NO, '' AS POM_PO_DATE, '' AS DOM_DO_NO, '' AS IM_INVOICE_NO, '' AS IM_SUBMIT_DATE, '' AS GM_CREATED_DATE, '' AS DOL_DO_MANUFACTURER, '' AS DOL_IQC_MANU_DT, '' AS DOL_IQC_EXP_DT, '' AS POM_VENDOR_CODE, '' AS PM_PRODUCT_INDEX, '' AS DOL_COY_ID, '' AS IQCA_SEQ, '' AS AO_NAME, ''AS AAO_NAME, '' AS IQCA_APPROVAL_TYPE, '' AS IQCA_ACTION_DATE, '' AS IQCA_AO_REMARK FROM GRN_MSTR</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="tb" DataSetColumn="tb" />
+              <Mapping SourceColumn="IVL_IQC_NO" DataSetColumn="IVL_IQC_NO" />
+              <Mapping SourceColumn="IM_ITEM_CODE" DataSetColumn="IM_ITEM_CODE" />
+              <Mapping SourceColumn="IM_INVENTORY_NAME" DataSetColumn="IM_INVENTORY_NAME" />
+              <Mapping SourceColumn="PM_IQC_TYPE" DataSetColumn="PM_IQC_TYPE" />
+              <Mapping SourceColumn="DOL_LOT_NO" DataSetColumn="DOL_LOT_NO" />
+              <Mapping SourceColumn="IVL_LOT_QTY" DataSetColumn="IVL_LOT_QTY" />
+              <Mapping SourceColumn="PM_UOM" DataSetColumn="PM_UOM" />
+              <Mapping SourceColumn="IVL_STATUS" DataSetColumn="IVL_STATUS" />
+              <Mapping SourceColumn="POM_PO_NO" DataSetColumn="POM_PO_NO" />
+              <Mapping SourceColumn="POM_PO_DATE" DataSetColumn="POM_PO_DATE" />
+              <Mapping SourceColumn="DOM_DO_NO" DataSetColumn="DOM_DO_NO" />
+              <Mapping SourceColumn="IM_INVOICE_NO" DataSetColumn="IM_INVOICE_NO" />
+              <Mapping SourceColumn="IM_SUBMIT_DATE" DataSetColumn="IM_SUBMIT_DATE" />
+              <Mapping SourceColumn="GM_CREATED_DATE" DataSetColumn="GM_CREATED_DATE" />
+              <Mapping SourceColumn="DOL_DO_MANUFACTURER" DataSetColumn="DOL_DO_MANUFACTURER" />
+              <Mapping SourceColumn="POM_VENDOR_CODE" DataSetColumn="POM_VENDOR_CODE" />
+              <Mapping SourceColumn="PM_PRODUCT_INDEX" DataSetColumn="PM_PRODUCT_INDEX" />
+              <Mapping SourceColumn="DOL_COY_ID" DataSetColumn="DOL_COY_ID" />
+              <Mapping SourceColumn="IQCA_SEQ" DataSetColumn="IQCA_SEQ" />
+              <Mapping SourceColumn="AO_NAME" DataSetColumn="AO_NAME" />
+              <Mapping SourceColumn="AAO_NAME" DataSetColumn="AAO_NAME" />
+              <Mapping SourceColumn="IQCA_APPROVAL_TYPE" DataSetColumn="IQCA_APPROVAL_TYPE" />
+              <Mapping SourceColumn="IQCA_ACTION_DATE" DataSetColumn="IQCA_ACTION_DATE" />
+              <Mapping SourceColumn="IQCA_AO_REMARK" DataSetColumn="IQCA_AO_REMARK" />
+              <Mapping SourceColumn="DOL_IQC_MANU_DT" DataSetColumn="DOL_IQC_MANU_DT" />
+              <Mapping SourceColumn="DOL_IQC_EXP_DT" DataSetColumn="DOL_IQC_EXP_DT" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewIQC" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PreviewIQC" msprop:Generator_DataSetName="PreviewIQC">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetPreviewIQC" msprop:Generator_UserTableName="DataSetPreviewIQC" msprop:Generator_RowDeletedName="DataSetPreviewIQCRowDeleted" msprop:Generator_RowChangedName="DataSetPreviewIQCRowChanged" msprop:Generator_RowClassName="DataSetPreviewIQCRow" msprop:Generator_RowChangingName="DataSetPreviewIQCRowChanging" msprop:Generator_RowEvArgName="DataSetPreviewIQCRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetPreviewIQCRowChangeEventHandler" msprop:Generator_TableClassName="DataSetPreviewIQCDataTable" msprop:Generator_TableVarName="tableDataSetPreviewIQC" msprop:Generator_RowDeletingName="DataSetPreviewIQCRowDeleting" msprop:Generator_TablePropName="DataSetPreviewIQC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tb" msprop:Generator_UserColumnName="tb" msprop:Generator_ColumnPropNameInRow="tb" msprop:Generator_ColumnVarNameInTable="columntb" msprop:Generator_ColumnPropNameInTable="tbColumn" type="xs:string" />
+              <xs:element name="IVL_IQC_NO" msprop:Generator_UserColumnName="IVL_IQC_NO" msprop:Generator_ColumnPropNameInRow="IVL_IQC_NO" msprop:Generator_ColumnVarNameInTable="columnIVL_IQC_NO" msprop:Generator_ColumnPropNameInTable="IVL_IQC_NOColumn" type="xs:string" />
+              <xs:element name="IM_ITEM_CODE" msprop:Generator_UserColumnName="IM_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="IM_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="IM_ITEM_CODEColumn" type="xs:string" />
+              <xs:element name="IM_INVENTORY_NAME" msprop:Generator_UserColumnName="IM_INVENTORY_NAME" msprop:Generator_ColumnPropNameInRow="IM_INVENTORY_NAME" msprop:Generator_ColumnVarNameInTable="columnIM_INVENTORY_NAME" msprop:Generator_ColumnPropNameInTable="IM_INVENTORY_NAMEColumn" type="xs:string" />
+              <xs:element name="PM_IQC_TYPE" msprop:Generator_UserColumnName="PM_IQC_TYPE" msprop:Generator_ColumnPropNameInRow="PM_IQC_TYPE" msprop:Generator_ColumnVarNameInTable="columnPM_IQC_TYPE" msprop:Generator_ColumnPropNameInTable="PM_IQC_TYPEColumn" type="xs:string" />
+              <xs:element name="DOL_LOT_NO" msprop:Generator_UserColumnName="DOL_LOT_NO" msprop:Generator_ColumnPropNameInRow="DOL_LOT_NO" msprop:Generator_ColumnVarNameInTable="columnDOL_LOT_NO" msprop:Generator_ColumnPropNameInTable="DOL_LOT_NOColumn" type="xs:string" />
+              <xs:element name="IVL_LOT_QTY" msprop:Generator_UserColumnName="IVL_LOT_QTY" msprop:Generator_ColumnPropNameInRow="IVL_LOT_QTY" msprop:Generator_ColumnVarNameInTable="columnIVL_LOT_QTY" msprop:Generator_ColumnPropNameInTable="IVL_LOT_QTYColumn" type="xs:string" />
+              <xs:element name="PM_UOM" msprop:Generator_UserColumnName="PM_UOM" msprop:Generator_ColumnPropNameInRow="PM_UOM" msprop:Generator_ColumnVarNameInTable="columnPM_UOM" msprop:Generator_ColumnPropNameInTable="PM_UOMColumn" type="xs:string" />
+              <xs:element name="IVL_STATUS" msprop:Generator_UserColumnName="IVL_STATUS" msprop:Generator_ColumnPropNameInRow="IVL_STATUS" msprop:Generator_ColumnVarNameInTable="columnIVL_STATUS" msprop:Generator_ColumnPropNameInTable="IVL_STATUSColumn" type="xs:string" />
+              <xs:element name="POM_PO_NO" msprop:Generator_UserColumnName="POM_PO_NO" msprop:Generator_ColumnPropNameInRow="POM_PO_NO" msprop:Generator_ColumnVarNameInTable="columnPOM_PO_NO" msprop:Generator_ColumnPropNameInTable="POM_PO_NOColumn" type="xs:string" />
+              <xs:element name="POM_PO_DATE" msprop:Generator_UserColumnName="POM_PO_DATE" msprop:Generator_ColumnPropNameInRow="POM_PO_DATE" msprop:Generator_ColumnVarNameInTable="columnPOM_PO_DATE" msprop:Generator_ColumnPropNameInTable="POM_PO_DATEColumn" type="xs:string" />
+              <xs:element name="DOM_DO_NO" msprop:Generator_UserColumnName="DOM_DO_NO" msprop:Generator_ColumnPropNameInRow="DOM_DO_NO" msprop:Generator_ColumnVarNameInTable="columnDOM_DO_NO" msprop:Generator_ColumnPropNameInTable="DOM_DO_NOColumn" type="xs:string" />
+              <xs:element name="IM_INVOICE_NO" msprop:Generator_UserColumnName="IM_INVOICE_NO" msprop:Generator_ColumnPropNameInRow="IM_INVOICE_NO" msprop:Generator_ColumnVarNameInTable="columnIM_INVOICE_NO" msprop:Generator_ColumnPropNameInTable="IM_INVOICE_NOColumn" type="xs:string" />
+              <xs:element name="IM_SUBMIT_DATE" msprop:Generator_UserColumnName="IM_SUBMIT_DATE" msprop:Generator_ColumnPropNameInRow="IM_SUBMIT_DATE" msprop:Generator_ColumnVarNameInTable="columnIM_SUBMIT_DATE" msprop:Generator_ColumnPropNameInTable="IM_SUBMIT_DATEColumn" type="xs:string" />
+              <xs:element name="GM_CREATED_DATE" msprop:Generator_UserColumnName="GM_CREATED_DATE" msprop:Generator_ColumnPropNameInRow="GM_CREATED_DATE" msprop:Generator_ColumnVarNameInTable="columnGM_CREATED_DATE" msprop:Generator_ColumnPropNameInTable="GM_CREATED_DATEColumn" type="xs:string" />
+              <xs:element name="DOL_DO_MANUFACTURER" msprop:Generator_UserColumnName="DOL_DO_MANUFACTURER" msprop:Generator_ColumnPropNameInRow="DOL_DO_MANUFACTURER" msprop:Generator_ColumnVarNameInTable="columnDOL_DO_MANUFACTURER" msprop:Generator_ColumnPropNameInTable="DOL_DO_MANUFACTURERColumn" type="xs:string" />
+              <xs:element name="POM_VENDOR_CODE" msprop:Generator_UserColumnName="POM_VENDOR_CODE" msprop:Generator_ColumnPropNameInRow="POM_VENDOR_CODE" msprop:Generator_ColumnVarNameInTable="columnPOM_VENDOR_CODE" msprop:Generator_ColumnPropNameInTable="POM_VENDOR_CODEColumn" type="xs:string" />
+              <xs:element name="PM_PRODUCT_INDEX" msprop:Generator_UserColumnName="PM_PRODUCT_INDEX" msprop:Generator_ColumnPropNameInRow="PM_PRODUCT_INDEX" msprop:Generator_ColumnVarNameInTable="columnPM_PRODUCT_INDEX" msprop:Generator_ColumnPropNameInTable="PM_PRODUCT_INDEXColumn" type="xs:string" />
+              <xs:element name="DOL_COY_ID" msprop:Generator_UserColumnName="DOL_COY_ID" msprop:Generator_ColumnPropNameInRow="DOL_COY_ID" msprop:Generator_ColumnVarNameInTable="columnDOL_COY_ID" msprop:Generator_ColumnPropNameInTable="DOL_COY_IDColumn" type="xs:string" />
+              <xs:element name="IQCA_SEQ" msprop:Generator_UserColumnName="IQCA_SEQ" msprop:Generator_ColumnPropNameInRow="IQCA_SEQ" msprop:Generator_ColumnVarNameInTable="columnIQCA_SEQ" msprop:Generator_ColumnPropNameInTable="IQCA_SEQColumn" type="xs:string" />
+              <xs:element name="AO_NAME" msprop:Generator_UserColumnName="AO_NAME" msprop:Generator_ColumnPropNameInRow="AO_NAME" msprop:Generator_ColumnVarNameInTable="columnAO_NAME" msprop:Generator_ColumnPropNameInTable="AO_NAMEColumn" type="xs:string" />
+              <xs:element name="AAO_NAME" msprop:Generator_UserColumnName="AAO_NAME" msprop:Generator_ColumnPropNameInRow="AAO_NAME" msprop:Generator_ColumnVarNameInTable="columnAAO_NAME" msprop:Generator_ColumnPropNameInTable="AAO_NAMEColumn" type="xs:string" />
+              <xs:element name="IQCA_APPROVAL_TYPE" msprop:Generator_UserColumnName="IQCA_APPROVAL_TYPE" msprop:Generator_ColumnPropNameInRow="IQCA_APPROVAL_TYPE" msprop:Generator_ColumnVarNameInTable="columnIQCA_APPROVAL_TYPE" msprop:Generator_ColumnPropNameInTable="IQCA_APPROVAL_TYPEColumn" type="xs:string" />
+              <xs:element name="IQCA_ACTION_DATE" msprop:Generator_UserColumnName="IQCA_ACTION_DATE" msprop:Generator_ColumnPropNameInRow="IQCA_ACTION_DATE" msprop:Generator_ColumnVarNameInTable="columnIQCA_ACTION_DATE" msprop:Generator_ColumnPropNameInTable="IQCA_ACTION_DATEColumn" type="xs:string" />
+              <xs:element name="IQCA_AO_REMARK" msprop:Generator_UserColumnName="IQCA_AO_REMARK" msprop:Generator_ColumnPropNameInRow="IQCA_AO_REMARK" msprop:Generator_ColumnVarNameInTable="columnIQCA_AO_REMARK" msprop:Generator_ColumnPropNameInTable="IQCA_AO_REMARKColumn" type="xs:string" />
+              <xs:element name="DOL_IQC_MANU_DT" msprop:Generator_UserColumnName="DOL_IQC_MANU_DT" msprop:Generator_ColumnPropNameInRow="DOL_IQC_MANU_DT" msprop:Generator_ColumnVarNameInTable="columnDOL_IQC_MANU_DT" msprop:Generator_ColumnPropNameInTable="DOL_IQC_MANU_DTColumn" type="xs:string" />
+              <xs:element name="DOL_IQC_EXP_DT" msprop:Generator_UserColumnName="DOL_IQC_EXP_DT" msprop:Generator_ColumnPropNameInRow="DOL_IQC_EXP_DT" msprop:Generator_ColumnVarNameInTable="columnDOL_IQC_EXP_DT" msprop:Generator_ColumnPropNameInTable="DOL_IQC_EXP_DTColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

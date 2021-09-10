@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Top100Vendor_MYR" targetNamespace="http://tempuri.org/Top100Vendor_MYR.xsd" xmlns:mstns="http://tempuri.org/Top100Vendor_MYR.xsd" xmlns="http://tempuri.org/Top100Vendor_MYR.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Top100Vendor_MYR" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Top100Vendor_MYR" msprop:Generator_DataSetName="Top100Vendor_MYR">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MYRSub" msprop:Generator_UserTableName="MYRSub" msprop:Generator_RowDeletedName="MYRSubRowDeleted" msprop:Generator_TableClassName="MYRSubDataTable" msprop:Generator_RowChangedName="MYRSubRowChanged" msprop:Generator_RowClassName="MYRSubRow" msprop:Generator_RowChangingName="MYRSubRowChanging" msprop:Generator_RowEvArgName="MYRSubRowChangeEvent" msprop:Generator_RowEvHandlerName="MYRSubRowChangeEventHandler" msprop:Generator_TablePropName="MYRSub" msprop:Generator_TableVarName="tableMYRSub" msprop:Generator_RowDeletingName="MYRSubRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="im_invoice_total" msprop:Generator_UserColumnName="im_invoice_total" msprop:Generator_ColumnPropNameInRow="im_invoice_total" msprop:Generator_ColumnVarNameInTable="columnim_invoice_total" msprop:Generator_ColumnPropNameInTable="im_invoice_totalColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

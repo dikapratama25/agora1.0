@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Top100Vendor_TotalFrgn" targetNamespace="http://tempuri.org/Top100Vendor_TotalFrgn.xsd" xmlns:mstns="http://tempuri.org/Top100Vendor_TotalFrgn.xsd" xmlns="http://tempuri.org/Top100Vendor_TotalFrgn.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Top100Vendor_TotalFrgn" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Top100Vendor_TotalFrgn" msprop:Generator_DataSetName="Top100Vendor_TotalFrgn">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="totalForeign" msprop:Generator_UserTableName="totalForeign" msprop:Generator_RowDeletedName="totalForeignRowDeleted" msprop:Generator_RowChangedName="totalForeignRowChanged" msprop:Generator_RowClassName="totalForeignRow" msprop:Generator_RowChangingName="totalForeignRowChanging" msprop:Generator_RowEvArgName="totalForeignRowChangeEvent" msprop:Generator_RowEvHandlerName="totalForeignRowChangeEventHandler" msprop:Generator_TableClassName="totalForeignDataTable" msprop:Generator_TableVarName="tabletotalForeign" msprop:Generator_RowDeletingName="totalForeignRowDeleting" msprop:Generator_TablePropName="totalForeign">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="im_currency_code" msprop:Generator_UserColumnName="im_currency_code" msprop:Generator_ColumnPropNameInRow="im_currency_code" msprop:Generator_ColumnVarNameInTable="columnim_currency_code" msprop:Generator_ColumnPropNameInTable="im_currency_codeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="im_invoice_total" msprop:Generator_UserColumnName="im_invoice_total" msprop:Generator_ColumnPropNameInRow="im_invoice_total" msprop:Generator_ColumnVarNameInTable="columnim_invoice_total" msprop:Generator_ColumnPropNameInTable="im_invoice_totalColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="im_myr_total" msprop:Generator_UserColumnName="im_myr_total" msprop:Generator_ColumnPropNameInRow="im_myr_total" msprop:Generator_ColumnVarNameInTable="columnim_myr_total" msprop:Generator_ColumnPropNameInTable="im_myr_totalColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

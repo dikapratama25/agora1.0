@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewIRSlip" targetNamespace="http://tempuri.org/PreviewIRSlip.xsd" xmlns:mstns="http://tempuri.org/PreviewIRSlip.xsd" xmlns="http://tempuri.org/PreviewIRSlip.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString3 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString3.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetPreviewIRSlipTableAdapter" GeneratorDataComponentClassName="DataSetPreviewIRSlipTableAdapter" Name="DataSetPreviewIRSlip" UserDataComponentName="DataSetPreviewIRSlipTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString3 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT NULL AS TB, NULL AS IT_TRANS_REF_NO, NULL AS IT_TRANS_DATE, NULL AS IT_ADDITION_INFO, NULL AS IT_ADDITION_INFO1, NULL AS IT_REF_NO, NULL AS IT_REMARK, NULL AS SECTION, NULL AS URGENT, NULL AS REQUESTOR_NAME, NULL AS STATUS_DESC, NULL AS APPROVED_DATE, NULL AS IM_ITEM_CODE, NULL AS IM_INVENTORY_NAME, NULL AS IT_TRANS_QTY, NULL AS IRD_IR_MTHISSUE, NULL AS IRD_IR_BEFOREAPP_MTHISSUE, NULL AS IRD_IR_LAST3MTH, NULL AS IRD_UOM, NULL AS LM_LOCATION, NULL AS LM_SUB_LOCATION, NULL AS AO, NULL AS AAO, NULL AS  SEQ, NULL AS ACTION_DATE, NULL AS REMARK FROM INVENTORY_MSTR</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IT_TRANS_REF_NO" DataSetColumn="IT_TRANS_REF_NO" />
+              <Mapping SourceColumn="IT_ADDITION_INFO" DataSetColumn="IT_ADDITION_INFO" />
+              <Mapping SourceColumn="IT_ADDITION_INFO1" DataSetColumn="IT_ADDITION_INFO1" />
+              <Mapping SourceColumn="IT_REMARK" DataSetColumn="IT_REMARK" />
+              <Mapping SourceColumn="IM_ITEM_CODE" DataSetColumn="IM_ITEM_CODE" />
+              <Mapping SourceColumn="IM_INVENTORY_NAME" DataSetColumn="IM_INVENTORY_NAME" />
+              <Mapping SourceColumn="LM_LOCATION" DataSetColumn="LM_LOCATION" />
+              <Mapping SourceColumn="LM_SUB_LOCATION" DataSetColumn="LM_SUB_LOCATION" />
+              <Mapping SourceColumn="IT_REF_NO" DataSetColumn="IT_REF_NO" />
+              <Mapping SourceColumn="TB" DataSetColumn="TB" />
+              <Mapping SourceColumn="IT_TRANS_DATE" DataSetColumn="IT_TRANS_DATE" />
+              <Mapping SourceColumn="SECTION" DataSetColumn="SECTION" />
+              <Mapping SourceColumn="URGENT" DataSetColumn="URGENT" />
+              <Mapping SourceColumn="REQUESTOR_NAME" DataSetColumn="REQUESTOR_NAME" />
+              <Mapping SourceColumn="STATUS_DESC" DataSetColumn="STATUS_DESC" />
+              <Mapping SourceColumn="APPROVED_DATE" DataSetColumn="APPROVED_DATE" />
+              <Mapping SourceColumn="IT_TRANS_QTY" DataSetColumn="IT_TRANS_QTY1" />
+              <Mapping SourceColumn="AO" DataSetColumn="AO" />
+              <Mapping SourceColumn="AAO" DataSetColumn="AAO" />
+              <Mapping SourceColumn="SEQ" DataSetColumn="SEQ" />
+              <Mapping SourceColumn="ACTION_DATE" DataSetColumn="ACTION_DATE" />
+              <Mapping SourceColumn="REMARK" DataSetColumn="REMARK" />
+              <Mapping SourceColumn="IRD_IR_MTHISSUE" DataSetColumn="IRD_IR_MTHISSUE" />
+              <Mapping SourceColumn="IRD_IR_BEFOREAPP_MTHISSUE" DataSetColumn="IRD_IR_BEFOREAPP_MTHISSUE" />
+              <Mapping SourceColumn="IRD_IR_LAST3MTH" DataSetColumn="IRD_IR_LAST3MTH" />
+              <Mapping SourceColumn="IRD_UOM" DataSetColumn="IRD_UOM" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewIRSlip" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PreviewIRSlip" msprop:Generator_DataSetName="PreviewIRSlip">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetPreviewIRSlip" msprop:Generator_UserTableName="DataSetPreviewIRSlip" msprop:Generator_RowDeletedName="DataSetPreviewIRSlipRowDeleted" msprop:Generator_RowChangedName="DataSetPreviewIRSlipRowChanged" msprop:Generator_RowClassName="DataSetPreviewIRSlipRow" msprop:Generator_RowChangingName="DataSetPreviewIRSlipRowChanging" msprop:Generator_RowEvArgName="DataSetPreviewIRSlipRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetPreviewIRSlipRowChangeEventHandler" msprop:Generator_TableClassName="DataSetPreviewIRSlipDataTable" msprop:Generator_TableVarName="tableDataSetPreviewIRSlip" msprop:Generator_RowDeletingName="DataSetPreviewIRSlipRowDeleting" msprop:Generator_TablePropName="DataSetPreviewIRSlip">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IT_TRANS_REF_NO" msprop:Generator_UserColumnName="IT_TRANS_REF_NO" msprop:Generator_ColumnPropNameInRow="IT_TRANS_REF_NO" msprop:Generator_ColumnVarNameInTable="columnIT_TRANS_REF_NO" msprop:Generator_ColumnPropNameInTable="IT_TRANS_REF_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IT_ADDITION_INFO" msprop:Generator_UserColumnName="IT_ADDITION_INFO" msprop:Generator_ColumnPropNameInRow="IT_ADDITION_INFO" msprop:Generator_ColumnVarNameInTable="columnIT_ADDITION_INFO" msprop:Generator_ColumnPropNameInTable="IT_ADDITION_INFOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IT_ADDITION_INFO1" msprop:Generator_UserColumnName="IT_ADDITION_INFO1" msprop:Generator_ColumnPropNameInRow="IT_ADDITION_INFO1" msprop:Generator_ColumnVarNameInTable="columnIT_ADDITION_INFO1" msprop:Generator_ColumnPropNameInTable="IT_ADDITION_INFO1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IT_REMARK" msprop:Generator_UserColumnName="IT_REMARK" msprop:Generator_ColumnPropNameInRow="IT_REMARK" msprop:Generator_ColumnVarNameInTable="columnIT_REMARK" msprop:Generator_ColumnPropNameInTable="IT_REMARKColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_ITEM_CODE" msprop:Generator_UserColumnName="IM_ITEM_CODE" msprop:Generator_ColumnPropNameInRow="IM_ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_ITEM_CODE" msprop:Generator_ColumnPropNameInTable="IM_ITEM_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_INVENTORY_NAME" msprop:Generator_UserColumnName="IM_INVENTORY_NAME" msprop:Generator_ColumnPropNameInRow="IM_INVENTORY_NAME" msprop:Generator_ColumnVarNameInTable="columnIM_INVENTORY_NAME" msprop:Generator_ColumnPropNameInTable="IM_INVENTORY_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IT_TRANS_QTY" msprop:Generator_UserColumnName="IT_TRANS_QTY" msprop:Generator_ColumnPropNameInRow="IT_TRANS_QTY" msprop:Generator_ColumnVarNameInTable="columnIT_TRANS_QTY" msprop:Generator_ColumnPropNameInTable="IT_TRANS_QTYColumn" type="xs:int" />
+              <xs:element name="LM_LOCATION" msprop:Generator_UserColumnName="LM_LOCATION" msprop:Generator_ColumnPropNameInRow="LM_LOCATION" msprop:Generator_ColumnVarNameInTable="columnLM_LOCATION" msprop:Generator_ColumnPropNameInTable="LM_LOCATIONColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LM_SUB_LOCATION" msprop:Generator_UserColumnName="LM_SUB_LOCATION" msprop:Generator_ColumnPropNameInRow="LM_SUB_LOCATION" msprop:Generator_ColumnVarNameInTable="columnLM_SUB_LOCATION" msprop:Generator_ColumnPropNameInTable="LM_SUB_LOCATIONColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IT_REF_NO" msprop:Generator_UserColumnName="IT_REF_NO" msprop:Generator_ColumnPropNameInRow="IT_REF_NO" msprop:Generator_ColumnVarNameInTable="columnIT_REF_NO" msprop:Generator_ColumnPropNameInTable="IT_REF_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TB" msprop:Generator_UserColumnName="TB" msprop:Generator_ColumnPropNameInRow="TB" msprop:Generator_ColumnVarNameInTable="columnTB" msprop:Generator_ColumnPropNameInTable="TBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IT_TRANS_DATE" msprop:Generator_UserColumnName="IT_TRANS_DATE" msprop:Generator_ColumnPropNameInRow="IT_TRANS_DATE" msprop:Generator_ColumnVarNameInTable="columnIT_TRANS_DATE" msprop:Generator_ColumnPropNameInTable="IT_TRANS_DATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SECTION" msprop:Generator_UserColumnName="SECTION" msprop:Generator_ColumnPropNameInRow="SECTION" msprop:Generator_ColumnVarNameInTable="columnSECTION" msprop:Generator_ColumnPropNameInTable="SECTIONColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="URGENT" msprop:Generator_UserColumnName="URGENT" msprop:Generator_ColumnPropNameInRow="URGENT" msprop:Generator_ColumnVarNameInTable="columnURGENT" msprop:Generator_ColumnPropNameInTable="URGENTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="REQUESTOR_NAME" msprop:Generator_UserColumnName="REQUESTOR_NAME" msprop:Generator_ColumnPropNameInRow="REQUESTOR_NAME" msprop:Generator_ColumnVarNameInTable="columnREQUESTOR_NAME" msprop:Generator_ColumnPropNameInTable="REQUESTOR_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS_DESC" msprop:Generator_UserColumnName="STATUS_DESC" msprop:Generator_ColumnPropNameInRow="STATUS_DESC" msprop:Generator_ColumnVarNameInTable="columnSTATUS_DESC" msprop:Generator_ColumnPropNameInTable="STATUS_DESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="APPROVED_DATE" msprop:Generator_UserColumnName="APPROVED_DATE" msprop:Generator_ColumnPropNameInRow="APPROVED_DATE" msprop:Generator_ColumnVarNameInTable="columnAPPROVED_DATE" msprop:Generator_ColumnPropNameInTable="APPROVED_DATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IT_TRANS_QTY1" msdata:Caption="IT_TRANS_QTY" msprop:Generator_UserColumnName="IT_TRANS_QTY1" msprop:Generator_ColumnPropNameInRow="IT_TRANS_QTY1" msprop:Generator_ColumnVarNameInTable="columnIT_TRANS_QTY1" msprop:Generator_ColumnPropNameInTable="IT_TRANS_QTY1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="AO" msprop:Generator_UserColumnName="AO" msprop:Generator_ColumnPropNameInRow="AO" msprop:Generator_ColumnVarNameInTable="columnAO" msprop:Generator_ColumnPropNameInTable="AOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AAO" msprop:Generator_UserColumnName="AAO" msprop:Generator_ColumnPropNameInRow="AAO" msprop:Generator_ColumnVarNameInTable="columnAAO" msprop:Generator_ColumnPropNameInTable="AAOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SEQ" msprop:Generator_UserColumnName="SEQ" msprop:Generator_ColumnPropNameInRow="SEQ" msprop:Generator_ColumnVarNameInTable="columnSEQ" msprop:Generator_ColumnPropNameInTable="SEQColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTION_DATE" msprop:Generator_UserColumnName="ACTION_DATE" msprop:Generator_ColumnPropNameInRow="ACTION_DATE" msprop:Generator_ColumnVarNameInTable="columnACTION_DATE" msprop:Generator_ColumnPropNameInTable="ACTION_DATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARK" msprop:Generator_UserColumnName="REMARK" msprop:Generator_ColumnPropNameInRow="REMARK" msprop:Generator_ColumnVarNameInTable="columnREMARK" msprop:Generator_ColumnPropNameInTable="REMARKColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRD_IR_MTHISSUE" msprop:Generator_UserColumnName="IRD_IR_MTHISSUE" msprop:Generator_ColumnVarNameInTable="columnIRD_IR_MTHISSUE" msprop:Generator_ColumnPropNameInRow="IRD_IR_MTHISSUE" msprop:Generator_ColumnPropNameInTable="IRD_IR_MTHISSUEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRD_IR_BEFOREAPP_MTHISSUE" msprop:Generator_UserColumnName="IRD_IR_BEFOREAPP_MTHISSUE" msprop:Generator_ColumnVarNameInTable="columnIRD_IR_BEFOREAPP_MTHISSUE" msprop:Generator_ColumnPropNameInRow="IRD_IR_BEFOREAPP_MTHISSUE" msprop:Generator_ColumnPropNameInTable="IRD_IR_BEFOREAPP_MTHISSUEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRD_IR_LAST3MTH" msprop:Generator_UserColumnName="IRD_IR_LAST3MTH" msprop:Generator_ColumnVarNameInTable="columnIRD_IR_LAST3MTH" msprop:Generator_ColumnPropNameInRow="IRD_IR_LAST3MTH" msprop:Generator_ColumnPropNameInTable="IRD_IR_LAST3MTHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRD_UOM" msprop:Generator_UserColumnName="IRD_UOM" msprop:Generator_ColumnPropNameInRow="IRD_UOM" msprop:Generator_ColumnVarNameInTable="columnIRD_UOM" msprop:Generator_ColumnPropNameInTable="IRD_UOMColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

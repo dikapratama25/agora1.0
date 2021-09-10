@@ -1,0 +1,1 @@
+<%@ WebService Language="VB" CodeBehind="Service.asmx.vb" Class="BillingASP.Service" %>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OutstandingInv" targetNamespace="http://tempuri.org/OutstandingInv.xsd" xmlns:mstns="http://tempuri.org/OutstandingInv.xsd" xmlns="http://tempuri.org/OutstandingInv.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="eprocureConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.eProcure.My.MySettings.GlobalReference.Default.eprocureConnectionString1" Provider="MySql.Data.MySqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString2.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetOutstandingInvTableAdapter" GeneratorDataComponentClassName="DataSetOutstandingInvTableAdapter" Name="DataSetOutstandingInv" UserDataComponentName="DataSetOutstandingInvTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString2 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     invoice_mstr.IM_INVOICE_NO, invoice_mstr.IM_S_COY_ID, invoice_mstr.IM_S_COY_NAME, invoice_mstr.IM_B_COY_ID, 
+                      invoice_mstr.IM_PAYMENT_DATE, invoice_mstr.IM_CREATED_ON, invoice_mstr.IM_INVOICE_STATUS, invoice_mstr.IM_INVOICE_TOTAL, NULL AS INVOICE_AMT,
+                      invoice_mstr.IM_CURRENCY_CODE, po_mstr.POM_PO_NO, po_mstr.POM_B_COY_ID, po_mstr.POM_S_COY_ID, po_mstr.POM_S_COY_NAME, 
+                      po_mstr.POM_PAYMENT_METHOD, po_mstr.POM_CURRENCY_CODE, po_mstr.POM_CREATED_DATE, po_details.POD_ETD, po_details.POD_PO_NO, 
+                      po_details.POD_COY_ID, po_mstr.POM_PO_DATE, company_mstr.CM_COY_ID, company_mstr.CM_COY_NAME, invoice_details.ID_INVOICE_NO, 
+                      invoice_details.ID_S_COY_ID, invoice_details.ID_PO_LINE, po_details.POD_PO_LINE
+FROM         invoice_mstr INNER JOIN
+                      invoice_details ON invoice_mstr.IM_INVOICE_NO = invoice_details.ID_INVOICE_NO INNER JOIN
+                      company_mstr ON invoice_mstr.IM_B_COY_ID = company_mstr.CM_COY_ID, po_mstr, po_details</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IM_INVOICE_NO" DataSetColumn="IM_INVOICE_NO" />
+              <Mapping SourceColumn="IM_S_COY_ID" DataSetColumn="IM_S_COY_ID" />
+              <Mapping SourceColumn="IM_S_COY_NAME" DataSetColumn="IM_S_COY_NAME" />
+              <Mapping SourceColumn="IM_B_COY_ID" DataSetColumn="IM_B_COY_ID" />
+              <Mapping SourceColumn="IM_PAYMENT_DATE" DataSetColumn="IM_PAYMENT_DATE" />
+              <Mapping SourceColumn="IM_CREATED_ON" DataSetColumn="IM_CREATED_ON" />
+              <Mapping SourceColumn="IM_INVOICE_STATUS" DataSetColumn="IM_INVOICE_STATUS" />
+              <Mapping SourceColumn="IM_INVOICE_TOTAL" DataSetColumn="IM_INVOICE_TOTAL" />
+              <Mapping SourceColumn="IM_CURRENCY_CODE" DataSetColumn="IM_CURRENCY_CODE" />
+              <Mapping SourceColumn="POM_PO_NO" DataSetColumn="POM_PO_NO" />
+              <Mapping SourceColumn="POM_B_COY_ID" DataSetColumn="POM_B_COY_ID" />
+              <Mapping SourceColumn="POM_S_COY_ID" DataSetColumn="POM_S_COY_ID" />
+              <Mapping SourceColumn="POM_S_COY_NAME" DataSetColumn="POM_S_COY_NAME" />
+              <Mapping SourceColumn="POM_PAYMENT_METHOD" DataSetColumn="POM_PAYMENT_METHOD" />
+              <Mapping SourceColumn="POM_CURRENCY_CODE" DataSetColumn="POM_CURRENCY_CODE" />
+              <Mapping SourceColumn="POM_CREATED_DATE" DataSetColumn="POM_CREATED_DATE" />
+              <Mapping SourceColumn="POD_ETD" DataSetColumn="POD_ETD" />
+              <Mapping SourceColumn="POD_PO_NO" DataSetColumn="POD_PO_NO" />
+              <Mapping SourceColumn="POD_COY_ID" DataSetColumn="POD_COY_ID" />
+              <Mapping SourceColumn="POM_PO_DATE" DataSetColumn="POM_PO_DATE" />
+              <Mapping SourceColumn="CM_COY_ID" DataSetColumn="CM_COY_ID" />
+              <Mapping SourceColumn="CM_COY_NAME" DataSetColumn="CM_COY_NAME" />
+              <Mapping SourceColumn="ID_INVOICE_NO" DataSetColumn="ID_INVOICE_NO" />
+              <Mapping SourceColumn="ID_S_COY_ID" DataSetColumn="ID_S_COY_ID" />
+              <Mapping SourceColumn="ID_PO_LINE" DataSetColumn="ID_PO_LINE" />
+              <Mapping SourceColumn="POD_PO_LINE" DataSetColumn="POD_PO_LINE" />
+              <Mapping SourceColumn="STATUS_DESC" DataSetColumn="STATUS_DESC" />
+              <Mapping SourceColumn="INVOICE_AMT" DataSetColumn="INVOICE_AMT" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OutstandingInv" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OutstandingInv" msprop:Generator_DataSetName="OutstandingInv">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetOutstandingInv" msprop:Generator_UserTableName="DataSetOutstandingInv" msprop:Generator_RowDeletedName="DataSetOutstandingInvRowDeleted" msprop:Generator_RowChangedName="DataSetOutstandingInvRowChanged" msprop:Generator_RowClassName="DataSetOutstandingInvRow" msprop:Generator_RowChangingName="DataSetOutstandingInvRowChanging" msprop:Generator_RowEvArgName="DataSetOutstandingInvRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetOutstandingInvRowChangeEventHandler" msprop:Generator_TableClassName="DataSetOutstandingInvDataTable" msprop:Generator_TableVarName="tableDataSetOutstandingInv" msprop:Generator_RowDeletingName="DataSetOutstandingInvRowDeleting" msprop:Generator_TablePropName="DataSetOutstandingInv">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IM_INVOICE_NO" msprop:Generator_UserColumnName="IM_INVOICE_NO" msprop:Generator_ColumnVarNameInTable="columnIM_INVOICE_NO" msprop:Generator_ColumnPropNameInRow="IM_INVOICE_NO" msprop:Generator_ColumnPropNameInTable="IM_INVOICE_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_S_COY_ID" msprop:Generator_UserColumnName="IM_S_COY_ID" msprop:Generator_ColumnVarNameInTable="columnIM_S_COY_ID" msprop:Generator_ColumnPropNameInRow="IM_S_COY_ID" msprop:Generator_ColumnPropNameInTable="IM_S_COY_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_S_COY_NAME" msprop:Generator_UserColumnName="IM_S_COY_NAME" msprop:Generator_ColumnVarNameInTable="columnIM_S_COY_NAME" msprop:Generator_ColumnPropNameInRow="IM_S_COY_NAME" msprop:Generator_ColumnPropNameInTable="IM_S_COY_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_B_COY_ID" msprop:Generator_UserColumnName="IM_B_COY_ID" msprop:Generator_ColumnVarNameInTable="columnIM_B_COY_ID" msprop:Generator_ColumnPropNameInRow="IM_B_COY_ID" msprop:Generator_ColumnPropNameInTable="IM_B_COY_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IM_PAYMENT_DATE" msprop:Generator_UserColumnName="IM_PAYMENT_DATE" msprop:Generator_ColumnVarNameInTable="columnIM_PAYMENT_DATE" msprop:Generator_ColumnPropNameInRow="IM_PAYMENT_DATE" msprop:Generator_ColumnPropNameInTable="IM_PAYMENT_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IM_CREATED_ON" msprop:Generator_UserColumnName="IM_CREATED_ON" msprop:Generator_ColumnVarNameInTable="columnIM_CREATED_ON" msprop:Generator_ColumnPropNameInRow="IM_CREATED_ON" msprop:Generator_ColumnPropNameInTable="IM_CREATED_ONColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IM_INVOICE_STATUS" msprop:Generator_UserColumnName="IM_INVOICE_STATUS" msprop:Generator_ColumnVarNameInTable="columnIM_INVOICE_STATUS" msprop:Generator_ColumnPropNameInRow="IM_INVOICE_STATUS" msprop:Generator_ColumnPropNameInTable="IM_INVOICE_STATUSColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IM_INVOICE_TOTAL" msprop:Generator_UserColumnName="IM_INVOICE_TOTAL" msprop:Generator_ColumnVarNameInTable="columnIM_INVOICE_TOTAL" msprop:Generator_ColumnPropNameInRow="IM_INVOICE_TOTAL" msprop:Generator_ColumnPropNameInTable="IM_INVOICE_TOTALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IM_CURRENCY_CODE" msprop:Generator_UserColumnName="IM_CURRENCY_CODE" msprop:Generator_ColumnVarNameInTable="columnIM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInRow="IM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInTable="IM_CURRENCY_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POM_PO_NO" msprop:Generator_UserColumnName="POM_PO_NO" msprop:Generator_ColumnVarNameInTable="columnPOM_PO_NO" msprop:Generator_ColumnPropNameInRow="POM_PO_NO" msprop:Generator_ColumnPropNameInTable="POM_PO_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POM_B_COY_ID" msprop:Generator_UserColumnName="POM_B_COY_ID" msprop:Generator_ColumnVarNameInTable="columnPOM_B_COY_ID" msprop:Generator_ColumnPropNameInRow="POM_B_COY_ID" msprop:Generator_ColumnPropNameInTable="POM_B_COY_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POM_S_COY_ID" msprop:Generator_UserColumnName="POM_S_COY_ID" msprop:Generator_ColumnVarNameInTable="columnPOM_S_COY_ID" msprop:Generator_ColumnPropNameInRow="POM_S_COY_ID" msprop:Generator_ColumnPropNameInTable="POM_S_COY_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POM_S_COY_NAME" msprop:Generator_UserColumnName="POM_S_COY_NAME" msprop:Generator_ColumnVarNameInTable="columnPOM_S_COY_NAME" msprop:Generator_ColumnPropNameInRow="POM_S_COY_NAME" msprop:Generator_ColumnPropNameInTable="POM_S_COY_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POM_PAYMENT_METHOD" msprop:Generator_UserColumnName="POM_PAYMENT_METHOD" msprop:Generator_ColumnVarNameInTable="columnPOM_PAYMENT_METHOD" msprop:Generator_ColumnPropNameInRow="POM_PAYMENT_METHOD" msprop:Generator_ColumnPropNameInTable="POM_PAYMENT_METHODColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POM_CURRENCY_CODE" msprop:Generator_UserColumnName="POM_CURRENCY_CODE" msprop:Generator_ColumnVarNameInTable="columnPOM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInRow="POM_CURRENCY_CODE" msprop:Generator_ColumnPropNameInTable="POM_CURRENCY_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POM_CREATED_DATE" msprop:Generator_UserColumnName="POM_CREATED_DATE" msprop:Generator_ColumnVarNameInTable="columnPOM_CREATED_DATE" msprop:Generator_ColumnPropNameInRow="POM_CREATED_DATE" msprop:Generator_ColumnPropNameInTable="POM_CREATED_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="POD_ETD" msprop:Generator_UserColumnName="POD_ETD" msprop:Generator_ColumnVarNameInTable="columnPOD_ETD" msprop:Generator_ColumnPropNameInRow="POD_ETD" msprop:Generator_ColumnPropNameInTable="POD_ETDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="POD_PO_NO" msprop:Generator_UserColumnName="POD_PO_NO" msprop:Generator_ColumnVarNameInTable="columnPOD_PO_NO" msprop:Generator_ColumnPropNameInRow="POD_PO_NO" msprop:Generator_ColumnPropNameInTable="POD_PO_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POD_COY_ID" msprop:Generator_UserColumnName="POD_COY_ID" msprop:Generator_ColumnVarNameInTable="columnPOD_COY_ID" msprop:Generator_ColumnPropNameInRow="POD_COY_ID" msprop:Generator_ColumnPropNameInTable="POD_COY_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POM_PO_DATE" msprop:Generator_UserColumnName="POM_PO_DATE" msprop:Generator_ColumnVarNameInTable="columnPOM_PO_DATE" msprop:Generator_ColumnPropNameInRow="POM_PO_DATE" msprop:Generator_ColumnPropNameInTable="POM_PO_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CM_COY_ID" msprop:Generator_UserColumnName="CM_COY_ID" msprop:Generator_ColumnVarNameInTable="columnCM_COY_ID" msprop:Generator_ColumnPropNameInRow="CM_COY_ID" msprop:Generator_ColumnPropNameInTable="CM_COY_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CM_COY_NAME" msprop:Generator_UserColumnName="CM_COY_NAME" msprop:Generator_ColumnVarNameInTable="columnCM_COY_NAME" msprop:Generator_ColumnPropNameInRow="CM_COY_NAME" msprop:Generator_ColumnPropNameInTable="CM_COY_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_INVOICE_NO" msprop:Generator_UserColumnName="ID_INVOICE_NO" msprop:Generator_ColumnVarNameInTable="columnID_INVOICE_NO" msprop:Generator_ColumnPropNameInRow="ID_INVOICE_NO" msprop:Generator_ColumnPropNameInTable="ID_INVOICE_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_S_COY_ID" msprop:Generator_UserColumnName="ID_S_COY_ID" msprop:Generator_ColumnVarNameInTable="columnID_S_COY_ID" msprop:Generator_ColumnPropNameInRow="ID_S_COY_ID" msprop:Generator_ColumnPropNameInTable="ID_S_COY_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_PO_LINE" msprop:Generator_UserColumnName="ID_PO_LINE" msprop:Generator_ColumnVarNameInTable="columnID_PO_LINE" msprop:Generator_ColumnPropNameInRow="ID_PO_LINE" msprop:Generator_ColumnPropNameInTable="ID_PO_LINEColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="POD_PO_LINE" msprop:Generator_UserColumnName="POD_PO_LINE" msprop:Generator_ColumnVarNameInTable="columnPOD_PO_LINE" msprop:Generator_ColumnPropNameInRow="POD_PO_LINE" msprop:Generator_ColumnPropNameInTable="POD_PO_LINEColumn" type="xs:long" />
+              <xs:element name="STATUS_DESC" msprop:Generator_UserColumnName="STATUS_DESC" msprop:Generator_ColumnVarNameInTable="columnSTATUS_DESC" msprop:Generator_ColumnPropNameInRow="STATUS_DESC" msprop:Generator_ColumnPropNameInTable="STATUS_DESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INVOICE_AMT" msprop:Generator_UserColumnName="INVOICE_AMT" msprop:Generator_ColumnPropNameInRow="INVOICE_AMT" msprop:Generator_ColumnVarNameInTable="columnINVOICE_AMT" msprop:Generator_ColumnPropNameInTable="INVOICE_AMTColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataSetOutstandingInv" />
+      <xs:field xpath="mstns:POD_PO_NO" />
+      <xs:field xpath="mstns:POD_COY_ID" />
+      <xs:field xpath="mstns:CM_COY_ID" />
+      <xs:field xpath="mstns:ID_INVOICE_NO" />
+      <xs:field xpath="mstns:ID_S_COY_ID" />
+      <xs:field xpath="mstns:POD_PO_LINE" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

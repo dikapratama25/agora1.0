@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Format>
+	<Catalog>	
+	    	<InvoiceMstrReadArea>
+			<Sheet>Header</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>H</ColTo>
+			<RowFrom>2</RowFrom>
+			<RowTo>100</RowTo>
+		</InvoiceMstrReadArea>
+		<InvoiceDetailsReadArea>
+			<Sheet>GL Debits</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>V</ColTo>
+			<RowFrom>3</RowFrom>
+			<RowTo>2002</RowTo>
+		</InvoiceDetailsReadArea>
+	</Catalog>
+</Format>
+

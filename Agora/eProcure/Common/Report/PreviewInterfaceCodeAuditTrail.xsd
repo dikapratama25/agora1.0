@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PreviewInterfaceCodeAuditTrail" targetNamespace="http://tempuri.org/PreviewInterfaceCodeAuditTrail.xsd" xmlns:mstns="http://tempuri.org/PreviewInterfaceCodeAuditTrail.xsd" xmlns="http://tempuri.org/PreviewInterfaceCodeAuditTrail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConnectionString1.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetInterfaceCodeAuditTableAdapter" GeneratorDataComponentClassName="DataSetInterfaceCodeAuditTableAdapter" Name="DataSetInterfaceCodeAudit" UserDataComponentName="DataSetInterfaceCodeAuditTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConnectionString1 (Web.config)" DbObjectName="eprocure.au_interface_mapping" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT AU_IM_INTERFACE_INDEX, AU_DATE, AU_ACTION, AU_BR_CODE, AU_GL_CODE, AU_CC, AU_CC_DESC, AU_IM_MAPPING_CODE, AU_LOG_INDEX FROM au_interface_mapping
+INNER JOIN user_mstr 
+ON au_interface_mapping.AU_USER = user_mstr.UM_USER_ID AND user_mstr.UM_COY_ID = AU_IM_COY_ID</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AU_IM_INTERFACE_INDEX" DataSetColumn="AU_IM_INTERFACE_INDEX" />
+              <Mapping SourceColumn="AU_DATE" DataSetColumn="AU_DATE" />
+              <Mapping SourceColumn="AU_ACTION" DataSetColumn="AU_ACTION" />
+              <Mapping SourceColumn="AU_BR_CODE" DataSetColumn="AU_BR_CODE" />
+              <Mapping SourceColumn="AU_GL_CODE" DataSetColumn="AU_GL_CODE" />
+              <Mapping SourceColumn="AU_CC" DataSetColumn="AU_CC" />
+              <Mapping SourceColumn="AU_CC_DESC" DataSetColumn="AU_CC_DESC" />
+              <Mapping SourceColumn="AU_IM_MAPPING_CODE" DataSetColumn="AU_IM_MAPPING_CODE" />
+              <Mapping SourceColumn="AU_LOG_INDEX" DataSetColumn="AU_LOG_INDEX" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PreviewInterfaceCodeAuditTrail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PreviewInterfaceCodeAuditTrail" msprop:Generator_DataSetName="PreviewInterfaceCodeAuditTrail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetInterfaceCodeAudit" msprop:Generator_UserTableName="DataSetInterfaceCodeAudit" msprop:Generator_RowDeletedName="DataSetInterfaceCodeAuditRowDeleted" msprop:Generator_RowChangedName="DataSetInterfaceCodeAuditRowChanged" msprop:Generator_RowClassName="DataSetInterfaceCodeAuditRow" msprop:Generator_RowChangingName="DataSetInterfaceCodeAuditRowChanging" msprop:Generator_RowEvArgName="DataSetInterfaceCodeAuditRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetInterfaceCodeAuditRowChangeEventHandler" msprop:Generator_TableClassName="DataSetInterfaceCodeAuditDataTable" msprop:Generator_TableVarName="tableDataSetInterfaceCodeAudit" msprop:Generator_RowDeletingName="DataSetInterfaceCodeAuditRowDeleting" msprop:Generator_TablePropName="DataSetInterfaceCodeAudit">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AU_IM_INTERFACE_INDEX" msprop:Generator_UserColumnName="AU_IM_INTERFACE_INDEX" msprop:Generator_ColumnVarNameInTable="columnAU_IM_INTERFACE_INDEX" msprop:Generator_ColumnPropNameInRow="AU_IM_INTERFACE_INDEX" msprop:Generator_ColumnPropNameInTable="AU_IM_INTERFACE_INDEXColumn" type="xs:long" />
+              <xs:element name="AU_DATE" msprop:Generator_UserColumnName="AU_DATE" msprop:Generator_ColumnVarNameInTable="columnAU_DATE" msprop:Generator_ColumnPropNameInRow="AU_DATE" msprop:Generator_ColumnPropNameInTable="AU_DATEColumn" type="xs:dateTime" />
+              <xs:element name="AU_ACTION" msprop:Generator_UserColumnName="AU_ACTION" msprop:Generator_ColumnVarNameInTable="columnAU_ACTION" msprop:Generator_ColumnPropNameInRow="AU_ACTION" msprop:Generator_ColumnPropNameInTable="AU_ACTIONColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AU_BR_CODE" msprop:Generator_UserColumnName="AU_BR_CODE" msprop:Generator_ColumnVarNameInTable="columnAU_BR_CODE" msprop:Generator_ColumnPropNameInRow="AU_BR_CODE" msprop:Generator_ColumnPropNameInTable="AU_BR_CODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AU_GL_CODE" msprop:Generator_UserColumnName="AU_GL_CODE" msprop:Generator_ColumnVarNameInTable="columnAU_GL_CODE" msprop:Generator_ColumnPropNameInRow="AU_GL_CODE" msprop:Generator_ColumnPropNameInTable="AU_GL_CODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AU_CC" msprop:Generator_UserColumnName="AU_CC" msprop:Generator_ColumnVarNameInTable="columnAU_CC" msprop:Generator_ColumnPropNameInRow="AU_CC" msprop:Generator_ColumnPropNameInTable="AU_CCColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AU_CC_DESC" msprop:Generator_UserColumnName="AU_CC_DESC" msprop:Generator_ColumnVarNameInTable="columnAU_CC_DESC" msprop:Generator_ColumnPropNameInRow="AU_CC_DESC" msprop:Generator_ColumnPropNameInTable="AU_CC_DESCColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AU_IM_MAPPING_CODE" msprop:Generator_UserColumnName="AU_IM_MAPPING_CODE" msprop:Generator_ColumnVarNameInTable="columnAU_IM_MAPPING_CODE" msprop:Generator_ColumnPropNameInRow="AU_IM_MAPPING_CODE" msprop:Generator_ColumnPropNameInTable="AU_IM_MAPPING_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AU_LOG_INDEX" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="AU_LOG_INDEX" msprop:Generator_ColumnVarNameInTable="columnAU_LOG_INDEX" msprop:Generator_ColumnPropNameInRow="AU_LOG_INDEX" msprop:Generator_ColumnPropNameInTable="AU_LOG_INDEXColumn" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataSetInterfaceCodeAudit" />
+      <xs:field xpath="mstns:AU_LOG_INDEX" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Format>
+	<Catalog>
+		<CoyName>
+			<Sheet>PO</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>F</ColTo>
+			<RowFrom>5</RowFrom>
+			<RowTo>5</RowTo>
+		</CoyName>
+		
+		<DocNo>
+			<Sheet>PO</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>F</ColTo>
+			<RowFrom>6</RowFrom>
+			<RowTo>6</RowTo>
+		</DocNo>
+				
+	    <ReadArea>
+			<Sheet>PO</Sheet>
+			<ColFrom>A</ColFrom>
+			<ColTo>Z</ColTo>
+			<RowFrom>10</RowFrom>
+			<RowTo>1009</RowTo>
+		</ReadArea>
+		
+		<Column>
+			<ColNo>0</ColNo>
+			<ColName>No</ColName>
+			<DBField></DBField>
+			<AllowNUll>FALSE</AllowNUll>                 
+			<Regex>^\d*$</Regex>
+			<RegexErrMsg>Row No is expecting integer value.</RegexErrMsg> 
+		</Column>
+
+		<Column>
+			<ColNo>1</ColNo>
+			<ColName>Item Name</ColName>
+			<DBField>ID_PRODUCT_DESC</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex></Regex>
+			<RegexErrMsg>Item Name Description maximum length is 500.</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>2</ColNo>
+			<ColName>(GL Code) GL Description</ColName>
+			<DBField>ID_B_GL_CODE</DBField>
+			<AllowNUll>FALSE</AllowNUll>
+			<Regex>^[ |\S]{0,30}$</Regex>
+			<RegexErrMsg>GL Code maximum length is 100.</RegexErrMsg>  
+		</Column>
+
+		<Column>
+			<ColNo>3</ColNo>
+			<ColName>Category Code</ColName>
+			<DBField>ID_B_CATEGORY_CODE</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex></Regex>
+			<RegexErrMsg></RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>4</ColNo>
+			<ColName>Asset Group</ColName>
+			<DBField>ID_ASSET_GROUP</DBField>
+			<AllowNUll>FALSE</AllowNUll>  			
+		</Column>
+		
+		<Column>
+			<ColNo>5</ColNo>
+			<ColName>Quantity</ColName>
+			<DBField>ID_RECEIVED_QTY</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex>^\d*$</Regex>
+			<RegexErrMsg>Numeric Only</RegexErrMsg>  
+		</Column>
+		
+		<Column>
+			<ColNo>6</ColNo>
+			<ColName>UOM</ColName>
+			<DBField>ID_UOM</DBField>
+			<AllowNUll>FALSE</AllowNUll>  			
+		</Column>
+				
+		<Column>
+			<ColNo>7</ColNo>
+			<ColName>Unit Price</ColName>
+			<DBField>ID_UNIT_COST</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex>^\d{1,10}(\.\d{1,4})?$</Regex>
+			<RegexErrMsg>Price is expecting decimal value.</RegexErrMsg> 			
+		</Column>
+		
+		<Column>
+			<ColNo>8</ColNo>
+			<ColName>TAX</ColName>
+			<DBField>ID_GST</DBField>
+			<AllowNUll>FALSE</AllowNUll>                
+			<Regex>^\d{1,10}(\.\d{1,4})?$</Regex>
+			<RegexErrMsg>Tax is expecting decimal value.</RegexErrMsg> 			
+		</Column>
+		
+		<Column>
+			<ColNo>9</ColNo>
+			<ColName>Amount</ColName>
+			<DBField></DBField>
+			<AllowNUll>FALSE</AllowNUll>
+			<Regex>^\d{1,10}(\.\d{1,4})?$</Regex>
+			<RegexErrMsg>Amount is expecting decimal value.</RegexErrMsg> 
+		</Column>
+					
+	</Catalog>
+</Format>
+

@@ -1,0 +1,190 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	<HEAD>
+		<title>test_by_kk</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK href="../css/Styles.css" type="text/css" rel="stylesheet">
+	</HEAD>
+	<body MS_POSITIONING="GridLayout">
+		<form name="Form1" method="post" action="catBatchUpload.aspx?pageid=78" id="Form1" enctype="multipart/form-data">
+<input type="hidden" name="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" value="dDwxMzg2NzE5MzE5O3Q8O2w8aTwxPjs+O2w8dDxwPGw8ZW5jdHlwZTs+O2w8bXVsdGlwYXJ0L2Zvcm0tZGF0YTs+PjtsPGk8OT47aTwxMT47PjtsPHQ8cDxwPGw8VGV4dDs+O2w8Oz4+Oz47Oz47dDxAMDxwPHA8bDxBbGxvd0N1c3RvbVBhZ2luZztBbGxvd1BhZ2luZztTaG93Rm9vdGVyO0FsbG93U29ydGluZztBdXRvR2VuZXJhdGVDb2x1bW5zO0dyaWRMaW5lcztDZWxsU3BhY2luZztfIVNCO0Nzc0NsYXNzO0NlbGxQYWRkaW5nO1Nob3dIZWFkZXI7PjtsPG88Zj47bzxmPjtvPGY+O288Zj47bzxmPjtTeXN0ZW0uV2ViLlVJLldlYkNvbnRyb2xzLkdyaWRMaW5lcywgU3lzdGVtLldlYiwgVmVyc2lvbj0xLjAuNTAwMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2E8Qm90aD47aTwwPjtpPDkxNzUwNj47R3JpZDtpPC0xPjtvPHQ+Oz4+Oz47OztwPGw8Q3NzQ2xhc3M7SG9yaXpvbnRhbEFsaWduO18hU0I7PjtsPEdyaWRIZWFkZXI7U3lzdGVtLldlYi5VSS5XZWJDb250cm9scy5Ib3Jpem9udGFsQWxpZ24sIFN5c3RlbS5XZWIsIFZlcnNpb249MS4wLjUwMDAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhPExlZnQ+O2k8NjU1Mzg+Oz4+Ozs7cDxsPEJhY2tDb2xvcjtfIVNCOz47bDwyPCcjRjFGMERDJz47aTw4Pjs+Pjs7cDxsPEZvbnRfQm9sZDtfIVNCOz47bDxvPHQ+O2k8MjA0OD47Pj47Oz47Oz47Pj47Pj47PhsHH2vyqOHk+6H8dJzZQqw1GnjV" />
+
+<script language="javascript" type="text/javascript">
+<!--
+	function __doPostBack(eventTarget, eventArgument) {
+		var theform;
+		if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+			theform = document.Form1;
+		}
+		else {
+			theform = document.forms["Form1"];
+		}
+		theform.__EVENTTARGET.value = eventTarget.split("$").join(":");
+		theform.__EVENTARGUMENT.value = eventArgument;
+		theform.submit();
+	}
+// -->
+</script>
+
+			<TABLE class="alltable" id="Table5" cellSpacing="0" cellPadding="0" width="100%" border="0">
+				<TR>
+					<TD class="header" style="HEIGHT: 17px"><span id="lblTitle" class="header">Batch Upload / Download</span></TD>
+				</TR>
+				<TR>
+					<TD class="emptycol"></TD>
+				</TR>
+				<TR>
+					<td>
+						<TABLE class="alltable" id="Table2" cellSpacing="0" cellPadding="0" width="300" border="0">
+							<TR>
+								<TD class="tableheader" colSpan="3">&nbsp;<span id="lblHeader">Batch Upload/Download</span></TD>
+							</TR>
+							<TR class="tablecol">
+								<TD style="WIDTH: 92px; HEIGHT: 6px" width="92"></TD>
+								<TD style="HEIGHT: 6px"></TD>
+							</TR>
+							<TR class="tablecol">
+								<TD width="100">&nbsp;<B>File Location :</B><br>
+									&nbsp;<span id="lblAttach" class="div" style="width:176px;">Recommended file size is 300KB</span></TD>
+								<TD>&nbsp;&nbsp;<input name="cmdBrowse" id="cmdBrowse" type="file" class="button" style="FONT-SIZE: 8pt; WIDTH: 340px; FONT-FAMILY: verdana; BACKGROUND-COLOR: white" />&nbsp;</TD>
+								<TD></TD>
+							</TR>
+							<TR class="tablecol">
+								<TD>&nbsp;</TD>
+								<TD style="HEIGHT: 5px">&nbsp;&nbsp;<span id="lblPath" class="txtbox" style="height:5px;"></span></TD>
+							</TR>
+							<TR class="tablecol">
+								<TD style="WIDTH: 92px; HEIGHT: 6px" width="92"></TD>
+								<TD style="HEIGHT: 6px"></TD>
+							</TR>
+						</TABLE>
+					</td>
+				</TR>
+				<TR>
+					<TD class="emptycol"></TD>
+				</TR>
+				<tr>
+					<td></td>
+				</tr>
+				<TR>
+					<TD class="emptycol"></TD>
+				</TR>
+				<TR>
+					<TD class="emptycol">Click
+						<a id="cmdDownloadTemplate" href="javascript:__doPostBack('cmdDownloadTemplate','')">here</a>&nbsp;to 
+						download template.</TD>
+				</TR>
+				<TR>
+					<TD class="emptycol">&nbsp;&nbsp;</TD>
+				</TR>
+				<TR>
+					<TD><input type="submit" name="cmdUpload" value="Upload" id="cmdUpload" class="button" />&nbsp;<input type="submit" name="cmdDownload" value="Download" id="cmdDownload" class="button" /></TD>
+				</TR>
+				<TR>
+					<TD class="emptycol">&nbsp;&nbsp;</TD>
+				</TR>
+			</TABLE>
+		</form>
+	</body>
+</HTML>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	<HEAD>
+		<title>test_by_kk</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK href="../css/Styles.css" type="text/css" rel="stylesheet">
+	</HEAD>
+	<body MS_POSITIONING="GridLayout">
+		<form name="Form1" method="post" action="catBatchUpload.aspx?pageid=78" id="Form1" enctype="multipart/form-data">
+<input type="hidden" name="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" value="dDwxMzg2NzE5MzE5O3Q8O2w8aTwxPjs+O2w8dDxwPGw8ZW5jdHlwZTs+O2w8bXVsdGlwYXJ0L2Zvcm0tZGF0YTs+PjtsPGk8OT47aTwxMT47PjtsPHQ8cDxwPGw8VGV4dDs+O2w8Oz4+Oz47Oz47dDxAMDxwPHA8bDxBbGxvd0N1c3RvbVBhZ2luZztBbGxvd1BhZ2luZztTaG93Rm9vdGVyO0FsbG93U29ydGluZztBdXRvR2VuZXJhdGVDb2x1bW5zO0dyaWRMaW5lcztDZWxsU3BhY2luZztfIVNCO0Nzc0NsYXNzO0NlbGxQYWRkaW5nO1Nob3dIZWFkZXI7PjtsPG88Zj47bzxmPjtvPGY+O288Zj47bzxmPjtTeXN0ZW0uV2ViLlVJLldlYkNvbnRyb2xzLkdyaWRMaW5lcywgU3lzdGVtLldlYiwgVmVyc2lvbj0xLjAuNTAwMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2E8Qm90aD47aTwwPjtpPDkxNzUwNj47R3JpZDtpPC0xPjtvPHQ+Oz4+Oz47OztwPGw8Q3NzQ2xhc3M7SG9yaXpvbnRhbEFsaWduO18hU0I7PjtsPEdyaWRIZWFkZXI7U3lzdGVtLldlYi5VSS5XZWJDb250cm9scy5Ib3Jpem9udGFsQWxpZ24sIFN5c3RlbS5XZWIsIFZlcnNpb249MS4wLjUwMDAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhPExlZnQ+O2k8NjU1Mzg+Oz4+Ozs7cDxsPEJhY2tDb2xvcjtfIVNCOz47bDwyPCcjRjFGMERDJz47aTw4Pjs+Pjs7cDxsPEZvbnRfQm9sZDtfIVNCOz47bDxvPHQ+O2k8MjA0OD47Pj47Oz47Oz47Pj47Pj47PhsHH2vyqOHk+6H8dJzZQqw1GnjV" />
+
+<script language="javascript" type="text/javascript">
+<!--
+	function __doPostBack(eventTarget, eventArgument) {
+		var theform;
+		if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+			theform = document.Form1;
+		}
+		else {
+			theform = document.forms["Form1"];
+		}
+		theform.__EVENTTARGET.value = eventTarget.split("$").join(":");
+		theform.__EVENTARGUMENT.value = eventArgument;
+		theform.submit();
+	}
+// -->
+</script>
+
+			<TABLE class="alltable" id="Table5" cellSpacing="0" cellPadding="0" width="100%" border="0">
+				<TR>
+					<TD class="header" style="HEIGHT: 17px"><span id="lblTitle" class="header">Batch Upload / Download</span></TD>
+				</TR>
+				<TR>
+					<TD class="emptycol"></TD>
+				</TR>
+				<TR>
+					<td>
+						<TABLE class="alltable" id="Table2" cellSpacing="0" cellPadding="0" width="300" border="0">
+							<TR>
+								<TD class="tableheader" colSpan="3">&nbsp;<span id="lblHeader">Batch Upload/Download</span></TD>
+							</TR>
+							<TR class="tablecol">
+								<TD style="WIDTH: 92px; HEIGHT: 6px" width="92"></TD>
+								<TD style="HEIGHT: 6px"></TD>
+							</TR>
+							<TR class="tablecol">
+								<TD width="100">&nbsp;<B>File Location :</B><br>
+									&nbsp;<span id="lblAttach" class="div" style="width:176px;">Recommended file size is 300KB</span></TD>
+								<TD>&nbsp;&nbsp;<input name="cmdBrowse" id="cmdBrowse" type="file" class="button" style="FONT-SIZE: 8pt; WIDTH: 340px; FONT-FAMILY: verdana; BACKGROUND-COLOR: white" />&nbsp;</TD>
+								<TD></TD>
+							</TR>
+							<TR class="tablecol">
+								<TD>&nbsp;</TD>
+								<TD style="HEIGHT: 5px">&nbsp;&nbsp;<span id="lblPath" class="txtbox" style="height:5px;"></span></TD>
+							</TR>
+							<TR class="tablecol">
+								<TD style="WIDTH: 92px; HEIGHT: 6px" width="92"></TD>
+								<TD style="HEIGHT: 6px"></TD>
+							</TR>
+						</TABLE>
+					</td>
+				</TR>
+				<TR>
+					<TD class="emptycol"></TD>
+				</TR>
+				<tr>
+					<td></td>
+				</tr>
+				<TR>
+					<TD class="emptycol"></TD>
+				</TR>
+				<TR>
+					<TD class="emptycol">Click
+						<a id="cmdDownloadTemplate" href="javascript:__doPostBack('cmdDownloadTemplate','')">here</a>&nbsp;to 
+						download template.</TD>
+				</TR>
+				<TR>
+					<TD class="emptycol">&nbsp;&nbsp;</TD>
+				</TR>
+				<TR>
+					<TD><input type="submit" name="cmdUpload" value="Upload" id="cmdUpload" class="button" />&nbsp;<input type="submit" name="cmdDownload" value="Download" id="cmdDownload" class="button" /></TD>
+				</TR>
+				<TR>
+					<TD class="emptycol">&nbsp;&nbsp;</TD>
+				</TR>
+			</TABLE>
+		</form>
+	</body>
+</HTML>

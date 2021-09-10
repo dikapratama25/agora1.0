@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SPP>
+	<folder name="Common" path="../../Common/" type="wl"></folder>
+		<folder name="FTN" path="../../FTN/" type="wl">
+      <folder name="Report">
+        <file name="ReportFormatN2">Report/ReportFormatN2.aspx</file>
+        <file name="ReportFormatN4">Report/ReportFormatN4.aspx</file>
+      </folder>
+    </folder>
+    
+		<folder name="SEH" path="../../SEH/" type="wl"></folder>
+</SPP>

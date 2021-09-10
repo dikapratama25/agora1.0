@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SummaryMonthlyStockBalance" targetNamespace="http://tempuri.org/SummaryMonthlyStockBalance.xsd" xmlns:mstns="http://tempuri.org/SummaryMonthlyStockBalance.xsd" xmlns="http://tempuri.org/SummaryMonthlyStockBalance.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="eprocureConn" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="eprocureConn (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.eprocureConn.ConnectionString" Provider="MySql.Data.MySqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSetSumStockBalanceTableAdapter" GeneratorDataComponentClassName="DataSetSumStockBalanceTableAdapter" Name="DataSetSumStockBalance" UserDataComponentName="DataSetSumStockBalanceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="eprocureConn (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT a.PM_ACCT_CODE, b.CT_NAME,c.IC_COST_OPEN_COST, 
+'' AS IC_GRN_COST, 
+'' AS IC_II_COST,
+''  AS IC_WO_COST ,
+c.IC_COST_CLOSE_COST, tb_a.PO_VALUE
+FROM product_mstr a
+INNER JOIN commodity_type b ON a.PM_CATEGORY_NAME = b.CT_ID
+INNER JOIN inventory_mstr e ON a.PM_S_COY_ID = e.IM_coy_id AND PM_VENDOR_ITEM_CODE = IM_ITEM_CODE
+INNER JOIN inventory_cost c ON e.IM_INVENTORY_INDEX = c.IC_INVENTORY_INDEX
+LEFT JOIN 
+(
+SELECT SUM(POD_ORDERED_QTY - (POD_RECEIVED_QTY - POD_REJECTED_QTY)) AS PO_VALUE, POD_VENDOR_ITEM_CODE, POD_COY_ID,POM_PO_DATE
+FROM po_details b
+INNER JOIN po_mstr a ON a.POM_B_COY_ID = b.POD_COY_ID AND  a.POM_PO_NO = b.POD_PO_NO 
+WHERE a.POM_PO_STATUS &lt;&gt; 4 AND a.POM_PO_STATUS &lt;&gt; 5 AND YEAR(a.POM_PO_DATE) = '2011' AND MONTH(a.POM_PO_DATE) = '11' AND b.POD_COY_ID = 'delta'
+GROUP BY  b.POD_VENDOR_ITEM_CODE
+) tb_a
+ON a.PM_VENDOR_ITEM_CODE = tb_a.POD_VENDOR_ITEM_CODE AND a.PM_S_COY_ID = tb_a.POD_COY_ID
+</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PM_ACCT_CODE" DataSetColumn="PM_ACCT_CODE" />
+              <Mapping SourceColumn="CT_NAME" DataSetColumn="CT_NAME" />
+              <Mapping SourceColumn="IC_COST_OPEN_COST" DataSetColumn="IC_COST_OPEN_COST" />
+              <Mapping SourceColumn="IC_GRN_COST" DataSetColumn="IC_GRN_COST" />
+              <Mapping SourceColumn="IC_II_COST" DataSetColumn="IC_II_COST" />
+              <Mapping SourceColumn="IC_WO_COST" DataSetColumn="IC_WO_COST" />
+              <Mapping SourceColumn="IC_COST_CLOSE_COST" DataSetColumn="IC_COST_CLOSE_COST" />
+              <Mapping SourceColumn="PO_VALUE" DataSetColumn="PO_VALUE" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SummaryMonthlyStockBalance" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SummaryMonthlyStockBalance" msprop:Generator_DataSetName="SummaryMonthlyStockBalance">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetSumStockBalance" msprop:Generator_UserTableName="DataSetSumStockBalance" msprop:Generator_RowDeletedName="DataSetSumStockBalanceRowDeleted" msprop:Generator_TableClassName="DataSetSumStockBalanceDataTable" msprop:Generator_RowChangedName="DataSetSumStockBalanceRowChanged" msprop:Generator_RowClassName="DataSetSumStockBalanceRow" msprop:Generator_RowChangingName="DataSetSumStockBalanceRowChanging" msprop:Generator_RowEvArgName="DataSetSumStockBalanceRowChangeEvent" msprop:Generator_RowEvHandlerName="DataSetSumStockBalanceRowChangeEventHandler" msprop:Generator_TablePropName="DataSetSumStockBalance" msprop:Generator_TableVarName="tableDataSetSumStockBalance" msprop:Generator_RowDeletingName="DataSetSumStockBalanceRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PM_ACCT_CODE" msprop:Generator_UserColumnName="PM_ACCT_CODE" msprop:Generator_ColumnPropNameInRow="PM_ACCT_CODE" msprop:Generator_ColumnVarNameInTable="columnPM_ACCT_CODE" msprop:Generator_ColumnPropNameInTable="PM_ACCT_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CT_NAME" msprop:Generator_UserColumnName="CT_NAME" msprop:Generator_ColumnPropNameInRow="CT_NAME" msprop:Generator_ColumnVarNameInTable="columnCT_NAME" msprop:Generator_ColumnPropNameInTable="CT_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IC_COST_OPEN_COST" msprop:Generator_UserColumnName="IC_COST_OPEN_COST" msprop:Generator_ColumnPropNameInRow="IC_COST_OPEN_COST" msprop:Generator_ColumnVarNameInTable="columnIC_COST_OPEN_COST" msprop:Generator_ColumnPropNameInTable="IC_COST_OPEN_COSTColumn" type="xs:decimal" />
+              <xs:element name="IC_GRN_COST" msprop:Generator_UserColumnName="IC_GRN_COST" msprop:Generator_ColumnPropNameInRow="IC_GRN_COST" msprop:Generator_ColumnVarNameInTable="columnIC_GRN_COST" msprop:Generator_ColumnPropNameInTable="IC_GRN_COSTColumn" type="xs:string" />
+              <xs:element name="IC_II_COST" msprop:Generator_UserColumnName="IC_II_COST" msprop:Generator_ColumnPropNameInRow="IC_II_COST" msprop:Generator_ColumnVarNameInTable="columnIC_II_COST" msprop:Generator_ColumnPropNameInTable="IC_II_COSTColumn" type="xs:string" />
+              <xs:element name="IC_WO_COST" msprop:Generator_UserColumnName="IC_WO_COST" msprop:Generator_ColumnPropNameInRow="IC_WO_COST" msprop:Generator_ColumnVarNameInTable="columnIC_WO_COST" msprop:Generator_ColumnPropNameInTable="IC_WO_COSTColumn" type="xs:string" />
+              <xs:element name="IC_COST_CLOSE_COST" msprop:Generator_UserColumnName="IC_COST_CLOSE_COST" msprop:Generator_ColumnPropNameInRow="IC_COST_CLOSE_COST" msprop:Generator_ColumnVarNameInTable="columnIC_COST_CLOSE_COST" msprop:Generator_ColumnPropNameInTable="IC_COST_CLOSE_COSTColumn" type="xs:decimal" />
+              <xs:element name="PO_VALUE" msprop:Generator_UserColumnName="PO_VALUE" msprop:Generator_ColumnPropNameInRow="PO_VALUE" msprop:Generator_ColumnVarNameInTable="columnPO_VALUE" msprop:Generator_ColumnPropNameInTable="PO_VALUEColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
